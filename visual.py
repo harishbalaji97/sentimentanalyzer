@@ -8,7 +8,15 @@ Created on Sun Feb 13 18:16:28 2022
 import streamlit as st
 import numpy as np
 import pandas as pd
+hide_table_row_index = """
+            <style>
+            tbody th {display:none}
+            .blank {display:none}
+            </style>
+            """
 
+# Inject CSS with Markdown
+st.markdown(hide_table_row_index, unsafe_allow_html=True)
 def try1(df,stre):
     try:
         count=df[df['Sender Email Type'].str.strip()==stre]['count'].values[0]
@@ -94,8 +102,12 @@ def app():
         text=text+str(output_df['smallwords_removed'][i]).replace("[","").replace("'","").replace(",","")
     output_df['Sentiment']=output_df['Label']
     output_df['Emotions']=output_df['emotions1']
-    
-    st.table(output_df[['Text',"Sentiment","Emotions"]])
+    output_df['Mail Content']=output_df['Text']
+    output_df=output_df.sort_values('Emotions')
+    temp2=output_df[['Mail Content',"Sentiment","Emotions"]]
+    temp2=temp2.sort_values(['Sentiment','Emotions'],ascending=False)
+    #temp2=temp2.style.hide_index()
+    st.table(temp2)
     
        
 if __name__ == "__main__":
