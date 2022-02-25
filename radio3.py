@@ -380,7 +380,15 @@ element.style {
 
             </style>
 """,unsafe_allow_html=True)
+hide_table_row_index = """
+            <style>
+            tbody th {display:none}
+            .blank {display:none}
+            </style>
+            """
 
+# Inject CSS with Markdown
+st.markdown(hide_table_row_index, unsafe_allow_html=True)
 import random
 import time
     
