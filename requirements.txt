@@ -8,3 +8,4 @@ text2emotion
 extract-msg
 wordcloud
 sklearn
+openpyxl

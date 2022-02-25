@@ -104,10 +104,19 @@ def app():
     output_df['Emotions']=output_df['emotions1']
     output_df['Mail Content']=output_df['Text']
     output_df=output_df.sort_values('Emotions')
-    temp2=output_df[['Mail Content',"Sentiment","Emotions"]]
-    temp2=temp2.sort_values(['Sentiment','Emotions'],ascending=False)
+    temp2=output_df[['Id','Mail Content',"Sentiment","Emotions"]]
+    #negid=[5,6,7,12,13,18]
+    #neuid=[8,17,49,69]
+    #posid=[33,34,53,47,64,71]
+    posid=[34,53,47,64,71,5,6,7,12,13,68,8,17,49,69]
+    temp3=pd.DataFrame()
+    temp3['Id']=posid
+    temp4=pd.merge(temp3,temp2, on='Id', how='left')
+    temp5=temp2[temp2['Id'].isin(list(posid))==False]
+    #temp2=temp2.sort_values(['Sentiment','Emotions'],ascending=False)
     #temp2=temp2.style.hide_index()
-    st.table(temp2)
+    outr=temp4.append(temp5)
+    st.table(outr[['Mail Content',"Sentiment","Emotions"]])
     
        
 if __name__ == "__main__":
