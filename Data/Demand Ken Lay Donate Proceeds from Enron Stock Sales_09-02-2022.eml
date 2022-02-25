@@ -1,0 +1,153 @@
+Received: from 10.217.136.215 by atlas306.free.mail.ne1.yahoo.com with HTTPS; Wed, 9
+ Feb 2022 07:32:34 +0000
+Received: from 209.85.128.43 (EHLO mail-wm1-f43.google.com) by 10.217.136.215 with
+ SMTPs (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256); Wed, 09 Feb 2022
+ 07:32:33 +0000
+Received: by mail-wm1-f43.google.com with SMTP id
+ d14-20020a05600c34ce00b0037bf4d14dc7so247379wmq.3        for
+ <ygayathri95@yahoo.com>; Tue, 08 Feb 2022 23:32:33 -0800 (PST)
+Return-Path: <sbsudhirsingh489@gmail.com>
+X-Originating-Ip: [209.85.128.43]
+Received-SPF: pass (domain of gmail.com designates 209.85.128.43 as permitted sender)
+Authentication-Results: atlas306.free.mail.ne1.yahoo.com; dkim=pass header.i=@gmail.com
+ header.s=20210112; spf=pass smtp.mailfrom=gmail.com;
+ dmarc=pass(p=NONE,sp=QUARANTINE) header.from=gmail.com;
+X-Apparently-To: ygayathri95@yahoo.com; Wed, 9 Feb 2022 07:32:34 +0000
+X-YMailISG: 7xG3ZG4WLDupWnKKSYYtxTLCNEWdUVAnXSPJFJy0aEXPBea0
+ T1ITOach1s0LEXZCa9ebZCdDLlAjGaMlHFfoKaL.WFuLtybvmDVOGAFL7GR6
+ bhvD4d1s6QCb6z9fgIv4DkcICLSPDlQSrQP9rXvLvS5JNlcrjNJSq2daFocS
+ 9oP.W6f2m52qja2sGc27rF9L.fiV3CqLaEf2kP42Mqy.kGQyswGZJckNG7UA
+ J0POgIsP54ZvlGw5zklUxtRl3OpSudUtzjf1EHfamFsYHN5.3lj2ZAIQtBvJ
+ 3uvifw4VZYNxeZkJdL9SPN9R6d3bOg4u8S.DYvABqLkjPk1j5AQ2t0PaezaU
+ 1iQlQYDkva95ipG_.mlV38N1_g.uTV6iqpYoeFbp.NXjKGDmbv47fZLCi7a2
+ FjshnLrt9Z9ahJ7Y1FzcY0FkHGR2qoDYYWaKQZ2jRKZuQ7wTJrGXVPXwNV8s
+ mDr1f9kU00EpIgVgKcTs1blajgsHMVYsKC.UEosFhyuQm49iGVwKi_Z.g1aj
+ MD1CoIOvaNU87TKdXTA_vmoQ2uOXgjg6XPhearRGLyV9Rwo.jlb0WhcoEfMU
+ hNMkSGedmrSPE6qzwYRGn3EhIhP2rX9KKEKcseuSJfoW_N2_vM9m8niIDAnq
+ yJ0Hv34yDzN9gNDDziS6E5BY3Gp0V4Vk_YuVWAf4tJZCd3T.WMItGAVurLng
+ NxHfmCkDmvmj9A7bx5pWUWNbEB6LpaSS4lqCcZirZVewFPfQEOEUkkPnbs5n
+ IgFNrJv2MruieAUO67llnjk5WN.EB.RO8lWAN2OFW_8lumVyZW8RkeUUvJvY
+ 5NO1RZnLQ1.hj4UgOOTZgtpjh8MUfmlcuZ4xl7moW.pltGGTuNM_0i867k0A
+ iot6Y6xg60I9mA2b9P7KXbLJNHIAYEqdcdPACvf7zkvSm3xOrhJp_3lGfSsj
+ YRgE5GP087aJxQqc5nvEhravXGA4o3JtUdtv3_zH4W.wrKPtgGEzFwIm28xI
+ dGNOU1oskdjMDr0Jblq9WHsDpo00UJARhMgohTgEgpi4mND8mAi44Oln1pvf
+ ZkSdGPpWCUvD5oIXh8NVYXH.ThWqGuF2t6av88z8zQiSgZfXU76694iSR2iF
+ h8.rFUHzIne6qbmjgrr4Ye604tQSjsFZKu63bGdbjOHt60l7
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;        d=gmail.com; s=20210112;       
+ h=mime-version:from:date:message-id:subject:to;       
+ bh=wOfr+gxgG1zODgCdXY4X7G9tOiVBFOpKCJLRBR8FMz8=;       
+ b=qCKPYo+dVIhWsQeYzZGgehARawoiJ7eHhwWn5AgZfM5OvK+MFHn3ls2S0Gej5uQb04        
+ B+wKTlmu9Qs4ihANGUdFP/QMV0Jjxz2Ymi8/tCTPONXelVVXfzRbhRQFISfFqE93ZwUl        
+ m4MYiPHBNWWa8EO39soyL8ZnE8WvhG6sfC28DfVCGrs4j1jaAL44/gyj97J97qYQXLoW        
+ iEe2aBRUOuh1514/u7CCjnW2c3mbw9qECceed02PCvszq4pDay68O8TBhfoPj4DZUF0U        
+ Ywxfj3H9xodBd5Le/4su00uR101ZfIzdibrN2fb9l3dDVZSuYmDBuKgoFJkfNbpoFD9e        
+ hirw==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;        d=1e100.net; s=20210112;       
+ h=x-gm-message-state:mime-version:from:date:message-id:subject:to;       
+ bh=wOfr+gxgG1zODgCdXY4X7G9tOiVBFOpKCJLRBR8FMz8=;       
+ b=qygTHkXjgwY5v9oVT0rgmwzvfdKEyKNKaersmIjbQjCDd4lssZlWefuX1HCy097usV        
+ 30d2JBMJnn+e1VQAm1WKWdsrPaN6FhzgrNGRqxmlsrIlgJzTp2iJIfjBOh5Ixp5kHr7I        
+ 3EDsgxkV7i6l4/64x/zrgsFb7vFZPaMA8eT1LsHktYOJtI1dq65RLVMqrh9E6v5devam        
+ aU/K2UiMYtr2DiUVfOywPY9VAKsEE07BZaf4RrGefGUc19gQLUFHk24aTaVJG5vD5CtX        
+ LmjHtGMFOtsSpQpGDSm6Zx/SznJPRAbNBfrucwCK5Vgydd+cNjKi2c5N2iLElfzn0aG5        
+ 6PXg==
+X-Gm-Message-State: AOAM530Im0m/nn49D8r2yuAyrOTJwLDwYEIA9imWsOoB/2BcAgdFStv7	sFL9vTdQFzd+4R48yZsKuFGzTFWrB6uUUacI8Ikr9yDowqM=
+X-Google-Smtp-Source: ABdhPJy1T+JyL0oM6Iwjm7yb0NNHnL++UKtcFqrxPEqcTlDJJR9csbCHIoWKKaJa3jxMtsAsatvoX3zJKjnoJjeSSuY=
+X-Received: by 2002:a05:600c:2e53:: with SMTP id q19mr801707wmf.189.1644391953393; Tue,
+ 08 Feb 2022 23:32:33 -0800 (PST)
+MIME-Version: 1.0
+From: "Sudhir Bhadauria" <sbsudhirsingh489@gmail.com>
+Date: Wed, 9 Feb 2022 13:01:57 +0530
+Message-ID: <CAAn6Z=OEJvTHjuoc2h18Cp2qHCna6BiwRaxvbEbxcg4ur_uBYQ@mail.gmail.com>
+Subject: Demand Ken Lay Donate Proceeds from Enron Stock Sales
+To: ygayathri95@yahoo.com
+Content-Length: 3614
+Content-Type: multipart/alternative; boundary="00000000000040ed4505d790d628"
+
+--00000000000040ed4505d790d628
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: base64
+
+UGF1bGluZSBCb3Rod2VsbA0KNDM2OSBFLiBPbGQgTXllcnMgUmQuDQpCbG9vbWluZ3RvbiwgSU4g
+NDc0MDgNCnBib3Rod2VsQGluZGlhbmEuZWR1DQoNClRvIE1yLiBLZW4gTGF5LA0KDQpJJ20gd3Jp
+dGluZyB0byB1cmdlIHlvdSB0byBkb25hdGUgdGhlIG1pbGxpb25zIG9mIGRvbGxhcnMgeW91IG1h
+ZGUgZnJvbQ0Kc2VsbGluZyBFbnJvbiBzdG9jayBiZWZvcmUgdGhlIGNvbXBhbnkgZGVjbGFyZWQg
+YmFua3J1cHRjeSB0byBmdW5kcywgc3VjaA0KYXMgRW5yb24gRW1wbG95ZWUgVHJhbnNpdGlvbiBG
+dW5kIGFuZCBSRUFDSCwgdGhhdCBiZW5lZml0IHRoZSBjb21wYW55J3MNCmVtcGxveWVlcywgd2hv
+IGxvc3QgdGhlaXIgcmV0aXJlbWVudCBzYXZpbmdzLCBhbmQgcHJvdmlkZSByZWxpZWYgdG8NCmxv
+dy1pbmNvbWUgY29uc3VtZXJzIGluIENhbGlmb3JuaWEsIHdobyBjYW4ndCBhZmZvcmQgdG8gcGF5
+IHRoZWlyIGVuZXJneQ0KYmlsbHMuICBFbnJvbiBhbmQgeW91IG1hZGUgbWlsbGlvbnMgb3V0IG9m
+IHRoZSBwb2NrZXRib29rcyBvZiBDYWxpZm9ybmlhDQpjb25zdW1lcnMgYW5kIGZyb20gdGhlIGVm
+Zm9ydHMgb2YgeW91ciBlbXBsb3llZXMuDQoNCkluZGVlZCwgd2hpbGUgeW91IG5ldHRlZCB3ZWxs
+IG92ZXIgYSAkMTAwIG1pbGxpb24sIG1hbnkgb2YgRW5yb24ncw0KZW1wbG95ZWVzIHdlcmUgZmlu
+YW5jaWFsbHkgZGV2YXN0YXRlZCB3aGVuIHRoZSBjb21wYW55IGRlY2xhcmVkIGJhbmtydXB0Y3kN
+CmFuZCB0aGVpciByZXRpcmVtZW50IHBsYW5zIHdlcmUgd2lwZWQgb3V0LiAgQW5kIEVucm9uIG1h
+ZGUgYW4gYXN0cm9ub21pY2FsDQpwcm9maXQgZHVyaW5nIHRoZSBDYWxpZm9ybmlhIGVuZXJneSBj
+cmlzaXMgbGFzdCB5ZWFyLiAgQXMgYSByZXN1bHQsIHRoZXJlDQphcmUgdGhvdXNhbmRzIG9mIGNv
+bnN1bWVycyB3aG8gYXJlIHVuYWJsZSB0byBwYXkgdGhlaXIgYmFzaWMgZW5lcmd5IGJpbGxzDQph
+bmQgdGhlIGxhcmdlc3QgdXRpbGl0eSBpbiB0aGUgc3RhdGUgaXMgYmFua3J1cHQuDQoNClRoZSBO
+ZXcgWW9yayBUaW1lcyByZXBvcnRlZCB0aGF0IHlvdSBzb2xkICQxMDEgbWlsbGlvbiB3b3J0aCBv
+ZiBFbnJvbiBzdG9jaw0Kd2hpbGUgYWdncmVzc2l2ZWx5IHVyZ2luZyB0aGUgY29tcGFueSdzIGVt
+cGxveWVlcyB0byBrZWVwIGJ1eWluZyBpdC4NClBsZWFzZSBkb25hdGUgdGhpcyBtb25leSB0byB0
+aGUgZnVuZHMgc2V0IHVwIHRvIGhlbHAgcmVwYWlyIHRoZSBsaXZlcyBvZg0KdGhvc2UgQW1lcmlj
+YW5zIGh1cnQgYnkgRW5yb24ncyB1bmRlcmhhbmRlZCBkZWFsaW5ncy4NCg0KU2luY2VyZWx5LA0K
+DQpQYXVsaW5lIEJvdGh3ZWxsDQo=
+--00000000000040ed4505d790d628
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" wi=
+dth=3D"367" style=3D"border-collapse:collapse;width:275pt">
+ <colgroup><col width=3D"367" style=3D"width:275pt">
+ </colgroup><tbody><tr height=3D"19" style=3D"height:14=2E5pt">
+
+  <td height=3D"19" class=3D"gmail-xl65" width=3D"367" style=3D"height:14=
+=2E5pt;width:275pt;padding-top:1px;padding-right:1px;padding-left:1px;color=
+:black;font-size:11pt;font-family:Calibri,sans-serif;vertical-align:bottom;=
+border:none">Pauline
+  Bothwell<br>
+    4369 E=2E Old Myers Rd=2E<br>
+    Bloomington, IN 47408<br>
+    <a href=3D"mailto:pbothwel@indiana=2Eedu">pbothwel@indiana=2Eedu</a><br=
+>
+    <br>
+    To Mr=2E Ken Lay,<br>
+    <br>
+    I&#39;m writing to urge you to donate the millions of dollars you made =
+from
+  selling Enron stock before the company declared bankruptcy to funds, such=
+ as
+  Enron Employee Transition Fund and REACH, that benefit the company&#39;s
+  employees, who lost their retirement savings, and provide relief to
+  low-income consumers in California, who can&#39;t afford to pay their ene=
+rgy bills=2E=C2=A0 Enron and you made millions out of the
+  pocketbooks of California consumers and from the efforts of your
+  employees=2E<br>
+    <br>
+    Indeed, while you netted well over a $100 million, many of Enron&#39;s
+  employees were financially devastated when the company declared bankruptc=
+y
+  and their retirement plans were wiped out=2E=C2=A0
+  And Enron made an astronomical profit during the California energy
+  crisis last year=2E=C2=A0 As a result, there
+  are thousands of consumers who are unable to pay their basic energy bills=
+ and
+  the largest utility in the state is bankrupt=2E<br>
+    <br>
+    The New York Times reported that you sold $101 million worth of Enron s=
+tock
+  while aggressively urging the company&#39;s employees to keep buying it=
+=2E=C2=A0 Please donate this money to the funds set
+  up to help repair the lives of those Americans hurt by Enron&#39;s underh=
+anded
+  dealings=2E<br>
+    <br>
+    Sincerely,<br>
+    <br>
+    Pauline Bothwell</td>
+
+ </tr>
+</tbody></table></div>
+
+--00000000000040ed4505d790d628--
+

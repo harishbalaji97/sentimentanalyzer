@@ -1,0 +1,107 @@
+Delivered-To: laxmi.saoji@gmail.com
+Received: by 2002:ab0:59b2:0:0:0:0:0 with SMTP id g47csp3012984uad;
+        Fri, 11 Feb 2022 01:20:03 -0800 (PST)
+X-Received: by 2002:a05:6102:c4b:: with SMTP id y11mr219309vss.80.1644571203584;
+        Fri, 11 Feb 2022 01:20:03 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1644571203; cv=none;
+        d=google.com; s=arc-20160816;
+        b=xqvPv7Zt/KGeRe0a1Bp2WwATWdsH8j4hII0rRbIBKYxnLqwIAQz09e7FNLP3gQb3q1
+         C4QWfA4WLsEKtTzoguLD157KPopyD5XS7tq68hJapvDVKYfobE4ooslafsrU+wuQw6rJ
+         igoPu+o/R3HgvHZUwnvKAtlqHdjIaeLlQ8L8B467nUOq3vzpkIIYUe9hGOivCWkMA0pf
+         cwPGia0GH3CtTEYgG1XgaT9M5NUnT6vH4ZMbA6tOwKjuz1mVtWwEvet3JwyQw8cKAfD0
+         6wvjhU2SzIa8d1ce5sheDBqMmZvwC8eyNeTxTZWPrLI2fCUM6s0/M5AOdeWMJzFG/IVi
+         0Vvw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:mime-version:dkim-signature;
+        bh=ipb+aijUDVkn4IZG8If2LoTmaeJwuWnQMWZ+Z/BF6FE=;
+        b=BQcPdWBavCuw1a1skvNHMSbr8D47msA7B2U5+dW+3vxT5V4zC2t+WosgJZQyQ9Inlr
+         DrgXmvu3QLAavI5HUNAGUalmSMBCjIGzbWP0uDWxpmbi+3aL22Rgpmy7PB3C8DXUMFfk
+         SJ92NcejaoB/4Yr5oO7A1UaARmiad+np79eoslQWuob+25sFlPspSrPEgdTrrlGQqhaF
+         3E6pMGNwoQ4eZ3FhRV4dxCSkZ8/wgX7FocayT2eGQEmxSaGFM9O+ccg9eQ+y8C38yDy1
+         3BYI2epYtKZ+7tksjfxINBisyzzy/8BQzSe/BfSVxJekU2DdLerB2HrctBD4hSts4uRT
+         BGxA==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20210112 header.b=oWHGfqRf;
+       spf=pass (google.com: domain of uttamgrade@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=uttamgrade@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <uttamgrade@gmail.com>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
+        by mx.google.com with SMTPS id e20sor5624759vkp.3.2022.02.11.01.20.03
+        for <laxmi.saoji@gmail.com>
+        (Google Transport Security);
+        Fri, 11 Feb 2022 01:20:03 -0800 (PST)
+Received-SPF: pass (google.com: domain of uttamgrade@gmail.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20210112 header.b=oWHGfqRf;
+       spf=pass (google.com: domain of uttamgrade@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=uttamgrade@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=mime-version:from:date:message-id:subject:to;
+        bh=ipb+aijUDVkn4IZG8If2LoTmaeJwuWnQMWZ+Z/BF6FE=;
+        b=oWHGfqRfi3f5QQ/zu/ec7cMVCBJlbftfOZo0MXcAPf2uOwkECwsW631uC6m5VwPHuI
+         0nM0hTa2zGWnDYDlym6UGGZBlp8doIkdnfjD+l8ebNRxiNjsMq7SA9o/f9MIOawQuE7Q
+         3nVnEQIkN1teucXPgzmKn73iY5TAwvNBEcGxJYEWxxb5wTeP8b6OUFOTRhCQJ7x3mosb
+         wXD2LgSpcbjaIS/qg8vz3Nh9R6pvnrEQEC6+oIauKqezPsh6wbc3Ycb1Y+o8OLlj9HZM
+         7wZV1say+oow9zEwWUn0GSXL4Htq56MOsBB2IFcCRszDTqOC1ygVt2PShwODK3BDjNPL
+         d/pA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=x-gm-message-state:mime-version:from:date:message-id:subject:to;
+        bh=ipb+aijUDVkn4IZG8If2LoTmaeJwuWnQMWZ+Z/BF6FE=;
+        b=4XL8xQW9a2PYXTIwHrcoGiPntnNXsiivlk0xtM4qxZ6OCEQs5NXNrT0XE3W5hqgaMy
+         36LUMHdJpDxJx1h6/uPIkSA4F8coG75CUA86GW1nT4jAkEf2oGvePVquQhugsR2HrPqR
+         4IDF3GAhm4ChixB+warWBN/xObEa1CrrspG9cA4hSeoPBfTIx5daWzLhux31ulboS+LR
+         qr3KNGzbAGPHpizTLU88ihz4iOMIOKcX2gaiE7Ie/OhfbHp22ySfvlTrYob8f+wnIa19
+         9bsAl7H2uucT3PfUCAHRjmaxwOvF/60Z806OhCX+B1fTkg/8KvkwnlYGieWgmqyxgKwN
+         rBRQ==
+X-Gm-Message-State: AOAM533m621nmge9/AMPd/01FWpSSwtDIyA2hS+z3LMm6LOX+hfk1ryE
+	VOZAWcz7NrW3qKJkEjJVF5n+f0YnhS18rl8N5SkDEYVL1OniDQ==
+X-Google-Smtp-Source: ABdhPJyWe5utQioryys2VY5EdqC0x3gAO292wVIS5arkzHYE2yBN4it2GxueX5EHHkDMeXYGLshdQZUJivr6XbDx9kA=
+X-Received: by 2002:a1f:2dd0:: with SMTP id t199mr179087vkt.10.1644571203200;
+ Fri, 11 Feb 2022 01:20:03 -0800 (PST)
+MIME-Version: 1.0
+From: Uttam Grade <uttamgrade@gmail.com>
+Date: Fri, 11 Feb 2022 14:49:52 +0530
+Message-ID: <CAEogfThENhGN8Hvd_CiMXFGy8u5MQ0pj_iuKvPFv-N0rGZ6p1Q@mail.gmail.com>
+Subject: Eh
+To: laxmi.saoji@gmail.com
+Content-Type: multipart/alternative; boundary="0000000000005fec0805d7ba9210"
+
+--0000000000005fec0805d7ba9210
+Content-Type: text/plain; charset="UTF-8"
+
+My 5 year old dropped this from a standing position (about a foot off the
+ground) and it busted. I had to use the BB warranty to replace it the day
+after purchase for a fall that the tablet should've been able to handle
+that is designed for kids. I'm happy with the apps, but definitely not
+thrilled with the lack of protection that is designed for kids.
+
+--0000000000005fec0805d7ba9210
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" wi=
+dth=3D"260" style=3D"border-collapse:collapse;width:195pt">
+ <colgroup><col width=3D"260" style=3D"width:195pt">
+ </colgroup><tbody><tr height=3D"19" style=3D"height:14.5pt">
+
+  <td height=3D"19" class=3D"gmail-xl66" width=3D"260" style=3D"height:14.5=
+pt;width:195pt;background-image:initial;background-position:initial;backgro=
+und-size:initial;background-repeat:initial;background-origin:initial;backgr=
+ound-clip:initial;padding-top:1px;padding-right:1px;padding-left:1px;color:=
+black;font-size:11pt;font-family:Calibri,sans-serif;vertical-align:bottom;b=
+order:none;white-space:nowrap">My 5
+  year old dropped this from a standing position (about a foot off the grou=
+nd)
+  and it busted. I had to use the BB warranty to replace it the day after
+  purchase for a fall that the tablet should&#39;ve been able to handle tha=
+t is
+  designed for kids. I&#39;m happy with the apps, but definitely not thrill=
+ed with
+  the lack of protection that is designed for kids.</td>
+
+ </tr>
+</tbody></table></div>
+
+--0000000000005fec0805d7ba9210--

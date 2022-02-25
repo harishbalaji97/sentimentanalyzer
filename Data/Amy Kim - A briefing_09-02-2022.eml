@@ -1,0 +1,157 @@
+Received: from 10.196.243.13 by atlas203.free.mail.bf1.yahoo.com with HTTPS; Wed, 9 Feb
+ 2022 06:33:52 +0000
+Received: from 209.85.221.47 (EHLO mail-wr1-f47.google.com) by 10.196.243.13 with SMTPs
+ (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256); Wed, 09 Feb 2022 06:33:52
+ +0000
+Received: by mail-wr1-f47.google.com with SMTP id i15so2261816wrb.3        for
+ <ygayathri95@yahoo.com>; Tue, 08 Feb 2022 22:33:51 -0800 (PST)
+Return-Path: <sbsudhirsingh489@gmail.com>
+X-Originating-Ip: [209.85.221.47]
+Received-SPF: pass (domain of gmail.com designates 209.85.221.47 as permitted sender)
+Authentication-Results: atlas203.free.mail.bf1.yahoo.com; dkim=pass header.i=@gmail.com
+ header.s=20210112; spf=pass smtp.mailfrom=gmail.com;
+ dmarc=pass(p=NONE,sp=QUARANTINE) header.from=gmail.com;
+X-Apparently-To: ygayathri95@yahoo.com; Wed, 9 Feb 2022 06:33:52 +0000
+X-YMailISG: 33Hzo6cWLDsjCOamp55PNF8FILUSIPeAkm9R_Sdjz6Qjwrxx
+ XXlxU9oK4.7jQfn_CpSf9ciO0dFz.QKOKFs36YnS4LnAkAvYyl1rEpFwHv2D
+ f3jkKZKSneGYp95wNAbNBc3q19nSjMqP9BC3TPz2bANAMrBhILlD6p1H73jZ
+ WYHuVdq.BtYP2tkxTNuVnncUMsI6PKhVSzQ1so00x0Tk50AZSmkUpiazXA0I
+ jfuPXoi9Qzw2poqD6vW84QhjhbnEPkQ3o0a.xWeAmgGoaG7xKYUdhawOZfnz
+ mK6mNUB9sJMasQbOkjbFB6GQPKEQ64U8FZx26BGVcgJyjVbNSFQM_G6GKZsv
+ s7M1wS6I4g2Q_AUNsOJWNAtXosizCUQHKP5Y8h45._B9T9swjdzJhGbOX..X
+ 6Qj6H7iF9HZxt4wpDzueql3S_kzbGZpMx2twOi.jMK6i2mOXMt9rdUqcy8ib
+ O8ErvxKUjFi7pQBR2egf_i8anGK5SJ4F8md35S_5kcnjcb.N94hG16onH1Bw
+ ao_7lsZwH7VfiM0lYRlvvQSKMpy7xvigMj8ysjKPViqXe_2PbVztAn.cg1Hd
+ GWEq_s2RG.I1cHiZGXPUkELoS6TkxLbWtU323vP3pvWlgD1LRkjHuk7yr31r
+ xgzOSawh_MpdBhYHu9VH6Kxng6pwBPLVt6bEXBXPlo2HfDVCHuRac8AsL3RM
+ g0XgklT2wSWwvw0Htwr8tW.zb.vumazpCgrIv1Ts5JTVdH7UGfvXYK3VjGTZ
+ ZGIhLay0hCh2U_yaXoegG0_o6n9OihJ1uFsVWH6CHojIcK8Dq3N2Yj.0EBSu
+ SC6xl8TDzuG_oXMtbTcRBtlT0IP0Az8inaUUkpr_bnfGZQEXBcMDzmg5Md64
+ NYv8eTPaw5YKJJKUE2hBD6neQGA9fGrxC95Gp0cxGAkyn3MuwNutAMZHLlNV
+ lRVe7Jp2nkRoUUizi4MI4a5EFFx0vVb8LaTx_6h1a74UECPHlabS4US1DIrF
+ TwesSxB_RC4SUhC1KOSvfhs4tG0OEPE5RDNqJV6M0GFCt1d0uca4sPrnk3zp
+ 9OM6tn2l5dK4w03q6.6M_nkSfqA3K9VcRA05Iv1WC2YCFtQVLinX5yymbJAQ
+ VNtnl91y._oy04JJy2SJEr.d25BCepM-
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;        d=gmail.com; s=20210112;       
+ h=mime-version:from:date:message-id:subject:to;       
+ bh=EZRpeYTKX47jLlXjYZqSlYSyN2XmoG3z25Ii5IW9uss=;       
+ b=Ga5Px5YZcLYRYuG/brPzOvtlUSN7cxQ/r6+DgorXD/FNj+a5Xf3f2lHgKpSZbfssET        
+ nYHlw2U2R1trb1/GDNdOYDdctrnBu79rwuXVJS5N9Cn4wwJ7ffJxwvbnxboMo/RM3U3Q        
+ loNAEP4tK1E2dhWQEJjdano/tThi+Ktp44rVblLO99XRFTOS14NHW9Pyj+M/0O5ZNKGc        
+ sGBh7doN0ZKeyKAliSWWuuPSECPDHHL4Gj6KKNU/S8b51eL1DyburV0dX/VDnl57oT7V        
+ 4FRrndsfHmr/VhMAAY+Djke9t0rahCQI0hNBnd9aEPyn1HFniOjIBvvUtscT9j30zCRJ        
+ FiZQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;        d=1e100.net; s=20210112;       
+ h=x-gm-message-state:mime-version:from:date:message-id:subject:to;       
+ bh=EZRpeYTKX47jLlXjYZqSlYSyN2XmoG3z25Ii5IW9uss=;       
+ b=hpEcZLZnhNl7uiIUbW4vJJNCKU8Yf2WsZV1Hx9QOw6xfPQ42hU5lytLelAUZ49Z6Zg        
+ soAxemqv4jCbJDysr7qvpehloTlcc1CB0Ybyf+LsS7nHlhfANQOM+7yh9kLrB77+7sPV        
+ Jet6sjI2xnX9tOrVViBUmtpNLP5MypodUSw1xnJbjZ9kxDKxBIchkLggm18MCaXiKYRa        
+ s+Bum77+Q+zKPfrWpw3YrFPID2ok0BMtlMWGIoGBqjnO9Jq0Gyp/54PCtvnwSpSz6BuG        
+ ojlewJHbKwgZb7tPq9w5OiHgX4sKpk0BCnpZhJ2TN4yjIUHFLbEYMi7eNIXTAYKGL7ME        
+ 0t2w==
+X-Gm-Message-State: AOAM531XD6PAY6DEfpWigKclRIHHo8LrP2D1kuDX2MAVDzjFu/w45AAB	UC1NryyQZrpz72+2TrjJ0fowpNFCFotp6sUUrPPeyCWjNEw=
+X-Google-Smtp-Source: ABdhPJzHYrWXArM8cYNbmHrrBIoTzjAyqgWlfht6UB3XcggIwSOqe3jFduv6llkCyCljB6tyHTeNfZXXAVcJRQFnv2Y=
+X-Received: by 2002:a05:6000:1a8c:: with SMTP id f12mr804727wry.153.1644388431391; Tue,
+ 08 Feb 2022 22:33:51 -0800 (PST)
+MIME-Version: 1.0
+From: "Sudhir Bhadauria" <sbsudhirsingh489@gmail.com>
+Date: Wed, 9 Feb 2022 12:03:15 +0530
+Message-ID: <CAAn6Z=Omy3rYvrn2ekN_M2kRv=bmNcOrNuQ9O=XfoiWWMmvq_Q@mail.gmail.com>
+Subject: Amy Kim - A briefing
+To: ygayathri95@yahoo.com
+Content-Length: 3258
+Content-Type: multipart/alternative; boundary="000000000000536cc605d79004b3"
+
+--000000000000536cc605d79004b3
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: base64
+
+UmljaywgSmltOg0KDQpJbiBhIG51dHNoZWxsLCBhbiBpbnRlbGxpZ2VudCBhbmQgYnJpZ2h0IGFj
+aGlldmVyIHdobyBjYW4gYmUgb2YgdXNlIHRvIEdBDQppbg0KbWFueSBhcmVhczsgZ2xvYmFsIGFz
+c2V0cywgRUJTLCBhbmQgZW52aXJvbm1lbnRhbCBjb21lIHRvIG1pbmQgdmVyeQ0KY2xlYXJseS4N
+CkhlciBwb2xpdGVuZXNzLCBmcmllbmRsZXNzLCBhbmQgYWN0dWFsbHkgb3Blbm5lc3MsICBpbmRp
+Y2F0ZSB0aGF0IHNoZSBjb3VsZA0KYmUgYSB2ZXJ5IGdvb2QgdGVhbSBwbGF5ZXIuICAgU2hlIHBl
+cmNlaXZlcyBoZXIgIGV4cGVyaWVuY2UgaW4gRW5yb24gYXMNCiJ2ZXJ5DQpwb3NpdGl2ZSIgYW5k
+ICJjb25zdHJ1Y3RpdmUiOyBzaGUgd29ya2VkIG9uIGNvbnRyYWN0dWFsIGlzc3VlcyByZWxhdGVk
+IHRvDQpUaGVybW9mbG9yaXMsIGFuZCBDb2xvbWJpYS1QYW5hbWEgUGlwZWxpbmUuDQoNClJpc2sg
+QW5hbHl0aWNzIGlzIG5vdCBoZXIgZm9ydGUgYXJlYSwgYW5kIGEgbGVhcm5pbmcgY3VydmUgaXMg
+bmVlZGVkLg0KSG93ZXZlciwgaGVyIGFiaWxpdGllcy1jbGVhcmx5IGZyb20gdGhlIHJlc3VtZSBh
+bmQgZnJvbSB0aGUgd2F5IHNoZQ0KZXhwbGFpbmVkDQp0aGUgZGV0YWlscyBvZiBoZXIgZXhwZXJp
+ZW5jZS0taW5kaWNhdGUgdGhhdCB0aGlzIGN1cnZlIG1heSBub3QgYmUgYSBzdGVlcA0Kb25lLiAg
+QWN0dWFsbHksIHNoZSB3b3VsZCBiZSBhIGdvb2QgYWRkaXRpb24gdG8gYSB3ZWxsIGVzdGFibGlz
+aGVkIFRlYW0gaW4NClJpc2sgQW5hbHl0aWNzIGluIHRoZSBmdXR1cmUgd2hlbiBsZWdhbCBpc3N1
+ZXMgYW5kIHRoZWlyIGFzc29jaWF0ZWQgcmlza3MNCmFyZQ0KZGVhbHQgd2l0aC4NCg0KSSBzaGFs
+bCB0YWtlIHRoZSBsaWJlcnR5IHRvIGNvbW11bmljYXRlIHdpdGggQW15IGFnYWluIGFmdGVyIHNo
+ZSBmaW5pc2hlcw0KaGVyDQpleGFtcyBpbiB0aGUgMyB3ZWVrcyB0aW1lIGFuZCBsZWFybiBtb3Jl
+IGFib3V0IGhlciBwb2ludHMgb2Ygc3RyZW5ndGggYW5kDQpwb3RlbnRpYWwgYXJlYXMgb2YgY29u
+dHJpYnV0aW9uLg0KDQpPZiBjb3Vyc2UsIEkgc2hhbGwga2VlcCB5b3UgcG9zdGVkLg0KDQpCcmdy
+ZHMNCg0KQUkNCg==
+--000000000000536cc605d79004b3
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" wi=
+dth=3D"367" style=3D"border-collapse:collapse;width:275pt">
+ <colgroup><col width=3D"367" style=3D"width:275pt">
+ </colgroup><tbody><tr height=3D"19" style=3D"height:14=2E5pt">
+
+  <td height=3D"19" class=3D"gmail-xl65" width=3D"367" style=3D"height:14=
+=2E5pt;width:275pt;padding-top:1px;padding-right:1px;padding-left:1px;color=
+:black;font-size:11pt;font-family:Calibri,sans-serif;vertical-align:bottom;=
+border:none">Rick,
+  Jim: <br>
+    <br>
+    In a nutshell, an intelligent and bright achiever who can be of use to =
+GA
+  in <br>
+    many areas; global assets, EBS, and environmental come to mind very
+  clearly=2E=C2=A0 <br>
+    Her politeness, friendless, and actually openness,=C2=A0 indicate that =
+she could <br>
+    be a very good team player=2E=C2=A0=C2=A0 She
+  perceives her=C2=A0 experience in Enron as &quot;very
+  <br>
+    positive&quot; and &quot;constructive&quot;; she worked on contractual
+  issues related to <br>
+    Thermofloris, and Colombia-Panama Pipeline=2E<br>
+    <br>
+    Risk Analytics is not her forte area, and a learning curve is needed=2E=
+=C2=A0 <br>
+    However, her abilities-clearly from the resume and from the way she
+  explained <br>
+    the details of her experience--indicate that this curve may not be a st=
+eep
+  <br>
+    one=2E=C2=A0 Actually, she would be a good
+  addition to a well established Team in <br>
+    Risk Analytics in the future when legal issues and their associated ris=
+ks
+  are <br>
+    dealt with=2E=C2=A0=C2=A0 <br>
+    <br>
+    I shall take the liberty to communicate with Amy again after she finish=
+es
+  her <br>
+    exams in the 3 weeks time and learn more about her points of strength a=
+nd
+  <br>
+    potential areas of contribution=2E<br>
+    <br>
+    Of course, I shall keep you posted=2E<br>
+    <br>
+    Brgrds<br>
+    <br>
+    AI<br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    =C2=A0=C2=A0</td>
+
+ </tr>
+</tbody></table></div>
+
+--000000000000536cc605d79004b3--
+

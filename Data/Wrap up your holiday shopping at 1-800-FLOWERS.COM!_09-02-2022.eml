@@ -1,0 +1,190 @@
+Received: from 10.217.135.107 by atlas110.free.mail.ne1.yahoo.com with HTTPS; Wed, 9
+ Feb 2022 06:30:23 +0000
+Received: from 209.85.221.46 (EHLO mail-wr1-f46.google.com) by 10.217.135.107 with
+ SMTPs (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256); Wed, 09 Feb 2022
+ 06:30:23 +0000
+Received: by mail-wr1-f46.google.com with SMTP id e3so2324424wra.0        for
+ <ygayathri95@yahoo.com>; Tue, 08 Feb 2022 22:30:23 -0800 (PST)
+Return-Path: <sbsudhirsingh489@gmail.com>
+X-Originating-Ip: [209.85.221.46]
+Received-SPF: pass (domain of gmail.com designates 209.85.221.46 as permitted sender)
+Authentication-Results: atlas110.free.mail.ne1.yahoo.com; dkim=pass header.i=@gmail.com
+ header.s=20210112; spf=pass smtp.mailfrom=gmail.com;
+ dmarc=pass(p=NONE,sp=QUARANTINE) header.from=gmail.com;
+X-Apparently-To: ygayathri95@yahoo.com; Wed, 9 Feb 2022 06:30:24 +0000
+X-YMailISG: hP2rR7sWLDtCQTJaAykgFfJp50GOQLUkarLVyb5kRnXofySM
+ e0JYTZZ1OwtTGX6LEyX64uFyddiZ88M_zgsl2VAfPmgLU5tHjDrwdEiiOrkd
+ 94gADjBeC09JyUgFRczfWD6t5wNOrL267EENCAuee0GJwPaKBE5rjCIBd7Gy
+ QmERKKGe3Y01IQ372D4t2zsyyJ9AeJ88oGXQRummfNGbJhv1RciYEURswnIx
+ y7o.vYtLSq5cH2VDXXyud5zO0a3CCYeabGOczPMn_cPrnTnncrjeX5YiVWBz
+ oGszqeN8C.xmUVLK90.LCaAxs79KtVfRPFaGCPYKFhIdj3kySzozVm8Zv88V
+ 8CXMQRd4zHMJlVD7mEY4zutSoDn1SMl61kIJuIIhsjez.cAJavCgNaOGJ3ug
+ lDjnKPznW46qKgfV6Iyc__xIaNoyfGZU5mv056yOBk7sM.SxZ9V_QVSGKi..
+ 3ik5sxSWTRWbVi4k5bAf.UdyomzwzbrwItu9TQaIYH9APX6dyPolTs2f_AAz
+ C_BC0huRsDPmUy0KzUfASTEf8YHUnLpDhmZobYCvunYproX5Fu22EGPtBO.h
+ dUVeqceNGA6zBqGaN_xJotzpjg1Upc12xboudsopFylFHl0d49nge.xxTmzq
+ _84SH.J5zWnbvmuDu1LnyF2PXw1gKfKVjAaHA8jDavb3ZFpyxzM3aiRnKW6r
+ mORRCkFTcq6OCIE3u0USQjX0N79ZZj9JGtKjfMFqimCPNqBl5trjiNSjdENP
+ bYvzEn2BzQq962g4yIcpLrLvU4z0APj6BFmDqUqP0o50YM9hjwO3AjaDe64w
+ KVZQh0b5y8trwK3_TkkP5YIJN482cGmuyD00XCzExW7gTbA2Mq3UGx.DfKBm
+ zXxVkAzr8bCX9JTpjGASvDk.5iQuRUkdXoNgM.X8KlpPfl4Dio2t5kNSDKuU
+ kQG73B5dt_og_0xoqgFIF4EvE1LpsskLZCKZw9bCNjnS9ACeCa5KZ0BEw4yc
+ rIjNWof5_n.x1j8PMCX71lpseeWupXr8lS1Lqm6GJ.dHtbYQZ2RJMQdChy5P
+ XHuz4YabW_ND3783DGLkDLt7e0TMTDeS0AU5mFdkGQkxJfWeqwp_Ma3haYLa
+ ctDmfRBAyUbAB.m22DPjPqWMuHl2VyqnRCPPS_aqxsHjxZ_ZEPLR
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;        d=gmail.com; s=20210112;       
+ h=mime-version:from:date:message-id:subject:to;       
+ bh=XVRzgQSixsCmwy0gF00o0GouX2RqFxNErKP+8E/YWeo=;       
+ b=Xsk9hQpnepzIInfOv//VmbTxKildHcK9vRe66WnRgm0R7DSdn/n4yIJw6DCJagBhAA        
+ 779SPMn1YaaOqI4nY5RShhM14FNStGMvBNNnCh015s0kdDESjob33dUu95jgzIKIPaLi        
+ T9Pafky9jtfvTud+wxjQPsNvUc+r+9QTK/JO2+PuNgZTVb7mH8gSNt+htpggOQco3QwO        
+ mV+4mBcnG3gD9/9A+FDem0u7MTnDphu7GX94yFxx1OotLQ07aA1EBaUPugnjgA5FZjBW        
+ 2i929Kom2jCJrFicZYStf0rI6YD53KatTsfMxLc4utcbXm8XZpTikJgr72xhxheIQkad        
+ za4Q==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;        d=1e100.net; s=20210112;       
+ h=x-gm-message-state:mime-version:from:date:message-id:subject:to;       
+ bh=XVRzgQSixsCmwy0gF00o0GouX2RqFxNErKP+8E/YWeo=;       
+ b=JGr1bkj9UhiXoYc4XR0Z0i5HLpY1NmEZvxsxi/KEFsSN8nhMXWBaF0Yz+QryUHWnx0        
+ +FAdrDOmrZAEP/wg1NI1KRpP+pV+lp8iG27JTcmFrvEY62lo2grr4hUXYePxIKIS2D3R        
+ DTuIp9eouXnjDMlzHDqoruDIhUVCwZzs8BcI+6VRqh7QP1PbnTf/DRmgFQE9cPH3onJF        
+ punEhvWLX5b+579D4qhF0kr+mON4iVLC+XIT8W3bfoK3IUr5tHyPqnVVk+JXaZRueaqW        
+ 8nMopL2lA0iGiJauorNZzVQ4LyxOTyIh8Ud0d7go9zRiFl27tYOBxToY9rt5T1tSQicl        
+ mKTg==
+X-Gm-Message-State: AOAM531tfiS/ju/YDUORKjSF0yG4qrCjlIFR3gr17vNnRrS3YVq7k6r/	Mkm0k5wGOR8Yver6OenfqQKxVjS8jrbTwMkEUphkE8Ikrhs=
+X-Google-Smtp-Source: ABdhPJyBBCWoI6DFgo5niN6nWO8N8Ci8Mf0WzbemmlImqMUeJCYzHiDWIJs5i4WLL/gMCEVActuw299sAOCfnUgigFQ=
+X-Received: by 2002:a5d:40ca:: with SMTP id b10mr784319wrq.6.1644388222891; Tue, 08 Feb
+ 2022 22:30:22 -0800 (PST)
+MIME-Version: 1.0
+From: "Sudhir Bhadauria" <sbsudhirsingh489@gmail.com>
+Date: Wed, 9 Feb 2022 11:59:47 +0530
+Message-ID: <CAAn6Z=No-rYxB=n0LuA+t761SPjHBH+nWAw2Q319HU8Lyga97A@mail.gmail.com>
+Subject: Wrap up your holiday shopping at 1-800-FLOWERS.COM!
+To: ygayathri95@yahoo.com
+Content-Length: 4987
+Content-Type: multipart/alternative; boundary="000000000000e5fb5805d78ff77c"
+
+--000000000000e5fb5805d78ff77c
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: base64
+
+RGVhciBBbmRyZXcgTGV3aXMsDQoNCldlIGhhdmUgZ2lmdHMgZm9yIGV2ZXJ5b25lIG9uIHlvdXIg
+bGlzdCEgWW91IGNhbiBmaW5pc2ggeW91ciBob2xpZGF5DQpzaG9wcGluZw0KaW4gdHdvIHNoYWtl
+cyBvZiB5b3VyIG1vdXNlJ3MgdGFpbCBhdCAxLTgwMC1GTE9XRVJTLkNPTSEgIEZyb20gdGFzdHkN
+CmdvdXJtZXQNCmNvb2tpZXMgYW5kIGNha2VzIHRvIG91ciB2ZXJ5IHNwZWNpYWwgaG9saWRheSBj
+ZW50ZXJwaWVjZXMgdG8gY29sbGVjdGlibGVzLA0KY2hvY29sYXRlcyBhbmQgamV3ZWxyeSAtIHdl
+IGhhdmUgaXQgYWxsISAgU28gImNsaWNrIiBvbiBpbiBhbmQgc2VlIGZvcg0KeW91cnNlbGYgd2hh
+dCBhbGwgdGhlIGV4Y2l0ZW1lbnQgaXMgYWJvdXQhDQoNCkNsaWNrIGhlcmUgdG8gdmlldyBjYXRh
+bG9nOg0KaHR0cDovL3d3dy5zMnUyLmNvbS9jb250ZW50LmFzcD93Y2k9dmVyc2lvbiZ3bmQ9MCZz
+dGF0dXNfaWQ9MzA5MjUyNTQNCg0KDQpIYXBweSBIb2xpZGF5cyENCg0KRnJvbSBhbGwgb2YgeW91
+ciBGcmllbmRzIGF0IDEtODAwLUZMT1dFUlMuQ09Nc20NCg0KWW91IHJlY2VpdmVkIHRoaXMgZW1h
+aWwgYmVjYXVzZSB5b3UgYXJlIGEgMS04MDAtRkxPV0VSUy5DT00gY3VzdG9tZXIuIElmDQp5b3UN
+CndvdWxkIG5vIGxvbmdlciBsaWtlIHRvIHJlY2VpdmUgb3VyIHByb21vdGlvbmFsIGVtYWlsIG9m
+ZmVycywgcGxlYXNlIHNlbmQNCmFuDQplbWFpbCB0byBtYWlsdG86cmVtb3ZlQDE4MDBmbG93ZXJz
+LmNvbQ0KZnJvbSB0aGUgZW1haWwgYWRkcmVzcyB5b3Ugd291bGQgbGlrZSByZW1vdmVkLiBJZiB5
+b3UgaGF2ZSBhZGRpdGlvbmFsIGVtYWlsDQphZGRyZXNzZXMgb24gZmlsZSB3aXRoIHVzIHlvdSBt
+dXN0IHNlbmQgZW1haWwgZnJvbSB0aG9zZSBhZGRyZXNzZXMgYXMgd2VsbA0Kb3INCnlvdSB3aWxs
+IGNvbnRpbnVlIHRvIHJlY2VpdmUgZW1haWxzIGF0IHRob3NlIGFkZHJlc3Nlcy4gUGxlYXNlIGRv
+IG5vdCByZXBseQ0KdG8gdGhpcyBtZXNzYWdlLiBEdWUgdG8gdGltaW5nIGlzc3VlcywgeW91IG1h
+eSBwb3RlbnRpYWxseSByZWNlaXZlIGEgZnV0dXJlDQptZXNzYWdlIGJlZm9yZSB5b3VyIHVuc3Vi
+c2NyaWJlIHJlcXVlc3QgaXMgaW1wbGVtZW50ZWQuDQoNCkZvciBxdWVzdGlvbnMgYWJvdXQgYW4g
+b3JkZXIgb3IgYW55IG90aGVyIGlzc3VlcywgcGxlYXNlIGVtYWlsIHVzIGF0DQptYWlsdG86Y3Vz
+dHNlcnZpY2VAMTgwMGZsb3dlcnMuY29tDQoNClRoZSAxLTgwMC1GTE9XRVJTLkNPTSBwcml2YWN5
+IHBvbGljeSBpcyBhdmFpbGFibGUgb25saW5lIGF0DQpodHRwOi8vd3d3LjE4MDBmbG93ZXJzLmNv
+bS9mbG93ZXJzL3NlY3VyaXR5L2luZGV4LmFzcCNwcml2YWN5DQoNCipFeGNsdXNpdmUgb2YgYXBw
+bGljYWJsZSBzZXJ2aWNlIGFuZCBzaGlwcGluZyBjaGFyZ2VzIGFuZCB0YXhlcy4gIEl0ZW1zIG1h
+eQ0KdmFyeSBhbmQgYXJlIHN1YmplY3QgdG8gYXZhaWxhYmlsaXR5LCBkZWxpdmVyeSBydWxlcyBh
+bmQgdGltZXMuICBJdGVtcw0KYXZhaWxhYmxlIG9ubGluZSBhbmQgYnkgcGhvbmUuICBPZmZlcnMg
+Y2Fubm90IGJlIGNvbWJpbmVkLCBhcmUgbm90DQphdmFpbGFibGUNCm9uIGFsbCBwcm9kdWN0cyBh
+bmQgYXJlIHN1YmplY3QgdG8gcmVzdHJpY3Rpb25zIGFuZCBibGFja291dCBwZXJpb2RzLiAgVm9p
+ZA0Kd2hlcmUgcHJvaGliaXRlZC4gKGMpIDIwMDAgMS04MDAtRkxPV0VSUy5DT00sIElOQy4NCg==
+--000000000000e5fb5805d78ff77c
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" wi=
+dth=3D"367" style=3D"border-collapse:collapse;width:275pt">
+ <colgroup><col width=3D"367" style=3D"width:275pt">
+ </colgroup><tbody><tr height=3D"19" style=3D"height:14=2E5pt">
+
+  <td height=3D"19" class=3D"gmail-xl65" width=3D"367" style=3D"height:14=
+=2E5pt;width:275pt;padding-top:1px;padding-right:1px;padding-left:1px;color=
+:black;font-size:11pt;font-family:Calibri,sans-serif;vertical-align:bottom;=
+border:none">Dear
+  Andrew Lewis,<br>
+    <br>
+    We have gifts for everyone on your list! You can finish your holiday
+  shopping <br>
+    in two shakes of your mouse&#39;s tail at <a href=3D"http://1-800-FLOWE=
+RS=2ECOM">1-800-FLOWERS=2ECOM</a>!=C2=A0 From tasty gourmet <br>
+    cookies and cakes to our very special holiday centerpieces to collectib=
+les,
+  <br>
+    chocolates and jewelry - we have it all!=C2=A0
+  So &quot;click&quot; on in and see for <br>
+    yourself what all the excitement is about!<br>
+    <br>
+    Click here to view catalog:<br>
+  =20
+  <a href=3D"http://www=2Es2u2=2Ecom/content=2Easp?wci=3Dversion&amp;wnd=3D0=
+&amp;status_id=3D30925254">http://www=2Es2u2=2Ecom/content=2Easp?wci=3Dvers=
+ion&amp;wnd=3D0&amp;status_id=3D30925254</a><br>
+    <br>
+    <br>
+    Happy Holidays!<br>
+    <br>
+    From all of your Friends at 1-800-FLOWERS=2ECOMsm<br>
+    <br>
+    You received this email because you are a <a href=3D"http://1-800-FLOWE=
+RS=2ECOM">1-800-FLOWERS=2ECOM</a> customer=2E If
+  you <br>
+    would no longer like to receive our promotional email offers, please se=
+nd
+  an <br>
+    email to mailto:<a href=3D"mailto:remove@1800flowers=2Ecom">remove@1800=
+flowers=2Ecom</a><br>
+    from the email address you would like removed=2E If you have additional=
+ email
+  <br>
+    addresses on file with us you must send email from those addresses as w=
+ell
+  or <br>
+    you will continue to receive emails at those addresses=2E Please do not=
+ reply
+  <br>
+    to this message=2E Due to timing issues, you may potentially receive a =
+future
+  <br>
+    message before your unsubscribe request is implemented=2E<br>
+    <br>
+    For questions about an order or any other issues, please email us at <b=
+r>
+    mailto:<a href=3D"mailto:custservice@1800flowers=2Ecom">custservice@180=
+0flowers=2Ecom</a><br>
+    <br>
+    The <a href=3D"http://1-800-FLOWERS=2ECOM">1-800-FLOWERS=2ECOM</a> priv=
+acy policy is available online at<br>
+    <a href=3D"http://www=2E1800flowers=2Ecom/flowers/security/index=2Easp#=
+privacy">http://www=2E1800flowers=2Ecom/flowers/security/index=2Easp#privac=
+y</a><br>
+    <br>
+    *Exclusive of applicable service and shipping charges and taxes=2E=C2=
+=A0 Items may <br>
+    vary and are subject to availability, delivery rules and times=2E=C2=A0 =
+Items <br>
+    available online and by phone=2E=C2=A0
+  Offers cannot be combined, are not available <br>
+    on all products and are subject to restrictions and blackout periods=2E=
+=C2=A0 Void <br>
+    where prohibited=2E (c) 2000 <a href=3D"http://1-800-FLOWERS=2ECOM">1-8=
+00-FLOWERS=2ECOM</a>, INC=2E<br>
+    <br>
+    <br>
+    <br>
+    <br>
+    </td>
+
+ </tr>
+</tbody></table></div>
+
+--000000000000e5fb5805d78ff77c--
+

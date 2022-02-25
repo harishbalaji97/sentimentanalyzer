@@ -1,0 +1,155 @@
+Delivered-To: laxmi.saoji@gmail.com
+Received: by 2002:ab0:59b2:0:0:0:0:0 with SMTP id g47csp1132651uad;
+        Tue, 8 Feb 2022 22:05:16 -0800 (PST)
+X-Received: by 2002:ac5:c209:: with SMTP id m9mr277549vkk.22.1644386716116;
+        Tue, 08 Feb 2022 22:05:16 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1644386716; cv=none;
+        d=google.com; s=arc-20160816;
+        b=kjUYtO+PsvpZFnv/6hsIUVVsqkjfoFloX0LFT/5oyJsHkj9C8LWHsntdSwGkLTiiv0
+         grlQun363op9DvhJCYnBHyzTGYpUWsGv5gwZfEYxUz6HGODDE+CuhMRq8FL0S1jYKij2
+         iBHuUezjoAgQ4e6DtXH4P0HF9nv/3by8MA9I28rjLdmfIC+820IT8VjcwgkxT15ZQRZ4
+         VAa+rgojUUheLnQR8dz0qy8bAP0dD2FPBSEzs76Jv4v1cvKiV96my36a48EDPw1qKRla
+         khmY2TqsoDp2PDHPRnO/2B9ksnJcyN0XbV+8mMKLlOKPVT+PZ3lLLxcv4BRaOHT4pWXf
+         7iRw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:mime-version:dkim-signature;
+        bh=GNouU+xrgGotZS7aTplJG3jp9iBRxsBdN/hnIINRGyQ=;
+        b=DOcTaxtzlKsDLmVdGOm/3h5tk7hwEH7aeYMnHBND7KavCaAIk2epkZUut1Z3rYob4M
+         H9fLXsxqXWt2vYMCVw0l4RdtOKwUSC++DPNu2aku2Lfy1EJgzFeTzwVwVLEDplbV/kai
+         t9OxF4unDx49NrOO+CjXMNaKzT+wnlceJNu5A/bnC2J1leyxg8ZZUyYFbnPObs2eGzaQ
+         dCxawbBiGSLU9T5RpZnKlv3rosgAIpQfPAQG1i0fEh8j9kr78YdbLUcf6AWyn5Rfupsq
+         sBIjygnAFvagCjBdnnGHFKqa65zUqHxPYG7rK7VMRimckKtJxz9AOAwTx35+hZO0hASw
+         BZCQ==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20210112 header.b=dcwxFBCa;
+       spf=pass (google.com: domain of uttamgrade@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=uttamgrade@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <uttamgrade@gmail.com>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
+        by mx.google.com with SMTPS id h2sor2551793vke.73.2022.02.08.22.05.16
+        for <laxmi.saoji@gmail.com>
+        (Google Transport Security);
+        Tue, 08 Feb 2022 22:05:16 -0800 (PST)
+Received-SPF: pass (google.com: domain of uttamgrade@gmail.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20210112 header.b=dcwxFBCa;
+       spf=pass (google.com: domain of uttamgrade@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=uttamgrade@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=mime-version:from:date:message-id:subject:to;
+        bh=GNouU+xrgGotZS7aTplJG3jp9iBRxsBdN/hnIINRGyQ=;
+        b=dcwxFBCakUpAUlwjGs1/jbvQCKdFcJr2UCE4jgERatYAnf/KftVXBGV6PFY6aQRMLu
+         XGUkHvS8VNxS2nU3OmzUGb0BKZ72YWxLfhSiwBnkZWZe7mZjy508teHBY80ECwJ0XJvq
+         u2IPnUPykzO37Gc76tI3V/rsOOwcKdQilGAR9c7PrvGZWerbcqA3Xo9dmH3/rVMK5XhG
+         XnRHEl31KCJM4T+0UNCjB7QlHi7fdtxZVki4yblNnGrnCtMlIg4YE/b4+mdA5Xi5nJeK
+         UZkfp2XMebP23OV4yv+Jjwpu7r58kYaLH4bH040yUVVNCMoNXlUff9Lzc0R3Ss1/YDS7
+         ISeQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=x-gm-message-state:mime-version:from:date:message-id:subject:to;
+        bh=GNouU+xrgGotZS7aTplJG3jp9iBRxsBdN/hnIINRGyQ=;
+        b=aQ+TKv5Iqdab9r45AOaKxA1lva8rmNjUSoD/mXIF56dezuzhs5u5SEYQJi7OQ3klzl
+         3YCevFidDNL20NRKK542OoyaXgA0uoAock8Kr7K+4ZNGPRKWcejY6WGdaO4APyEgrUEu
+         nboN5HHS1Z4zNkMbqlyevOBYimVyeIVyCisMGiF3K8a1xpXSUaNjyXhzMOEK3jAGtzHC
+         F904F4PCg1CWZLu8/7onMmcy3n8yNH6sO5wsu0v5YKoIOhUZiPPDJdpRtJTqlhCwSBup
+         wrYVUct9dqTi0mfaFPGXOInTgRwHV+ztmK703lChsp6q4fS1/6Wqd7gP4dhPm7Y+z0GA
+         aJ6A==
+X-Gm-Message-State: AOAM531R3R3if9lyPmJUBxbP5FVakJUK998THIYG+6UaI3iWXiQ48AKn
+	KRRlWwEzP7WwHqrDLx+yfyr6DNG6ODUaS9c062c8h5AtlL49eg==
+X-Google-Smtp-Source: ABdhPJwhdVThP6dEvNwO+l07I68h7JkALtMT4s/IqHppYicJM4Zbgv2gNlEYG7DcX0qZp0q52dC9u9QdXbGRsv+nra8=
+X-Received: by 2002:a1f:1707:: with SMTP id 7mr260329vkx.16.1644386715766;
+ Tue, 08 Feb 2022 22:05:15 -0800 (PST)
+MIME-Version: 1.0
+From: Uttam Grade <uttamgrade@gmail.com>
+Date: Wed, 9 Feb 2022 11:35:05 +0530
+Message-ID: <CAEogfTjjEiKoC1yu0HmeN2Z+-svvsaDWq7qgw84W9XGK1HEaHQ@mail.gmail.com>
+Subject: FW: UBS East delivery points and regions
+To: laxmi.saoji@gmail.com
+Content-Type: multipart/alternative; boundary="00000000000011140405d78f9e48"
+
+--00000000000011140405d78f9e48
+Content-Type: text/plain; charset="UTF-8"
+
+East Delivery Points for Facilities
+
+
+ -----Original Message-----
+From: Evans, Casey
+Sent: Tuesday, January 29, 2002 6:46 PM
+To: White, Stacey W.
+Subject: FW: UBS East delivery points and regions
+
+just an fyi....
+
+ -----Original Message-----
+From: Evans, Casey
+Sent: Tuesday, January  29, 2002 6:45 PM
+To: Theriot, Kim S.
+Subject: UBS East delivery points and regions
+
+Kim,
+
+I'm attaching a spreadsheet that details the regions and delivery points we
+would like to have migrated over to the Global Facilities database for
+UBS.  There are two separate tabs - one for regions and one for delivery
+points.  I have left a message with John in Portland to call me in the
+morning and I will have him compile the same information for you for the
+west.
+
+Please let me know if you have any questions!
+Thanks!
+Casey
+
+--00000000000011140405d78f9e48
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" wi=
+dth=3D"353" style=3D"border-collapse:collapse;width:265pt">
+ <colgroup><col width=3D"353" style=3D"width:265pt">
+ </colgroup><tbody><tr height=3D"19" style=3D"height:14.5pt">
+
+  <td height=3D"19" class=3D"gmail-xl65" width=3D"353" style=3D"height:14.5=
+pt;width:265pt;padding-top:1px;padding-right:1px;padding-left:1px;color:bla=
+ck;font-size:11pt;font-family:Calibri,sans-serif;vertical-align:bottom;bord=
+er:none">East
+  Delivery Points for Facilities<br>
+    <br>
+    <br>
+    =C2=A0-----Original Message-----<br>
+    From: 	Evans, Casey=C2=A0 <br>
+    Sent:	Tuesday, January 29, 2002 6:46 PM<br>
+    To:	White, Stacey W.<br>
+    Subject:	FW: UBS East delivery points and regions<br>
+    <br>
+    just an fyi....<br>
+    <br>
+    =C2=A0-----Original Message-----<br>
+    From: 	Evans, Casey=C2=A0 <br>
+    Sent:	Tuesday, January=C2=A0 29, 2002 6:45
+  PM<br>
+    To:	Theriot, Kim S.<br>
+    Subject:	UBS East delivery points and regions<br>
+    <br>
+    Kim,<br>
+    <br>
+    I&#39;m attaching a spreadsheet that details the regions and delivery p=
+oints we
+  would like to have migrated over to the Global Facilities database for
+  UBS.=C2=A0 There are two separate tabs - one
+  for regions and one for delivery points.=C2=A0
+  I have left a message with John in Portland to call me in the morning
+  and I will have him compile the same information for you for the west.<br=
+>
+    <br>
+    Please let me know if you have any questions!<br>
+    Thanks!<br>
+    Casey<br>
+    <br>
+    =C2=A0</td>
+
+ </tr>
+</tbody></table></div>
+
+--00000000000011140405d78f9e48--

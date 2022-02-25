@@ -1,0 +1,507 @@
+Delivered-To: laxmi.saoji@gmail.com
+Received: by 2002:ab0:59b2:0:0:0:0:0 with SMTP id g47csp1125655uad;
+        Tue, 8 Feb 2022 21:52:15 -0800 (PST)
+X-Received: by 2002:a05:6122:610:: with SMTP id u16mr238836vkp.4.1644385935654;
+        Tue, 08 Feb 2022 21:52:15 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1644385935; cv=none;
+        d=google.com; s=arc-20160816;
+        b=ktUTCHNDlO3yZ4nMZn5g1YGkxqDVcEii7cAXwjN3GWW5jytrnodP8DHkVPzqmGQjHn
+         Juhn2bvw8vzYuOMd9jObWpHBx6nw8bgL5EUktvI3L1VBDakmhAOYMw+WpfzQdkqTCpFn
+         iDx8frqhG3nMxUhbpFW/Q/VcZ3xzY1bl1SxcT160tw/hOlPR6XFLlUE//7Kd9wsz9BCE
+         2fHyStQrQzXYlUmfUZlbfCWK6Nuw65p2S+v8FtZeghAnw0GYu8iZ9P5RNAFmSafXAkGJ
+         eiyJLUZ/uV42GN2w20szmiLXMIfXcYw8IIa6h1RR6AfeiY0YmmudXFE6kTE83ajmZfFd
+         DzeA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:mime-version:dkim-signature;
+        bh=tl28Y/L5J7N9Y3qFeGMxqa9mN3zWIbUbrGuI+wsjiQI=;
+        b=FtVbeH2Plvdcz8ne+2Y4z3+DtArjSvp9cAZZSAoQSbCVWR5on+v0S/OpyoTubjRFWk
+         tP+UmZdZGe0mFXmAF84eg5Dwx9k9aVIprm5m7bl52GPpWVh9eZOo3w3ZaL44SGw6yK92
+         RUsPiZ15QZlJQh3JLYHDQuew/v2Izkql8Dbfsz4YNo6Bmo9fHKXPUCdJSN0c69oDkkVc
+         jFNdQxkj5xfWnAkUyOEHM7Xx/yXaECMaZeWz26tCayG9z0K0RG+ITiynYlHGUlDy5cg4
+         JeBP6GMhjDu0G+kdcKDPdg1vStwm1AfwSDR/mxhfmRHMvG4x/Y3cc8oUt44ANEVHPYKk
+         Mfww==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20210112 header.b="a1h/p/bn";
+       spf=pass (google.com: domain of uttamgrade@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=uttamgrade@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <uttamgrade@gmail.com>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
+        by mx.google.com with SMTPS id az40sor1824631uab.1.2022.02.08.21.52.15
+        for <laxmi.saoji@gmail.com>
+        (Google Transport Security);
+        Tue, 08 Feb 2022 21:52:15 -0800 (PST)
+Received-SPF: pass (google.com: domain of uttamgrade@gmail.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20210112 header.b="a1h/p/bn";
+       spf=pass (google.com: domain of uttamgrade@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=uttamgrade@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=mime-version:from:date:message-id:subject:to;
+        bh=tl28Y/L5J7N9Y3qFeGMxqa9mN3zWIbUbrGuI+wsjiQI=;
+        b=a1h/p/bnFNiyNOsGZtSmViYgY8f4yYo4NQoIs0FZvrlnx2eIirf5ji7Lc96gmVCgV4
+         Mqp9V3pGe2QfTpef3vzk8dYRFHz0QwuHYzqxOcOPiH/CT1EXM/PIaW3dXf+N1K/3r7Rj
+         125Gh2RYHCd8Ly42qzX8rXHVP93eQYzn/NktznENm/ncc1Q40P5F9DT8b+/mQ4zz9ojp
+         UXQfrCee9Tc4IAqIgbREe+fyEB9sRSM6oOokr1Py5Ttk+639TTO/auC8LITKMdLuq71w
+         3eM6hv1jcBAjXl8exalPb7cA1+gsvMjcBZfLsJRC7uelyXvRJYkavv9+/oPdJxN/lOAC
+         23iw==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=x-gm-message-state:mime-version:from:date:message-id:subject:to;
+        bh=tl28Y/L5J7N9Y3qFeGMxqa9mN3zWIbUbrGuI+wsjiQI=;
+        b=wCDTVn4br4E+6DuTEzMjHXddLNzOr/VRj8lOIAkWfnil19SHiP1+1UX7lDmqpAGRjJ
+         fC8IEB+QQNHOTDp9Vk8KzIFoerCTZdtCBwFKDRdBfdwy87ReQ9l+K0lt7YyRcl5oMOO5
+         TMWPPXC6nfkb3OADaK5czKnkM+o9/8bykGzZ7JpYyI9TL+qVFCCx5Z4VhrKs+de75YMd
+         Jgl2/ufP6ALFeBxLi8S74DlyrOBZfT1hfKLTorCjP8NcSMajpVcYNiX6XMeOZ3EPjkJR
+         wFf4g7w37GanQWIuUltjHRc4h9aCyO/ZFjlVPRV0K9vBVZgjQJwDTn5A4/WOFv4nc2eC
+         yQOg==
+X-Gm-Message-State: AOAM5326GfhALmrRQRxNYAQWZffqFEjiGGKcP9t0PkgUy/RG9ZpyVpNL
+	vYiRq3YjyLwvIr7GmqlS2CPVZamrpQ0DBcPh8LOcF9plMoegrw==
+X-Google-Smtp-Source: ABdhPJzosMkxx/NT7z/SwUzKYk0hlda5PvpKZq5dtKuhihZfNyJNXBamRW1V47Wa0awToYrxyilbgf6TtPAPHaXdaJw=
+X-Received: by 2002:ab0:3011:: with SMTP id f17mr227772ual.94.1644385935203;
+ Tue, 08 Feb 2022 21:52:15 -0800 (PST)
+MIME-Version: 1.0
+From: Uttam Grade <uttamgrade@gmail.com>
+Date: Wed, 9 Feb 2022 11:22:04 +0530
+Message-ID: <CAEogfTjBZ-poci8RcC-gBcjgZASpyeSfUn4m9exEaLeW-=BqAg@mail.gmail.com>
+Subject: Re: ENA Sales on HPL
+To: laxmi.saoji@gmail.com
+Content-Type: multipart/alternative; boundary="0000000000008aa31a05d78f6f89"
+
+--0000000000008aa31a05d78f6f89
+Content-Type: text/plain; charset="UTF-8"
+
+Last that I had, was that legal was reviewing the contract.  Which sounds
+like it has been forgotten.
+
+Cheryl:  I would ask Dan Hyvl to find out where legal stands on this.
+
+Julie
+
+
+
+
+
+Daren J Farmer
+05/23/2000 10:34 AM
+To: Julie Meyers/HOU/ECT@ECT, Cheryl Dudley/HOU/ECT@ECT
+cc:
+Subject: Re: ENA Sales on HPL
+
+Julie,
+
+What info do you have on the Praxair deal (#70171)?  Should this be on ENA
+or
+HPLC?
+
+D
+
+
+
+
+Cheryl D King
+05/23/2000 09:27 AM
+
+Sent by: Cheryl Dudley
+To: Daren J Farmer/HOU/ECT@ECT
+cc: Mary M Smith/HOU/ECT@ECT
+Subject: Re: ENA Sales on HPL
+
+Daren - thank you for the list of the true, remaining ENA sales customers.
+I
+have been researching your list & getting the contractual volumes that
+Brenda
+needs.  I am confused about Praxair though.
+
+The sales contract between ENA & Praxair was assigned to HPLC eff/
+10/1/99.
+The only remaining contract between ENA & Praxair is a Master Financial
+Agreement.
+
+Does Praxair really need to remain under ENA or is it okay under HPLC?  If
+it
+really needs to be under ENA, we will need to un-do the 10/1/99 assignment
+to
+HPLC or set-up a new contract between ENA & Praxair.
+
+Please advise.
+
+
+
+
+
+Daren J Farmer
+05/11/2000 03:11 PM
+To: Cheryl Dudley/HOU/ECT@ECT
+cc:
+Subject: Re: ENA Sales on HPL
+
+Cheryl,
+
+The counterparties with which ENA currently sales gas are:
+
+City of Brazoria
+Central Illinois Light Company
+D & H Gas Company, Inc.
+Markham Gas
+Merit Energy Partners
+Praxair
+Reliant Energy - Entex
+Reliant Energy - HL&P
+Southern Union Company
+Texas Utilities Fuel Company (Now TXU Fuel Co)
+Union Carbide Corporation
+Unit Gas Transmission Company Inc
+
+
+ENA has transacted with the other companies listed below, but that will
+most
+likely not happen again.  (HPL will trade with those counterparties.)
+
+All ENA trades on HPL will be in Sitara.  We have reports which can be
+generated out of CPR that can list all deals by counterparty for ENA.  Let
+me
+know if you need something like that.
+
+Let me know if you have any other questions.
+
+D
+
+
+
+
+
+
+
+
+
+Cheryl D King
+05/10/2000 08:42 AM
+
+Sent by: Cheryl Dudley
+To: Brenda F Herod/HOU/ECT@ECT
+cc: Daren J Farmer/HOU/ECT@ECT, Mary M Smith/HOU/ECT@ECT
+Subject: ENA Sales on HPL
+
+Just to update you on this project's status:
+
+Based on a new report that Scott Mills ran for me from Sitara, I have come
+up
+with the following counterparties as the ones to which ENA is selling gas
+off
+of HPL's pipe.
+
+Altrade Transaction, L.L.C.   Gulf Gas Utilities Company
+Brazoria, City of     Panther Pipeline, Inc.
+Central Illinois Light Company   Praxair, Inc.
+Central Power and Light Company  Reliant Energy - Entex
+CES - Equistar Chemicals, LP   Reliant Energy - HL&P
+Central Illinois Light Company  Southern Union Company
+D & H Gas Company, Inc.   Texas Utilities Fuel Company
+Duke Energy Field Services, Inc.  TXU Gas Distribution
+Entex Gas Marketing Company   Union Carbide Corporation
+Equistar Chemicals, LP    Unit Gas Transmission Company Inc.
+
+
+Since I'm not sure exactly what gets entered into Sitara, Pat Clynes
+suggested that I check with Daren Farmer to make sure that I'm not missing
+something (which I did below).  While I am waiting for a response from him
+and/or Mary Smith, I will begin gathering the contractual volumes under the
+above contracts.
+
+
+---------------------- Forwarded by Cheryl Dudley/HOU/ECT on 05/10/2000
+07:56
+AM ---------------------------
+
+
+Cheryl D King
+05/08/2000 04:11 PM
+
+Sent by: Cheryl Dudley
+To: Daren J Farmer/HOU/ECT@ECT, Mary M Smith/HOU/ECT@ECT
+cc:
+Subject: ENA Sales on HPL
+
+I am working on a project for Brenda Herod & was wondering if one of you
+could tell me if I'm on the right track & if this will get everything for
+which she is looking.
+
+She is trying to draft a long-term transport/storage agreement between ENA
+&
+HPLC which will allow ENA to move the gas to their markets.  In order to
+accomplish this, she needs to know all of the Sales to customers that ENA
+is
+doing off of HPL's pipe.
+
+I had Scott Mills run a report from Sitara showing all ENA Buy/Sell
+Activity
+on HPL since 7/99.  If I eliminate the Buys & the desk-to-desk deals, will
+this give me everything that I need?
+
+Are there buy/sell deals done with ENA on HPL's pipe that wouldn't show up
+in
+Sitara?  Someone mentioned something about deals where HPL transports the
+gas
+on it's own behalf then ENA sells it to a customer at that same spot  --
+?????  Do deals like that happen? Would they show up in Sitara?
+
+Is there anything else that I'm missing?  I'm not real familiar with how
+some
+of these deals happen nowadays so am very receptive to any
+ideas/suggestions/help that you can offer !!!
+
+Thanks in advance.
+
+--0000000000008aa31a05d78f6f89
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" wi=
+dth=3D"353" style=3D"border-collapse:collapse;width:265pt">
+ <colgroup><col width=3D"353" style=3D"width:265pt">
+ </colgroup><tbody><tr height=3D"19" style=3D"height:14.5pt">
+
+  <td height=3D"19" class=3D"gmail-xl66" width=3D"353" style=3D"height:14.5=
+pt;width:265pt;background-image:initial;background-position:initial;backgro=
+und-size:initial;background-repeat:initial;background-origin:initial;backgr=
+ound-clip:initial;padding-top:1px;padding-right:1px;padding-left:1px;color:=
+black;font-size:11pt;font-family:Calibri,sans-serif;vertical-align:bottom;b=
+order:none">Last
+  that I had, was that legal was reviewing the contract.=C2=A0 Which sounds=
+ <br>
+    like it has been forgotten.<br>
+    <br>
+    Cheryl:=C2=A0 I would ask Dan Hyvl to find
+  out where legal stands on this.<br>
+    <br>
+    Julie<br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    Daren J Farmer<br>
+    05/23/2000 10:34 AM<br>
+    To: Julie Meyers/HOU/ECT@ECT, Cheryl Dudley/HOU/ECT@ECT<br>
+    cc:=C2=A0 <br>
+    Subject: Re: ENA Sales on HPL=C2=A0 <br>
+    <br>
+    Julie, <br>
+    <br>
+    What info do you have on the Praxair deal (#70171)?=C2=A0 Should this b=
+e on ENA or <br>
+    HPLC?<br>
+    <br>
+    D<br>
+    <br>
+    <br>
+    <br>
+    <br>
+    	Cheryl D King<br>
+    	05/23/2000 09:27 AM<br>
+    	<br>
+    Sent by: Cheryl Dudley<br>
+    To: Daren J Farmer/HOU/ECT@ECT<br>
+    cc: Mary M Smith/HOU/ECT@ECT <br>
+    Subject: Re: ENA Sales on HPL=C2=A0 <br>
+    <br>
+    Daren - thank you for the list of the true, remaining ENA sales
+  customers.=C2=A0 I <br>
+    have been researching your list &amp; getting the contractual volumes t=
+hat
+  Brenda <br>
+    needs.=C2=A0 I am confused about Praxair
+  though.<br>
+    <br>
+    The sales contract between ENA &amp; Praxair was assigned to HPLC eff/
+  10/1/99.=C2=A0 <br>
+    The only remaining contract between ENA &amp; Praxair is a Master Finan=
+cial
+  <br>
+    Agreement.<br>
+    <br>
+    Does Praxair really need to remain under ENA or is it okay under HPLC?=
+=C2=A0 If it <br>
+    really needs to be under ENA, we will need to un-do the 10/1/99 assignm=
+ent
+  to <br>
+    HPLC or set-up a new contract between ENA &amp; Praxair.<br>
+    <br>
+    Please advise.<br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    Daren J Farmer<br>
+    05/11/2000 03:11 PM<br>
+    To: Cheryl Dudley/HOU/ECT@ECT<br>
+    cc:=C2=A0 <br>
+    Subject: Re: ENA Sales on HPL=C2=A0 <br>
+    <br>
+    Cheryl, <br>
+    <br>
+    The counterparties with which ENA currently sales gas are:<br>
+    <br>
+    City of Brazoria<br>
+    Central Illinois Light Company<br>
+    D &amp; H Gas Company, Inc.<br>
+    Markham Gas <br>
+    Merit Energy Partners<br>
+    Praxair<br>
+    Reliant Energy - Entex<br>
+    Reliant Energy - HL&amp;P<br>
+    Southern Union Company<br>
+    Texas Utilities Fuel Company (Now TXU Fuel Co)<br>
+    Union Carbide Corporation<br>
+    Unit Gas Transmission Company Inc<br>
+    <br>
+    <br>
+    ENA has transacted with the other companies listed below, but that will
+  most <br>
+    likely not happen again.=C2=A0 (HPL will
+  trade with those counterparties.)<br>
+    <br>
+    All ENA trades on HPL will be in Sitara.=C2=A0
+  We have reports which can be <br>
+    generated out of CPR that can list all deals by counterparty for ENA.=
+=C2=A0 Let me <br>
+    know if you need something like that.=C2=A0
+  <br>
+    <br>
+    Let me know if you have any other questions.<br>
+    <br>
+    D<br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    	Cheryl D King<br>
+    	05/10/2000 08:42 AM<br>
+    	<br>
+    Sent by: Cheryl Dudley<br>
+    To: Brenda F Herod/HOU/ECT@ECT<br>
+    cc: Daren J Farmer/HOU/ECT@ECT, Mary M Smith/HOU/ECT@ECT <br>
+    Subject: ENA Sales on HPL<br>
+    <br>
+    Just to update you on this project&#39;s status:<br>
+    <br>
+    Based on a new report that Scott Mills ran for me from Sitara, I have c=
+ome
+  up <br>
+    with the following counterparties as the ones to which ENA is selling g=
+as
+  off <br>
+    of HPL&#39;s pipe.<br>
+    <br>
+    Altrade Transaction, L.L.C.=C2=A0=C2=A0 Gulf
+  Gas Utilities Company<br>
+    Brazoria, City of=C2=A0=C2=A0=C2=A0=C2=A0 Panther
+  Pipeline, Inc.<br>
+    Central Illinois Light Company=C2=A0=C2=A0
+  Praxair, Inc.<br>
+    Central Power and Light Company=C2=A0
+  Reliant Energy - Entex<br>
+    CES - Equistar Chemicals, LP=C2=A0=C2=A0
+  Reliant Energy - HL&amp;P<br>
+    Central Illinois Light Company=C2=A0
+  Southern Union Company<br>
+    D &amp; H Gas Company, Inc.=C2=A0=C2=A0 Texas
+  Utilities Fuel Company<br>
+    Duke Energy Field Services, Inc.=C2=A0 TXU
+  Gas Distribution<br>
+    Entex Gas Marketing Company=C2=A0=C2=A0 Union
+  Carbide Corporation<br>
+    Equistar Chemicals, LP=C2=A0=C2=A0=C2=A0 Unit Gas
+  Transmission Company Inc.<br>
+    <br>
+    <br>
+    Since I&#39;m not sure exactly what gets entered into Sitara, Pat Clyne=
+s <br>
+    suggested that I check with Daren Farmer to make sure that I&#39;m not =
+missing
+  <br>
+    something (which I did below).=C2=A0 While
+  I am waiting for a response from him <br>
+    and/or Mary Smith, I will begin gathering the contractual volumes under=
+ the
+  <br>
+    above contracts.<br>
+    <br>
+    <br>
+    ---------------------- Forwarded by Cheryl Dudley/HOU/ECT on 05/10/2000
+  07:56 <br>
+    AM ---------------------------<br>
+    <br>
+    <br>
+    	Cheryl D King<br>
+    	05/08/2000 04:11 PM<br>
+    	<br>
+    Sent by: Cheryl Dudley<br>
+    To: Daren J Farmer/HOU/ECT@ECT, Mary M Smith/HOU/ECT@ECT<br>
+    cc:=C2=A0 <br>
+    Subject: ENA Sales on HPL<br>
+    <br>
+    I am working on a project for Brenda Herod &amp; was wondering if one o=
+f
+  you <br>
+    could tell me if I&#39;m on the right track &amp; if this will get ever=
+ything
+  for <br>
+    which she is looking.<br>
+    <br>
+    She is trying to draft a long-term transport/storage agreement between =
+ENA
+  &amp; <br>
+    HPLC which will allow ENA to move the gas to their markets.=C2=A0 In or=
+der to <br>
+    accomplish this, she needs to know all of the Sales to customers that E=
+NA
+  is <br>
+    doing off of HPL&#39;s pipe.<br>
+    <br>
+    I had Scott Mills run a report from Sitara showing all ENA Buy/Sell
+  Activity <br>
+    on HPL since 7/99.=C2=A0 If I eliminate
+  the Buys &amp; the desk-to-desk deals, will <br>
+    this give me everything that I need?<br>
+    <br>
+    Are there buy/sell deals done with ENA on HPL&#39;s pipe that wouldn&#3=
+9;t show up
+  in <br>
+    Sitara?=C2=A0 Someone mentioned something
+  about deals where HPL transports the gas <br>
+    on it&#39;s own behalf then ENA sells it to a customer at that same spo=
+t=C2=A0 --=C2=A0
+  <br>
+    ?????=C2=A0 Do deals like that happen?
+  Would they show up in Sitara?<br>
+    <br>
+    Is there anything else that I&#39;m missing?=C2=A0
+  I&#39;m not real familiar with how some <br>
+    of these deals happen nowadays so am very receptive to any <br>
+    ideas/suggestions/help that you can offer !!!<br>
+    <br>
+    Thanks in advance.<br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    </td>
+
+ </tr>
+</tbody></table></div>
+
+--0000000000008aa31a05d78f6f89--

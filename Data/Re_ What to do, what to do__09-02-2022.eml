@@ -1,0 +1,181 @@
+Received: from 10.197.41.12 by atlas209.free.mail.bf1.yahoo.com with HTTPS; Wed, 9 Feb
+ 2022 05:51:51 +0000
+Received: from 209.85.128.47 (EHLO mail-wm1-f47.google.com) by 10.197.41.12 with SMTPs
+ (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256); Wed, 09 Feb 2022 05:51:51
+ +0000
+Received: by mail-wm1-f47.google.com with SMTP id
+ l123-20020a1c2581000000b0037b9d960079so2556186wml.0        for
+ <ygayathri95@yahoo.com>; Tue, 08 Feb 2022 21:51:51 -0800 (PST)
+Return-Path: <sbsudhirsingh489@gmail.com>
+X-Originating-Ip: [209.85.128.47]
+Received-SPF: pass (domain of gmail.com designates 209.85.128.47 as permitted sender)
+Authentication-Results: atlas209.free.mail.bf1.yahoo.com; dkim=pass header.i=@gmail.com
+ header.s=20210112; spf=pass smtp.mailfrom=gmail.com;
+ dmarc=pass(p=NONE,sp=QUARANTINE) header.from=gmail.com;
+X-Apparently-To: ygayathri95@yahoo.com; Wed, 9 Feb 2022 05:51:51 +0000
+X-YMailISG: 5KR.zdkWLDtJrRkAujAKj2OFNKEvpEkSP_yDx11_ov5pIhlG
+ WPnEwfxt0IMT1WfEfMEnodDX7A.dqlsORUOX0dfR_XEqSRTJAP9oREU5zLKN
+ eql26bhenP.mK7yNfI0YD5aUnq7nISKO_hV3wdQqsdIyiPQd63CXzslZH3yW
+ 1yvNQxgV.O91qJSKmaaHRpxMRpunAqZ3Xno8MfzlC2hXF2isZpsFHprVH6xh
+ MsXS3d.YDMIjbSih_terMl0v59YEXGvzYYyT8RMFAZhisQY139f6EaWsUfCq
+ dZ7fssx5BKQWp3iAyHhtLFy6VYCXojR3PSJA05KM64.6wEOXb0_pJbY7TNX2
+ RA9vHN06d.Jie8T_xugz3NRHpY7BEZBz._aMICXSfWkxK2Ga6A83oATxnFHp
+ ulmsqX23XO1V.jl6P8f20zDQ_7znqVzhOvMMhDylqN7olfELYKnIMYBc3nZ8
+ D_6Gnp4VPF3e8ZKqVPQb.Vkdu3Ta2YI77OZKxGWRy7G9QGnmAz_iYkkApsIA
+ VaDsjvTLV65NJGMMjcYU.K2nUhhu69Swzus09nBOE2D516AhZppbD1coZPk.
+ WP_KY2lmhYoiKd97tnCDrmGRvIctXD.zeEjHjqmWYQDE4zfBSfR56mCr_Or_
+ 8c0PxwYGOxeUCQgPOtgoGCQrXMHnrg0aCI83udqex.830pWT2pSAzitYLIv9
+ BzS4kaK071zvPuwbzsW2.dhmcU2Jq.W6WNsXaYpJJsb3uVW9b_HILgjGZ2WK
+ 7chYHGXTFvoyOaVMJx5.ReyXjZIOo_awQKct1bru2pTx6UAWsJxbfusuJARD
+ bG2y.rfd0mT5QWcdSOA6OIJMwGVTxT52b5ttjXiyC7IbB9ACNhSqPuN1frde
+ .AfmAEentC_COVl8qZ9S2ulUdzYpVTQt6mwsHLKQE5uiPHuJrUJyZO2ZFg8n
+ BkMs5uxTeF6FJHsyEY_f.vl_tVLxmREikgMQvOyO7StA_XeCi.VEXf8Armx7
+ WczU5Wo2pCFGln8GgEK_Jq71Nuqq9mGAe0d4zpC9xjIUi1wDSIM7WF1cVJgp
+ I0cjyfYgLsMB1aFQXx5bxj1gMIPqYcdV9LlO9WsVTHNd_.FOEWPUdSi8XuNw
+ ePk_z4arUVuPp7ecuTbFuqMCfxvG.37AvgNHBq.kv6cdXQVY.JVWqK1_NK8e tA--
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;        d=gmail.com; s=20210112;       
+ h=mime-version:from:date:message-id:subject:to;       
+ bh=QTWVeFmifmir1VII6w1zgm2+fpeEObunh2KQqelqvNI=;       
+ b=AG6vMrqwGzUfzNxGogj41oSGDqol12bH0OF/MOhx9W9l4BAIkC6Y30YSnP5QxaeOd4        
+ q+eWou+X0xunKHTQ0OXYlUfIkOphpc+yNI7PznZNCRBuWftbYy+GucgmZhQgoeXuWP5j        
+ iuOYERY5vg5Pd2g/rWyBpynd3spTCONE4+PbncUirTGMrUNhYn7M0dcuOmzasqE/Pmc6        
+ wKLf5FK8sAnSV9PNXmCKVITIq5PAMn/YC8zJJ0/O2JLKxNDoo1Pi54azUjCSaSGLI8vB        
+ ZwUrFVP+IgWPqIaqa/qgbfeCGgFd1DhSd+F4Bfu4z/PvUo8whXAkuWDJh4v7bRPxIodg        
+ cHXA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;        d=1e100.net; s=20210112;       
+ h=x-gm-message-state:mime-version:from:date:message-id:subject:to;       
+ bh=QTWVeFmifmir1VII6w1zgm2+fpeEObunh2KQqelqvNI=;       
+ b=MaKx0aU7MJwRrGlLmTK6XdvgPnCz24jDLZAX8rVgXcG3dBQtsCLBYr7c190PQ4gojG        
+ zUoIAl9luko+gYEwrvz6AMlDZnHQ/qkgmbpXPu1cwiJ0Zizm1o5FboA2DzSbEwK0dAON        
+ vplepFTzP5i3OsOqx1zVNt26dYNbKKznzP067qJk1eILc1aYF1McyJQrn/fTYjoJ/4R0        
+ kVIhL89FIN2sv7kgMddb2uD6/CKqqlQVzYcfGP1/HZP0YkLLqvWdj7oxw/UgNCGUuaQU        
+ tOdUaGpOkwkW9/JfO4ITbUD78TvgSTwtBh8VeWCeX3K6BCZ3Oo2TKaSJlvLX8dH9OFu6        
+ pIdQ==
+X-Gm-Message-State: AOAM5315mU0DlNmgK02IySuLf/CGQngWjOu7N6U7XfYuEg4hNvnxjmw8	jPoVnH6W59BVs+oxSbH9Pe3XUVK111X0T13YYKdKQ7HekJw=
+X-Google-Smtp-Source: ABdhPJyuQb6jCVsbVcUnISIiVWI/f8oEhSJ+ybXwqPczd6A4XFzFLhl//51v4SK1vKIHX5LcnocG9dum3ayiFOPRwoc=
+X-Received: by 2002:a05:600c:3845:: with SMTP id s5mr1096868wmr.134.1644385910158; Tue,
+ 08 Feb 2022 21:51:50 -0800 (PST)
+MIME-Version: 1.0
+From: "Sudhir Bhadauria" <sbsudhirsingh489@gmail.com>
+Date: Wed, 9 Feb 2022 11:21:14 +0530
+Message-ID: <CAAn6Z=MOYX0=fF=Eti1Zn7zqZdNLritqeJ1hJowORMC8=e4w3w@mail.gmail.com>
+Subject: Re: What to do, what to do?
+To: ygayathri95@yahoo.com
+Content-Length: 7055
+Content-Type: multipart/alternative; boundary="0000000000000c785905d78f6e5b"
+
+--0000000000000c785905d78f6e5b
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: base64
+
+IlRoYW5rcyBmb3IgdGhlIGFkdmljZS9odW1vci4gIEknbSBmZWVsaW5nIG11Y2ggYmV0dGVyIHRv
+ZGF5LiAgSSBrbmV3DQp5ZXN0ZXJkYXkgd2FzIGdvaW5nIHRvIGJlIHByZXR0eSByb3VnaCBhbmQg
+bm90IG11Y2ggZnVuIGFzIGhpcw0KY29tbXVuaWNhdGlvbg0Kb3IgbGFjayB0aGVyZW9mIHdvdWxk
+IHNwZWFrIHZvbHVtZXMuICAoQW5kIGhpcyBzaWxlbmNlIGRlZmluaXRlbHkgc2FpZCBhDQpsb3Qp
+DQoNCkV2ZXJ5b25lJ3MgcHJldHR5IG11Y2ggb24gdGhlIHNhbWUgcGFnZSBhcyBmYXIgYXMgdGhl
+aXIgZGlzYXBwb2ludG1lbnQgaW4NCnNhaWQgaW5kaXZpZHVhbCBnb2VzLiAgSSB0aGluayB3ZSBh
+bGwgZXhwZWN0ZWQgYSBsaXR0bGUgYml0IG1vcmUgb3V0IG9mDQpoaW0uDQpPaCB3ZWxsLCBzbyBJ
+J20gc2luZ2xlIGFnYWluLiAgSnVzdCB0aGluayBob3cgaW5jcmVkaWJsZSBpdCdsbCBiZSB3aGVu
+IEkNCmZpbmQNCnNvbWVvbmUgSSBmZWVsIGV2ZW4gbW9yZSBmb3IgdGhhbiBUZWQgKGF0IGxlYXN0
+IHRoYXQncyB3aGF0IEknbSBmb2N1c2luZw0Kb24pLiAgU28gZG8gd2Uga25vdyBpZiBQYXQgRml0
+emdlcmFsZCBpcyBzaW5nbGU/DQoNCkFueXdheSwgSSd2ZSBmb3VuZCBJJ20gbm90IHRoYXQgYXR0
+cmFjdGVkIHRvIGNvd2FyZHMgKHdoaWNoIGlzIGV4YWN0bHkgdGhlDQpjYXRhZ29yeSBJJ2QgcHV0
+IFRlZCBpbiByaWdodCBub3cpLg0KDQpIb3BlIGV2ZXJ5dGhpbmcncyBnb29kIHdpdGggeW91IChl
+c3BlY2lhbGx5IHRoZSBmaXJtIHJlY3J1aXRpbmcpLiAgSSdtDQpjb21pbmcNCnVwIHRoaXMgd2Vl
+a2VuZCBmb3IgdGhlIGdhbWUgLSBob3BlZnVsbHkgRnJpZGF5IG5pZ2h0IC0gYW5kIHdhbnRlZCB0
+byBzZWUNCmlmDQp5b3UgYW5kIERvdWcgd2FudGVkIHRvIGdvIG91dCBlaXRoZXIgRnJpZGF5IG5p
+Z2h0IG9yIGFmdGVyIHRoZSBnYW1lDQpTYXR1cmRheS4gIEkgaG9wZSB5b3UgZ3V5cyBhcmUgcGxh
+bm5pbmcgb24gZ29pbmcgdG8gdGhlIGdhbWUgYmVjYXVzZSBJJ2QNCmxvdmUNCnRvIHNpdCB3aXRo
+IHlvdS4NCg0KVGFsayB0byB5b3Ugc29vbiwNClN1c2FuDQoNClBTIC0gQ2hlY2sgb3V0IHRoZSBs
+aXN0IG9mIGluZGl2aWR1YWxzIGZvciBvdXIgZ2lybHMgbmlnaHQgb3V0IHRoZQ0KVGh1cnMuLi5J
+DQpkb24ndCB0aGluayBJJ20gZ29pbmcgdG8gZ28gKEkgZG9uJ3QgaGF2ZSBlbm91Z2ggdGltZSB0
+byB3YXN0ZSBvbiBwZW9wbGUNCkknbQ0Kbm90IHRoYXQgZm9uZCBvZikNCg0KICIiJ01BVFRPU08s
+IEFOR0VMQSAnIiIgPEFtYXR0b3NvQG1kY2suY29tPiwgIiInJ0FzaGxlYXN0dUBhb2wuY29tJyAn
+IiINCjxBc2hsZWFzdHVAYW9sLmNvbT4sICIiJ3NhcmFoX2NfYnVja0Bob3RtYWlsLmNvbSAnIiIN
+CjxzYXJhaF9jX2J1Y2tAaG90bWFpbC5jb20+LCBKdWxpYW5uYSBHcmlzaGFtDQo8SnVsaWFubmEu
+R3Jpc2hhbUBIYWxsaWJ1cnRvbi5jb20+LCAiIidyZWJlY2NhY29va2VAaG90bWFpbC5jb20gJyIi
+DQo8cmViZWNjYWNvb2tlQGhvdG1haWwuY29tPiwgIiInamtib3dsZXNAaG90bWFpbC5jb20gJyIi
+IDwNCmprYm93bGVzQGhvdG1haWwuY29tPiwNCiIiJ1N1c2FuLk0uU2NvdHRAZW5yb24uY29tICci
+IiA8U3VzYW4uTS5TY290dEBlbnJvbi5jb20+LA0KIiInYXNobGV5LmNyYWRkb2NrQGFjLmNvbSAn
+IiIgPGFzaGxleS5jcmFkZG9ja0BhYy5jb20+LA0KIiInTGF1cmVuLkRlbG9yZW56b0BuZXdib3N0
+b24uY29tICciIiA8TGF1cmVuLkRlbG9yZW56b0BuZXdib3N0b24uY29tPiwNCiIiJ0xpc2EuQS5N
+ZWFkb3JAY2hhc2UuY29tICciIiA8TGlzYS5BLk1lYWRvckBjaGFzZS5jb20+LA0KIiInSlBBVEVS
+U09AaG91c3RvbmlzZC5vcmcgJyIiIDxKUEFURVJTT0Bob3VzdG9uaXNkLm9yZz4sDQoiIidKUEFU
+RVJTT05AaG91c3RvbmlzZC5vcmcgJyIiIDxKUEFURVJTT05AaG91c3RvbmlzZC5vcmc+LA0KIiIn
+amVzc3BhdEBleGNpdGUuY29tICciIiA8amVzc3BhdEBleGNpdGUuY29tPiwgIiInQ0ZhaW5AcXVl
+c3RpYS5jb20gJyIiDQo8Q0ZhaW5AcXVlc3RpYS5jb20+LCAiIidrZW5kbGUuci5lZ2VAdXMuYXJ0
+aHVyYW5kZXJzZW4uY29tICciIg0KPGtlbmRsZS5yLmVnZUB1cy5hcnRodXJhbmRlcnNlbi5jb20+
+LCAiIidraW1mbGFja0B5YWhvby5jb20gJyIiDQo8a2ltZmxhY2tAeWFob28uY29tPiwgIiInQnJl
+bm5hLmwuYm95ZEB1cy5hcnRodXJhbmRlcnNlbi5jb20gJyIiDQo8QnJlbm5hLmwuYm95ZEB1cy5h
+cnRodXJhbmRlcnNlbi5jb20+Ig0K
+--0000000000000c785905d78f6e5b
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">&quot;Thanks for the advice/humor=2E=C2=A0 I&#39;m feeling=
+ much better today=2E=C2=A0 I knew <br>yesterday was going to be pretty rou=
+gh and not much fun as his communication <br>or lack thereof would speak vo=
+lumes=2E =C2=A0(And his silence definitely said a lot)<br><br>Everyone&#39;=
+s pretty much on the same page as far as their disappointment in <br>said i=
+ndividual goes=2E=C2=A0 I think we all expected a little bit more out of hi=
+m=2E =C2=A0<br>Oh well, so I&#39;m single again=2E=C2=A0 Just think how inc=
+redible it&#39;ll be when I find <br>someone I feel even more for than Ted =
+(at least that&#39;s what I&#39;m focusing <br>on)=2E=C2=A0 So do we know i=
+f Pat Fitzgerald is single?<br><br>Anyway, I&#39;ve found I&#39;m not that =
+attracted to cowards (which is exactly the <br>catagory I&#39;d put Ted in =
+right now)=2E<br><br>Hope everything&#39;s good with you (especially the fi=
+rm recruiting)=2E=C2=A0 I&#39;m coming <br>up this weekend for the game - h=
+opefully Friday night - and wanted to see if <br>you and Doug wanted to go =
+out either Friday night or after the game <br>Saturday=2E=C2=A0 I hope you =
+guys are planning on going to the game because I&#39;d love <br>to sit with=
+ you=2E<br><br>Talk to you soon,<br>Susan<br><br>PS - Check out the list of=
+ individuals for our girls night out the Thurs=2E=2E=2EI <br>don&#39;t thin=
+k I&#39;m going to go (I don&#39;t have enough time to waste on people I&#3=
+9;m <br>not that fond of)<br><br>=C2=A0&quot;&quot;&#39;MATTOSO, ANGELA &#3=
+9;&quot;&quot; &lt;<a href=3D"mailto:Amattoso@mdck=2Ecom">Amattoso@mdck=2Ec=
+om</a>&gt;, &quot;&quot;&#39;&#39;<a href=3D"mailto:Ashleastu@aol=2Ecom">As=
+hleastu@aol=2Ecom</a>&#39; &#39;&quot;&quot; <br>&lt;<a href=3D"mailto:Ashl=
+eastu@aol=2Ecom">Ashleastu@aol=2Ecom</a>&gt;, &quot;&quot;&#39;<a href=3D"m=
+ailto:sarah_c_buck@hotmail=2Ecom">sarah_c_buck@hotmail=2Ecom</a> &#39;&quot=
+;&quot; <br>&lt;<a href=3D"mailto:sarah_c_buck@hotmail=2Ecom">sarah_c_buck@=
+hotmail=2Ecom</a>&gt;, Julianna Grisham <br>&lt;Julianna=2EGrisham@Hallibur=
+ton=2Ecom&gt;, &quot;&quot;&#39;<a href=3D"mailto:rebeccacooke@hotmail=2Eco=
+m">rebeccacooke@hotmail=2Ecom</a> &#39;&quot;&quot; <br>&lt;<a href=3D"mail=
+to:rebeccacooke@hotmail=2Ecom">rebeccacooke@hotmail=2Ecom</a>&gt;, &quot;&q=
+uot;&#39;<a href=3D"mailto:jkbowles@hotmail=2Ecom">jkbowles@hotmail=2Ecom</=
+a> &#39;&quot;&quot; &lt;<a href=3D"mailto:jkbowles@hotmail=2Ecom">jkbowles=
+@hotmail=2Ecom</a>&gt;, <br>&quot;&quot;&#39;<a href=3D"mailto:Susan=2EM=2ES=
+cott@enron=2Ecom">Susan=2EM=2EScott@enron=2Ecom</a> &#39;&quot;&quot; &lt;<=
+a href=3D"mailto:Susan=2EM=2EScott@enron=2Ecom">Susan=2EM=2EScott@enron=2Ec=
+om</a>&gt;, <br>&quot;&quot;&#39;<a href=3D"mailto:ashley=2Ecraddock@ac=2Ec=
+om">ashley=2Ecraddock@ac=2Ecom</a> &#39;&quot;&quot; &lt;<a href=3D"mailto:=
+ashley=2Ecraddock@ac=2Ecom">ashley=2Ecraddock@ac=2Ecom</a>&gt;, <br>&quot;&=
+quot;&#39;<a href=3D"mailto:Lauren=2EDelorenzo@newboston=2Ecom">Lauren=2EDe=
+lorenzo@newboston=2Ecom</a> &#39;&quot;&quot; &lt;<a href=3D"mailto:Lauren=
+=2EDelorenzo@newboston=2Ecom">Lauren=2EDelorenzo@newboston=2Ecom</a>&gt;, <=
+br>&quot;&quot;&#39;<a href=3D"mailto:Lisa=2EA=2EMeador@chase=2Ecom">Lisa=
+=2EA=2EMeador@chase=2Ecom</a> &#39;&quot;&quot; &lt;<a href=3D"mailto:Lisa=
+=2EA=2EMeador@chase=2Ecom">Lisa=2EA=2EMeador@chase=2Ecom</a>&gt;, <br>&quot=
+;&quot;&#39;<a href=3D"mailto:JPATERSO@houstonisd=2Eorg">JPATERSO@houstonis=
+d=2Eorg</a> &#39;&quot;&quot; &lt;<a href=3D"mailto:JPATERSO@houstonisd=2Eo=
+rg">JPATERSO@houstonisd=2Eorg</a>&gt;, <br>&quot;&quot;&#39;<a href=3D"mail=
+to:JPATERSON@houstonisd=2Eorg">JPATERSON@houstonisd=2Eorg</a> &#39;&quot;&q=
+uot; &lt;<a href=3D"mailto:JPATERSON@houstonisd=2Eorg">JPATERSON@houstonisd=
+=2Eorg</a>&gt;, <br>&quot;&quot;&#39;<a href=3D"mailto:jesspat@excite=2Ecom=
+">jesspat@excite=2Ecom</a> &#39;&quot;&quot; &lt;<a href=3D"mailto:jesspat@=
+excite=2Ecom">jesspat@excite=2Ecom</a>&gt;, &quot;&quot;&#39;<a href=3D"mai=
+lto:CFain@questia=2Ecom">CFain@questia=2Ecom</a> &#39;&quot;&quot; <br>&lt;=
+<a href=3D"mailto:CFain@questia=2Ecom">CFain@questia=2Ecom</a>&gt;, &quot;&=
+quot;&#39;<a href=3D"mailto:kendle=2Er=2Eege@us=2Earthurandersen=2Ecom">ken=
+dle=2Er=2Eege@us=2Earthurandersen=2Ecom</a> &#39;&quot;&quot; <br>&lt;<a hr=
+ef=3D"mailto:kendle=2Er=2Eege@us=2Earthurandersen=2Ecom">kendle=2Er=2Eege@u=
+s=2Earthurandersen=2Ecom</a>&gt;, &quot;&quot;&#39;<a href=3D"mailto:kimfla=
+ck@yahoo=2Ecom">kimflack@yahoo=2Ecom</a> &#39;&quot;&quot; <br>&lt;<a href=
+=3D"mailto:kimflack@yahoo=2Ecom">kimflack@yahoo=2Ecom</a>&gt;, &quot;&quot;=
+&#39;<a href=3D"mailto:Brenna=2El=2Eboyd@us=2Earthurandersen=2Ecom">Brenna=
+=2El=2Eboyd@us=2Earthurandersen=2Ecom</a> &#39;&quot;&quot; <br>&lt;<a href=
+=3D"mailto:Brenna=2El=2Eboyd@us=2Earthurandersen=2Ecom">Brenna=2El=2Eboyd@u=
+s=2Earthurandersen=2Ecom</a>&gt;&quot;<br></div>
+
+--0000000000000c785905d78f6e5b--
+

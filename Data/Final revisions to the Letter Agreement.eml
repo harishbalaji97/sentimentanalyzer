@@ -1,0 +1,186 @@
+Delivered-To: laxmi.saoji@gmail.com
+Received: by 2002:ab0:59b2:0:0:0:0:0 with SMTP id g47csp1142166uad;
+        Tue, 8 Feb 2022 22:23:32 -0800 (PST)
+X-Received: by 2002:a05:6102:3310:: with SMTP id v16mr268668vsc.56.1644387812174;
+        Tue, 08 Feb 2022 22:23:32 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1644387812; cv=none;
+        d=google.com; s=arc-20160816;
+        b=V8CD6EmxpVbJOxRdEPbVhuRV6AOAQvkpxbOv7h/HoVXgdkg1C8GRui98CGC+nbDALu
+         mwOQ4a4IWVIrioQiCB95FuJpjZcSBEQotOsvctY3ZiJSOwarcMCBHngVSdzC2Ei0EKhi
+         uzUm114wz0xk2SLxKRtrAW6kgQuDyY2pGi885lqc0tik/e+703juK2svdnss86LS/bK3
+         gkF+XrzHyIGXezNBoHEjO9hAqXJiB2gVkmRjiWsFnSYnIHOYtaPYJwaVhe/PjmdCwIrq
+         1sAU6LvJXjIsANynXx4XnEp/j4CC0bIB3jh5+jtHlvBeoFeOndNH8qVb320KF0eRpaH0
+         cKvQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:mime-version:dkim-signature;
+        bh=molFclFSiubnT8jORrmORgr5GX0A2Rl8npMz9mYPpHI=;
+        b=B0b1JOTROn95r+ehGENefljwRzNrBpeT+yidd4ime4jMa+PHMMXhSYkW3GT7nlQrNP
+         TfcIS6QImr1bLMN0Nv9tAMGbNYcvUWWtT+2RH0ioB/XtSiY1FQkN06VVgw8KdasYaOGL
+         IRQV8mO3xpB6hr+rSAWuNaXRXTVcrIS9TYS/N97WT1Be9lodRSv+Nixps7LoEMgYbG3U
+         oYexrGLUNN4oFl1iYIZOFvoI4cvZd3MHe9gyu4LVxSgQ5WkX35e0D9eq+SmYHSRn6sVN
+         8AcPFmLN0P4V2og9lYE3OmOQy9OWdAOf8W8F44Kr6WX42lqHF+4uIEz5ks/Z9yIvMqgK
+         b6WQ==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20210112 header.b="iJikLTQ/";
+       spf=pass (google.com: domain of uttamgrade@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=uttamgrade@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <uttamgrade@gmail.com>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
+        by mx.google.com with SMTPS id u16sor937333vst.58.2022.02.08.22.23.32
+        for <laxmi.saoji@gmail.com>
+        (Google Transport Security);
+        Tue, 08 Feb 2022 22:23:32 -0800 (PST)
+Received-SPF: pass (google.com: domain of uttamgrade@gmail.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20210112 header.b="iJikLTQ/";
+       spf=pass (google.com: domain of uttamgrade@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=uttamgrade@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=mime-version:from:date:message-id:subject:to;
+        bh=molFclFSiubnT8jORrmORgr5GX0A2Rl8npMz9mYPpHI=;
+        b=iJikLTQ/SanagWwspFjzAxbi6pmGImi0YMvyE86f3C9B4lIUj91npVt9EcuDDS79XN
+         bRloo2JMd2y7Us6NybURPR36IjnQX1Wjn1RWdFnDcn6BmQtJUMpeR4NZ6umd/ZgRn+rA
+         qJWrNzDpboPOnfF8p4TLVboeUVgnhOAwMoObVPKD+avCa1K6PjjE1Zd2xL0Py92fyQrY
+         P/PODSxV0fgLSf+oP05siUzT8qNvPQ0vBNRHaf8apuR+UlIKR89OCiAH8rtT7fV5QmsJ
+         1Z/vG2bqZKgFzS9gGS5WIlFzfMUQDPHLrZ9iJcCxxlnflsjow5BBQ6BdH8PodPmdhsFr
+         e/dg==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=x-gm-message-state:mime-version:from:date:message-id:subject:to;
+        bh=molFclFSiubnT8jORrmORgr5GX0A2Rl8npMz9mYPpHI=;
+        b=rEEgfc/s15iTDZ7thc9ibeC3lJHDFb/82AUNvaLu3DFwnFilFJscx5bd97pcWgja5+
+         us6vXLXdRpDXLJ9g+UFo196Sua90m9BfB3P46RPupmVAEcfsXmnoSRZ25jWKOTACU5g9
+         ic/p2UkPgFQcLCIWsrM18RZ1gjadye1NAMl0LCw05zjq+0pNYjo849vm+bZMNmqtkoE2
+         fYn/wEzpIryq50Fxt1klrDtqn8d+dG3rt27a/4WbuW6RAX+xcKMx8EUMh3PcQr/TmgaH
+         JkU0arQDKBIWk+ogmFmD0GQirxnXgblDFtRAwaOKjXRQfimOB9JZkyiUa6whnzoZDbJH
+         QVcQ==
+X-Gm-Message-State: AOAM530v3vTEmAXfcewMf5aBfLgMuczkSH0O1whcDHDKzXQJWibn2b41
+	Ez7eh5T6RQ2mAAnjsOGvR2G3CdzxmvuSJxFoTtIVzate25T+AA==
+X-Google-Smtp-Source: ABdhPJy9sW2Jq8uT9XLVXfa6wbnR0QysikTaHj5LAlEymEWsaJB0wB0ojO8MFn+ymvsWFEBYEhllW6HRTH+macSgw+Y=
+X-Received: by 2002:a67:a64a:: with SMTP id r10mr223575vsh.76.1644387811731;
+ Tue, 08 Feb 2022 22:23:31 -0800 (PST)
+MIME-Version: 1.0
+From: Uttam Grade <uttamgrade@gmail.com>
+Date: Wed, 9 Feb 2022 11:53:21 +0530
+Message-ID: <CAEogfTiG7hUZ4fG+GjiMzboE1whu1rw7Fo_Swq73KXY5NU=iXw@mail.gmail.com>
+Subject: Final revisions to the Letter Agreement
+To: laxmi.saoji@gmail.com
+Content-Type: multipart/alternative; boundary="000000000000642dc905d78fdf8d"
+
+--000000000000642dc905d78fdf8d
+Content-Type: text/plain; charset="UTF-8"
+
+ <<RED.Letter Agmt Enron Turbines Delta Power.DOC>>  <<Letter Agmt Enron
+Turbines Delta Power.DOC>>
+
+
+Gentlemen:
+
+We have enclosed what we hope is the final draft of the letter agreement
+between ENA and PPL, marked to reflect revisions from the prior draft dated
+April 3, 2001.  In the event these revisions are acceptable, we have also
+enclosed a clean copy for execution.  We would recommend execution in
+duplicate in order that each party may retain an original. Thank you.
+
+Carolyn M. Campbell
+King & Spalding
+713-276-7307 (phone)
+713-751-3280 (fax)
+ccampbell@kslaw.com
+
+Enclosures: 133641vR12/11
+  133641v12
+
+
+
+
+                    Confidentiality Notice
+This message is being sent by or on behalf of a lawyer.  It is intended
+exclusively for the individual or entity to which it is addressed.  This
+communication may contain information that is proprietary, privileged or
+confidential or otherwise legally exempt from disclosure.  If you are not
+the
+named addressee, you are not authorized to read, print, retain, copy or
+disseminate this message or any part of it.  If you have received this
+message in error, please notify the sender immediately by e-mail and delete
+all copies of the message.
+
+
+ - RED.Letter Agmt Enron Turbines Delta Power.DOC
+ - Letter Agmt Enron Turbines Delta Power.DOC
+
+--000000000000642dc905d78fdf8d
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" wi=
+dth=3D"353" style=3D"border-collapse:collapse;width:265pt">
+ <colgroup><col width=3D"353" style=3D"width:265pt">
+ </colgroup><tbody><tr height=3D"546" style=3D"height:409.5pt">
+
+  <td height=3D"546" class=3D"gmail-xl65" width=3D"353" style=3D"height:409=
+.5pt;width:265pt;padding-top:1px;padding-right:1px;padding-left:1px;color:b=
+lack;font-size:11pt;font-family:Calibri,sans-serif;vertical-align:bottom;bo=
+rder:none">=C2=A0&lt;&lt;RED.Letter Agmt Enron Turbines Delta
+  Power.DOC&gt;&gt;=C2=A0 &lt;&lt;Letter Agmt
+  Enron<br>
+    Turbines Delta Power.DOC&gt;&gt;<br>
+    <br>
+    <br>
+    Gentlemen:<br>
+    <br>
+    We have enclosed what we hope is the final draft of the letter
+  agreement<br>
+    between ENA and PPL, marked to reflect revisions from the prior draft
+  dated<br>
+    April 3, 2001.=C2=A0 In the event these
+  revisions are acceptable, we have also<br>
+    enclosed a clean copy for execution.=C2=A0
+  We would recommend execution in<br>
+    duplicate in order that each party may retain an original. Thank you.<b=
+r>
+    <br>
+    Carolyn M. Campbell<br>
+    King &amp; Spalding<br>
+    713-276-7307 (phone)<br>
+    713-751-3280 (fax)<br>
+    <a href=3D"mailto:ccampbell@kslaw.com">ccampbell@kslaw.com</a><br>
+    <br>
+    Enclosures: 133641vR12/11<br>
+    =C2=A0 133641v12<br>
+    <br>
+    <br>
+    <br>
+    <br>
+    =C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=
+=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0 Confidentiality
+  Notice<br>
+    This message is being sent by or on behalf of a lawyer.=C2=A0 It is int=
+ended <br>
+    exclusively for the individual or entity to which it is addressed.=C2=
+=A0 This <br>
+    communication may contain information that is proprietary, privileged o=
+r
+  <br>
+    confidential or otherwise legally exempt from disclosure.=C2=A0 If you =
+are not the <br>
+    named addressee, you are not authorized to read, print, retain, copy or
+  <br>
+    disseminate this message or any part of it.=C2=A0
+  If you have received this <br>
+    message in error, please notify the sender immediately by e-mail and de=
+lete
+  <br>
+    all copies of the message.<br>
+    <br>
+    <br>
+    =C2=A0- RED.Letter Agmt Enron Turbines
+  Delta Power.DOC<br>
+    =C2=A0- Letter Agmt Enron Turbines Delta
+  Power.DOC</td>
+
+ </tr>
+</tbody></table></div>
+
+--000000000000642dc905d78fdf8d--

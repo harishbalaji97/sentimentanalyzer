@@ -1,0 +1,86 @@
+Received: from 10.217.130.18 by atlas208.free.mail.ne1.yahoo.com with HTTPS; Wed, 9 Feb
+ 2022 06:49:51 +0000
+Received: from 209.85.221.53 (EHLO mail-wr1-f53.google.com) by 10.217.130.18 with SMTPs
+ (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256); Wed, 09 Feb 2022 06:49:51
+ +0000
+Received: by mail-wr1-f53.google.com with SMTP id h6so2264152wrb.9        for
+ <ygayathri95@yahoo.com>; Tue, 08 Feb 2022 22:49:51 -0800 (PST)
+Return-Path: <sbsudhirsingh489@gmail.com>
+X-Originating-Ip: [209.85.221.53]
+Received-SPF: pass (domain of gmail.com designates 209.85.221.53 as permitted sender)
+Authentication-Results: atlas208.free.mail.ne1.yahoo.com; dkim=pass header.i=@gmail.com
+ header.s=20210112; spf=pass smtp.mailfrom=gmail.com;
+ dmarc=pass(p=NONE,sp=QUARANTINE) header.from=gmail.com;
+X-Apparently-To: ygayathri95@yahoo.com; Wed, 9 Feb 2022 06:49:52 +0000
+X-YMailISG: dYJ6AWwWLDvbQLaYqE3zXONJUbEqqXw6jSdiF348AG7NKSP0
+ ThyyUS8NRSkk90fTbBMdLHksArrkKu06NmufGy7q99PYAnDstGdzj1OYNPYv
+ eGz6Jh5JpDmIsy3jkRXaf.cmGQRv5eIcYCWfbKmvShqUwMO8kxnuofztrb7C
+ 4M4_HR9ppPtWgCESwrTOhz.WyBdp_IhQ88VaF3fjD13YTotGbjNV0sd2.3ap
+ CcFgt0SVhu60B.gyRyjzJcGvi.mIcQeDTzqRWsOqd3iIFxO_9P0gsYN0FFda
+ ANKSltEuwYpcFTvyjbkyJrvqg9ijon7nmFOfONAplRl_M9.TrbUtR_56yGsX
+ iVIAgCwVyvs9X9v6pL83QaGjLgKETvc0r2fzRM54XHc8I28uDTCpkPVERkC4
+ _6.2R3ADERRNI87N7wwJhlorn_FcdG4hAfKraYw8cp5cTIMJh7PeTO5rczaK
+ U3szhQ6aS86Zfu0LvyhbDEqJxtHC1x7E7QBAa51sJ6zWYrfNq29.itUS_ZAU
+ xv8KWjhk8AWcat3oIx132ivJC8CTHzAB7O68tKBWOnpuj8wNKidq5T6pXc1G
+ PhFnwKfIV3l_ZnnQKI30JbDor6qK6ACLzt7S68BajBCR284vDW4XnJQ1rzVN
+ CnWnggkkQ9DYlYH8IwjNYk9lT4a.55cXozMqGv.02xF2ZOMMdZMe1e3J6Sr2
+ sz0A.9Uu_T6okrWY8bbe_fp3ktNBrfSh0L_BZg3uzIuexUWd0bE88Kw3OilU
+ kMCYH7cqvodW7yvVnaWAuf54820h.YWGUFhc3h88dWqs_Ive4XZLu8KaKjoe
+ E7se_gK8mJXs31tRe3TJt5M6okwN0Wbjtj.56URsVHlzTkFpLRPU7Wplb8Z4
+ bHi.ULb14K8M82IK54xpEGBo5kMP7J0QDeaYastr2HVtHnQHdxHHTC_UC00f
+ kleEbTi133v.OYpLOssuNkO3vuIQksYCzh43LJUyY_k5r3euL5hIs4fSiua4
+ LCzYxJ1AMi4XgaqQgnWy__ZgKNlITbek6oYHkSYVK.bcTBE4DDdQFXDz9Z_O
+ gJ_n6S8i9vOHTfKdzXJzISIcVooOG8uHXHmm01593oXZobgEKhZvJKgDKYYb
+ lXP1xYSdmd1skShLPhP_Q3F.y9pVY.LEubcUEO3D0S6ioULN6sgM9ppigtKt Hw--
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;        d=gmail.com; s=20210112;       
+ h=mime-version:from:date:message-id:subject:to;       
+ bh=tHS9um/X/TjpmVsOY1b8lVKA+woif8hdzv6BkMZcJKU=;       
+ b=qmDQf6mOV/XnzZccCfCPBz8Qw6viBbbSEiKs2Ii/kv6vbHKPZr2ZBrNr89LPfkr5BQ        
+ 7bkDnqwnUcuk6NR6zFOGkkL4/Wtwk9N2i2DgdVuSvY6LIDByLSSbcS0PIRZmIRW/NyAn        
+ ag8ljB7A77G7OwBkINnY0ChxQnFKcLQ/s+EOnKwhozH9gvMAdNjANqmGv6EqYMKjTVqc        
+ CLImQPEtwo7KTnba/5ScH330bVQ9AVt/qncsvSjN5ZZd24FHdnJYCx9nJZwGx291lnOt        
+ W8J5IAYuZe26GCksGlRad0zoZ+ewSq2jc4yS7hVJJ8OVQWOZFrtd7sJPJ43kIk5wTDNT        
+ 5tiw==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;        d=1e100.net; s=20210112;       
+ h=x-gm-message-state:mime-version:from:date:message-id:subject:to;       
+ bh=tHS9um/X/TjpmVsOY1b8lVKA+woif8hdzv6BkMZcJKU=;       
+ b=woSx+5YkCcr4BhIg9mBBcvaMIKiEFlBt+u5GICG8eLT2d6AKh5DEOeTj6X3b3vIoul        
+ 51HwCP6Y2+EKFme7t60uINg/FuuANDYw/wRuF6PHPJ2VCFJtRKGtd0+uoSu0gJHVT1VK        
+ DbZ9xH0n9NMC6C98q0Q22biD7XkceU0vQunuknlJH5WFF7tGLBnc7ymHMpJ1JLMtaenI        
+ zssged4U4Nu8k9hqkzYnprt7tt+A9mquW6Qv/ZYrsQ53y9L5/edS/btSCdvH27Xr65gw        
+ PXMvHWr4fFbguj6+txPQ7W3DybjpR1GUOMg+BTFGGNKHlmVMdjNrJDvNqoFxB5qvGTk+        
+ atLg==
+X-Gm-Message-State: AOAM530SMJmQfU0yb1AF4j5hCX0OyWMQwnFAmbrxJ6jYWNdiq8jBe6qS	wyop2PSB25pqn45IbRwqJso7k2D4SEqrntsPpxVkzZ79UQQ=
+X-Google-Smtp-Source: ABdhPJyuhwbM5i1FZww0WmmOxTXuAeGL7Lc/0lutF9MHAa4GmvkpMBqaSTuZhHrA34tBnrTXuGWViS7r4ATiuDtgddQ=
+X-Received: by 2002:a5d:40ca:: with SMTP id b10mr834307wrq.6.1644389390509; Tue, 08 Feb
+ 2022 22:49:50 -0800 (PST)
+MIME-Version: 1.0
+From: "Sudhir Bhadauria" <sbsudhirsingh489@gmail.com>
+Date: Wed, 9 Feb 2022 12:19:14 +0530
+Message-ID: <CAAn6Z=O4pPY-k=8bxqbnhJWZ2LS34bnjG0A+DYaGer8ROP=yqg@mail.gmail.com>
+Subject: Play
+To: ygayathri95@yahoo.com
+Content-Length: 767
+Content-Type: multipart/alternative; boundary="0000000000007e68c505d7903d23"
+
+--0000000000007e68c505d7903d23
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: base64
+
+V2VkbmVzZGF5LCBEZWMuIDEzdGggd291bGQgd29yayBiZXN0IGZvciBtZS4NCg==
+--0000000000007e68c505d7903d23
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: base64
+
+PGRpdiBkaXI9Imx0ciI+PHRhYmxlIGJvcmRlcj0iMCIgY2VsbHBhZGRpbmc9IjAiIGNlbGxzcGFj
+aW5nPSIwIiB3aWR0aD0iMzY3IiBzdHlsZT0iYm9yZGVyLWNvbGxhcHNlOmNvbGxhcHNlO3dpZHRo
+OjI3NXB0Ij4NCiA8Y29sZ3JvdXA+PGNvbCB3aWR0aD0iMzY3IiBzdHlsZT0id2lkdGg6Mjc1cHQi
+Pg0KIDwvY29sZ3JvdXA+PHRib2R5Pjx0ciBoZWlnaHQ9IjE5IiBzdHlsZT0iaGVpZ2h0OjE0LjVw
+dCI+DQoNCiAgPHRkIGhlaWdodD0iMTkiIHdpZHRoPSIzNjciIHN0eWxlPSJoZWlnaHQ6MTQuNXB0
+O3dpZHRoOjI3NXB0O3BhZGRpbmctdG9wOjFweDtwYWRkaW5nLXJpZ2h0OjFweDtwYWRkaW5nLWxl
+ZnQ6MXB4O2NvbG9yOmJsYWNrO2ZvbnQtc2l6ZToxMXB0O2ZvbnQtZmFtaWx5OkNhbGlicmksc2Fu
+cy1zZXJpZjt2ZXJ0aWNhbC1hbGlnbjpib3R0b207Ym9yZGVyOm5vbmU7d2hpdGUtc3BhY2U6bm93
+cmFwIj5XZWRuZXNkYXksIERlYy4NCiAgMTN0aCB3b3VsZCB3b3JrIGJlc3QgZm9yIG1lLjwvdGQ+
+DQoNCiA8L3RyPg0KPC90Ym9keT48L3RhYmxlPjwvZGl2Pg0K
+--0000000000007e68c505d7903d23--
+

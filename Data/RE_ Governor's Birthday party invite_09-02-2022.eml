@@ -1,0 +1,205 @@
+Received: from 10.217.152.8 by atlas306.free.mail.ne1.yahoo.com with HTTPS; Wed, 9 Feb
+ 2022 09:56:57 +0000
+Received: from 209.85.221.42 (EHLO mail-wr1-f42.google.com) by 10.217.152.8 with SMTPs
+ (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256); Wed, 09 Feb 2022 09:56:57
+ +0000
+Received: by mail-wr1-f42.google.com with SMTP id o24so373626wro.3        for
+ <ygayathri95@yahoo.com>; Wed, 09 Feb 2022 01:56:57 -0800 (PST)
+Return-Path: <sbsudhirsingh489@gmail.com>
+X-Originating-Ip: [209.85.221.42]
+Received-SPF: pass (domain of gmail.com designates 209.85.221.42 as permitted sender)
+Authentication-Results: atlas306.free.mail.ne1.yahoo.com; dkim=pass header.i=@gmail.com
+ header.s=20210112; spf=pass smtp.mailfrom=gmail.com;
+ dmarc=pass(p=NONE,sp=QUARANTINE) header.from=gmail.com;
+X-Apparently-To: ygayathri95@yahoo.com; Wed, 9 Feb 2022 09:56:59 +0000
+X-YMailISG: O4cSh_AWLDviq1t_VIspO1FcTEhnogJ4csmRBsD34LQCGk9T
+ .nofoxpJ8hPbmxdscorxuBbbfJykgv1lPyRsREIRGPD7qELqor7GmX24zNjh
+ h.Flu.WRx4vP.0UwANZBevRNkFyamDzU4zCIb2LvE8Dy586vEQOWZdoctWpg
+ LmsBgBnv84xtaw9YjChVWfKaTnhY0mjn6K5Ju0b.Nh4RgPIQHgzmzdwBkqA4
+ MM56ka08b2_6t6s_o46qiTpAB6iDHI_.BI2KL4YwHKJythD_MJQU.Wkd148s
+ f77qbaLYXIZVGU5RXxX0mvMGWOEaHDogsZFQBSzaFqqCh_DlHlU4UlBD.9Bg
+ 1CRKMcvAAh7Iljmg.IHTeHQ89bqKYW4X0hCcr0EWSk.eSdKE.9nRWOBfmofg
+ MnMz0vvPnRG5SnMJiejIxE0tXIAJLojVxQriTzk.SoZ_NcRi33ETop6v4ziu
+ qXWOzKz_nfEMUB_DipX9EZhmTrauSkZgQP4kdRhfxj9KZ4JMcpguQsduD_DI
+ Eu.J67eneAHGsapo8tVDlvYQwU8nzJBp.ieQ9_CcImHw1wsYVH54s3tMoQuJ
+ HXBl7mzKzsGCMG9yOyczF52V72vtucXIJsTxURLoe4NDm2FzLP6gjiV6ytge
+ W2mPsdAO9drLQfylIX70W_C7Uq.tnczKzZrwy25ViBWEI.ErOFXIOxZ2a.D7
+ JmPxa77XhpzvNhOxHo.sJT4hf.ythiPwh4Iupd5cpiMKPMhtIyE9YS_7jxJZ
+ vIe1vbmPodnV3Ot57F9uptZ6ykbcQlljLi6N01M4VN7.ksaIQSd53RIKKpnC
+ 0JiisEAtl_fzq5udhCJAVsZgx5Nk2sUd8eccm23wnCuNvF.NV4WQ.R6z.KsL
+ ezzPUOHYPxWqDDKVuI2rdF14C.WJW9a_fhcFi3L1ANL6_MFQma9dTq2rcYXG
+ LWHRf3gbFwiHPnBUMC9p_l.aYDZ4F8WhT2Qy7QTTKGQ3DJO16b8LgaPhyASF
+ drT4ZDneWwfO1sQ_U2qL1Wkoy2Coz27HLSAeP5VxUFz6KDRkhxwYcJE73v1T
+ _3Xwa7h9EIf4f0EQD22DwGgH4PagwcrHD4JyGXsgHfpS.YKRSJ.U4_QVRiip
+ x.6PYkXta9IGh1MQhNxp3ietz9zkdcCN_f0XD8z09tQNMSe3fEE-
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;        d=gmail.com; s=20210112;       
+ h=mime-version:from:date:message-id:subject:to;       
+ bh=yL5mSMSMnIWTqEqBNtpB7AMD4X2/iwAeYk9OlY3UfTE=;       
+ b=YdJMBa6coXJylkxt+4Q4bK9UpyFjoHeVgAK1Ety2M652YrQXBDY4y2Ov8KjaDgYa6h        
+ JbmSJa4DCTlu0VQEFxt/Gk4LLgiTzz5HgCdSGYuHm+MzvRYD+YGJxrj7MVYViQgE2/wn        
+ o4bjz2/TFlUv6K+3SPAPnwkFQTfrhYQgEj7LvWZhkuBNMNJBdjrxxKfk0BbulWvdRp2Q        
+ fCSL1p5EteRsMtN98kJr6MQVZKvUPimatuNBL3lydqOsRFFaEx4ujsoIGdGJsCNRZupf        
+ dNZi7eY69VIwtGBLwhE8SIx0HBvPmi1O4M81cTm7XPkM2fP6wGozGHMvv2cf3C3NkRjQ        
+ d0yg==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;        d=1e100.net; s=20210112;       
+ h=x-gm-message-state:mime-version:from:date:message-id:subject:to;       
+ bh=yL5mSMSMnIWTqEqBNtpB7AMD4X2/iwAeYk9OlY3UfTE=;       
+ b=Ew+4gisSRJxixwuQ83dbo55R1WncAW8crFKGCxzzVEbQgpQ4YeyTQXX1HfB5UCCbuW        
+ Ttf24K224837CYnhtDmu7c4BFWqDflodKSPtqiXZbt816jnumAJAbNoJ5JOqQCfH78nj        
+ SKuQIUWfH/FGNAUo5jDCzz4XHYdPTyjZ3qwiygd4fBqYJ3GoSJT+UkHKETaSo4zRBEld        
+ PsH9GEKwcJlSjxLhmmFk5h5Pz3LUTDHd9VuWosp5gxy6fF+r7kaS71Sl9d3bznGjjP2j        
+ 9YkqHbN1Jxt7YDLkOkJ9CgQuWd8m8rWH0orH9jthY7y4oe+O9WY9JeaWIqpQvJuaYzPi        
+ df7w==
+X-Gm-Message-State: AOAM531z8Ky5A99IApwLsDMJwjmQcAPrMX+cdM7l/TElzd+4zNT+3/aX	fYDGckJdDacSJYZo38jYbWtymm9us64PMR4LBuRxhrgg
+X-Google-Smtp-Source: ABdhPJxBY8tdHroV/TGd+qJqRbubiF+5sVDU58RCtGeouSw/aKyIlypZ3/+E96hX6JaGHQcr3saA0d7zm95C/x/NWvg=
+X-Received: by 2002:a5d:40ca:: with SMTP id b10mr1417418wrq.6.1644400616883; Wed, 09 Feb
+ 2022 01:56:56 -0800 (PST)
+MIME-Version: 1.0
+From: "Sudhir Bhadauria" <sbsudhirsingh489@gmail.com>
+Date: Wed, 9 Feb 2022 15:26:20 +0530
+Message-ID: <CAAn6Z=PcHFa4vd9pX92iyj90B6f76rzfDst+NfyAfavgckxSxg@mail.gmail.com>
+Subject: RE: Governor's Birthday party invite
+To: ygayathri95@yahoo.com
+Content-Length: 5760
+Content-Type: multipart/alternative; boundary="000000000000a34b1405d792da0a"
+
+--000000000000a34b1405d792da0a
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: base64
+
+Tm8gaW52aXRlIGhlcmUuDQoNCkkgdGhvdWdodCBHcmF5IHdhcyB0b28gb2xkIGZvciAgYmlydGhk
+YXlzIQ0KDQpNYXliZSBJRVAgc2hvdWxkIGdpdmUgaGltIGEgbmljZSBiaWcgIGNhbmRsZSB0byBs
+aWdodCB0aGUgY2FrZS4NCg0KS2VudA0KDQotLS0tLU9yaWdpbmFsIE1lc3NhZ2UtLS0tLQ0KRnJv
+bTogSnVsZWUgTWFsaW5vd3NraS1CYWxsIFttYWlsdG86am1iYWxsQG5zLm5ldF0NClNlbnQ6IFdl
+ZG5lc2RheSwgRGVjZW1iZXIgMDYsIDIwMDAgODo0NCBBTQ0KVG86IE5hbSBOZ3V5ZW47IEJpbGwg
+Q2FybHNvbjsgQmlsbCBXb29kczsgQm9iIEVsbGVyeTsgQm9iIEVzY2FsYW50ZTsgQ2Fyb2x5bg0K
+QmFrZXI7IEN1cnRpcyBLZWJsZXI7IERhdmlkIEtlYW5lOyBEYXZpZCBQYXJxdWV0OyBEZWFuIEdv
+c3NlbGluOyBEdWFuZQ0KTmVsc29uOyBFZCBUb21lbzsgRnJhbmsgRGVSb3NhOyBHcmVnIEJsdWU7
+IEhhcCBCb3lkOyBpZXBAaWVwYS5jb207IEphY2sNClBpZ290dDsgSmVmZiBEYXNvdmljaDsgSmlt
+IFdpbGxleTsgSm9lIEdyZWNvOyBKb2UgUm9uYW47IEpvaG4gU3RvdXQ7DQpKb25hdGhhbiBXZWlz
+Z2FsbDsgS2Fzc2FuZHJhIEdvdWdoOyBLZW4gSG9mZm1hbjsgS2VudCBGaWNrZXR0OyBMeW5uDQpM
+ZWRuaWNreTsgTWFydHkgTWNGYWRkZW47IFBhdWxhIFNvb3M7IFJpY2hhcmQgSHlkZTsgUm9iZXJ0
+IExhbWtpbjsgUm9nZXINClBlbG90ZTsgU3RlcGhhbmllIE5ld2VsbDsgU3RldmUgUG9uZGVyOyBT
+dGV2ZW4gS2VsbGV5OyBTdWUgTWFyYTsgVGFuZHkNCk1jTWFubmVzOyBUb255IFdldHplbDsgVHJv
+bmQgQXNjaGVob3VnOyBXaWxsaWFtIEhhbGwNCkNjOiBqb2huLmcubGFycmVhQHdpbGxpYW1zLmNv
+bQ0KU3ViamVjdDogRnc6IEdvdmVybm9yJ3MgQmlydGhkYXkgcGFydHkgaW52aXRlDQoNCg0KU2Vl
+IGJlbG93Lg0KDQotLS0tLSBPcmlnaW5hbCBNZXNzYWdlIC0tLS0tDQpGcm9tOiBMYXJyZWEsIEpv
+aG4gPG1haWx0bzpKb2huLmcuTGFycmVhQHdpbGxpYW1zLmNvbT4NClRvOiAnSnVsZWUgIDxtYWls
+dG86am1iYWxsQG5zLm5ldD4gTWFsaW5vd3NraS1CYWxsJw0KU2VudDogV2VkbmVzZGF5LCBEZWNl
+bWJlciAwNiwgMjAwMCA3OjU2IEFNDQpTdWJqZWN0OiBHb3Zlcm5vcidzIEJpcnRoZGF5IHBhcnR5
+IGludml0ZQ0KDQoNCg0KSnVsZWUsIFdpbGxpYW1zIHJlY2VpdmVkIGEgZmF4ZWQgaW52aXRhdGlv
+biB0byB0aGUgR292ZXJub3Incw0KQmlydGhkYXkgcGFydHkgYXQgSGFpbSBTYWJlbidzIGhvdXNl
+IGFib3V0IGEgd2VlayBhbmQgYSBoYWxmIGFnby4gIERvIHlvdQ0Ka25vdyBpZiBhbnkgb3RoZXIg
+Z2VuZXJhdG9ycyBvciBtYXJrZXRlcnMgaW4gSUVQIHJlY2VpdmVkIHRoZSBpbnZpdGU/ICBXaG8N
+CmluIElFUCB3b3VsZCBrbm93Pw0KDQoNCkpvaG4gRy4gTGFycmVhDQpHb3Zlcm5tZW50YWwgUmVs
+YXRpb25zDQo4NTAgU3RpbGx3YXRlciBSb2FkLCBTdWl0ZSAxNTANCldlc3QgU2FjcmFtZW50bywg
+Q0EgOTU2MDUNCig5MTYpIDM3Ni0zNjUwDQooOTE2KSAzNzYtMzYxMA0KKDkxNikgNjE2LTcwNjIg
+bW9iaWxlDQpqb2huLmcubGFycmVhQHdpbGxpYW1zLmNvbQ0KDQoNCg0KDQpQRyZFIE5hdGlvbmFs
+IEVuZXJneSBHcm91cCBhbmQgYW55IG90aGVyDQpjb21wYW55IHJlZmVyZW5jZWQgaGVyZWluIHRo
+YXQgdXNlcyB0aGUgUEcmRSBuYW1lIG9yDQpsb2dvIGFyZSBub3QgdGhlIHNhbWUgY29tcGFueSBh
+cyBQYWNpZmljIEdhcyBhbmQNCkVsZWN0cmljIENvbXBhbnksIHRoZSByZWd1bGF0ZWQgQ2FsaWZv
+cm5pYSB1dGlsaXR5LiAgTmVpdGhlcg0KUEcmRSBOYXRpb25hbCBFbmVyZ3kgR3JvdXAgbm9yIHRo
+ZXNlIG90aGVyDQpyZWZlcmVuY2VkIGNvbXBhbmllcyBhcmUgcmVndWxhdGVkIGJ5IHRoZSBDYWxp
+Zm9ybmlhIFB1YmxpYw0KVXRpbGl0aWVzIENvbW1pc3Npb24uICBDdXN0b21lcnMgb2YgUGFjaWZp
+YyBHYXMgYW5kIEVsZWN0cmljIENvbXBhbnkNCmRvIG5vdCBoYXZlIHRvIGJ1eSBwcm9kdWN0cyBm
+cm9tIHRoZXNlIGNvbXBhbmllcyBpbiBvcmRlcg0KdG8gY29udGludWUgdG8gcmVjZWl2ZSBxdWFs
+aXR5IHJlZ3VsYXRlZCBzZXJ2aWNlcyBmcm9tIHRoZSB1dGlsaXR5Lg0K
+--000000000000a34b1405d792da0a
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" wi=
+dth=3D"141" style=3D"border-collapse:collapse;width:106pt">
+ <colgroup><col width=3D"141" style=3D"width:106pt">
+ </colgroup><tbody><tr height=3D"19" style=3D"height:14=2E5pt">
+
+  <td height=3D"19" width=3D"141" style=3D"height:14=2E5pt;width:106pt;padd=
+ing-top:1px;padding-right:1px;padding-left:1px;color:black;font-size:11pt;f=
+ont-family:Calibri,sans-serif;vertical-align:bottom;border:none">No
+  invite here=2E<br>
+    <br>
+    I thought Gray was too old for=C2=A0 birthdays!<br>
+    <br>
+    Maybe IEP should give him a nice big=C2=A0
+
+candle to light the cake=2E<br>
+    <br>
+    Kent<br>
+    <br>
+    -----Original Message-----<br>
+    From: Julee Malinowski-Ball [mailto:<a href=3D"mailto:jmball@ns=2Enet" =
+target=3D"_blank">jmball@ns=2Enet</a>]<br>
+    Sent: Wednesday, December 06, 2000 8:44 AM<br>
+    To: Nam Nguyen; Bill Carlson; Bill Woods; Bob Ellery; Bob Escalante;
+  Carolyn<br>
+    Baker; Curtis Kebler; David Keane; David Parquet; Dean Gosselin;
+  Duane<br>
+    Nelson; Ed Tomeo; Frank DeRosa; Greg Blue; Hap Boyd; <a href=3D"mailto:=
+iep@iepa=2Ecom" target=3D"_blank">iep@iepa=2Ecom</a>;
+  Jack<br>
+    Pigott; Jeff Dasovich; Jim Willey; Joe Greco; Joe Ronan; John Stout;<br=
+>
+    Jonathan Weisgall; Kassandra Gough; Ken Hoffman; Kent Fickett; Lynn<br>=
+
+    Lednicky; Marty McFadden; Paula Soos; Richard Hyde; Robert Lamkin;
+  Roger<br>
+    Pelote; Stephanie Newell; Steve Ponder; Steven Kelley; Sue Mara;
+  Tandy<br>
+    McMannes; Tony Wetzel; Trond Aschehoug; William Hall<br>
+    Cc: <a href=3D"mailto:john=2Eg=2Elarrea@williams=2Ecom" target=3D"_blan=
+k">john=2Eg=2Elarrea@williams=2Ecom</a><br>
+    Subject: Fw: Governor&#39;s Birthday party invite<br>
+    <br>
+    <br>
+    See below=2E<br>
+    <br>
+    ----- Original Message -----<br>
+    From: Larrea, John &lt;mailto:<a href=3D"mailto:John=2Eg=2ELarrea@willi=
+ams=2Ecom" target=3D"_blank">John=2Eg=2ELarrea@williams=2Ecom</a>&gt;<br>
+    To: &#39;Julee=C2=A0
+  &lt;mailto:<a href=3D"mailto:jmball@ns=2Enet" target=3D"_blank">jmball@ns=
+=2Enet</a>&gt; Malinowski-Ball&#39;<br>
+    Sent: Wednesday, December 06, 2000 7:56 AM<br>
+    Subject: Governor&#39;s Birthday party invite<br>
+    <br>
+    <br>
+    <br>
+    Julee, Williams received a faxed invitation to the Governor&#39;s<br>
+    Birthday party at Haim Saben&#39;s house about a week and a half ago=2E=
+=C2=A0 Do you<br>
+    know if any other generators or marketers in IEP received the invite?=
+=C2=A0 Who<br>
+    in IEP would know?<br>
+    <br>
+    <br>
+    John G=2E Larrea<br>
+    Governmental Relations<br>
+    850 Stillwater Road, Suite 150<br>
+    West Sacramento, CA 95605<br>
+    (916) 376-3650<br>
+    (916) 376-3610<br>
+    (916) 616-7062 mobile<br>
+    <a href=3D"mailto:john=2Eg=2Elarrea@williams=2Ecom" target=3D"_blank">j=
+ohn=2Eg=2Elarrea@williams=2Ecom</a><br>
+    <br>
+    <br>
+    <br>
+    <br>
+    PG&amp;E National Energy Group and any other<br>
+    company referenced herein that uses the PG&amp;E name or<br>
+    logo are not the same company as Pacific Gas and<br>
+    Electric Company, the regulated California utility=2E=C2=A0 Neither<br>=
+
+    PG&amp;E National Energy Group nor these other<br>
+    referenced companies are regulated by the California Public<br>
+    Utilities Commission=2E=C2=A0 Customers of
+  Pacific Gas and Electric Company<br>
+    do not have to buy products from these companies in order<br>
+    to continue to receive quality regulated services from the utility=2E</=
+td>
+
+ </tr>
+</tbody></table></div>
+
+--000000000000a34b1405d792da0a--
+

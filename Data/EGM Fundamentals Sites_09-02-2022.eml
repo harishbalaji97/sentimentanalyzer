@@ -1,0 +1,162 @@
+Received: from 10.197.36.8 by atlas204.free.mail.bf1.yahoo.com with HTTPS; Wed, 9 Feb
+ 2022 07:19:49 +0000
+Received: from 209.85.128.47 (EHLO mail-wm1-f47.google.com) by 10.197.36.8 with SMTPs
+ (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256); Wed, 09 Feb 2022 07:19:49
+ +0000
+Received: by mail-wm1-f47.google.com with SMTP id
+ bg19-20020a05600c3c9300b0034565e837b6so1836313wmb.1        for
+ <ygayathri95@yahoo.com>; Tue, 08 Feb 2022 23:19:49 -0800 (PST)
+Return-Path: <sbsudhirsingh489@gmail.com>
+X-Originating-Ip: [209.85.128.47]
+Received-SPF: pass (domain of gmail.com designates 209.85.128.47 as permitted sender)
+Authentication-Results: atlas204.free.mail.bf1.yahoo.com; dkim=pass header.i=@gmail.com
+ header.s=20210112; spf=pass smtp.mailfrom=gmail.com;
+ dmarc=pass(p=NONE,sp=QUARANTINE) header.from=gmail.com;
+X-Apparently-To: ygayathri95@yahoo.com; Wed, 9 Feb 2022 07:19:50 +0000
+X-YMailISG: bSIJobIWLDvdsFBVhKjUvuwKM3mM_aftIofFsZ5I2Gnry8K5
+ QYQ6HW394mjYAXSV1ezQOA1IMcdoq0kL6OwpYBc4oaVMvsalZhE_LffshJ5W
+ pnP3Nrl2R4RNkENm9jNOQgC0T5OIdOR6G8ztP6ZqgHeYP.ZWiZpKDUPUiY6i
+ J.5J5mEISiAq.Fmr1XjzTB2rVq5j8k73F2lXY8jPG0Gq5qT4qCO3984E9aHU
+ kf41TeSsOORpfVqzCeawyRsVGEPRnute3x5QXccaXVs9h1kP68IiBVfxxJLT
+ faDR0hY4ESN8u59AiEgfqX464VKhz.3jtAHNPdQAuHLcWPH9XJB8RyVEbxJP
+ HEoIvJME4ObBi1BFrNJQNKb6rav4Iko8HcjDUCJkbDEWBVPOZwOmpH4QYuQK
+ PGoM1WjbWMDseaa69.3kiICOnuscj8cA19LgzPZWklOXkusXDGMBnq3Dxw49
+ QQ_kaFDcZ0Tu_QS4Wv0IWjAnqDVI8vL3OLz0czlHm4x.Qzynstrbp4rb4DyZ
+ 8O_YIw1BifgWQzJINDgY_vD3j5OcemKrKqGI_Jz5lQu5sVAdXCbRqzO3H20A
+ VA_5jNfYAyF2d6qDDKsaQqsEqUdxYcCzK0klPlDJpPtbLLxFzVNM3RBPSSxZ
+ cRzPq7DtMs6wuf96vtoxcWPmclqjCMN6wL0siKNumjK9C0M45QLRCqAjGZLE
+ fMSr44bhDGFyKokDCPNb45w9mcpDnq1kcIqCI7TXG7jrrrp.cL8Q.ANpha3F
+ CohkokeM6CpeyXSusfYsVO900tUa8lLLFFbU_W3sbFLpVeu1eq_OVeEMup0c
+ PjAqVKNho7VVJESH2PKjwXJ1tpi6ZSiByLSYffEF8MPAmbLD8V071W.ZpMkm
+ sxzurdUyTdxIAk6bqwflqsglw3awWPoqGtSjfoDTbg3cQclHy8wDt5_ESKBZ
+ o.sIRJfY8lR1HYISfzC9hHK.TaeWRe__feMY7Izus9a92jKAAqn53BmhuRKh
+ prqyPsARQfHtKUWYpPBE05tSEq5Q52ahj8vdbV8ea7U3oUQTT__Ov2lCERCH
+ LMuQhzcLhw_PdQYOIaxXOG7908d2azZi0mdsrWffXHyO_yf2RrBG3ysLBgSy
+ _a1gyeFwkFHNTV9yPhYyjbB5mKIZP5YkaQnVheHpdP0AHpp1L_lt
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;        d=gmail.com; s=20210112;       
+ h=mime-version:from:date:message-id:subject:to;       
+ bh=h+/jNC8qSLteowXF8PBo53LhVeE48wEjDpicey4fW70=;       
+ b=WuAsN7U5aRytSpb4bI7OXJGwpDYYAETznSTXuTfRRXj8dovKASZEveTnETtU4xhpxD        
+ Nfa8yyI1JsDpCsvxKvpyV0TuXlvMdXX2OjzB81qbkawVwVG+5CgM6XRzg/5ZR3Lk8JFg        
+ CuBVccq9l8hFCRlBl/hIFRBgWzT1mJAtZtBhgSk1GODr2eGJbHGLHeTdu373lU891Pg9        
+ JBE/lq9kuINdQV1WUJRH2lnR+lBfgKqhEniO59FTYz1nalAaePzwFA4x8YM3cDf0dDZQ        
+ e19eRQ9+4ISQvV4fRThGmKKtJDzhNE7ApIC0gPwqchh4uw4sPSGwKH2zAx8qU1it8Y+6        
+ WAXQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;        d=1e100.net; s=20210112;       
+ h=x-gm-message-state:mime-version:from:date:message-id:subject:to;       
+ bh=h+/jNC8qSLteowXF8PBo53LhVeE48wEjDpicey4fW70=;       
+ b=d9JC6h0XjXjRyFoFZXs62X6gIaXa69l+BdecokqeC/V1wWWx1XhWoK/PbBD1lRodd9        
+ QTe+C7K+Phes/XtPf6y0yEfb54v9f4hBhkbkkfudy1j28OwUUcicr9qRF229YvYfy92H        
+ Srwf8CaH4O3QOevAIBKamRLmynLdrndZB8UFcfZMHJLBIj1tND+hLloI/E1/yG20Ehmq        
+ y2DwN7m/caf+uQiGHSVB4IiIckalRNbayJxdh7iAIEOpEF8zESNdUIeL3TGwsigAVng4        
+ +/QPdLAscJJA7g5D6zL1vboyRs5r7iqrqCU08TdsTbKTyp7Eid8tr1Ae97PHe+sOv3FZ        
+ Rc0Q==
+X-Gm-Message-State: AOAM530nq/Y7b6kLihT6nEVUs2QlMMGydOIvFfWyZoIXHRpae/4dftKj	gw+JisthWvUFD7UMoZ6qZeDbxt1/WdPdVTf4N7mWXTXQlhI=
+X-Google-Smtp-Source: ABdhPJyDTzfYGY8BG5tlEtDdlN5sv3dyRPLDQ/4VZQrXQPgtQ2gfApa/E/wUCe7Mi98+/XWNq4DV9gn1E5R3AVgS398=
+X-Received: by 2002:a05:600c:3845:: with SMTP id s5mr1332127wmr.134.1644391188725; Tue,
+ 08 Feb 2022 23:19:48 -0800 (PST)
+MIME-Version: 1.0
+From: "Sudhir Bhadauria" <sbsudhirsingh489@gmail.com>
+Date: Wed, 9 Feb 2022 12:49:13 +0530
+Message-ID: <CAAn6Z=ONifsG8KZn0VwCWE6-b=aZCveKkP64+=vk3sZEOriiuw@mail.gmail.com>
+Subject: EGM Fundamentals Sites
+To: ygayathri95@yahoo.com
+Content-Length: 3379
+Content-Type: multipart/alternative; boundary="000000000000ad07cf05d790a8f0"
+
+--000000000000ad07cf05d790a8f0
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: base64
+
+RllJOiAgRUdNIGhhcyBlc3RhYmxpc2hlZCBhIGZ1bmRhbWVudGFscyBncm91cCB0aGF0IGlzIHBy
+b3ZpZGluZw0KaW5mb3JtYXRpb24NCm9uIHRoZSBpbnRyYW5ldCByZWxhdGluZyB0byBjb2FsDQog
+IGFuZCBjcnVkZSBtYXJrZXRzLg0KDQpSZWdhcmRzLA0KDQpDaHJpcyBDYWxnZXINCg0KDQoNCg0K
+RnJvbTogIEplbm5pZmVyIEZyYXNlciAgICAgICAgICAgICAgICAgICAgICAgICAgIDAxLzA5LzIw
+MDEgMDQ6MTcgUE0NCg0KDQpUbzogQ2hyaXN0b3BoZXIgRiBDYWxnZXIvUERYL0VDVEBFQ1QNCmNj
+Og0KU3ViamVjdDogRUdNIEZ1bmRhbWVudGFscyBTaXRlcw0KDQoNCkhlcmUgaXMgdGhlIGluZm8g
+b24gdGhlIEVHTSBzaXRlcy4gSUYgd2UgY2FuIGJlIG9mIGFueSBhc3NpdGFuY2UgdG8gdGhlDQpX
+ZXN0ZXJuIHRlYW0gbGV0IG1lIGtub3cuDQoNCkxpbmtzIHRvIHRoZSBzaXRlcyBhcmUgYXMgZm9s
+bG93czoNCg0KQ29hbCAtIGh0dHA6Ly9lZ21mdW5keS5kZXYuY29ycC5lbnJvbi5jb20vY29hbC9m
+cmFtZXdvcmsvZGVmYXVsdC5hc3ANCg0KQ3J1ZGUgLSBodHRwOi8vZWdtZnVuZHkuZGV2LmNvcnAu
+ZW5yb24uY29tL2NydWRlL2ZyYW1ld29yay9kZWZhdWx0LmFzcA0KDQpmbGFzaCBpbnRybyAtIGh0
+dHA6Ly9lZ21mdW5keS5kZXYuY29ycC5lbnJvbi5jb20vICAgKlBsZWFzZSBub3RlIHRoYXQgdGhl
+DQpsaW5rcyBmcm9tIHRoaXMgaW50cm8gYXJlIHRlbXBvcmFyaWx5IHVuYXZhaWxhYmxlIHNvIHlv
+dSBzaG91bGQgdXNlIG9uZSBvZg0KdGhlIGFib3ZlIGxpbmtzIHRvIGFjY2VzcyB0aGUgc2l0ZSBv
+ZiB5b3VyIGNob2ljZS4gIEZlZWwgZnJlZSB0byBjaGVjayBvdXQNCnRvDQpzZWUgdGhlIGRpcmVj
+dGlvbiB3ZSdyZSBtb3ZpbmcgIGluICBhcyBmYXIgYXMgbG9vayBhbmQgZmVlbCBnb2VzLg0KDQpU
+aGFua3MgZm9yIHBhc3NpbmcgdGhlbSBvbnRvIHRvIHlvdXIgdGVhbQ0KDQpKZW4NCjM0NzU5DQo=
+--000000000000ad07cf05d790a8f0
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" wi=
+dth=3D"367" style=3D"border-collapse:collapse;width:275pt">
+ <colgroup><col width=3D"367" style=3D"width:275pt">
+ </colgroup><tbody><tr height=3D"19" style=3D"height:14=2E5pt">
+
+  <td height=3D"19" class=3D"gmail-xl65" width=3D"367" style=3D"height:14=
+=2E5pt;width:275pt;padding-top:1px;padding-right:1px;padding-left:1px;color=
+:black;font-size:11pt;font-family:Calibri,sans-serif;vertical-align:bottom;=
+border:none">FYI:=C2=A0 EGM has established a fundamentals group
+  that is providing information <br>
+    on the intranet relating to coal<br>
+    =C2=A0 and crude markets=2E<br>
+    <br>
+    Regards,<br>
+    <br>
+    Chris Calger=C2=A0=C2=A0 <br>
+    <br>
+    <br>
+    	<br>
+    	<br>
+    	From:=C2=A0 Jennifer Fraser=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=
+=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=
+=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0 01/09/2001 04:17
+  PM<br>
+    	<br>
+    <br>
+    To: Christopher F Calger/PDX/ECT@ECT<br>
+    cc:=C2=A0 <br>
+    Subject: EGM Fundamentals Sites<br>
+    <br>
+    <br>
+    Here is the info on the EGM sites=2E IF we can be of any assitance to t=
+he <br>
+    Western team let me know=2E<br>
+    <br>
+    Links to the sites are as follows:<br>
+    <br>
+    Coal - <a href=3D"http://egmfundy=2Edev=2Ecorp=2Eenron=2Ecom/coal/frame=
+work/default=2Easp">http://egmfundy=2Edev=2Ecorp=2Eenron=2Ecom/coal/framewo=
+rk/default=2Easp</a><br>
+    <br>
+    Crude - <a href=3D"http://egmfundy=2Edev=2Ecorp=2Eenron=2Ecom/crude/fra=
+mework/default=2Easp">http://egmfundy=2Edev=2Ecorp=2Eenron=2Ecom/crude/fram=
+ework/default=2Easp</a><br>
+    <br>
+    flash intro - <a href=3D"http://egmfundy=2Edev=2Ecorp=2Eenron=2Ecom/">h=
+ttp://egmfundy=2Edev=2Ecorp=2Eenron=2Ecom/</a>=C2=A0=C2=A0 *Please note tha=
+t the <br>
+    links from this intro are temporarily unavailable so you should use one=
+ of
+  <br>
+    the above links to access the site of your choice=2E=C2=A0 Feel free to=
+ check out to <br>
+    see the direction we&#39;re moving=C2=A0
+  in=C2=A0 as far as look and feel
+  goes=2E<br>
+    <br>
+    Thanks for passing them onto to your team<br>
+    <br>
+    Jen<br>
+    34759<br>
+    <br>
+    <br>
+    <br>
+    </td>
+
+ </tr>
+</tbody></table></div>
+
+--000000000000ad07cf05d790a8f0--
+

@@ -1,0 +1,109 @@
+Received: from 10.253.232.219 by atlas123.free.mail.gq1.yahoo.com with HTTPS; Wed, 9
+ Feb 2022 07:33:15 +0000
+Received: from 209.85.128.51 (EHLO mail-wm1-f51.google.com) by 10.253.232.219 with
+ SMTPs (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256); Wed, 09 Feb 2022
+ 07:33:15 +0000
+Received: by mail-wm1-f51.google.com with SMTP id
+ y6-20020a7bc186000000b0037bdc5a531eso1863573wmi.0        for
+ <ygayathri95@yahoo.com>; Tue, 08 Feb 2022 23:33:14 -0800 (PST)
+Return-Path: <sbsudhirsingh489@gmail.com>
+X-Originating-Ip: [209.85.128.51]
+Received-SPF: pass (domain of gmail.com designates 209.85.128.51 as permitted sender)
+Authentication-Results: atlas123.free.mail.gq1.yahoo.com; dkim=pass header.i=@gmail.com
+ header.s=20210112; spf=pass smtp.mailfrom=gmail.com;
+ dmarc=pass(p=NONE,sp=QUARANTINE) header.from=gmail.com;
+X-Apparently-To: ygayathri95@yahoo.com; Wed, 9 Feb 2022 07:33:16 +0000
+X-YMailISG: Z7ojzzMWLDut1MiuX_m5uBCgiT3RZcz.p4bxWRzw8tUSjCxL
+ bi2eSDKwNutrFLdNecJA0_wNedeGOejMYsgy6TfX51NmhsJDSxMKvdmBNMrA
+ I8Sywk_fJgLRA6zcfovLmp7MF5nTPv12eKTRDaYpgRRZTWVYQJziRHHPbXKm
+ n93XCLRye8HEOI9pNzngqjRJ15OWWu5Ol1fesHgM0OsfkLYccLUFsig.xhpI
+ SsbW12q0fEqKg1nxxv5SWy7njUnTHZb6TPT4zuLEy5ikf3FMlXfCB_rLBLxt
+ 0GQeVusHLgLTMUW82bfjn6E4FYRyRB6Ui2fCl80GBfI1.3XnMPIJSHWSPOLX
+ NseNSax7wg.cW1uFnzryCTEwz1mm8D7CLAeTmKcX4VcvzXTxVou4ar4lrrSs
+ .RL7708lEwei_mu3HeEYA60uLN0YYH6YPY8wtRFxldKW3VUsJ.EWFUd71l9v
+ rLWXrZQ7EwKfMqOx8Pe3Nh93XRSSE3QQVngDfH9ray7q1229jSkc7UYu0JAI
+ FbgzL279qPN8gk5JYpuZKmozv0gaLSQL_kBK7K_DooHXDEpICqd6x0zVBhl.
+ E_5riZvXEri8B9wi6.GQTqG7sVMotLFc6Ye3MaAYq6r41JWgqQxlYzrwcuA4
+ YbSLSnJeELhYmBAwM47K4WbXGYAdVJs2wYmIqschDXdxcHltR5qeZhEw.aPB
+ UVgdo7oBt3i6WLkTrYxNji0ljdT1kRQsc5cLM1RukMCFi247XFw_.CUITJjU
+ 0P6xqgtpnM8NSXd.s6y9MmX_aJQroL3nj7fxRlPX0_NhPtIVf55NdVuItw1P
+ lZOEmfceGT9SnutfON35SjVWF25HE613Xwc6Uz25Nnu2063hVCHgz8WpH7r3
+ ft0gPBl6XSINHyvvfpNUfVDOEdrT3DYpsxtdN82VqBEX6i0FFcuIDuOzLiEI
+ A8Xuww1wAiuLvIBNGBqdIYb.9rqlI0uD.HOKnDpb7IUYt9y030PWs0sqmK1O
+ sr_YrRv28i4xNlvVyL6tlnKZqH5FBRByl7IfOQjPb2vi.3fTcSgNpwai3TPi
+ G.nr_lIqu_UQfKULKVTCksuWZh.6KPkZkyWo6lvqPSIio39CFeLKfFUPNg0Y
+ c0pl9so7b6Z5GuyPLDlV2BF.EeFaumQqqJigj345WCF9Mw9AFK2h5E8-
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;        d=gmail.com; s=20210112;       
+ h=mime-version:from:date:message-id:subject:to;       
+ bh=0flwED90bdFTUJZZ6azbPd29HLN36N1c5bdnkWbHJJI=;       
+ b=iOAIM2zi11QMfPVCjA0U77uep9lYzUOaFo4bJAqOmm2+3jFBLBxD0AVi0NmTNTuuCI        
+ OUGZgalAS2U8VMAT2v5rP9hGmSTDtuMrBuo1Z5+XydZdQiogsB2XPBnnfTddeIzxDrRP        
+ DF904y5FfUVsi8mCyzLUkZVIF0YdAcSUvypDAmPeYmQANoE5JzJh9ICa6lb2g4/+C7ba        
+ bzboi5NKCsxQqh1FgLLMGBhYc2vWZAp9MNEkuDgNUDV4nQo9jQFoGHcRwv1bqQreNPGL        
+ g4Ua1+Qj0nT3sGG6cgHIXVg4ltE0I1n0ByWoAsEq4c1Lb5vOBTzVmKX+/cAp1MSec+aj        
+ 0AAw==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;        d=1e100.net; s=20210112;       
+ h=x-gm-message-state:mime-version:from:date:message-id:subject:to;       
+ bh=0flwED90bdFTUJZZ6azbPd29HLN36N1c5bdnkWbHJJI=;       
+ b=Eq7aLaNoPi6Am+TX1PAobziZSO7l9/Oo0C/5dkhcnvPOSV69UNGwCAmGe7kMGaOaoZ        
+ k/lH84FGagAMJvqt7tlxrK9r4thhUTYenur0rUOgEkETXCS5isAAXEb/pzktjqw9PKeU        
+ CYGiBqWr407WgqmEK1W7b6VF2eew7ArnRYcszqqo0OgA/cIjzExAmQEQjd0reQsev/+K        
+ ZOTioaKCZZVaq0NMZgSOdQerUkQWqi2h1I6YXihI5nFaNxAREJT+no0KYfL3RD1hXpIY        
+ FGaH5wQRcaFLustOPAl7Tsp36s4gEruil0L9RTC8yt0n/0GYDd9V85f640ou1JMoD71B        
+ lJ0g==
+X-Gm-Message-State: AOAM530o+PBd9CwhuUq85fXcjaxRElpaFFvsIP7Fu+pcgz0LOn+CjpeF	PweJnxa9bSUamsEpVmiYdqGlZkgrwe1DSC+6qfxEdXbPVsw=
+X-Google-Smtp-Source: ABdhPJzurOBydouZJUxQbnRhCDwuXKoCtvkzJ2RmWQ52gc3NlRqeXRuz7TCrHzt2OvdqPGDeZ3tdnJrJfki2ZSIKkcQ=
+X-Received: by 2002:a05:600c:1151:: with SMTP id z17mr1324113wmz.169.1644391993573; Tue,
+ 08 Feb 2022 23:33:13 -0800 (PST)
+MIME-Version: 1.0
+From: "Sudhir Bhadauria" <sbsudhirsingh489@gmail.com>
+Date: Wed, 9 Feb 2022 13:02:37 +0530
+Message-ID: <CAAn6Z=Pey0JwW4EHL9T7AKjdu_H0HUsQWrpDBm5W_S68fzmCJw@mail.gmail.com>
+Subject: ISDA for Peoples/Enron activities
+To: ygayathri95@yahoo.com
+Content-Length: 1411
+Content-Type: multipart/alternative; boundary="000000000000a603bb05d790d802"
+
+--000000000000a603bb05d790d802
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: base64
+
+SGkgU2FyYSwNCg0KSSBiZWxpZXZlIHdlIHN0aWxsIGhhdmUgYW4gaW50ZXJlc3QgaW4gdXNpbmcg
+YW4gRW5yb24gZm9ybSBhcyBhIGdvIGJ5IGZvcg0KdGhlDQpFbnJvbi9QZW9wbGVzIGFjdGl2aXRp
+ZXMuICBJZiB5b3UgY2FuIGdpdmUgbWUgd2hhdCB5b3UgYXJlIGNvbWZvcnRhYmxlDQp3aXRoLA0K
+SSB3aWxsIG1ha2Ugc3VyZSBpdCBpcyB0cmFuc21pdHRlZCB3aXRoIHRoZSBhcHByb3ByaWF0ZSBj
+YXZlYXRzLA0KY29uZmlkZW50aWFsaXR5IHJlc3RyaWN0aW9ucywgZXRjLg0KDQpUaGFua3MsDQoN
+CktheQ0K
+--000000000000a603bb05d790d802
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" wi=
+dth=3D"367" style=3D"border-collapse:collapse;width:275pt">
+ <colgroup><col width=3D"367" style=3D"width:275pt">
+ </colgroup><tbody><tr height=3D"19" style=3D"height:14=2E5pt">
+
+  <td height=3D"19" class=3D"gmail-xl65" width=3D"367" style=3D"height:14=
+=2E5pt;width:275pt;padding-top:1px;padding-right:1px;padding-left:1px;color=
+:black;font-size:11pt;font-family:Calibri,sans-serif;vertical-align:bottom;=
+border:none">Hi
+  Sara,<br>
+    <br>
+    I believe we still have an interest in using an Enron form as a go by f=
+or
+  the <br>
+    Enron/Peoples activities=2E=C2=A0 If you can
+  give me what you are comfortable with, <br>
+    I will make sure it is transmitted with the appropriate caveats, <br>
+    confidentiality restrictions, etc=2E <br>
+    <br>
+    Thanks,<br>
+    <br>
+    Kay<br>
+    </td>
+
+ </tr>
+</tbody></table></div>
+
+--000000000000a603bb05d790d802--
+

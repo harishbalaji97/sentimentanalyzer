@@ -1,0 +1,98 @@
+Delivered-To: laxmi.saoji@gmail.com
+Received: by 2002:ab0:59b2:0:0:0:0:0 with SMTP id g47csp3011491uad;
+        Fri, 11 Feb 2022 01:17:22 -0800 (PST)
+X-Received: by 2002:ab0:3045:: with SMTP id x5mr252509ual.17.1644571042511;
+        Fri, 11 Feb 2022 01:17:22 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1644571042; cv=none;
+        d=google.com; s=arc-20160816;
+        b=0A+TNeLZVfAtrLaL0ux0acdALOyI8XuZ4ccX+tq3Jc8V2SmtK8bQyD0w/3z7e0pXV5
+         Gvll4oKXZw76Xh90ucQ1t4n7+iRPtiqhiYtw27mOYAgQFI4GqYow/QoHDB3tLTJcy+VK
+         ODBzlNG7JFHmj0j2ZVh2KXcP9lCx11zHWxDORKwy8S9zSTu4W8s+b++Yd987VZVQKFOP
+         wRK1Zx5IjPSAOjixryy9fLZKB3hALr2EwXVKGjFu1UQr7QnnYoHEN59C24oXcteqjE+m
+         hVMP9vqnJBYd5BppnOIhUcDptkwWp0ah6ldLycq+BNx3XbunaH+sIQ0i8YXUa3H7zW4h
+         8BzQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:mime-version:dkim-signature;
+        bh=71Dr2JVKZMdiQUEKXNtqzKQIATJ8SaDj/FP1/fNFd5E=;
+        b=mBPrfLgnbkn7Zz/FryMAoYZ5O2KO0u4OTPZKPfqES0WuyWa90DpgWlDYBY2vaWfpTs
+         SXPdfAxjrJflS1PyD+/BWdNJBMI/1wMtTSpMVwPuKJydBwvLBwVxVi7ympLl/gFoqTPp
+         2mkA0/9SNb39NVxSuBbTTGLzWUYdEyxGlGk663FO5g5Lx5U5RPYYjVZJCC/GSQ0BSztV
+         DVcMUSeK5ohLDkvdIWKpTCgBdut5k9hFfyJuq7USXAnYcxrJAlhVPqVIRt8tnyzJ/ytW
+         DB/ZZ+45U+dxuhGShy43ViA9k600M1RbHhxlTR5Qmba6COrNsCCoo4qXb8NJ7M3ZB75I
+         or4w==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20210112 header.b=XL1lxIhc;
+       spf=pass (google.com: domain of uttamgrade@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=uttamgrade@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <uttamgrade@gmail.com>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
+        by mx.google.com with SMTPS id l38sor5476274vkd.7.2022.02.11.01.17.22
+        for <laxmi.saoji@gmail.com>
+        (Google Transport Security);
+        Fri, 11 Feb 2022 01:17:22 -0800 (PST)
+Received-SPF: pass (google.com: domain of uttamgrade@gmail.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20210112 header.b=XL1lxIhc;
+       spf=pass (google.com: domain of uttamgrade@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=uttamgrade@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=mime-version:from:date:message-id:subject:to;
+        bh=71Dr2JVKZMdiQUEKXNtqzKQIATJ8SaDj/FP1/fNFd5E=;
+        b=XL1lxIhcGpCZoclYcMDN0VCAzX4IxY1QMAWOdewwlfr1DIyQQT/FeObdwxMVS4TaxB
+         0oo3M7kIeLgfgebZS340R8h0Zi5yeiKoJqfNfZ8LhNNG4zKOB7YseiTLRTNAy8re6VmS
+         bgPBlgJ2ZGst+6Qb2pZv5I8e1hDZO2T0dGiB0Ye9EtqzzDnsmEMGjKCGw+jBZB+I6t1k
+         1JKODjFuFrxxPpZGBKpywXngkHXmtiNf7Fuh7eQxYTKBxJXKgS79gGkRSoBoMovi1yZM
+         ikaPu+90mD8yKAWWrO7HwBFO3ExMRARwM9gkdxCpDO64URXdMwaUPbkWg07J119Odo3l
+         gzdA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=x-gm-message-state:mime-version:from:date:message-id:subject:to;
+        bh=71Dr2JVKZMdiQUEKXNtqzKQIATJ8SaDj/FP1/fNFd5E=;
+        b=s/yEi5Mlis4slelSBVYenRbPHu4hpTRPPeF6UokYNknuG2l4c3UQSvqZmhl5ki5gmM
+         ouSpD42mCzZO2Mdga3yT0NZw+bTRfbfE0FgYLia0sS2soDHRHUcPGleW7X72g6uquO3x
+         Der8Wa3pGZ04zQjS+tFCztiAvoJjGXuZgl6F1++g5LFqEyE2NpTyFjBfJJ4cXaEp+Rmg
+         V2p6skiZKDvcp3WJmvnXUzqRUxfYxkE0mUR29dkDuNjNdAzwyoMPYCiyLCtc4M+ZHNh/
+         rbgUf+5nVWIZgCC0KQHMAlnsfamLyIVr6ruB5Amjmp857tC+480y5/ndCLI+dSv/0ouC
+         B08Q==
+X-Gm-Message-State: AOAM532EzEBdc7mULuephTljmYWLQ6EytnGpy+rlTgrGWWEMEgf5tMHl
+	TczL9oeJ77OG94WcjOT6apTEGyWjEhbo7AeiUpyiwQ2ipnC1hw==
+X-Google-Smtp-Source: ABdhPJzAL6oWo53wwuDgamJNeFSteHnOiM4dfd2fqxqEF5Nl8VQ2P/IcUJBsoWM5hZqdInTiyJhtMb79OqRTOMRDsFk=
+X-Received: by 2002:a1f:2dd0:: with SMTP id t199mr175656vkt.10.1644571042125;
+ Fri, 11 Feb 2022 01:17:22 -0800 (PST)
+MIME-Version: 1.0
+From: Uttam Grade <uttamgrade@gmail.com>
+Date: Fri, 11 Feb 2022 14:47:11 +0530
+Message-ID: <CAEogfTitfCR4bcG9mgQDezuKvyFiobKV8b9-VN0PhqkK+=y9-g@mail.gmail.com>
+Subject: love this product, easy and fun for kids!
+To: laxmi.saoji@gmail.com
+Content-Type: multipart/alternative; boundary="000000000000c61c8f05d7ba88c5"
+
+--000000000000c61c8f05d7ba88c5
+Content-Type: text/plain; charset="UTF-8"
+
+Kids will love this tablet, has a camera and kids can make movies with it.
+Wonderful for a child with a good imagination
+
+--000000000000c61c8f05d7ba88c5
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" wi=
+dth=3D"260" style=3D"border-collapse:collapse;width:195pt">
+ <colgroup><col width=3D"260" style=3D"width:195pt">
+ </colgroup><tbody><tr height=3D"19" style=3D"height:14.5pt">
+
+  <td height=3D"19" class=3D"gmail-xl66" width=3D"260" style=3D"height:14.5=
+pt;width:195pt;background-image:initial;background-position:initial;backgro=
+und-size:initial;background-repeat:initial;background-origin:initial;backgr=
+ound-clip:initial;padding-top:1px;padding-right:1px;padding-left:1px;color:=
+black;font-size:11pt;font-family:Calibri,sans-serif;vertical-align:bottom;b=
+order:none;white-space:nowrap">Kids
+  will love this tablet, has a camera and kids can make movies with it.
+  Wonderful for a child with a good imagination</td>
+
+ </tr>
+</tbody></table></div>
+
+--000000000000c61c8f05d7ba88c5--

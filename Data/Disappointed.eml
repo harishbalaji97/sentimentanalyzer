@@ -1,0 +1,102 @@
+Delivered-To: laxmi.saoji@gmail.com
+Received: by 2002:ab0:59b2:0:0:0:0:0 with SMTP id g47csp3003028uad;
+        Fri, 11 Feb 2022 01:03:02 -0800 (PST)
+X-Received: by 2002:a05:6102:5048:: with SMTP id by8mr225766vsb.8.1644570182263;
+        Fri, 11 Feb 2022 01:03:02 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1644570182; cv=none;
+        d=google.com; s=arc-20160816;
+        b=zcDZ0EoZRP4E5vCsxwvmM3kzTh8yiKi2y/1rIaECLQxjStDJfOUBlW6XM8LG7xO22Z
+         zIpZhYwrGY4IGuQptjpoGY5GolvXbgP6EQWbP8QuzaF3DonP4C/vyS4/MBjqWBs+Hx6F
+         XTaNLU45m9tdtmrCxAj6Kbqig0abSxm5Q+oQl3N+GVyNAJMyIMfxOhtpMkJ/srxdiQhU
+         IyU4joFTjrJiCys7w5JEask5qjyhC/G1cg+Pc/9DcKvxlH+8ZgnguyBkTKpeJOKpy6TE
+         t0KKcG9UwQeMOms0vLfQWXVOGeaUE3PnZ16oK4cEDKXiRr6iroXV6hwPetV+FgRQ6cKw
+         /tKA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:mime-version:dkim-signature;
+        bh=wLHTTd5CgvWlWRWqBdCOyjLJmNil8DLB8mvke02JFFc=;
+        b=qCUyME7Z4CEwxg/4y9VEKC9FykdE9keHcY0ezLGQxvsFAPXVzNCweB5XtbA++1ZpQA
+         8WfD0H5BD+UU4VWaBP+vPXRmDaTYTOex8XVwGgI+ub6zAQLW0192sW0Ixs7Ew+Wht0fj
+         zP67A1DibkVEdwJ3pq75lEgHMGy9JUQG2GvxrM9kdOsOEd2Cl4b2Lbwl73wHr74mCbkN
+         8thrSTtmzSA2/zjYfwETWf9on8zia+hqHt0AivTM3Zfb3BQXwILb+R9TKNBY78RbrM76
+         fDR+9VLBBlQAdhhTAcAXgDtOtGV4A6xBdlfGJg+5jPFSbhVJBFYi7E8r9hM86wFA2dCX
+         bqJw==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20210112 header.b="ZjER/tM9";
+       spf=pass (google.com: domain of uttamgrade@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=uttamgrade@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <uttamgrade@gmail.com>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
+        by mx.google.com with SMTPS id h16sor6446193vsu.73.2022.02.11.01.03.02
+        for <laxmi.saoji@gmail.com>
+        (Google Transport Security);
+        Fri, 11 Feb 2022 01:03:02 -0800 (PST)
+Received-SPF: pass (google.com: domain of uttamgrade@gmail.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20210112 header.b="ZjER/tM9";
+       spf=pass (google.com: domain of uttamgrade@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=uttamgrade@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=mime-version:from:date:message-id:subject:to;
+        bh=wLHTTd5CgvWlWRWqBdCOyjLJmNil8DLB8mvke02JFFc=;
+        b=ZjER/tM9kuV264EbLpqHtZ56kkA/1HIAcVowFsOmWUQPthsjjZspOrxzs3cgEDdXF1
+         J633pEYcOC5lvl7sQdmevKjl2TNr0g9DKiAwam/hs0t8tQ5eHJ0g1hmDAV1fKH4Eso7A
+         i5QheT2nlrYIVuCHoc+EMnM4lCjo1gp3pRRCeV+uAeKjDekp70BAmNO0HTbHmgI2T0X5
+         P8rhrO/FPAHM/TLgZhVzL6kXKiIFr1GlXPCc5vM3RGQyRyjSbAvjReSbu2V0t8N8TtYt
+         Uz593adK5+g6o4TGsNeKpKtX7lEGq0SviljuDrol1oDQ/PP4wYZKsLLIku4VlCBpzqIG
+         mNvw==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=x-gm-message-state:mime-version:from:date:message-id:subject:to;
+        bh=wLHTTd5CgvWlWRWqBdCOyjLJmNil8DLB8mvke02JFFc=;
+        b=uGV55teQXS5kiWrZvOr4T1WueqOoIT8SaWiGFkD49KbdWpWuHRVm96V3PH6o/B0BJh
+         dgH8QEu08lfGUmO5B6+gMqzvNEvcWkVVwdI6j+zySncFGbrLfQmCLg5jBcpQC2aiv3y5
+         rdJYkpa+RskpqoLz2WliGYD82rpUg5EpFfYoK7aa5B1l+6FkLGmHAZ5Kn4XKcIk4dpUo
+         g+66BCG4b1wFSIjTEqw0P/UX8l+XWBkWQxNLtq0HDHpTKPAx2jdJb04HFLLo86t5Jisc
+         EFT1mdZIK5p1AreEwr9GP2uoldYfgKj69zE4R41JtftIZRkuk6Hc5py/4z1jLOs/z5t0
+         8CFA==
+X-Gm-Message-State: AOAM533CylQoJFLtnEFgYe0I4z1O6fJmAs+pI1gv3HtS/re9kPW+Uq3v
+	x7bwbgF53RtHytjFEfD9MM1H2GIBz31GlE+vPBk/3d+sop65+Q==
+X-Google-Smtp-Source: ABdhPJyQ7tQLQvhz32/zYOorP6kafSS8nNTZaUXS9QYIEdf0xNpRTYPzvzQoWYly4Ot6lZYNxqB30DULdFReRDqJV2w=
+X-Received: by 2002:a67:6704:: with SMTP id b4mr205576vsc.29.1644570181731;
+ Fri, 11 Feb 2022 01:03:01 -0800 (PST)
+MIME-Version: 1.0
+From: Uttam Grade <uttamgrade@gmail.com>
+Date: Fri, 11 Feb 2022 14:32:51 +0530
+Message-ID: <CAEogfThnHfH7O60-cS0MC2CgrGqz50gLaMr0xOXu5AfPY6UFKg@mail.gmail.com>
+Subject: Disappointed
+To: laxmi.saoji@gmail.com
+Content-Type: multipart/alternative; boundary="0000000000007d8a2c05d7ba554e"
+
+--0000000000007d8a2c05d7ba554e
+Content-Type: text/plain; charset="UTF-8"
+
+I bought this because the package said it was a fast charger only to find
+it charges at normal speed... That was disappointing. I'm pretty sure I'm
+not doing anything wrong. It seems pretty self explanatory... :/
+
+--0000000000007d8a2c05d7ba554e
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" wi=
+dth=3D"260" style=3D"border-collapse:collapse;width:195pt">
+ <colgroup><col width=3D"260" style=3D"width:195pt">
+ </colgroup><tbody><tr height=3D"19" style=3D"height:14.5pt">
+
+  <td height=3D"19" class=3D"gmail-xl66" width=3D"260" style=3D"height:14.5=
+pt;width:195pt;background-image:initial;background-position:initial;backgro=
+und-size:initial;background-repeat:initial;background-origin:initial;backgr=
+ound-clip:initial;padding-top:1px;padding-right:1px;padding-left:1px;color:=
+black;font-size:11pt;font-family:Calibri,sans-serif;vertical-align:bottom;b=
+order:none;white-space:nowrap">I bought
+  this because the package said it was a fast charger only to find it charg=
+es
+  at normal speed... That was disappointing. I&#39;m pretty sure I&#39;m no=
+t doing
+  anything wrong. It seems pretty self explanatory... :/</td>
+
+ </tr>
+</tbody></table></div>
+
+--0000000000007d8a2c05d7ba554e--

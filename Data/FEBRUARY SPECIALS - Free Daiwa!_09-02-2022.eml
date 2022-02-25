@@ -1,0 +1,204 @@
+Received: from 10.196.243.14 by atlas217.free.mail.bf1.yahoo.com with HTTPS; Wed, 9 Feb
+ 2022 06:50:20 +0000
+Received: from 209.85.221.44 (EHLO mail-wr1-f44.google.com) by 10.196.243.14 with SMTPs
+ (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256); Wed, 09 Feb 2022 06:50:20
+ +0000
+Received: by mail-wr1-f44.google.com with SMTP id e3so2385636wra.0        for
+ <ygayathri95@yahoo.com>; Tue, 08 Feb 2022 22:50:20 -0800 (PST)
+Return-Path: <sbsudhirsingh489@gmail.com>
+X-Originating-Ip: [209.85.221.44]
+Received-SPF: pass (domain of gmail.com designates 209.85.221.44 as permitted sender)
+Authentication-Results: atlas217.free.mail.bf1.yahoo.com; dkim=pass header.i=@gmail.com
+ header.s=20210112; spf=pass smtp.mailfrom=gmail.com;
+ dmarc=pass(p=NONE,sp=QUARANTINE) header.from=gmail.com;
+X-Apparently-To: ygayathri95@yahoo.com; Wed, 9 Feb 2022 06:50:21 +0000
+X-YMailISG: TkxInScWLDsDAhkmjMB0snrFDUNpnQUkhWMJiPvf.DKE8Xcd
+ nPVd3f5MDshyl0Rv_lsrLH1pTKiASNkspeSylpif4fTQ4BV4MX6cw9y6ciFs
+ vBT4gWDYSVua.NUB4i.UVftoO5KfJRcKNOdvpzZyoe_QiN8Nl3VDm3Nj3Hq.
+ xKvHUaS2R4CA6c6hbGd8eaxjY1ZgLOxbWvdC_cMlqRYt9zkr5rYLRAlzRXNU
+ bVsnSNvH8XXD08_AZf6cU3obZ2i3fbCP7J7fi7tPN1kuhU3FQ1mSGlQGEBqO
+ HnAntpKv24xWjLLLbKvN1iVrVm5ajgL06Iy8EPbSGTYQE_zkunaghMNuxJa2
+ _y_dwmYife01IOoRxqVTIgJ.7LZHSYYMtvQMvL0Xdgzs0NkSmMqy.PWZUxts
+ RKRiU6Hv98xeMgVMbtldX01Z1t7MO4xWWUxAo6bE4U4EjCLZqin_2nwQThAr
+ 9yVXio90funHOTGIpk6hBYP5zr0pqqB8GTe2Y7zJupTf3UAgfZe7t1q3pRYl
+ QdHsZBpcwaj8.ZRv4MyTMDA.vkjkz53cQj3NcivCmxv87DETR9FIaGA.0.9b
+ WSQaNaKbii03_UZHTJE2j8HQjm9msXNiwIYyKkzQpNgY.2vBHdghB6HnTsdb
+ 2SZ4oDjgzQthl7pn4nhpOrXqvtXJ6ONRpyLPR2fsrd8XB5M6_8lPbhZ5rK2h
+ MIwGjuWkC8AZO.DDmMYbJVlX6frcx2W.p5JKhf1IYsaEBT0kQkgBohW36jSq
+ hlc6Ct3da8ZBXrnTDKQj2obu72Ir.Z_wRr7DKml.xcZEzkFrUr2DIfIxhg2q
+ 53uDHFIO3ofLBEqPuOK0_VSTZ0VByroiI8PngrsmueceI6YrqXHrv8x0dsD0
+ o9JtRc_qnMQQLnMEBgqt6uSE8GkTSifb0YlOKuafGPCNzH8r0WsXmqVCOT0v
+ SZJSX83lM7Xg4DCPzd8UlSPbClS3ffy4Ov5amA5ZSNwb4KP6dDaCCtHoKyj8
+ c2nXzNfxC3YXzskS.dfTP0AWIXyHTsCOPdtNB2isTqknxa9YFemPY11CyJsv
+ 4qFhzo.zqncF0wC4ZlrYxnMXytR6KdAXiaVtMnkdn0RoRZBqA6p7NJ3cg0Sd
+ N0T8Gudh3Pkstq4uGVvHVzDzK8pg05rU9AtVhkW_5A--
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;        d=gmail.com; s=20210112;       
+ h=mime-version:from:date:message-id:subject:to;       
+ bh=n59L3UzJAdlLwcfl0BAKH+RXrDv8TkGoJoTHGGZNH4o=;       
+ b=YCVSpXDxGUPXbJFgiEJ97BI6AC4o/sIfs5zXFl29TE2kTrwvaeBCCLGUGL6c1DHA10        
+ yyeFfoxrFt15CzVaJQyIamJwDB4o7/ZG0yZ03+E7JEftmCYVu4yM27HVdz+Nbtv5u5ax        
+ lWgXqgsoTZI/aP/xLiOsOBV1eDKus/nb5K7tBlKLfPLBey5I5FzyXNSRHoTG/ZP9pdC/        
+ 48qZmzQPOhWwnwkZoI5s8mZ8/t5g6ppJb0JZNwn8iSUxn9WlaunWdI5m4tV30/JqHpEi        
+ 6/cxnOnAW34bu+8wKpOpe30zNV341UL7zMAqyetSsqVOVoi6RZaMNOYB56OeQgVXb9YF        
+ 7lvg==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;        d=1e100.net; s=20210112;       
+ h=x-gm-message-state:mime-version:from:date:message-id:subject:to;       
+ bh=n59L3UzJAdlLwcfl0BAKH+RXrDv8TkGoJoTHGGZNH4o=;       
+ b=FOO+OT86fjkiHpXrzsYQbLUBUnrQUJfJmLuo3M8qSx6zI2RshipIMR9/tPepMFIOmf        
+ G9nvFZ8mMO37d/oH4tkpumbGht7xO7GLb2AlVv8d40leEfmknDKT/hJDf2W6mm9yTbp5        
+ 7eJLps3PVFFEwAwZ2/79l31yJtfy+yyKvC7rB2zSZ4yY4aLGrcGapFWtW++GgshvJ8yB        
+ k7PraY+ElGCF0Pzo4CbsRxGs8txRKc25u/GT07qt7gtvEHynhxnPTvuyhHAVnBnT2BR0        
+ XTUPjwnKl9a/kl3C82vTciSkEWw1HW18IVzWGolURzNMNMjglZ1qCfBmKzng1EKLwwgH        
+ 4mGg==
+X-Gm-Message-State: AOAM5328Tw4jvqiBhKdftQSVEk9BPV0/JYdXiL5QzPAXoG9Db7pb+Aah	ipAjyRCKdr/S0PUiOkvVnKZXsyZVwAUJGLCWVqcBXnVT7+A=
+X-Google-Smtp-Source: ABdhPJzf50oDd9WDOnGtuDVeX2yG/bUwzfFaIyD+S8wUWIRZIBnT3y4uuwu2IOpcmqHNc77c7JIWAYCljpvJjyG1DOQ=
+X-Received: by 2002:a05:6000:1a8c:: with SMTP id f12mr847427wry.153.1644389419859; Tue,
+ 08 Feb 2022 22:50:19 -0800 (PST)
+MIME-Version: 1.0
+From: "Sudhir Bhadauria" <sbsudhirsingh489@gmail.com>
+Date: Wed, 9 Feb 2022 12:19:44 +0530
+Message-ID: <CAAn6Z=Oyic+PTYq-LKKCZyjbXrXuFwLNCGRSPCNHfYv9zhG4qA@mail.gmail.com>
+Subject: FEBRUARY SPECIALS - Free Daiwa!
+To: ygayathri95@yahoo.com
+Content-Length: 5734
+Content-Type: multipart/alternative; boundary="0000000000003e424e05d7903f3b"
+
+--0000000000003e424e05d7903f3b
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: base64
+
+ICAgIGVBbmdsZXIuY29tICAgICAgICBGRUJSVUFSWSBTUEVDSUFMUyAtIEZyZWUgRGFpd2EhIExv
+ZyBvbiB0byAgZUFuZ2xlciAgPQ0KIGFuZCBmaW5kIGV2ZXJ5dGhpbmcgeW91IG5lZWQgZm9yIHlv
+dXIgbmV4dCBhbmdsaW5nIGFkdmVudHVyZS4gICBGUkVFIFNISVBQPQ0KSU5HIG9uIG9yZGVycyBv
+dmVyICQxMDAhIChWaWV3IGRldGFpbHMgLikgW0lNQUdFXSAgIFtJTUFHRV0gICAgRmVicnVhcnkg
+OCwgPQ0KMjAwMiAgICAgZUFuZ2xlci5jb20gICAgICAgW0lNQUdFXSAgICBIb3QgRGVhbHMgIHwg
+IFJvZHMgIHwgIFJlZWxzICB8ICBDb21iPQ0Kb3MgIHwgIEx1cmVzICB8ICBMaW5lICB8ICBFbGVj
+dHJvbmljcyAgICBbSU1BR0VdICBbSU1BR0VdICAgIERhaXdhIE1pbGxpb25hPQ0KaXJlIFogQ2Fz
+dGluZyBSZWVsLUZSRUUgQ09NQk8gT0ZGRVIhICAgRy4gTG9vbWlzIEZseSBSb2QgS2l0cyAgIERh
+aXdhIE1pbGxpPQ0Kb25haXJlIFggU2VyaWVzIEJhaXRjYXN0IFJlZWwtRlJFRSBSRUVMIE9GRkVS
+ISAgIERhaXdhIE1pbGxpb25haXJlWiBDYXN0aW5nPQ0KIFJlZWxGUkVFIENPTUJPIE9GRkVSISAg
+ZUFuZ2xlciBQcmljZTogJDE5OS45NSAgRy4gTG9vbWlzIEZseSBSb2QgS2l0cyAgTiBFPQ0KIFcg
+ISBlQW5nbGVyIFByaWNlOiAkMTY1LjAwIC0gJDE4MC4wMCAgRGFpd2EgTWlsbGlvbmFpcmVYIFNl
+cmllcyBCYWl0Y2FzdCBSPQ0KZWVsRlJFRSBSRUVMIE9GRkVSISAgZUFuZ2xlciBQcmljZTogJDE0
+OS45NSAgICBbSU1BR0VdICAgU2NyZWFtaW4nIERlYWxzISAgPQ0KIFtJTUFHRV0gICAgZUFuZ2xl
+ciBXYWxsZXllIEx1cmUgS2l0ICAgUGFjay1hLVBvbGUgRmlzaGluZyBSb2QgVHJhdmVsIENhc2Ug
+PQ0KICBZby1adXJpIEJhc3MgQXJtcyBMdXJlIEtpdCAgIGVBbmdsZXJXYWxsZXllIEx1cmUgS2l0
+ICBQcmljZTogJDE5Ljk1IFNBTEUgPQ0KUFJJQ0U6ICQxNi45OSAgUGFjay1hLVBvbGVGaXNoaW5n
+IFJvZCBUcmF2ZWwgQ2FzZSAgUHJpY2U6ICQ3OS45OSBTQUxFIFBSSUNFPQ0KOiAkNjkuOTkgIFlv
+LVp1cmlCYXNzIEFybXMgTHVyZSBLaXQgIFByaWNlOiAkMzkuOTkgU0FMRSBQUklDRTogJDI5Ljk5
+ICAgW0lNPQ0KQUdFXSAgIFlvdXIgU2VjcmV0IFNwb3QuIE9ubGluZS4gICBbSU1BR0VdICAgIERy
+LiBTbGljayBSZWVsIE5pcHBlciBDb21ibyAgPQ0KIFJhcGFsYSBQcm8gR3VpZGUgRGlnaXRhbCBT
+Y2FsZXMgICBEYWlpY2hpIEJsZWVkaW5nIEJhaXQgTXVsdGktUGFrIFdvcm0gSG9vPQ0Ka3MgICBE
+ci4gU2xpY2tSZWVsIE5pcHBlciBDb21ibyAgUHJpY2U6ICQxMS45OSBTQUxFIFBSSUNFOiAkNy45
+OSAgUmFwYWxhIFByPQ0KbyBHdWlkZSBEaWdpdGFsIFNjYWxlcyAgUHJpY2U6ICQyOS45OSBTQUxF
+IFBSSUNFOiAkMjQuOTkgIERhaWljaGkgQmxlZWRpbmcgPQ0KQmFpdE11bHRpLVBhayBXb3JtIEhv
+b2tzICBQcmljZTogJDMuODkgU0FMRSBQUklDRTogJDMuMjkgICBbSU1BR0VdICAgICBPdmVyPQ0K
+IDIwLDAwMCBJdGVtcyEgICBbSU1BR0VdICAgRGFpd2EgTWlsbGlvbmFpcmUgWCBTZXJpZXMgQmFp
+dGNhc3QgUmVlbC1GUkVFIFJFPQ0KRUwgT0ZGRVIhICAgICBlQW5nbGVyICAtIFlvdXIgU2VjcmV0
+IFNwb3QuIE9ubGluZS4gICpJdGVtcyBmZWF0dXJlZCBvbiB0aGlzPQ0KIG1haWxpbmcgYXJlIHN1
+YmplY3QgdG8gYXZhaWxhYmlsaXR5LiAgKkZyZWUgc2hpcHBpbmcgb24gb3JkZXJzIG92ZXIgJDEw
+MCAoPQ0KVVBTIG9yIFVTUFMgZ3JvdW5kIHNlcnZpY2UsIGNvbnQuIFVuaXRlZCBTdGF0ZXMgb25s
+eSwgIGV4Y2x1ZGVzIG92ZXJzaXplZCBpPQ0KdGVtcykuIENsaWNrIGhlcmUgZm9yIG1vcmUgaW5m
+b3JtYXRpb24gLiAgVG8gIGJlIHJlbW92ZWQgZnJvbSBvdXIgVGFja2xlIFNoPQ0Kb3AgU3BlY2lh
+bHMgZS1tYWlsaW5nIGxpc3Qgc2ltcGx5ICBjbGljayAgaGVyZSAuICAgPTA5DQoNCg0KPTIwDQo9
+MjANCj0yMA0KPTIwDQo9MjANCj0yMA0KPTIwDQo9MjANCg==
+--0000000000003e424e05d7903f3b
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" wi=
+dth=3D"367" style=3D"border-collapse:collapse;width:275pt">
+ <colgroup><col width=3D"367" style=3D"width:275pt">
+ </colgroup><tbody><tr height=3D"19" style=3D"height:14=2E5pt">
+
+  <td height=3D"19" class=3D"gmail-xl65" width=3D"367" style=3D"height:14=
+=2E5pt;width:275pt;padding-top:1px;padding-right:1px;padding-left:1px;color=
+:black;font-size:11pt;font-family:Calibri,sans-serif;vertical-align:bottom;=
+border:none"><br>
+    =C2=A0=C2=A0=C2=A0 eAngler=2Ecom=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=
+=A0 FEBRUARY SPECIALS - Free Daiwa! Log
+  on to=C2=A0 eAngler=C2=A0 =3D<br>
+    =C2=A0and find everything you need for
+  your next angling adventure=2E=C2=A0=C2=A0 FREE
+  SHIPP=3D<br>
+    ING on orders over $100! (View details =2E) [IMAGE]=C2=A0=C2=A0 [IMAGE]=
+=C2=A0=C2=A0=C2=A0
+  February 8, =3D<br>
+    2002=C2=A0=C2=A0=C2=A0=C2=A0 eAngler=2Ecom=C2=A0=C2=A0=C2=A0=C2=A0=C2=
+=A0=C2=A0 [IMAGE]=C2=A0=C2=A0=C2=A0 Hot Deals=C2=A0
+  |=C2=A0 Rods=C2=A0 |=C2=A0
+  Reels=C2=A0 |=C2=A0 Comb=3D<br>
+    os=C2=A0 |=C2=A0
+  Lures=C2=A0 |=C2=A0 Line=C2=A0
+  |=C2=A0 Electronics=C2=A0=C2=A0=C2=A0 [IMAGE]=C2=A0
+  [IMAGE]=C2=A0=C2=A0=C2=A0 Daiwa Milliona=3D<br>
+    ire Z Casting Reel-FREE COMBO OFFER!=C2=A0=C2=A0
+  G=2E Loomis Fly Rod Kits=C2=A0=C2=A0 Daiwa
+  Milli=3D<br>
+    onaire X Series Baitcast Reel-FREE REEL OFFER!=C2=A0=C2=A0 Daiwa Millio=
+naireZ Casting=3D<br>
+    =C2=A0ReelFREE COMBO OFFER!=C2=A0 eAngler Price: $199=2E95=C2=A0 G=2E L=
+oomis Fly Rod Kits=C2=A0 N E=3D<br>
+    =C2=A0W ! eAngler Price: $165=2E00 -
+  $180=2E00=C2=A0 Daiwa MillionaireX Series
+  Baitcast R=3D<br>
+    eelFREE REEL OFFER!=C2=A0 eAngler Price:
+  $149=2E95=C2=A0=C2=A0=C2=A0 [IMAGE]=C2=A0=C2=A0 Screamin&#39; Deals!=C2=
+=A0 =3D<br>
+    =C2=A0[IMAGE]=C2=A0=C2=A0=C2=A0 eAngler Walleye Lure Kit=C2=A0=C2=A0 Pa=
+ck-a-Pole Fishing Rod Travel Case
+  =3D<br>
+    =C2=A0 Yo-Zuri Bass Arms Lure Kit=C2=A0=C2=A0 eAnglerWalleye Lure Kit=
+=C2=A0 Price: $19=2E95 SALE =3D<br>
+    PRICE: $16=2E99=C2=A0 Pack-a-PoleFishing Rod
+  Travel Case=C2=A0 Price: $79=2E99 SALE
+  PRICE=3D<br>
+    : $69=2E99=C2=A0 Yo-ZuriBass Arms Lure
+  Kit=C2=A0 Price: $39=2E99 SALE PRICE:
+  $29=2E99=C2=A0=C2=A0 [IM=3D<br>
+    AGE]=C2=A0=C2=A0 Your Secret Spot=2E Online=2E=C2=A0=C2=A0 [IMAGE]=C2=
+=A0=C2=A0=C2=A0
+  Dr=2E Slick Reel Nipper Combo=C2=A0
+  =3D<br>
+    =C2=A0Rapala Pro Guide Digital Scales=C2=A0=C2=A0 Daiichi Bleeding Bait=
+ Multi-Pak Worm
+  Hoo=3D<br>
+    ks=C2=A0=C2=A0 Dr=2E SlickReel Nipper Combo=C2=A0 Price: $11=2E99 SALE =
+PRICE: $7=2E99=C2=A0 Rapala Pr=3D<br>
+    o Guide Digital Scales=C2=A0 Price: $29=2E99
+  SALE PRICE: $24=2E99=C2=A0 Daiichi Bleeding
+  =3D<br>
+    BaitMulti-Pak Worm Hooks=C2=A0 Price:
+  $3=2E89 SALE PRICE: $3=2E29=C2=A0=C2=A0 [IMAGE]=C2=A0=C2=A0=C2=A0=C2=A0 O=
+ver=3D<br>
+    =C2=A020,000 Items!=C2=A0=C2=A0 [IMAGE]=C2=A0=C2=A0
+  Daiwa Millionaire X Series Baitcast Reel-FREE RE=3D<br>
+    EL OFFER!=C2=A0=C2=A0=C2=A0=C2=A0 eAngler=C2=A0 - Your Secret Spot=2E O=
+nline=2E=C2=A0 *Items featured on this=3D<br>
+    =C2=A0mailing are subject to
+  availability=2E=C2=A0 *Free shipping on orders
+  over $100 (=3D<br>
+    UPS or USPS ground service, cont=2E United States only,=C2=A0 excludes =
+oversized i=3D<br>
+    tems)=2E Click here for more information =2E=C2=A0
+  To=C2=A0 be removed from our Tackle
+  Sh=3D<br>
+    op Specials e-mailing list simply=C2=A0
+  click=C2=A0 here =2E=C2=A0=C2=A0 =3D09<br>
+    <br>
+    <br>
+    =3D20<br>
+    =3D20<br>
+    =3D20<br>
+    =3D20<br>
+    =3D20<br>
+    =3D20<br>
+    =3D20<br>
+    =3D20<br>
+    </td>
+
+ </tr>
+</tbody></table></div>
+
+--0000000000003e424e05d7903f3b--
+

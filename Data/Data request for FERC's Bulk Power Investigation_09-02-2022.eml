@@ -1,0 +1,118 @@
+Received: from 10.253.62.154 by atlas302.free.mail.gq1.yahoo.com with HTTPS; Wed, 9 Feb
+ 2022 06:10:34 +0000
+Received: from 209.85.128.45 (EHLO mail-wm1-f45.google.com) by 10.253.62.154 with SMTPs
+ (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256); Wed, 09 Feb 2022 06:10:34
+ +0000
+Received: by mail-wm1-f45.google.com with SMTP id
+ l12-20020a7bc34c000000b003467c58cbdfso2529355wmj.2        for
+ <ygayathri95@yahoo.com>; Tue, 08 Feb 2022 22:10:34 -0800 (PST)
+Return-Path: <sbsudhirsingh489@gmail.com>
+X-Originating-Ip: [209.85.128.45]
+Received-SPF: pass (domain of gmail.com designates 209.85.128.45 as permitted sender)
+Authentication-Results: atlas302.free.mail.gq1.yahoo.com; dkim=pass header.i=@gmail.com
+ header.s=20210112; spf=pass smtp.mailfrom=gmail.com;
+ dmarc=pass(p=NONE,sp=QUARANTINE) header.from=gmail.com;
+X-Apparently-To: ygayathri95@yahoo.com; Wed, 9 Feb 2022 06:10:34 +0000
+X-YMailISG: .60i1dkWLDvtclPQelAgvXTLeTf4mlNr5DJ.Eg7ccd5Rfyci
+ opdq6gGGMzhzqllYPxrliTrND9Pw6_S8O7fijULZGn1Yw9NTjlSSYP1o217O
+ Qxvx8uw79DskV8LReBUTv4_Cu2JwSy8HwBFjocBnWxMZPvZRkhsYzrwbV3C4
+ y8dzDN31RaCLqxCy987hzJkB.Pu90k3gaXlW7CFa9zGnQgxTj2loY9CyQkRJ
+ vXosccRpcinj0Nzt.xCUVFeQiuSp92CReqjSqZ0Pn54C5zsTog1QmHaYoDpw
+ .qWL6qK1bIayGJCj9dXrR_DTEvzp6ku6SvyTFGDxgoIUwNwpsH4qEJoQcxC0
+ 9aJlvDB3uLZyI.8GJKQnBnzV9W7U9OczYXgBSYxt1yUblHHjw8A0Xy9qkRoD
+ wL1rp2YlmC2mdGhlArgmHmUCzhAwgfyxGjftVFeyTiBX4uL4E7SeRaDS1PXU
+ WSb9U6smaAfjBBcblONlDveJtZ_nZMKPg2TxtOE7r.LPqtN8Ore2UbUS1SvJ
+ Bz7dXUbu2nVGLNVGCa98WR3sC6ty2A7lWkcqTkzXqSe3dKgFn74nakegPfgR
+ 06QGg7TUhMk2nvPohorZfPhUxkbxTHm_eofb4PFQKnDbNVRfbSOzqajrdc_0
+ Q.CPJ1Yd2BCj98YBbuM1CopFbepRM4vLLkJI1qb9VtTexx57AhmJTocVD7Ow
+ KEXqK.G7Mz4JVjo4V4UugURQb.Pua2KAtC9g6mftA22yf199WfgM8qcWdyZp
+ k6Y473TMRIZ0MHeFKYFlzkpGfMABOKqNKA8c6yu0TjfECKG5ip8l.ZL6M2eh
+ RapuF.RikMIWyXJ.sBirqMYNWyNanzIv8NNESyDfXati2c5k.ISIQ87atduY
+ YiIrZMtnq.jrszMfietR9BedTbLk1SXBnaZBBBLmkcUEUks9nldAhyvJEO92
+ MS87HWWh.E.jh45nEVtrthIGzeWWtnjh2pLBkmomPlNnPIjTA7S.lKqQng8G
+ jx1zFpYF8v6qYVxmKPxKgmeCnZRqtRsEN6t0eUy1XlZe3B3R3Q70QUs6ZNzj
+ cSAaHVYuCu0ZaWN5XN7xh1B.KYJgGNDuRcBciIMHT9ooLW4GjWZOm8nmIctG
+ uv4f4_Vt1jlbjQJF9kJqw3IYEF2x15ElHLukXkSLGUvu0vkNoVlh
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;        d=gmail.com; s=20210112;       
+ h=mime-version:from:date:message-id:subject:to;       
+ bh=RnbdRO64Z1IeDmWdtnqhABTdv53DLQJ+lt/KQBX6zyc=;       
+ b=j63yhunmcB/CW7kP81AWng9KW3uOx7ZPB0G0WdYEkwQkOmZsWRRKcnax9hSri+nb3H        
+ nRl2zufV8JeWcfv3Jn/muOGgKcStOCdgumo+09tf7uw7ss4KtXQ1O7o5vimvYccsUOf5        
+ //2UfxYTQ6prP5BCfdFTpZNcvZpSDt8DH7jO/1OJktZKUjXu9l2XouGsmG3LjhBM54Ex        
+ vS6iUz+Xncpcvg9vhgLrMGbtFrh4iLfcWWpgJMV/j9QGEM1DWi9SXyQCLw6IsAOQ/zKV        
+ Q0KBvnogI0fy4P2SA+4XHmIEdsRAJbHfTQlbl0wYUJuFKE5HryyZg4T4MCbzLB6blWJ/        
+ hFsg==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;        d=1e100.net; s=20210112;       
+ h=x-gm-message-state:mime-version:from:date:message-id:subject:to;       
+ bh=RnbdRO64Z1IeDmWdtnqhABTdv53DLQJ+lt/KQBX6zyc=;       
+ b=v7HbwviZqMJB8Yuz9tPSiVp50zdr1bpJTp/jARAV10VC8S29J+7Poorut1scGCNcbG        
+ wlUZS0yJaKn4gzTjOYmnFZcimKY6EqT//4/fmhQeUco1BcJ3W5PlOjwbFxTwCipsPhZr        
+ eWmQ9uNicy8S52aFjBCz/gB4vhtatJfdFiOdM3B4rK25hwAIZHuKqnjPCZX0LJLzl9AE        
+ saCWrsBRh+PAdjOA16GI20si1GcsHVJd5vFoMze+6etao07NvJbckwNxqutNnZwfMP8A        
+ lNXcYbFdyHMws0brs5X1HnQE39+5fqaGStacADxLoAhQvXFfIpZIKUMZLmdAGLFcJ0EU        
+ WSVA==
+X-Gm-Message-State: AOAM532l8CRladY8dibdSjTp3IvmSQ/PscVEM4fBgqbW01FJaYSdYLGq	gGv/5CPIV8D+dAdYePY8oKx4CV2GQg9HoF7GBgvUqlTCTKM=
+X-Google-Smtp-Source: ABdhPJzAwXrfnJpNO5kTzFj6R4D3oQnhEXvrcXpRntSx1f3iH1pQIL3dLlFOUuYer78K1uIERN10NHEwEDZndvfDdwE=
+X-Received: by 2002:a05:600c:3845:: with SMTP id s5mr1146006wmr.134.1644387033654; Tue,
+ 08 Feb 2022 22:10:33 -0800 (PST)
+MIME-Version: 1.0
+From: "Sudhir Bhadauria" <sbsudhirsingh489@gmail.com>
+Date: Wed, 9 Feb 2022 11:39:57 +0530
+Message-ID: <CAAn6Z=Ou8q+-cRwr6wiK77U5dbZvN_BfubNPgx-Ra7FbdTXTHA@mail.gmail.com>
+Subject: Data request for FERC's Bulk Power Investigation
+To: ygayathri95@yahoo.com
+Content-Length: 1982
+Content-Type: multipart/alternative; boundary="00000000000003a80305d78fb1be"
+
+--00000000000003a80305d78fb1be
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: base64
+
+QXR0YWNoZWQgaXMgYSBjb3B5IG9mIHRoZSBkYXRhIHJlcXVlc3QgZm9yIEZFUkMncyBCdWxrIFBv
+d2VyDQpJbnZlc3RpZ2F0aW9uLg0KV2UgYXJlIHNlbmRpbmcgeW91IGEgY29weSBieSBlLW1haWwg
+dG8gZ2V0IHlvdSBzdGFydGVkIG9uIHRoZSByZXNwb25zZXMuDQpXZQ0Kd2lsbCBiZSBtYWlsaW5n
+IG9yIGZheGluZyBhbiBvZmZpY2lhbCBjb3B5IG9mIHRoZSBkYXRhIHJlcXVlc3QgdG8geW91IG5l
+eHQNCndlZWsuICBPbmUgb2Ygb3VyIHRlYW0gbWVtYmVycyB3aWxsIGNvbnRhY3QgeW91IHRvbW9y
+cm93IHRvIHByb3ZpZGUgYSBxdWljaw0Kb3ZlcnZpZXcgb2YgdGhlIGRhdGEgcmVxdWVzdCwgYW5z
+d2VyIGFueSBxdWVzdGlvbnMgLCBlc3RhYmxpc2ggY29udGFjdHMNCnBvaW50cywgYW5kIGRpc2N1
+c3MgdGhlIHJlc3BvbnNlIHRpbWUuICBJbiB0aGUgaW50ZXJpbSwgaWYgeW91IG5lZWQgdG8NCmNv
+bnRhY3Qgc29tZW9uZSBwbGVhc2UgY2FsbCBCcmlhbiBIYXJyaW5ndG9uIGF0IDIwMi0yMDgtMjQ5
+My4NCg0KVGhhbmtzDQoNCiAtIGdlbmVyYXRvcnMmbWFya2V0ZXJzLndwZA0K
+--00000000000003a80305d78fb1be
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" wi=
+dth=3D"367" style=3D"border-collapse:collapse;width:275pt">
+ <colgroup><col width=3D"367" style=3D"width:275pt">
+ </colgroup><tbody><tr height=3D"19" style=3D"height:14=2E5pt">
+
+  <td height=3D"19" class=3D"gmail-xl65" width=3D"367" style=3D"height:14=
+=2E5pt;width:275pt;padding-top:1px;padding-right:1px;padding-left:1px;color=
+:black;font-size:11pt;font-family:Calibri,sans-serif;vertical-align:bottom;=
+border:none">Attached
+  is a copy of the data request for FERC&#39;s Bulk Power Investigation=2E=
+=C2=A0 <br>
+    We are sending you a copy by e-mail to get you started on the
+  responses=2E=C2=A0 We <br>
+    will be mailing or faxing an official copy of the data request to you n=
+ext
+  <br>
+    week=2E=C2=A0 One of our team members will
+  contact you tomorrow to provide a quick <br>
+    overview of the data request, answer any questions , establish contacts=
+
+  <br>
+    points, and discuss the response time=2E=C2=A0
+  In the interim, if you need to <br>
+    contact someone please call Brian Harrington at 202-208-2493=2E<br>
+    <br>
+    Thanks<br>
+    <br>
+    =C2=A0- generators&amp;marketers=2Ewpd</td>
+
+ </tr>
+</tbody></table></div>
+
+--00000000000003a80305d78fb1be--
+

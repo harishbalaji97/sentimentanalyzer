@@ -1,0 +1,125 @@
+Received: from 10.253.233.87 by atlas108.free.mail.gq1.yahoo.com with HTTPS; Wed, 9 Feb
+ 2022 07:28:18 +0000
+Received: from 209.85.221.42 (EHLO mail-wr1-f42.google.com) by 10.253.233.87 with SMTPs
+ (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256); Wed, 09 Feb 2022 07:28:18
+ +0000
+Received: by mail-wr1-f42.google.com with SMTP id i15so2439692wrb.3        for
+ <ygayathri95@yahoo.com>; Tue, 08 Feb 2022 23:28:17 -0800 (PST)
+Return-Path: <sbsudhirsingh489@gmail.com>
+X-Originating-Ip: [209.85.221.42]
+Received-SPF: pass (domain of gmail.com designates 209.85.221.42 as permitted sender)
+Authentication-Results: atlas108.free.mail.gq1.yahoo.com; dkim=pass header.i=@gmail.com
+ header.s=20210112; spf=pass smtp.mailfrom=gmail.com;
+ dmarc=pass(p=NONE,sp=QUARANTINE) header.from=gmail.com;
+X-Apparently-To: ygayathri95@yahoo.com; Wed, 9 Feb 2022 07:28:18 +0000
+X-YMailISG: Z4SURJgWLDthskNdnsYu3ay7PXgBqmSaRhIMXlM2cJN82FzM
+ dZUfmosOXxC5kcJqZQ_DWF5oT2K2gyYgQrlt7DEuJMOCoK2nGtEHYJHbB2mz
+ r3Xshmr2ew1dIy3ZSZGkswrYEpPGlwVuUwRng9J1bT_jmokHuzshI75w5Bdv
+ 4Tuq7W1ZswdRFCDcu1.98psRYqvHl5beOMJnf7sNk7sPN3Bil4KvvJ12_NlM
+ MV_pUNXCoUAyettsoeN.70DMZov0PC.BETgN8Lvk7_0Q1lt650etOoWj8cqf
+ uwojcY9ztiyIuE0fMgNPJ5IHUQiAFC7xgbNqG1jfv_LvmR5iICUGDfiQoN9C
+ YkncuDwiBBw2GvFIHTMDTAMlwk9wVPm2GXQlrHgZyWXq3P2NKqPmYktCCP2y
+ CzoipnhZied8y7Vuv6Rf_k3nD_r7uGge8hSHG.uMp_v0njwLnvNhXu9KoPex
+ 1UZ_09k_o17v4m9p34RxT3841DgudbiQvLWaK4M8KeF073vZU.ObWyV9vB42
+ 4tHSrq6k0NdKLOyDxgQ2cVJdc3AUrcr.ftOTWXm4NUt3e0CMFfrpC2lhx2SR
+ 1mkaxS12XuS.xcIlxzhxLHfjNFV2lkXJfndWjo1V9Y9GPDvmI8uWN6YdyAMH
+ shCd20PZzDzOBv4IjBT432uBFdexzmxrm1h6CDWPNLkuiVFW.MYtS61MnaoB
+ shyU7wJ__Jr9tTFslkDel4JHmzFOsE5Fr6JPuLAufhxcgXnTeNRMjMPmGJW8
+ sOz2SWbDIZEStPDVS4UGNgst9NcbyuGQLTjN0fqBN7RLt_SNVU080YFlo.DC
+ A9tn4q3fiky8W_UekCz2WZm62.3HqDaiEUm.yae2tWHbUKaNgeCmMorPCYVu
+ 4P7icEjIOXzK4KEV2abcchwvpdmsmmXekshMFO316t927rl.zBgV4Zx8P4sI
+ PIeE0uEx7Sb8etGjQHKTWavh7zxF2w5FeLZGKHZw.8DFvMmAXCR.hs4GP_WN
+ 1mLYxCs0OexYKf1s.FpZRwwH31GkuqK5.3rDaNKm386gR1OIMPZp_74PDI0n
+ W8O5YrUMWHGkq.yeFmVfvMOOXvG8T53zUDbU3Cwj1c8glJGg5t_GIGW9Z_Gc
+ rhQF_DJpDiQ2CrTpGIDWzY1qabCMq.V0qvtSn.DH6GrCag--
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;        d=gmail.com; s=20210112;       
+ h=mime-version:from:date:message-id:subject:to;       
+ bh=RjIenvvdbt3jRxC+G/R2SQ6l0CdYTerJ2V5vfy2GLIk=;       
+ b=l3xHvPqgVzfQHcjumP3p+MP7TkGDCD0x1b1mdHMIcmxZD0IiD/qlOEBmmxRPATCpa1        
+ NqnEZcSazrqrzkqT/saiQUzyFdrMCHHcYfCSvL7WrPkwGuZOD/bq3GcNGZFydMRe+KAV        
+ dj5OtCS5BvgzvxcNlEPRasd4SCgD9xWPW0/soWX5Sv06TFndT7fh7xnKhA0HvoPLUmbh        
+ 2fNZ/ji1zUJE7VZQfgvltjlvJrTLyguRl3vHbD6ihdvRxvnk7jhS8XYIKRkReaA742FO        
+ gFcH/Vnq0dWn09VvZtWuM5FDZl6MAHFDnfdNCveme9PsmTeg6D4tQSopDkXDA1z5/rHj        
+ mEww==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;        d=1e100.net; s=20210112;       
+ h=x-gm-message-state:mime-version:from:date:message-id:subject:to;       
+ bh=RjIenvvdbt3jRxC+G/R2SQ6l0CdYTerJ2V5vfy2GLIk=;       
+ b=dHVdjkpi/HGbVE6yI6LoyxL5cIWxV3Zl6gnJzoRa6+9WBuxdlgpFspzOUzrfqagKtZ        
+ gDFlN9vXHwK6a9SOL+CZf8eX+veUVsFVxuT7bXLi1Bs48BjNBBNkzNgd1b7iwpcdhNP7        
+ w0esCBn4qoOFac8JFOVc+q1R9apIJZ/LOunELJvR+YaJWrxhYOgpYOnVkCCni8RgkaHD        
+ OIu06Ubw8U2rAflwxPJ1kzbcwwJUl/FVCCynHLmKW2+VkxpTHc5NJ6+otm+gWOKXblGs        
+ O73NNi0VHAR0eQEt+4glKdX/kPV4oz1X6NAZ7tsfGEov4DdH7QCT64J20r9tDg3Pj93u        
+ 8VVA==
+X-Gm-Message-State: AOAM5323KE3L3lOdj1rknd7OhrW+On5n21QINn8b3xZr6FkfnRrbti67	4Rcby+uGTSvN9iGGsQVmvUrCmxaaX3Xm9wCeBaA67X1VSX8=
+X-Google-Smtp-Source: ABdhPJyOZfcLiM7BEGrcxN+lrnAiIpNdCMoFAELCREhHM060izAh1yz2VT6N7wKtCBOICWZ7PVFJJummoxW9a2JuMRM=
+X-Received: by 2002:a5d:40ca:: with SMTP id b10mr946598wrq.6.1644391697482; Tue, 08 Feb
+ 2022 23:28:17 -0800 (PST)
+MIME-Version: 1.0
+From: "Sudhir Bhadauria" <sbsudhirsingh489@gmail.com>
+Date: Wed, 9 Feb 2022 12:57:41 +0530
+Message-ID: <CAAn6Z=P6kjU3CvvWZWGf5sYcrgYGv6aGXukCsWta0e4B5VuO0w@mail.gmail.com>
+Subject: Credit Reserve - PGET Deal #817705.1
+To: ygayathri95@yahoo.com
+Content-Length: 2114
+Content-Type: multipart/alternative; boundary="00000000000000079c05d790c7e7"
+
+--00000000000000079c05d790c7e7
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: base64
+
+UGxlYXNlIG5vdGUgdGhlIGZvbGxvd2luZyBhZGRpdGlvbiB0byB0aGUgQ3JlZGl0IFJlc2VydmUg
+Zm9yIE9jdG9iZXIgMjAwMS4NCg0KQ1A6IFBHJkUgRW5lcmd5IFRyYWRpbmcgLSBQb3dlciBMLlAu
+DQpEZWFsIE5vOiA4MTc3MDUuMQ0KRGVhbCBEYXRlOiAxMC8xMi8wMQ0KRGVhbCBTcGVjaWZpY3M6
+IEVucm9uIHRvIEJ1eSBGaW5hbmNpYWwgU3dhcCBmcm9tIFBHJkUgRW5lcmd5IFRyYWRpbmcgLQ0K
+UG93ZXIgTC5QLg0KVGVybTogMDEvMDEvMjAwNCAtIDEyLzMxLzIwMDYNClZvbHVtZTogIDUwIE13
+IE9uLVBlYWsNClByaWNlOiAgJDQ5DQpSZWdpb246ICBOWSBab25lIEcgKEVhc3QpDQpUcmFkZXIv
+TWlkLU1hcmtldGVyOiAgRmxldGNoIFN0dXJtDQpDcmVkaXQgUmVzZXJ2ZSBBbW91bnQ6ICAkNjAs
+MDAwIFVTRA0KDQpSQUM6IHRyYW5zYWN0aW9uIGNvbmZpcm1lZCB1bmRlciBJU0RBIE1hc3RlciBB
+Z3JlZW1lbnQgZXhlY3V0ZWQgNi8yNy8wMQ0KYmV0d2VlbiBFTkEgYW5kIFBHJkUgRW5lcmd5IFRy
+YWRpbmcsIFBvd2VyIEwuUC4NCg0KUGxlYXNlIGNhbGwgd2l0aCBxdWVzdGlvbnMgb3IgY29tbWVu
+dC4NCg0KVGhhbmsgeW91DQpXZW5keSBDb253ZWxsDQo=
+--00000000000000079c05d790c7e7
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" wi=
+dth=3D"367" style=3D"border-collapse:collapse;width:275pt">
+ <colgroup><col width=3D"367" style=3D"width:275pt">
+ </colgroup><tbody><tr height=3D"19" style=3D"height:14=2E5pt">
+
+  <td height=3D"19" class=3D"gmail-xl65" width=3D"367" style=3D"height:14=
+=2E5pt;width:275pt;padding-top:1px;padding-right:1px;padding-left:1px;color=
+:black;font-size:11pt;font-family:Calibri,sans-serif;vertical-align:bottom;=
+border:none">Please
+  note the following addition to the Credit Reserve for October 2001=2E<br>=
+
+    <br>
+    CP: PG&amp;E Energy Trading - Power L=2EP=2E<br>
+    Deal No: 817705=2E1<br>
+    Deal Date: 10/12/01<br>
+    Deal Specifics: Enron to Buy Financial Swap from PG&amp;E Energy Tradin=
+g -
+  Power L=2EP=2E <br>
+    Term: 01/01/2004 - 12/31/2006 <br>
+    Volume:=C2=A0 50 Mw On-Peak<br>
+    Price:=C2=A0 $49<br>
+    Region:=C2=A0 NY Zone G (East)<br>
+    Trader/Mid-Marketer:=C2=A0 Fletch
+  Sturm<br>
+    Credit Reserve Amount:=C2=A0 $60,000
+  USD<br>
+    <br>
+    RAC: transaction confirmed under ISDA Master Agreement executed 6/27/01=
+ between
+  ENA and PG&amp;E Energy Trading, Power L=2EP=2E<br>
+    <br>
+    Please call with questions or comment=2E<br>
+    <br>
+    Thank you<br>
+    Wendy Conwell</td>
+
+ </tr>
+</tbody></table></div>
+
+--00000000000000079c05d790c7e7--
+
