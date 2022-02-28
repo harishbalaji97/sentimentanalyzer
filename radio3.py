@@ -373,6 +373,10 @@ element.style {
 {
  border:ridge;
  }
+.st-e9
+{
+ border:ridge;
+ }
 .st-c0
 {
  border:none;
