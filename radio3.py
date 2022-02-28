@@ -308,7 +308,7 @@ st.markdown("""
 	<!-- Navbar text is dark and background is light -->
 	<nav class="navbar fixed-top navbar-expand-lg navbar-custom">
 		<a class="navbar-brand" href="#">
-        <img src="https://rb.gy/wvpr3i" alt="" style="width:100px;height:55px;margin-top:-15px;">
+        <img src="https://logos-world.net/wp-content/uploads/2020/07/Accenture-Symbol.png" alt="" style="width:100px;height:55px;margin-top:-15px;">
          | Solutions.Ai
 	</a>
         <div class="mx-auto">
