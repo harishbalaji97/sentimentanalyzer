@@ -193,7 +193,18 @@ p, ol, ul, dl {
 
     
 } 
-
+.css-10y5sf6 {
+    font-family: "Source Code Pro", monospace;
+    font-size: 14px;
+    padding-bottom: 9.33333px;
+    color: #f8f9fa;
+    top: -22px;
+    position: absolute;
+    white-space: nowrap;
+    background-color: transparent;
+    line-height: 1.6;
+    font-weight: normal;
+}
 </style>
 """,unsafe_allow_html=True            )
 st.markdown("""
