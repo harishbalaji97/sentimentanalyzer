@@ -79,8 +79,12 @@ st.markdown("""
     flex: 1 1 0%;
     margin-left: calc(0rem);
     text-decoration: underline;
+    background:rgb(240, 242, 246);
     
 }
+
+
+
 .css-1q80ws6 {
     width: 274px;
     position: relative;
@@ -205,6 +209,16 @@ p, ol, ul, dl {
     line-height: 1.6;
     font-weight: normal;
 }
+
+.css-l3zrbl {
+    width: 119px;
+    position: relative;
+    display: flex;
+    flex: 1 1 0%;
+    flex-direction: column;
+    gap: 1rem;
+}
+
 </style>
 """,unsafe_allow_html=True            )
 st.markdown("""
@@ -393,6 +407,111 @@ element.style {
     <!--border:none;-->
 }
 
+.css-l3zrbl {
+    width: 119px;
+    position: relative;
+    display: flex;
+    flex: 1 1 0%;
+    flex-direction: column;
+    gap: 1rem;
+    border: ridge;
+}
+
+
+.css-dbtxvr {
+    width: 152px;
+    position: relative;
+    display: flex;
+    flex: 1 1 0%;
+    flex-direction: column;
+    gap: 1rem;
+    border: ridge;
+}
+@media (min-width: 576px)
+<style>
+.css-12oz5g7 {
+    padding-left: 0rem;
+    padding-right: 0rem;
+}
+.css-ocqkz7 {
+    display: flex;
+    flex-wrap: wrap;
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    -webkit-box-align: stretch;
+    align-items: stretch;
+    gap: 0.5rem;
+    <!-- border: solid; -->
+}
+.stSelectbox
+{
+    border:ridge;
+    padding: 0.7rem;
+    background: rgb(240, 242, 246);
+    }
+
+
+
+div.css-1v0mbdj.etr89bj1
+{
+ border:none;
+ }
+
+img {
+  vertical-align: middle;
+  border-style: none; // Remove the border on images inside links in IE 10-.
+}
+
+div['data-testid']{
+    border:none !important;
+    `}
+
+.css-qrbaxs {
+    font-size: 14px;
+    color: rgb(49, 51, 63);
+    margin-bottom: 7px;
+    height: auto;
+    min-height: 1.5rem;
+    vertical-align: middle;
+    display: flex;
+    flex-direction: row;
+    -webkit-box-align: center;
+    align-items: center;
+    font-weight: 700;
+    background: rgb(240, 242, 246);
+}
+
+
+.stSlider {
+    width: 73px;
+    border: ridge;
+    padding: 0.5rem;
+    background: rgb(240, 242, 246);
+}
+
+.css-1kyxreq etr89bj0
+{
+ border :none ;
+ }
+
+
+element-container.css-c6xa83 e1tzin5v1{
+    border:none;
+    
+    }
+.css-wlyek {
+    width: calc(60.241% - 1rem);
+    flex: 1 1 calc(60.241% - 1rem);
+    border: ridge;
+    padding:0.4rem;
+    
+}
+
+
+[data-testid ="stImage"]
+{
+    border:none !important ;
+    }
             </style>
 """,unsafe_allow_html=True)
 hide_table_row_index = """

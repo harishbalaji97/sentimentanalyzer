@@ -16,6 +16,8 @@ from PIL import Image
 
 
 def app():
+    
+
     output_df=pd.read_csv('fgk.csv') 
     output_df['date_mod']=pd.to_datetime(output_df['date_mod'])
     topic_df=output_df
@@ -34,7 +36,7 @@ def app():
     
     
     
-    col1,col2,col3,col4,col5,col6=st.columns([1,0.2,1,1,1,1])
+    col1,col3,col4,col5,col6=st.columns([1,1,1,1,1])
     for j in output_df['Receiver_Email_Type'].unique():
         st.session_state.email.append(j)
     
@@ -97,7 +99,7 @@ def app():
     word_freq['freq']=counter.values()
     word_freq.reset_index(inplace=True,drop=True)
     word_freq1=word_freq.sort_values('freq',ascending=False)
-    c1,c2=st.columns(2)
+    c1,c2=st.columns([3,5])
     with c1:
         st.subheader("Sentiments : Overview")
     with c2:
@@ -106,7 +108,7 @@ def app():
 
 
     
-    col1,col2,col3,col4=st.columns([1,1,1,5])
+    col1,col2,col3,col5,col4=st.columns([1,1,1,0.3,5])
     temp1=output_df.groupby(['Label'])['From'].count().reset_index()
     temp1=temp1.sort_values('From')
     t=temp1['From']
@@ -172,7 +174,7 @@ def app():
         temp3["sum"] = temp3.sum(axis=1)
         temp3=temp3.sort_values('sum',ascending=True)
         #temp3=temp3.sort_values('Positive',ascending=False)
-        fig,ax=plt.subplots(figsize=(10,7))
+        fig,ax=plt.subplots(figsize=(7,3))
         #fig,ax=plt.subplots(figsize=(10,5))
         #for axis in [ax.yaxis]:
          #   axis.set_major_locator(ticker.MaxNLocator(integer=True))
@@ -213,18 +215,18 @@ def app():
         ax.spines['bottom'].set_visible(False)
         ax.get_xaxis().set_ticks([])
         #ax.set_ylabel("No. of mails")
-        plt.yticks(fontsize=25)
-        ax.legend([ "Positive", "Neutral", "Negative"],fontsize=20)
+        plt.yticks(fontsize=12)
+        ax.legend([ "Positive", "Neutral", "Negative"],fontsize=8)
         st.pyplot(fig)
         
-    c1,c2=st.columns(2)
+    c1,c2=st.columns([3,5])
     with c1:
         st.subheader("Emotions : Overview")
     with c2:
         st.subheader("Emotions of Key Topics")
          
          
-    col1,col2,col3,col4=st.columns([1,2,1,5])
+    col1,col2,col3,col5,col4=st.columns([1,1,1,0.3,5])
     
     temp1=output_df.groupby(['emotions1'])['From'].count().reset_index()
     temp1=temp1.sort_values('From',ascending=False)
@@ -240,15 +242,46 @@ def app():
         #st.table(temp1)
         unq=temp1['emotions1'].unique()
         
-        st.write("Happy")
+        st.write("Trust")
+        st.write("Negative")
+        st.write("Anticipation")
+        st.write("Joy")
+        st.write("Positive")
+        st.write("Sadness")
+        st.write("Anger")
         st.write("Fear")
+        st.write("Disgust")
         st.write("Surprise")
-        st.write("Sad")
-        st.write("Angry")
+        
         
     with col2:
         try:
-            st.write(temp1[temp1['emotions1']=='Happy']['perc%'].values[0])
+            st.write(temp1[temp1['emotions1']=='Trust']['perc%'].values[0])
+        except:
+            st.write("0 %")
+        try:
+            st.write(temp1[temp1['emotions1']=='Negative']['perc%'].values[0])
+        except:
+            st.write("0 %")
+        try:
+            st.write(temp1[temp1['emotions1']=='Anticipation']['perc%'].values[0])
+        except:
+            st.write("0 %")
+        try:
+            st.write(temp1[temp1['emotions1']=='Joy']['perc%'].values[0])
+        except:
+            st.write("0 %")
+        try:
+            st.write(temp1[temp1['emotions1']=='Positive']['perc%'].values[0])
+        except:
+            st.write("0 %")
+            
+        try:
+            st.write(temp1[temp1['emotions1']=='Sadness']['perc%'].values[0])
+        except:
+            st.write("0 %")
+        try:
+            st.write(temp1[temp1['emotions1']=='Anger']['perc%'].values[0])
         except:
             st.write("0 %")
         try:
@@ -256,41 +289,59 @@ def app():
         except:
             st.write("0 %")
         try:
+            st.write(temp1[temp1['emotions1']=='Disgust']['perc%'].values[0])
+        except:
+            st.write("0 %")
+        try:
             st.write(temp1[temp1['emotions1']=='Surprise']['perc%'].values[0])
         except:
             st.write("0 %")
-        try:
-            st.write(temp1[temp1['emotions1']=='Sad']['perc%'].values[0])
-        except:
-            st.write("0 %")
-        try:
-            st.write(temp1[temp1['emotions1']=='Angry']['perc%'].values[0])
-        except:
-            st.write("0 %")
         
         
+    siz=(25,25)
     with col3:
         #st.text("")
-        img = Image.open("happy.png")
-        newsize = (27, 27)
-        img = img.resize(newsize)
-        st.image(img)
-        img = Image.open("scared.png")
-        newsize = (27, 27)
-        img = img.resize(newsize)
-        st.image(img)
-        img = Image.open("surprised.png")
-        newsize = (27, 27)
-        img = img.resize(newsize)
+        img = Image.open("trust.png")
+        newsize = (25, 25)
+        img = img.resize(siz)
         st.image(img)
         img = Image.open("sad.png")
         newsize = (27, 27)
-        img = img.resize(newsize)
+        img = img.resize(siz)
+        st.image(img)
+        img = Image.open("aniticipation.png")
+        newsize = (27, 27)
+        img = img.resize(siz)
+        st.image(img)
+        img = Image.open("happy.png")
+        newsize = (27, 27)
+        img = img.resize(siz)
+        st.image(img)
+        img = Image.open("happy.png")
+        newsize = (27, 27)
+        img = img.resize(siz)
+        st.image(img)
+        img = Image.open("sad.png")
+        newsize = (27, 27)
+        img = img.resize(siz)
         st.image(img)
         img = Image.open("angry.png")
         newsize = (27, 27)
-        img = img.resize(newsize)
+        img = img.resize(siz)
         st.image(img)
+        img = Image.open("fear.png")
+        newsize = (27, 27)
+        img = img.resize(siz)
+        st.image(img)
+        img = Image.open("disgust.jpg")
+        newsize = (27, 27)
+        img = img.resize(siz)
+        st.image(img)
+        img = Image.open("surprised.png")
+        newsize = (27, 27)
+        img = img.resize(siz)
+        st.image(img)
+        
      
     with col4:
     
@@ -301,7 +352,7 @@ def app():
         temp3["sum"] = temp3.sum(axis=1)
         temp3=temp3.sort_values('sum',ascending=True)
         #st.subheader("Emotions of Key Topics")
-        fig,ax=plt.subplots(figsize=(10,8))
+        fig,ax=plt.subplots(figsize=(7,3))
         #for axis in [ax.yaxis]:
          #   axis.set_major_locator(ticker.MaxNLocator(integer=True))
              # importing package
@@ -310,36 +361,68 @@ def app():
         temp3.fillna(0,inplace=True)
         x=list(temp3.index)
         try:
-            f = temp3['Happy']
+            f = temp3['Trust']
         except:
             f=[0]* len(temp3)
         try:
-            ph =temp3['Sad']
+            ph =temp3['Negative']
         except:
             ph=[0]*len(temp3)
             
         try:    
-            p = temp3['Fear']
+            p = temp3['Anticipation']
         except:
             p=[0]* len(temp3)
             
         try:
-            rem = temp3['Surprise']
+            rem = temp3['Joy']
         except:
             rem=[0]*len(temp3)
             
         try:
-            rem1 = temp3['Angry']
+            rem1 = temp3['Positive']
         except:
             rem1=[0]*len(temp3)
+            
+            
+        try:
+            rem2 = temp3['Sadness']
+        except:
+            rem2=[0]*len(temp3)
+            
+        try:
+            rem3 = temp3['Anger']
+        except:
+            rem3=[0]*len(temp3)
+            
+        try:
+            rem4 = temp3['Fear']
+        except:
+            rem4=[0]*len(temp3)
+            
+        try:
+            rem5 = temp3['Disgust']
+        except:
+            rem5=[0]*len(temp3)
+            
+        try:
+            rem6 = temp3['Surprise']
+        except:
+            rem6=[0]*len(temp3)
            # rem=temp3['Suprise']
              # plot bars in stack manner
             #ax.bar(x, e, color='r')
         ax.barh(x, f, color='g')
         ax.barh(x, p, left=f, color='r')
-        ax.barh(x, ph, left=f+p, color='y')
-        ax.barh(x, rem, left=f+ph+p, color='brown')
-        ax.barh(x, rem1, left=f+ph+p+rem, color='magenta')
+        ax.barh(x, ph, left=f+p, color='orange')
+        ax.barh(x, rem, left=f+ph+p, color='y')
+        ax.barh(x, rem1, left=f+ph+p+rem, color='g')
+        ax.barh(x, rem2, left=f+ph+p+rem+rem1, color='grey')
+        ax.barh(x, rem3, left=f+ph+p+rem+rem1+rem2, color='r')
+        ax.barh(x, rem4, left=f+ph+p+rem+rem1+rem2+rem3, color='purple')
+        ax.barh(x, rem5, left=f+ph+p+rem+rem1+rem2+rem4, color='lime')
+        ax.barh(x, rem6, left=f+ph+p+rem+rem1+rem2+rem5, color='lightgreen')
+        #ax.barh(x, rem1, left=f+ph+p+rem, color='magenta')
         #ax.set_xticklabels(ax.get_xticklabels(), rotation=40, ha="right")
             #ax.set_xlabel("Emotions")
         #plt.xticks(rotation=30)
@@ -349,42 +432,42 @@ def app():
         ax.spines['bottom'].set_visible(False)
         ax.get_xaxis().set_ticks([])
         #ax.set_ylabel("No. of mails")
-        ax.legend([ "Happy", "Sad", "Fear","Surprise","Angry"],fontsize=20)
+        ax.legend(['Trust', 'Negative', 'Anger', 'Anticipation', 'Joy', 'Sadness','Fear', 'Disgust', 'Positive', 'Surprise'],fontsize=8)
         #plt.legend(['Legend'], )
-        plt.yticks(fontsize=25)
+        plt.yticks(fontsize=12)
         st.pyplot(fig)
       
     
     
-    temp2=output_df.groupby(['date_mod','Label'])['From'].count().reset_index()
-    temp3=pd.pivot_table(temp2, values='From', index=['date_mod'],columns=['Label'], aggfunc=np.sum)
-    x=temp3.index
-    try:
-        pos=temp3['Positive']
-    except:
-        pos=[0]*len(temp3)
-    try:
-        neg=temp3['Negative']
-    except:
-        neg=[0]*len(temp3)
-    try:
-        neu=temp3['Neutral']
-    except:
-        neu=[0]*len(temp3)
-    st.subheader(" Daily Trend of Sentiments")
-    fig, ax = plt.subplots(figsize=(10,2))
-    ax.plot(x,pos, label="Positive")
-    ax.plot(x,neg, label="Negative")
-    ax.plot(x,neu, label="Neutral")
-    ax.set_ylabel("No of Mails")
-    ax.legend()
-    ax.spines['top'].set_visible(False)
-    ax.spines['right'].set_visible(False)
-    ax.spines['left'].set_visible(False)
-    ax.spines['bottom'].set_visible(False)
-    ax.legend(['Positive','Negative','Neutral'],loc='upper right',fontsize=8)
-    plt.xticks(rotation=30)
-    st.pyplot(fig) 
+        temp2=output_df.groupby(['date_mod','Label'])['From'].count().reset_index()
+        temp3=pd.pivot_table(temp2, values='From', index=['date_mod'],columns=['Label'], aggfunc=np.sum)
+        x=temp3.index
+        try:
+            pos=temp3['Positive']
+        except:
+            pos=[0]*len(temp3)
+        try:
+            neg=temp3['Negative']
+        except:
+            neg=[0]*len(temp3)
+        try:
+            neu=temp3['Neutral']
+        except:
+            neu=[0]*len(temp3)
+        st.subheader(" Daily Trend of Sentiments")
+        fig, ax = plt.subplots(figsize=(7,2))
+        ax.plot(x,pos, label="Positive")
+        ax.plot(x,neg, label="Negative")
+        ax.plot(x,neu, label="Neutral")
+        ax.set_ylabel("No of Mails")
+        ax.legend()
+        ax.spines['top'].set_visible(False)
+        ax.spines['right'].set_visible(False)
+        ax.spines['left'].set_visible(False)
+        ax.spines['bottom'].set_visible(False)
+        ax.legend(['Positive','Negative','Neutral'],loc='upper right',fontsize=8)
+        plt.xticks(rotation=30)
+        st.pyplot(fig) 
     
     
     

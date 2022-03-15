@@ -8,11 +8,11 @@ Created on Sun Feb 13 18:16:51 2022
 import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
-
+import matplotlib as mpl
 import numpy as np
 from wordcloud import WordCloud
 import matplotlib.ticker as ticker
-
+from pylab import *
 #st.set_page_config(layout="wide")
 #from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
 #analyzer = SentimentIntensityAnalyzer()
@@ -24,7 +24,7 @@ import matplotlib.ticker as ticker
 #predictions_vader = df['text'].map(lambda x : text_sentiment_vader(x))
 #df['Label'] = predictions_vader
 
-
+mpl.rcParams['figure.frameon']=True
 def try1(df,stre):
     try:
         count=df[df['Sender Email Type']==stre]['count'][0]
@@ -33,6 +33,7 @@ def try1(df,stre):
     return count
 
 def app():
+    
     #output_df=pd.read_csv('fgk.csv')    
     #output_df.to_csv("fgk.csv")
     output_df=pd.read_csv("fgk.csv")
@@ -52,7 +53,7 @@ def app():
     
     
     
-    col1,col2,col3,col4,col5,col6=st.columns([1,0.2,1,1,1,1])
+    col1,col3,col4,col5,col6=st.columns([1,1,1,1,1])
     for j in output_df['Receiver_Email_Type'].unique():
         st.session_state.email.append(j)
     
@@ -113,18 +114,18 @@ def app():
     #height = st.sidebar.slider("plot height", 1, 25, 1)
    
     df2=output_df.groupby(['date_mod'])['From'].count().reset_index()   
-    col1,col2,col3,col4=st.columns([1,1,1,1])
+    col1,col2,col3,col4=st.columns(4)
     with col1:
-        st.subheader("Overall Summary ")
-        #st.write("Mails")
-        fig, ax = plt.subplots(2, 2,figsize=(2, 2))
+        st.subheader("Summary ")
+        st.write(" ")
+        fig, ax = plt.subplots(2, 2,figsize=(3,3))
         pstr=str(output_df.shape[0])
-        ax[0,0].text( -0.4,-0.2,pstr, fontsize = 12)
+        ax[0,0].text( -0.5,-0.2,pstr, fontsize = 18)
         ax[0,0].pie([output_df.shape[0],2], 
                wedgeprops={'width':0.3}, 
                startangle=90, 
                colors=['#5DADE2', '#515A5A'])
-        ax[0,0].set_title("Mails")
+        ax[0,0].set_title("Mails",fontdict={'fontsize':18})
         #fig.savefig('plot2.png')
         #img = Image.open("plot2.png")
         #newsize = (90, 90)
@@ -132,13 +133,13 @@ def app():
         #st.image(img)
         #st.write("Users")
        # fig, ax = plt.subplots(figsize=(1, 1))
-        pstr=str(output_df['From'].nunique())
-        ax[0,1].text( -0.2,-0.2,pstr, fontsize = 12)
+        pstr=str(output_df['To'].nunique())
+        ax[0,1].text( -0.2,-0.2,pstr, fontsize = 18)
         ax[0,1].pie([output_df['From'].nunique(),2], 
                wedgeprops={'width':0.3}, 
                startangle=90, 
                colors=['#5DADE2', '#515A5A'])
-        ax[0,1].set_title("Users")
+        ax[0,1].set_title("Users",fontdict={'fontsize':18})
         #fig.savefig('plot1.png')
         #img = Image.open("plot1.png")
         #newsize = (90, 90)
@@ -147,12 +148,12 @@ def app():
         #st.write("Country")
         #fig, ax = plt.subplots(figsize=(1, 1))
         pstr=str(output_df['Location'].nunique())
-        ax[1,0].text( -0.2,-0.2,pstr, fontsize = 12)
+        ax[1,0].text( -0.2,-0.2,pstr, fontsize = 18)
         ax[1,0].pie([output_df['Location'].nunique(),2], 
                wedgeprops={'width':0.3}, 
                startangle=90, 
                colors=['#5DADE2', '#515A5A'])
-        ax[1,0].set_title("Country",y=0.9)
+        ax[1,0].set_title("Country",y=0.9,fontdict={'fontsize':18})
         #fig.savefig('plot3.png')
         #img = Image.open("plot3.png")
         #newsize = (90, 90)
@@ -161,12 +162,12 @@ def app():
         #st.write("Depts")
         #fig, ax = plt.subplots(figsize=(1, 1))
         pstr=str(output_df['Departments'].nunique())
-        ax[1,1].text( -0.2,-0.2,pstr, fontsize = 12)
+        ax[1,1].text( -0.2,-0.2,pstr, fontsize = 18)
         ax[1,1].pie([output_df['Departments'].nunique(),2], 
                wedgeprops={'width':0.3}, 
                startangle=90, 
                colors=['#5DADE2', '#515A5A'])
-        ax[1,1].set_title("Depts",y=0.9)
+        ax[1,1].set_title("Depts",y=0.9,fontdict={'fontsize':18})
         #fig.savefig('plot4.png')
         #img = Image.open("plot4.png")
         #newsize = (90, 90)
@@ -182,6 +183,10 @@ def app():
               # wedgeprops={'width':0.3}, 
                #startangle=90, 
               # colors=['#5DADE2', '#515A5A'])
+        #fig.patch.set_linewidth(2)
+        #fig.patch.set_edgecolor("black")     
+        fig.set_size_inches(5,3)
+        fig.tight_layout()
         st.pyplot(fig)
         
          
@@ -193,9 +198,9 @@ def app():
 
 
     with col2:
-        st.subheader("Overall Sentiments")
+        st.subheader("Sentiments")
         st.write(" ")
-        fig,ax=plt.subplots(figsize=(2,2))
+        fig1,ax=plt.subplots()
             #explode = (0, 0.1)
         temp1=output_df.groupby(['Label'])['From'].count().reset_index()
         temp1=temp1.sort_values('Label')
@@ -204,25 +209,34 @@ def app():
             #plt.pie(result['spam_probability'],labels=classes)
         ax.pie(t, labels=classes,wedgeprops={'linewidth':1.0 ,'edgecolor':'white'},autopct='%1.1f%%',colors=['r','y','g'])
         ax.axis('equal')
-        st.pyplot(fig)
+        #fig1.patch.set_linewidth(3)
+        #fig1.patch.set_edgecolor("black")
+        #plt.figure(frameon=False)
+        fig1.set_size_inches(4,4)
+        st.pyplot(fig1)
     with col3:
-        st.subheader("Overall Emotions")
+        st.subheader("Emotions")
         st.write(" ")
-        fig,ax=plt.subplots(figsize=(8,8))
+        fig2,ax=plt.subplots()
             #explode = (0, 0.1)
         temp1=output_df.groupby(['emotions1'])['From'].count().reset_index()
         temp1=temp1.sort_values('emotions1')
         t=temp1['From']
         classes=temp1['emotions1']
+        t=sorted(t)
             #plt.pie(result['spam_probability'],labels=classes)
-        ax.pie(t, labels=classes,wedgeprops={'linewidth':1.0 ,'edgecolor':'white'},autopct='%1.1f%%',colors=['r','brown','g','y','magenta'],textprops={'fontsize': 25})
+        ax.pie(t, labels=classes,wedgeprops={'linewidth':1.0 ,'edgecolor':'white'},autopct='%1.1f%%',colors=['lightgreen','lime','purple','r','grey','g','y','orange','r','g'],textprops={'fontsize': 25})
         ax.axis('equal')
-        st.pyplot(fig)
+        #fig2.patch.set_linewidth(5)
+        #fig2.patch.set_edgecolor("black")
+        fig2.set_size_inches(15,16)
+        #fig1.tight_layout()
+        st.pyplot(fig2)
         
     with col4:
         st.subheader("Daily trend of emails")
-        fig,ax = plt.subplots(figsize=(6,6)) # try different values
-        
+        fig3,ax = plt.subplots() # try different values
+        st.write(" ")
         for axis in [ax.yaxis]:
             axis.set_major_locator(ticker.MaxNLocator(integer=True))
             #figsize=(15,5)
@@ -236,7 +250,14 @@ def app():
         ax.spines['right'].set_visible(False)
         ax.spines['left'].set_visible(False)
         ax.spines['bottom'].set_visible(False)   
-        st.pyplot(fig)
+        autoAxis = ax.axis()
+        #fig3.patch.set_linewidth(5)
+        #fig3.patch.set_edgecolor("black")
+        fig3.set_size_inches(5,4.25)
+        #rec = plt.Rectangle((autoAxis[0]-25,autoAxis[2]-0.2),(autoAxis[1]-autoAxis[0])+30,(autoAxis[3]-autoAxis[2])+0.4,fill=False,lw=2)
+        #rec = ax.add_patch(rec)
+        #rec.set_clip_on(False)
+        st.pyplot(fig3)
     
     
     col1,col2=st.columns(2)
@@ -252,6 +273,12 @@ def app():
             #plt.figure(figsize=(10,8))
         ax.imshow(wordcloud)
         ax.axis("off")
+        autoAxis = ax.axis()
+        #rec = plt.Rectangle((autoAxis[0]-25,autoAxis[2]-0.2),(autoAxis[1]-autoAxis[0])+30,(autoAxis[3]-autoAxis[2])+0.4,fill=False,lw=2)
+        #rec = ax.add_patch(rec)
+        #rec.set_clip_on(False)
+        #fig.patch.set_linewidth(5)
+        #fig.patch.set_edgecolor("black")
         #ax.
             #plt.title("WordCloud - Vocabulary from Reviews", fontsize = 22)
         st.pyplot(fig)
@@ -264,15 +291,27 @@ def app():
         #temp1=output_df.groupby(['Tags'])['From'].count().reset_index()
         #temp1=temp1.sort_values(['emotions1'],ascending=False)
         fig,ax=plt.subplots(figsize=(10,10))
+        #fig=plt.figure(linewidth=10, edgecolor="#04253a")
         hbars = ax.barh(df['Sender Email Type'],df['count'], align='center')
         ax.set_yticks(df['Sender Email Type'])
-        ax.bar_label(hbars,label_type='edge',fontsize=18)
+        ax.bar_label(hbars,label_type='edge',fontsize=12)
         ax.spines['top'].set_visible(False)
         ax.spines['right'].set_visible(False)
         ax.spines['bottom'].set_visible(False)
         ax.spines['left'].set_visible(False)
         ax.get_xaxis().set_ticks([])
-        plt.yticks(fontsize=25)
+        plt.yticks(fontsize=12)
+        autoAxis = ax.axis()
+        #rec = plt.Rectangle((autoAxis[0]-25,autoAxis[2]-0.2),(autoAxis[1]-autoAxis[0])+30,(autoAxis[3]-autoAxis[2])+0.4,fill=False,lw=2)
+        #rec = ax.add_patch(rec)
+        #rec.set_clip_on(False)
+        #fig.patch.set_linewidth(5)
+        #fig.patch.set_edgecolor("black")
+        #rect = plt.Rectangle((0.02, 0.5), 1.97, 0.49, fill=False, color="k", lw=2, zorder=1000, transform=fig.transFigure, figure=fig)
+        #fig.patches.extend([rect])
+        #ax.patch.set_edgecolor('black')
+        fig.set_size_inches(5.5,3.75)
+        #ax.patch.set_linewidth('1') 
         st.pyplot(fig)
         #fig,ax=plt.subplots()
             #explode = (0, 0.1)
