@@ -1,1 +1,1 @@
-web: sh setup.sh && streamlit run radio3.py
+web: sh setup.sh && streamlit run radio4.py
