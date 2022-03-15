@@ -11,3 +11,4 @@ sklearn
 openpyxl
 lightgbm
 NRCLex
+nrclex
