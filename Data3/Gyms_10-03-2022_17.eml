@@ -1,0 +1,91 @@
+Received: from 10.197.39.76 by atlas225.free.mail.bf1.yahoo.com with HTTPS; Thu, 10 Mar
+ 2022 09:47:34 +0000
+Received: from 209.85.210.170 (EHLO mail-pf1-f170.google.com) by 10.197.39.76 with
+ SMTPs (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256); Thu, 10 Mar 2022
+ 09:47:34 +0000
+Received: by mail-pf1-f170.google.com with SMTP id t5so4648615pfg.4        for
+ <ygayathri95@yahoo.com>; Thu, 10 Mar 2022 01:47:33 -0800 (PST)
+Received: from BDC9-LX-137BR49.dir.svc.accenture.com ([223.226.206.29])        by
+ smtp.gmail.com with ESMTPSA id
+ p10-20020a056a000b4a00b004e12fd48035sm6520268pfo.96.2022.03.10.01.47.32     
+   for <ygayathri95@yahoo.com>        (version=TLS1_3
+ cipher=TLS_AES_256_GCM_SHA384 bits=256/256);        Thu, 10 Mar 2022
+ 01:47:33 -0800 (PST)
+Return-Path: <laxmi.saoji@gmail.com>
+X-Originating-Ip: [209.85.210.170]
+Received-SPF: pass (domain of gmail.com designates 209.85.210.170 as permitted sender)
+Authentication-Results: atlas225.free.mail.bf1.yahoo.com; dkim=pass header.i=@gmail.com
+ header.s=20210112; spf=pass smtp.mailfrom=gmail.com;
+ dmarc=pass(p=NONE,sp=QUARANTINE) header.from=gmail.com;
+X-Apparently-To: ygayathri95@yahoo.com; Thu, 10 Mar 2022 09:47:34 +0000
+X-YMailISG: 75zlXTQWLDtzcXTGx3fxD8vHK2AMhE6N30sVlcnKz0h3s0wm
+ p33Lq0_yiM5hrHIJvev7X5wfiAlPOzKit9dgEadJwqCtNZoSdx2qI7gHoCaT
+ lk4b1cxe0fsy5v.RV9b1f0TwkbvKAmywoTpHkMBFJgc6oi8UejWg89Yi43n1
+ ktWPkD873N9JDA6HRfCAiGNuwjVEuIYZ58FcLIs.QdHjeJwwv9LwPp50a081
+ Ur9Z3n.jLJshREvGHH_KD1Fo_1_LRNbmmxZNjT5AebFLF0K5PPlXIob27EZB
+ .V1vSanyQiNhz7X_Ue7.9QghPrdlXN9Q7ShPFkm7d7PP2H6yNoiGGxJIs3B6
+ s1gqi0_Vbu0HRdFTYaMHpSJ8MufyTlpVkw.QXYuet.wjBlxslOqpdceqIASy
+ 6Om_MXgDrPn5zazTpVPGuwGKGMTNwbr_Wpx3il_nYxEYzqRD2NpbQOpS0kqP
+ n.BmF3DnSzxLE_xHV7bJV2TZHCS9ShXdAzfsekCplw7xzIVKXNys3QSPy5ly
+ 3TstqtoS3EdFj4FLODVnTdEKySy262qZwHUrlpTYF67hncC9kJdHNr9KwR9a
+ d6dbYxe6kC9t..8Uw36wrX6jg7AjgsH0O7lh6Rd70tHC.SnDDfUDawMUSTFb
+ EXt93AqQp_y6CSQ6w8dZRU8ITvF5xpH9kw5N.TgcWm2ZIM3N6S.4eiwUO9WX
+ oV42ANfhZCHGjZUaXDQg5jOKxqqtfe4V2h2NBeH8sx_bBTXX8e2syiNrsOtf
+ ypAw.2X09I9N21GH9oWbRFh4M0RKhQKTsdQZuEhckHbFW.f2BF3VxaLPTAJ5
+ fefsFI2ZDAgu_xKUAlk64YFGemayFrhg6y9sovOj74BEF3leEyRNslHUqrBE
+ oCmSSguZnoWBY23VBNkttiz6q6zCJp6GSoYTw2eJHnMaslQqALbBkXVTvGMH
+ 66oylqIeYbFz1yey5td3hEfTkFTXtVxLwrZl_NfCkKSktEqnQ9.gAtYe3tbP
+ BccKS549gT4GdkSJ6OTb3dHWjblhQEKHadcIPq89lva_Ao_0msA_AwZ5QK1U
+ 75xjfihdO.eV6cUC0W0PI8gP23256_AZJLQWK8fcYHZVj0OjHTQ3IvEtcpJb
+ jGb1THr8MKJ4RCrqgX_GUtAX3YGB3SWLa7U6D8iE.8u6InupEf0ZAMpMYZSc
+ rXO5om6t2mm_zoNx7_aD07Yzww--
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;        d=gmail.com; s=20210112;       
+ h=message-id:date:mime-version:from:to:subject;       
+ bh=phzwCvwGCfsZHIQrOGUPz8SoN9CRwOyjJ+AVI8Eq4uI=;       
+ b=Ok+b8idd3cLjFBLLkayDd/PEyHhXfeU9s1IZAZTsJB7fn6gpcd51In+l3yswKx6GdU        
+ 7bNJ+qnouSM12CgVcYIGdPmBw+drIAdq5/Zb16YAnpnNjFoRdpZyfzX5L7IG4+t9zORv        
+ L0zIFpFa9CTODlclVAXUTCtN4Dw3X8bERiBK+oAF/xvGUWwBdsTEonFML6+YLTXFZw5G        
+ PB5aBvDqKYCjxdEL1bRNMquHGecN7SWqJ0tEBpXnfFJS1C77GmbbwF4vYR/ebMqJysj5        
+ 8piDK2Wohj69bu3o4drkuWy2k06UKQxgOgV2L8Fo58hLeGlfNPkI/Xb1zvGZuvWy1QMu        
+ THyA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;        d=1e100.net; s=20210112;       
+ h=x-gm-message-state:message-id:date:mime-version:from:to:subject;       
+ bh=phzwCvwGCfsZHIQrOGUPz8SoN9CRwOyjJ+AVI8Eq4uI=;       
+ b=niO7pVX0OpppaSfalbTwRNnc0sxBU2q4EnWC2+mR/eIFq0izYPIh+qYAOM/rgz1Hmj        
+ ZP4SVB1pSWlBC8WTXFesPp73vuDgv4v9mGeEdBr/rAlP+V4E8mfG8/o1dKdL/SErSt8J        
+ Dao76/vluAfav65CgJEGkgkwmzyXQjcWdWbl2sSNr1Hc9oGSELW/Ce3ayAyQxQp9JWyb        
+ 8iDVGthiwC0N+utS9gY45sbUdQwqjtJ8wEsOnWMx0w1WY4ZkBTnCULlfW+mMCfFxefZq        
+ EXbg+LRrBaJvvbmS8U+lAfD6byt5wqreqEu5xbP3nnu2MgbHNW98NpIGHsoREJilQYao        
+ DdMw==
+X-Gm-Message-State: AOAM532teFjJUTw6rgFs3NZUjb+8nLw46Y413O0J7AFVJxFnNH9Bdc3R	wYC2DLpJ6b8BjEHHnzfRQhXH7oXToVE=
+X-Google-Smtp-Source: ABdhPJz8bZSQMh25K7oZOnHbU6rtmge4CfP39UYzeQjV/Zi5cN9nBwvzPpPtE75tyGrqjYugL6019Q==
+X-Received: by 2002:a05:6a02:283:b0:342:703e:1434 with SMTP id
+ bk3-20020a056a02028300b00342703e1434mr3381885pgb.74.1646905653381;       
+ Thu, 10 Mar 2022 01:47:33 -0800 (PST)
+Message-ID: <6229c935.1c69fb81.e5136.0b6c@mx.google.com>
+Date: Thu, 10 Mar 2022 01:47:33 -0800 (PST)
+MIME-Version: 1.0
+From: laxmi.saoji@gmail.com
+To: ygayathri95@yahoo.com
+Subject: Gyms
+Content-Length: 1337
+Content-Type: multipart/mixed; boundary="===============4143636324508293542=="
+
+--===============4143636324508293542==
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: 7bit
+MIME-Version: 1.0
+
+Best gym I've ever been to. Have stuck with it for about 3 years, which is saying a lot. Love my trainer, Katrina, too.
+
+The building is always clean and well-kept, even the locker rooms, which never have that gross B.O. smell like other places. The heated pools are never nasty.
+
+Sometimes things break down, but that's because it's a big building with a lot of equipment. They seem to do their very best to make repairs quickly. I also enjoy the staff, and I approve of the fact that they've hired a couple of young developmentally disabled men who are hard workers and interact well with people. 
+
+I was concerned this gym might be too kid-centric for me, because I don't have kids, but the children have their own areas and don't get in the way. Even in the pool, they don't cause a distraction. 
+
+It's great that the folks with kids can use child care while they work out, and they often have "parents' night out" where you can drop off the kids on a Friday or Saturday and go for date night. I think that's terrific.
+
+It is a little pricier than other gyms in the area, but I think you get more for the money and a better quality of staff and facilities.
+--===============4143636324508293542==--
+

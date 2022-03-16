@@ -1,0 +1,85 @@
+Received: from 10.253.230.155 by atlas208.free.mail.gq1.yahoo.com with HTTPS; Thu, 10
+ Mar 2022 09:47:59 +0000
+Received: from 209.85.216.43 (EHLO mail-pj1-f43.google.com) by 10.253.230.155 with
+ SMTPs (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256); Thu, 10 Mar 2022
+ 09:47:59 +0000
+Received: by mail-pj1-f43.google.com with SMTP id b8so4727852pjb.4        for
+ <ygayathri95@yahoo.com>; Thu, 10 Mar 2022 01:47:59 -0800 (PST)
+Received: from BDC9-LX-137BR49.dir.svc.accenture.com ([223.226.206.29])        by
+ smtp.gmail.com with ESMTPSA id
+ u14-20020a056a00124e00b004f76d35c1dbsm2429976pfi.75.2022.03.10.01.47.57     
+   for <ygayathri95@yahoo.com>        (version=TLS1_3
+ cipher=TLS_AES_256_GCM_SHA384 bits=256/256);        Thu, 10 Mar 2022
+ 01:47:58 -0800 (PST)
+Return-Path: <laxmi.saoji@gmail.com>
+X-Originating-Ip: [209.85.216.43]
+Received-SPF: pass (domain of gmail.com designates 209.85.216.43 as permitted sender)
+Authentication-Results: atlas208.free.mail.gq1.yahoo.com; dkim=pass header.i=@gmail.com
+ header.s=20210112; spf=pass smtp.mailfrom=gmail.com;
+ dmarc=pass(p=NONE,sp=QUARANTINE) header.from=gmail.com;
+X-Apparently-To: ygayathri95@yahoo.com; Thu, 10 Mar 2022 09:47:59 +0000
+X-YMailISG: zKC2kTUWLDvYKvtku3kR_pdvV4G4C7HZf1bVxRN8ekvRQOIR
+ l3pyV4KRCUwsNxX2MVBZm_UVoQaOC8cROCcoBIwwHq0a0vbTwSv9zbuTjMWn
+ KoKeLu6f348pZ1GfAfx.PgFKgDS7m_5d9jJBR5Q5IY7Ea3uvG79JuD.kGU6_
+ Am1QYqHuE8hxgpuk85Iyn1Rw0DYkehtbIZTYrgpU4sTn17..otMHOK_ZbPsY
+ 02jw26vdXNxO2PEeWCTJjVuOWx8ovbKzgNsinU7xz5KbJMhHbmHyKP9lWO2c
+ OEvAAuBjXtB8aSELS7VWOjbvPRaV4V7j0HMxc2msGUcrDvmPB_c3cihs8NX_
+ 4fL6g1ivQ9DhNa03GJPCdkdkG1CEnG_X9Czkd4VBT_sZeP3_S6GT38qrcSte
+ rYXgGe.7ks6xaHKN55ygPYOgW3MWUVnTc7.9tCK8hrf0pw5TbcZrkzWefed4
+ 21etWehBl1xcGVCmAP3UesOv1IcUGi6FjpVLHaC21UlByMwtUrfPG5LYyOO3
+ OSvTiRL5CwmPI9euI_OzVTrvCXJs9C_uU4PdbOFlvO0zCXzkrL14AzC4W2Lq
+ 4iTAhbZXCnya73KKvLtqDGs2pmIuI5q9nMktPKQ8vZC3pctNobysA0Ql.f.R
+ 5SQbWKyXa6phzRBHO6ybsgJJ.zT5lq2eWH3SI7IfWGe7qu1Xicm69aboYlQ4
+ EGF93KAPy55Vct0DLDUr7I_YBWYHvI6a561Jl558rqeO_5stYefJ_HGDtr3q
+ cx2zHI_Ab_nSksjwydgYuq5fqwsCHD3bEVsANDm2gk5kN3UxIQhvffiJ.zDN
+ 3vYfvhpWUQg3SAafM.sH_AFujj6JCXxNeZfVkshux_AUyGow5Xl2Pi3n2X85
+ ma0M6dgVORbxPqvQCwy3paH6jnm9DuAHYRPDSa8qX_.l1MmOUGq9qkbXlbv2
+ llv7_wfB8Mc5YhApU3UlhqDCkgq8hSxejzqkF_oXo9hPmJwoFuiXmXiL6Aj2
+ ufd8.1K17jTOpLfCRuTNpEZjl8HLt48Alx6bcZswwHsWE7vIhw1Mh1UtFy53
+ r7SRPz07q9wzbKszZwlpZ16FQnJHEbKvKcIo0IrHcLeLuWvHd8oEpMK_k6Bz
+ 4dWUfKzmQijowNBL7MK1XUc7Inpjl_vSSfytxTmuMb2mvhkAW4WB941Rx88o
+ 1QHhPxtqCS39tDHjxaU-
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;        d=gmail.com; s=20210112;       
+ h=message-id:date:mime-version:from:to:subject;       
+ bh=1nCcrQKNWa3yo4999kjzOsie0OhQ8/3IIAu0MDVvFmM=;       
+ b=JbSJKcxI77WdBUvE1pIS0Rv1tIof9jaXtBI/ZreCZ38lXRBu8BBwov9RXWVNic26ED        
+ 2+VGrD1I98U8zEd40eg18fTSSe6zxzdrE7TSRTYZVSOMrglZr8LN2gkVh2Col4b/Vp6H        
+ HT+i4sAZla8INzv744tJKNj/qh2CdbR2GRR9a4OAa9cuKmKFlVo8tU0idoPHtZUoW/Yh        
+ nTaFD47k9EHJAWXN0scnA4X/sLCGu3c7A8UAYmjtsqQDDu3HNs0mUqnNTVBME6QmQHfH        
+ 1cTBfk2HdJ1ts5GxQvKL3HomMd5gl8dbZmn/qAikyS775610XOeLTOkN8p6KamIzcUlf        
+ VCbA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;        d=1e100.net; s=20210112;       
+ h=x-gm-message-state:message-id:date:mime-version:from:to:subject;       
+ bh=1nCcrQKNWa3yo4999kjzOsie0OhQ8/3IIAu0MDVvFmM=;       
+ b=EzgzpTjXLL+TEW2yF3fSnt7bmZq+af/5cdsHZ9kjvc3UipQvGZNUpkoV5RBJ0mZ0Rf        
+ 6ghw8hCg+cHTLMbGDym2U1a+MU9OiYoH1ceNluHsIUGw9/EsQBr91r6TPo+aIRCdUa1L        
+ syAUw6uzunSIdtfv+3PoWDr+BEB5xhEjIh0PZ6lZmUZqG1IFiVrQxEfvJpiJWfWb23bV        
+ 6VvWm/VLUkfGJJhZLZ4UeKC6ycl7qr1DynBRImcEfZfqfpXysQrW5tsQ8dzWU0nSacVT        
+ XG7/VO3x9j22aP+RMB09DsJTUWTjJFpKx1gZZS4gXAu73LTbh7d+bdr0vFT7IlPIulEV        
+ xZ5Q==
+X-Gm-Message-State: AOAM530SlU7HUAYP3A4mGffPezV7wn0zrBKTngFL/W479jt7N8siFE0+	vl3dU347PRmaPRjqVJf3zGoHeNCoLIY=
+X-Google-Smtp-Source: ABdhPJzh5XVTetAgNk1byAKvzwVKjpNnU8m7pXw0kzoPvpTX/LUawhym5wWZygl1lxyWJM3cpVgZ8A==
+X-Received: by 2002:a17:90a:7027:b0:1bf:6ae4:f19e with SMTP id
+ f36-20020a17090a702700b001bf6ae4f19emr4044572pjk.39.1646905678877;       
+ Thu, 10 Mar 2022 01:47:58 -0800 (PST)
+Message-ID: <6229c94e.1c69fb81.2fe76.62a0@mx.google.com>
+Date: Thu, 10 Mar 2022 01:47:58 -0800 (PST)
+MIME-Version: 1.0
+From: laxmi.saoji@gmail.com
+To: ygayathri95@yahoo.com
+Subject: Yoga
+Content-Length: 945
+Content-Type: multipart/mixed; boundary="===============7292789310964758368=="
+
+--===============7292789310964758368==
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: 7bit
+MIME-Version: 1.0
+
+Because of my buisness I am lucky enough to travel around the Greater Phoenix are to check out yoga studios and health facilities on a weekly basis. While there are so many great studios in town, Metta Yoga in Arcadia,  is one of my favorites for Flow classes and workshops! 
+
+Zuzana, the owner of Metta, is one of my favorite teachers.  Her soothing energy and passion for yoga and improving her students practice is one of a kind. Each time I got to Metta, I am reminded why I love it. Metta is clean, convenient and quaint. They offer great classes and Metta members also have the opportunity to practice at the Phoenician Resort in Scottsdale. 
+
+Whether you are a new student exploring your yoga options or an experienced yogi/yogini you will find a home at Metta!
+--===============7292789310964758368==--
+

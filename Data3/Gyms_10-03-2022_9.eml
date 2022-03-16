@@ -1,0 +1,80 @@
+Received: from 10.217.135.44 by atlas101.free.mail.ne1.yahoo.com with HTTPS; Thu, 10
+ Mar 2022 09:47:44 +0000
+Received: from 209.85.214.180 (EHLO mail-pl1-f180.google.com) by 10.217.135.44 with
+ SMTPs (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256); Thu, 10 Mar 2022
+ 09:47:44 +0000
+Received: by mail-pl1-f180.google.com with SMTP id m2so4428964pll.0        for
+ <ygayathri95@yahoo.com>; Thu, 10 Mar 2022 01:47:44 -0800 (PST)
+Received: from BDC9-LX-137BR49.dir.svc.accenture.com ([223.226.206.29])        by
+ smtp.gmail.com with ESMTPSA id
+ t8-20020aa79468000000b004f764340d8bsm3950900pfq.92.2022.03.10.01.47.42      
+  for <ygayathri95@yahoo.com>        (version=TLS1_3
+ cipher=TLS_AES_256_GCM_SHA384 bits=256/256);        Thu, 10 Mar 2022
+ 01:47:43 -0800 (PST)
+Return-Path: <laxmi.saoji@gmail.com>
+X-Originating-Ip: [209.85.214.180]
+Received-SPF: pass (domain of gmail.com designates 209.85.214.180 as permitted sender)
+Authentication-Results: atlas101.free.mail.ne1.yahoo.com; dkim=pass header.i=@gmail.com
+ header.s=20210112; spf=pass smtp.mailfrom=gmail.com;
+ dmarc=pass(p=NONE,sp=QUARANTINE) header.from=gmail.com;
+X-Apparently-To: ygayathri95@yahoo.com; Thu, 10 Mar 2022 09:47:44 +0000
+X-YMailISG: EPlgvXUWLDsyu6F_Clzsavd4Y2hX7zZursfAErnZQtqwLhWY
+ 5dI0XtvA4lVzciKS6UuvpdIQ6eNF2ovy0i7Mz6Sru1bv8vWk0qIMFG0fnNOg
+ R8.bpmuoXscxkKFoNWQNe9jvi4lkMhNFgt1qIAgj5xCW9UoI.YfrTg_IbqR_
+ LHQPzGuI6rQvpx0swqKouvmekuIZrElC6pVi8y5QV0WxOGPI4E6K3dzgZJEU
+ 38H0hmD3memvu7E45Uc5I2A_uQLB_LgZt3DNpucmd1d2dydvGXOwmOoXpBFo
+ L2y26LbrBgfKQPd5alcRbPCXdW9UIEZ1OP7yiGqC..sQGdpx9ijlgyZmVV6s
+ tt47xvp3DCc0n_r4Ac0QbN1QiBBzyI9MaTl4gs1WLG8CQqbHQUkwFT63DEJV
+ bybZeBCpeI6F6NXCODz8wdXXqV3EuakTMj0yFwl2HDHOVS_NV6lMTqoT2Idd
+ 3r4gj9GJvREyHRTwGMfIzFEhwGCT6rprPjZM.gVDat1D78eptPg3QG7hMyTQ
+ 3sVgJqQ4zUMHbq.Udm1dMR5Vo32ms3mFfAEaid6QzrWUafQpc6GYJC3F5St.
+ p9SA55XtYUFOEsXoSeuy9QtCCgwScWaOl.zGInJimIFk5zERDi6txucOqvrj
+ Cn53BMI1C32z5Iax0CDMiox_qZcs0_tOeSOSxLs8zdJxvk4DLNtkXk_n9KSp
+ nMAOOV2omJkIRMGAhx8xnNx4AEoIZcvH1tpIw5CLMUjZPJVa1UkJ1yqhYlnY
+ ksiO_UaNq01OG5L9cN8uL.Vkkd66uQWuR2xDWbOxsVbG0HaPY9NXPo5DNPST
+ YZgvhpUnOavvAeDauA3AoH8wGr5XMPLlIngZ3SWgbL1RB0HJY8UCdNsOBFyh
+ _lTpPhhOWi6.If.jQE7XYF6ppYM1_TluL2Uuq4RACcu4aAE5yeRNP8Ottpcc
+ Pnlm3uv6vXFL5pBH0yANmVVOZVyrNEte_5Laef8iUNQ5T1iNjz2A52t6hPZB
+ LEPKc8jMUge.AcG4QyuqPMgnceJPV7bsoQm715prgCDos94qd56fKD4YY3aY
+ axF8r9t9i8IUOIqpM_UUFJEg9srZF7G2SxOot.ybHMfDGzF8zB1mamb43WEb
+ AzAJhviJ_GjQH7BjS3n8HTa4pdpfExmlUCSbVEcyHA--
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;        d=gmail.com; s=20210112;       
+ h=message-id:date:mime-version:from:to:subject;       
+ bh=gfIF55pd+nAosr7a0qw1JFRqrg7CVWAFFiuOZTTPpYI=;       
+ b=eU08XvzdEFTJEzXaQfHlsY21zFeTHELWHFdCyVA7Fb1yeHRL+Wa86tb915k2qSVP4D        
+ ECb29LGLNGi2XHQ0hJwkkiN+MVn/zQk55RRzFth9F7wwqi8u/DmT/xH0zJGg72X73mqy        
+ K0Xo1+ueUjj8/zGKC/6uKKw9R+Gq5UqvqjKpZqRg+H0NaFgft4xNEJ5aKo3MM/TMxopp        
+ dxZiMmcnFiZ0R6Gecj+Jb2rluKC4huAcAlbDbzEiDmy+qnUDUhQhaC6qLxU0xvrjSmLS        
+ KExu8IZBzNFDlBMdjJt7X3IeZ2rbp8KOL5+wML1pi0iLIMCLdv3lgB63NKuNOP8pKa77        
+ PfYg==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;        d=1e100.net; s=20210112;       
+ h=x-gm-message-state:message-id:date:mime-version:from:to:subject;       
+ bh=gfIF55pd+nAosr7a0qw1JFRqrg7CVWAFFiuOZTTPpYI=;       
+ b=vDbKsz5IDOKkiTlbi3rIa1kCwYqL6aVbHDpBBV7B8XKg4vzr/apTVirnu+gzUFbmMV        
+ TRtwvaXRKqYFwZfF26V4YdSa7NGfialheu8JgLSvUlc6T2R0LclsBO4JuKCzfi+wis48        
+ /nv7s6HAYbaG3a376PzuxBZ8NblManmne2Bn0H3+n/wK4Fm+0GUt+Qyg+T4imm0DOlPm        
+ xRd7RYsHmSq9EqSK/xV0JQ65xS8K+RoomZexKgOyKaLBCdbUlhHZW4qDZaUIXJ9Jtk6Q        
+ Uttwi93GvnIoZZH/Rw1OrikIn6uOFXcpyJG958sGrT82lD0XIROMomBhWKohUQIjDPXk        
+ qtcw==
+X-Gm-Message-State: AOAM531vjClxmrclKUR+6CJL0TbB29kSwBZNFkmTfawqADeZz1fVDbZg	noaHyUU7uDv7P3NTckArmUc9xnGcSDI=
+X-Google-Smtp-Source: ABdhPJwaDUQ0owxb+II51xKCJuPCUVkcg9F1g4As4xO+Fkid7YSORcoo7vkR7skA2+JSBWSGV9v3aA==
+X-Received: by 2002:a17:902:ef4c:b0:14f:7548:dae3 with SMTP id
+ e12-20020a170902ef4c00b0014f7548dae3mr4261931plx.92.1646905663707;       
+ Thu, 10 Mar 2022 01:47:43 -0800 (PST)
+Message-ID: <6229c93f.1c69fb81.820ac.a778@mx.google.com>
+Date: Thu, 10 Mar 2022 01:47:43 -0800 (PST)
+MIME-Version: 1.0
+From: laxmi.saoji@gmail.com
+To: ygayathri95@yahoo.com
+Subject: Gyms
+Content-Length: 429
+Content-Type: multipart/mixed; boundary="===============6625667705558316849=="
+
+--===============6625667705558316849==
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: 7bit
+MIME-Version: 1.0
+
+This place is pretty fun! Staff is friendly, and it stays cool, even in the summer. I have been here twice and both times had a pretty fun time. It was not as intimidating as I thought it would be. My only advice for patrons is don't go in shorts!!! :P
+--===============6625667705558316849==--
+

@@ -1,0 +1,80 @@
+Received: from 10.214.147.16 by atlas325.free.mail.gq1.yahoo.com with HTTPS; Thu, 10
+ Mar 2022 09:47:13 +0000
+Received: from 209.85.215.172 (EHLO mail-pg1-f172.google.com) by 10.214.147.16 with
+ SMTPs (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256); Thu, 10 Mar 2022
+ 09:47:13 +0000
+Received: by mail-pg1-f172.google.com with SMTP id t187so4294769pgb.1        for
+ <ygayathri95@yahoo.com>; Thu, 10 Mar 2022 01:47:13 -0800 (PST)
+Received: from BDC9-LX-137BR49.dir.svc.accenture.com ([223.226.206.29])        by
+ smtp.gmail.com with ESMTPSA id
+ a32-20020a631a20000000b003756899829csm4991795pga.58.2022.03.10.01.47.12     
+   for <ygayathri95@yahoo.com>        (version=TLS1_3
+ cipher=TLS_AES_256_GCM_SHA384 bits=256/256);        Thu, 10 Mar 2022
+ 01:47:12 -0800 (PST)
+Return-Path: <laxmi.saoji@gmail.com>
+X-Originating-Ip: [209.85.215.172]
+Received-SPF: pass (domain of gmail.com designates 209.85.215.172 as permitted sender)
+Authentication-Results: atlas325.free.mail.gq1.yahoo.com; dkim=pass header.i=@gmail.com
+ header.s=20210112; spf=pass smtp.mailfrom=gmail.com;
+ dmarc=pass(p=NONE,sp=QUARANTINE) header.from=gmail.com;
+X-Apparently-To: ygayathri95@yahoo.com; Thu, 10 Mar 2022 09:47:14 +0000
+X-YMailISG: VzcfWb0WLDuwJEovqNDL.nbUDwc_gV5uqOwzIX6hvF951.s_
+ zhv726qd_VUK9y33_aE520xfezi10d9LCc4f2TvsyKcLXKlAiAX3XVPc7X3S
+ 9bzVv2utCOwnkOKpuoEU0iG4XCLVHB9cFrLKD7UmW1RApnacedpNkr.TNzEU
+ 2NQlDR92YnGSg4ZsQV615sgOaNNrTT660BtwdHlQ.VptJscaMYEBTCEXvpB2
+ bV8NatyJ1hugnS3JTPgnByBZxi1ta1bHy79fvSHrYAQNUtMb3XeSokTYUxS0
+ t0kr7kCT.VVgtzAQ7b0BwwmEv.AO0xLeWBfa2iMl9BQIWAw9GKecfqqXD8E2
+ RtrHsF0FFj4YZwVhdVgwVQPGI1AYw3t0gskyVTXtFkT41n.E.W3oumKQIVgu
+ SpMEGFJa2S_TUHDjQfaii4qrjoBXkvcM.8o3g9jTdcFGkwzLr.ig_Dx7Xzrw
+ osmqvlb4gdy2QI4iPlfimvF91lU7feE.epoCDAOih7oTFN4aS2.PdLkPXyPI
+ 5JpcbHP2Spu_4yV8SpSA2w6q7HCD7AFJ8jWp8G11L.LjWONkPfVADlvsQ78R
+ YjAKYIeCAtiPWha0oPtZkCLdmSNwPrJDpy_sF0aLHLKaf5kVBjuntiebiqXX
+ qyWDR1RCRv44_ldR6xOVTU388..Psg5.isIwhF1wQFzK7QN.u0DBd35MYMRg
+ Cxw59Yh1AT845tgZvOXUhuthXpzNcKnO5C4o4vSlHBHlNPBoV3A7LhvG1_DO
+ 96zsr_0KA.NRJlXtJsyGRGXh_UFp4kxkUV6lB2HJPuhtBqETzyCXTNoBYmHb
+ 0Qb1eYZ9U7xzmGXxUtBxTljL4mT2LQ40Nhj7_ggdBQJffA4z4r.g3rd0E.ho
+ 9B2pArCSmgIOuNHdDjGUQQinwRb9RO64VX0m0206KsZlIl4yRVhd40cEbOiL
+ 5sJt5pSNNQlbVUhk1wvoOtVOnr2MWCte3wbxLPwthu1o33yQ68v2MChiTwSX
+ 1yCMmbe3fOJiMyy6601bejZy33M2BvzYQZHRS4QdDmD3YMjCKQG8_pP_d1GU
+ JIerLu85h_scJN8zTvybwF2cjbTvxAvS3qnXTlevK4rbRIeW4t09m9AukqbT
+ DrYFhS5NJ4liAy_QRUfVGPji.wIdSg5f
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;        d=gmail.com; s=20210112;       
+ h=message-id:date:mime-version:from:to:subject;       
+ bh=FL/J6BTFNI9Kd+90aNSBw5wZo2mW1A2s5ji7mgbBXKc=;       
+ b=YfH2Vtw4FX7XMrH7V4ZTyEPZX/AUdoHHlc3TS2+cKhzelGCwYqofvvpnYY6QfGJoF6        
+ 4zBlthejTc8vUjdC30knnlS4M4i2U6uh3eJfP+RSuSERwWjRkA7TYLW2ALx3cPd0RSvz        
+ 0+LmlJCr8iquYTGSBgdRAN/26zxH+XzCQwR9s/JVNz0XizRCGMMfVF3rkgxpAD75rEdv        
+ 0+g4dEs6iEQo/eeH8tBPwBX91luj59dTaOAiM2Qw9NCH/qentzuR5azrwAOZu41wV0KZ        
+ wJ+eMF83t/gguwTzELqr3QZlubgXwGnKHFElELjOZrorMWJsIgN+R5wD+iBoGcpOTylU        
+ 8FPA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;        d=1e100.net; s=20210112;       
+ h=x-gm-message-state:message-id:date:mime-version:from:to:subject;       
+ bh=FL/J6BTFNI9Kd+90aNSBw5wZo2mW1A2s5ji7mgbBXKc=;       
+ b=MVUF9UsDgu4wkWyGuaHT0ACU5BNtYb6ghbwrnJuKCuwMaURE160txEgYyZ2Y0sCc21        
+ yxLjfSSv1rlN2zCvA7aOCyHq7eRVJkTT7cwbb/MyJOFxKi/EKPwtkDRdSYz24aO01Hpg        
+ gKBDYav6oA1dG2z92GC08K3KWkg3gy2l4H8TB+48cGAkGt/nWv5AlKVZAwyFDWy8cj8V        
+ z9iA+9rpsub1lqooy5MyA1ZVjYFAC9vupEaLzBH79xdSgjrAU1gI5mqOzeEEdXvZF5E1        
+ +Vz1/SAJ3vMxIxZSfAAPzdnTRdFCXA0NCrcpvYannMDNvaYt2axmlBPsz1YtOyzFDufR        
+ UyOg==
+X-Gm-Message-State: AOAM532xjhjS9Ywi0k/tlLUVEOXMUGb9J+JfiHtjaEvL1PFec+cUA+Bs	iwlbZ/YdfcsLksUotefI1nXS65VwVFU=
+X-Google-Smtp-Source: ABdhPJyVfgAvfda9SR3SxarKfvx/Y3yridROuanNpn7cX5zHinM462u2MxUglVVBpOVhTTIap2Ow4g==
+X-Received: by 2002:a05:6a00:1902:b0:4f6:939d:179c with SMTP id
+ y2-20020a056a00190200b004f6939d179cmr3804995pfi.43.1646905633203;       
+ Thu, 10 Mar 2022 01:47:13 -0800 (PST)
+Message-ID: <6229c920.1c69fb81.3a3a4.c226@mx.google.com>
+Date: Thu, 10 Mar 2022 01:47:12 -0800 (PST)
+MIME-Version: 1.0
+From: laxmi.saoji@gmail.com
+To: ygayathri95@yahoo.com
+Subject: Golf
+Content-Length: 264
+Content-Type: multipart/mixed; boundary="===============1287545590001426887=="
+
+--===============1287545590001426887==
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: 7bit
+MIME-Version: 1.0
+
+Course is in horrible playing shape, someone needs to invest here and make it beautiful
+--===============1287545590001426887==--
+

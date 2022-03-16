@@ -1,0 +1,82 @@
+Received: from 10.253.232.218 by atlas224.free.mail.gq1.yahoo.com with HTTPS; Thu, 10
+ Mar 2022 09:47:31 +0000
+Received: from 209.85.215.178 (EHLO mail-pg1-f178.google.com) by 10.253.232.218 with
+ SMTPs (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256); Thu, 10 Mar 2022
+ 09:47:31 +0000
+Received: by mail-pg1-f178.google.com with SMTP id o26so4268797pgb.8        for
+ <ygayathri95@yahoo.com>; Thu, 10 Mar 2022 01:47:31 -0800 (PST)
+Received: from BDC9-LX-137BR49.dir.svc.accenture.com ([223.226.206.29])        by
+ smtp.gmail.com with ESMTPSA id
+ q22-20020a056a00085600b004f397d1f3b5sm6331604pfk.171.2022.03.10.01.47.29    
+    for <ygayathri95@yahoo.com>        (version=TLS1_3
+ cipher=TLS_AES_256_GCM_SHA384 bits=256/256);        Thu, 10 Mar 2022
+ 01:47:30 -0800 (PST)
+Return-Path: <laxmi.saoji@gmail.com>
+X-Originating-Ip: [209.85.215.178]
+Received-SPF: pass (domain of gmail.com designates 209.85.215.178 as permitted sender)
+Authentication-Results: atlas224.free.mail.gq1.yahoo.com; dkim=pass header.i=@gmail.com
+ header.s=20210112; spf=pass smtp.mailfrom=gmail.com;
+ dmarc=pass(p=NONE,sp=QUARANTINE) header.from=gmail.com;
+X-Apparently-To: ygayathri95@yahoo.com; Thu, 10 Mar 2022 09:47:31 +0000
+X-YMailISG: SheusvgWLDtNQmFPfTgl_SVcKlElZt.cH5l5CFstj9k07YyE
+ mkWY6SOG4yLNgeWvzCe7TDHe1ZqqlXtAta3nGPEl5CBHIOgL.Rpv_RUFyjuE
+ WGSkhpVBbVtsdV4v3lZC2ZROv9_e0oX.kuRyoxKo1Flb3qEtyrWJV32zNiu2
+ AxcnmihKzlJMj_wgw5J2cKdBGc0PYVc3O76_GuZgugL7k6bMweyYKOHKRqp5
+ FBVQ4QTppi297Aka.81FU9zGbc3WHawhUxVsCIOS3MNHW1zMxPNKgyFGfOD7
+ 8_9.C54X.4fBYkIL51wXeO7Ud.niXlZT.4OsOLwETRhQlSe1VNqE4doIWUnh
+ 6aoiZcYsDoUJ.aal6c_AxNZfAb9mVjlRgaszANpLOMLik6KobC5zIdoHB4Nz
+ lwhZwFK.CscXz6nm2amUXZ2wU8dyfIIJ_oqHorPWTn5wJc2cHPiclQuFjlS0
+ EO5a1CbUAgEyaSHcyBpByg9XJIElAgG3Sc_cXRxBbE4rbHhul73af.Z5rqI.
+ 0RubUiNjA5MwMjjgtcGrk4waco0WY15WcdZcb7fnorYR.Zl6kD6R4LM9isAU
+ cQKgYZ2NprBvNu05kqAcegzLl5T_nFQ2sLa3E0AsvltNYkLDVJbPwQCjcGSn
+ L2tXUDHyO.IlFsWgB4dAlxwLWffGU2svQBwIZQ78Vc2anqbkILi2uI96vz6B
+ VXskZVyf3bVXAETadFlHJz0jCSckeC8BoihVMYzYaeXut486Hd.I6xy1xgXG
+ nIizzppnz4bWCO3giJf45atp4LpUQAx5ETb7JBaUhvcfX6qj2ppELcl_qxDu
+ 0qXYQu.NWGzyPesSe4UgpcX3OdzYCVgA9FlZK37PSZ5Ay.BEiwLTtyZieGwy
+ BFzkmKYtlkExFxAeun6LLrne.tdEC_4.N_5Jik8O2UaTwsUNYREZehehLfbA
+ y7pjo65akOUb8WktQGpNuU7lBhgL5cuHmnEncnGuX4xNmPgKVzp0V1A1z0.t
+ qoEqH.fRfPfMcCc1L_f64WngWErJErwh9ow_W2HifXsPAv78cz81DyyHvTxu
+ hc6WYyFmV1t8LqOaeZm11xi5y__uCbHejfB2.RdQ4V4qpqhgdUyrEDUgQGYq
+ SHKMN9JrOKFqQfaRvmGIZwUOq4AJ0H5CqnyzlSFtbdrMCEGl
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;        d=gmail.com; s=20210112;       
+ h=message-id:date:mime-version:from:to:subject;       
+ bh=RggOuNHWb+Fz3Xayv5JLlPy5Va4YX5LJN6oXlC7mxOM=;       
+ b=I2Idl1AHN+8YPwj+RZLXRt3iQv1FFD0KrqcQvCyKbvWFGd+98yiebTHKP141d7Idka        
+ vtphTZ0hhxbVgUqh5uazquzbX886Qy3PRPiti6IZFbghYbVSfJj88XQWDbQOLoizXjj9        
+ HUQp3sIx/lvkn9pB0LahwTnx7rdizgRhwK1cfvbHzmMaezp+9ZCwxSRRjfb5htFDCslX        
+ zVDWe+/89zDQnD50Te2trA9bIvRLYJVI85dZD1wzdAOzRj2D/LigHSqUhZjoK1uSgH2X        
+ czkcjXAYo+0gv7zPq49iqXTli7MTz2ZFZLCiqpDW8ey9YkCO0w6qJAx0luFLuoIHS/Z5        
+ zEzg==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;        d=1e100.net; s=20210112;       
+ h=x-gm-message-state:message-id:date:mime-version:from:to:subject;       
+ bh=RggOuNHWb+Fz3Xayv5JLlPy5Va4YX5LJN6oXlC7mxOM=;       
+ b=veP7FmXqh0eXUy2ji2vsp9x6I1GR/eFiTa4PqB9EpxaQEdAGiZV7fBAcSiOxTqHPgV        
+ CwC3Y2MfdSgu3GQsQh5yfSlCQQDBPLAhqVFGfeLdW3KFlW+IsoEcQ3ZDWHBiFsURT3rV        
+ v2zpHDOhHfuiJrz8EiLPrYqIxnqJqpKQxvrNF55E83OfAZGEOYfsdYYrTcK1vnPS81xM        
+ /TNdU3KbFu1DMYjGYVVBGivksDtxiWOS1CsLt8moaz38OMNJnyZle7M6sXODSu97dneA        
+ ta/t+F/uAg/K0iH1ZwfyEmoOYdNYHaC/r+iQx2mWNWLufw3NC7lDum/CIdnQE99XBF9n        
+ UGoQ==
+X-Gm-Message-State: AOAM531xanwE8ELrrz1UnY4V9SlQl7j3mrcifGICdz2TGcXY707LAzux	F/9neSa8HffzO+EyxLa8PIzXgJMULoo=
+X-Google-Smtp-Source: ABdhPJwD4PNoyuq4Xds4QSc41gq2EGulhswtH/HjyhYE3Za6pBLZXPWeALm1xpR3T/efZZv54xG+iA==
+X-Received: by 2002:a63:4b62:0:b0:37d:ef91:d613 with SMTP id
+ k34-20020a634b62000000b0037def91d613mr3355275pgl.465.1646905650825;       
+ Thu, 10 Mar 2022 01:47:30 -0800 (PST)
+Message-ID: <6229c932.1c69fb81.3d3df.fa60@mx.google.com>
+Date: Thu, 10 Mar 2022 01:47:30 -0800 (PST)
+MIME-Version: 1.0
+From: laxmi.saoji@gmail.com
+To: ygayathri95@yahoo.com
+Subject: Sporting Goods
+Content-Length: 835
+Content-Type: multipart/mixed; boundary="===============7150349423001819965=="
+
+--===============7150349423001819965==
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: 7bit
+MIME-Version: 1.0
+
+These guys saved Christmas for me.  I ordered a bike for my wife off Amazon, thinking that assembly would be no problem.  Well, after a few frustrating hours in the garage I tossed the bike in my trunk and took it to Bike Emporium.  The bike tech took one look at the front wheel that was giving me so much trouble and immediately deduced that it was a quick-release wheel, and that the quick-release mechanism had not been included in the box, hence my frustration.  
+
+10 minutes and $10 later, and he had the wheel on, had adjusted the brakes, fixed the handlebars (I put them on backwards), and checked the deraileurs.  Very friendly and helpful.  Thanks!
+--===============7150349423001819965==--
+

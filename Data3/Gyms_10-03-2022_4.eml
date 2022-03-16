@@ -1,0 +1,79 @@
+Received: from 10.197.37.232 by atlas302.free.mail.bf1.yahoo.com with HTTPS; Thu, 10
+ Mar 2022 09:47:11 +0000
+Received: from 209.85.215.178 (EHLO mail-pg1-f178.google.com) by 10.197.37.232 with
+ SMTPs (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256); Thu, 10 Mar 2022
+ 09:47:11 +0000
+Received: by mail-pg1-f178.google.com with SMTP id c11so4254120pgu.11        for
+ <ygayathri95@yahoo.com>; Thu, 10 Mar 2022 01:47:11 -0800 (PST)
+Received: from BDC9-LX-137BR49.dir.svc.accenture.com ([223.226.206.29])        by
+ smtp.gmail.com with ESMTPSA id
+ pi16-20020a17090b1e5000b001bd1ffaf2basm5562798pjb.0.2022.03.10.01.47.09     
+   for <ygayathri95@yahoo.com>        (version=TLS1_3
+ cipher=TLS_AES_256_GCM_SHA384 bits=256/256);        Thu, 10 Mar 2022
+ 01:47:10 -0800 (PST)
+Return-Path: <laxmi.saoji@gmail.com>
+X-Originating-Ip: [209.85.215.178]
+Received-SPF: pass (domain of gmail.com designates 209.85.215.178 as permitted sender)
+Authentication-Results: atlas302.free.mail.bf1.yahoo.com; dkim=pass header.i=@gmail.com
+ header.s=20210112; spf=pass smtp.mailfrom=gmail.com;
+ dmarc=pass(p=NONE,sp=QUARANTINE) header.from=gmail.com;
+X-Apparently-To: ygayathri95@yahoo.com; Thu, 10 Mar 2022 09:47:11 +0000
+X-YMailISG: WK0GnrwWLDsuGZYLbCWXGnKonMsblpPrTIW_cVgNdZw0D.wG
+ AsUeY4GR99Jefp.23uET5CFsFAtuqFHPqsXmTJpX0zmmqor7XgTY7xLt2etY
+ MRbj2TJaLkI14l3ubN1vgP.sTj7lcH4L6EgKNWSGDT4gL_yPI1n9cZasGc3M
+ imQo45Lp7dPkuOXxy3MQbPeOkJOYcGlXD9Q0i76bLefaa9tjiueWHsrA9Jgc
+ GeqJuPBAD2Ule8QUZ2SxmcRuXYL5e0qoGLM8E4DqYE0sHppZ7CidXWuKJeqN
+ N7geODvvRT.Rac3ob8lj9N4xiqk5AO_6tjaY_CaGg3NbpQoTwgUC8ZoPaxYS
+ DvDQKjXK5sddyhFLGmmCAzFw8x69Oiz8RmK5MNMZw7N2fVN5d7CqSk0_feK1
+ IcvgFaKQ6wjTYpAPMRIbcnm9yW1fk0zsekSlVw6P53cbr2jg7XwzPcLPYDXC
+ za7nKvfXxpJEA9tOXy01aL1w.L0my0KseQtZ10nWomQWpot79cY.nTfbTQ3B
+ SJbFRzsxeTCYa4S46lcFx3NOBbaLsbOCkcWM4hzvyE65TdTVkOIkfKhDa7VU
+ QvmA3K_D2hLTlYJFPECPZ27au6dWciAq4IKh3b5utUGJnb.bWzRCEh5vTddJ
+ 0LnLWpviiF1QGSo6E4ZQsD4jM66Oa5fvi48iiu4lMpttICmKNHOURL8DWbAM
+ 8RIV0NC8Vzj_sNJ48jmQ2OQYvq3d82lrWInDYJoipcmaPPqmbqN7ch8C9A2V
+ Z.JuVnmdMnmJkTkrTK8VxDPpmB2BeJFBDRPeo.MQfjbGUd6h0TmPNNHd2m0s
+ .NxZsU08Tw_SgIrcBfdTDrjzR5bS0cX..XEyTOF3jRVP1H1engwN7P.DSC6o
+ ghWybUwo_bYiEEBi9FbFz8CWNKsJ9rOc1n5BO9oyuGwQNnhaeNrSYvHyk9ov
+ LgOAm03Pm_rBqaM8rjk5EOw9LgogZ6fXHTu4wyrDyAHZYRff96ZXev674uMZ
+ 7eV7M6YrVL1bFXM5q7xAXLbtRgMxRVlsSnMNJ9..qoWK7yJdRYurX5yNFCFg
+ SufR5_WRexGfhJPH1wC_OIt.TnXBHSzmeXl0D1Cp0hmcCJvNzWq6.LLDBPOo 6Q--
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;        d=gmail.com; s=20210112;       
+ h=message-id:date:mime-version:from:to:subject;       
+ bh=LkgfMnWUynmU6KqVpBZruy8nNpWsRj0QpOOjR91Q1Yk=;       
+ b=M5hWITRqhTc2Ae98rQ5FelPVfuLnsS9VoEwSTTIFIGNvKM5gbQDGjB1pRXqUUfLPhg        
+ PBkMr4apbg8QqJT6PlUWiPXBpa331GcgmZNzjxSrKIi1MUimBTpFqcdYqsTZhvhg1fv0        
+ J2eDT98yZdWI2MLTenCIzCm7xfjrm1aJVPB/valPWW2hg/UykJRrp5WQmuGHVaqwx3qm        
+ xoyoDXPmRzDjdJ+69oGl1AziJ5Y48ZYv7dNihWdGLcMP0JTJAVuZDLQL5tWslC9Gl0JD        
+ JQJK+oiS7i9bFJgi4flVn52PCCn5llLm70AzR+hAVx/tmJX8oRrolHPdJ9Tb3qXYt6sj        
+ 5jCA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;        d=1e100.net; s=20210112;       
+ h=x-gm-message-state:message-id:date:mime-version:from:to:subject;       
+ bh=LkgfMnWUynmU6KqVpBZruy8nNpWsRj0QpOOjR91Q1Yk=;       
+ b=FZO5ykPzrqDUYmfwey3liEoxoF8eedEQmWnzObYddeCZ/DLHtx/VEa/iBmuQivz0gS        
+ kTmQGVG/kSVwQM+UIWms4hpf5hsVYo92bSN+VDA2TqQJzXqq8OtTWVHjfUerN51XFsEb        
+ c0j5e2GcGIF02NSHordmoV3kd9UVTRu+2uV9fMWndF+adk4Kq6EaBZem2mTJq3t4DKEB        
+ xD5jZ+m3YnB+YH4PEIjpHhYysjiulDVAVotMwwGg/Bs1Qt2UH+I3KLk+HLYGv8Pnf7sZ        
+ +gwYQwJ4V5ItHxT6nWfTiT4QXx9jm0qbPzM4pVV51RB8ZlirkrLCvLKp+KQKN509NSog        
+ CnTA==
+X-Gm-Message-State: AOAM5336Y/fJRmH+NxsO+VzXBR7uAMquWPLEfUuw9swyrUstOcQkT3ki	OresAWqcnSarEsASz9ur35aid6z0f4o=
+X-Google-Smtp-Source: ABdhPJwMf3K4ROakhk8+c+DmDKLqgQMtoX3/aApPJ8wzhvUWyw3Bn7hIk1n1Tt4QGCrj0nTn9uwZJw==
+X-Received: by 2002:a05:6a00:1381:b0:4f6:e4ba:2d64 with SMTP id
+ t1-20020a056a00138100b004f6e4ba2d64mr3796773pfg.24.1646905630701;       
+ Thu, 10 Mar 2022 01:47:10 -0800 (PST)
+Message-ID: <6229c91e.1c69fb81.26a91.d75c@mx.google.com>
+Date: Thu, 10 Mar 2022 01:47:10 -0800 (PST)
+MIME-Version: 1.0
+From: laxmi.saoji@gmail.com
+To: ygayathri95@yahoo.com
+Subject: Gyms
+Content-Length: 351
+Content-Type: multipart/mixed; boundary="===============7939425160799213081=="
+
+--===============7939425160799213081==
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: 7bit
+MIME-Version: 1.0
+
+I finally got someone to pay attention to me and not the guy that actually emailed me. After a while I finally got a live person on the line and they cancelled my membership.
+--===============7939425160799213081==--
+

@@ -1,0 +1,90 @@
+Received: from 10.253.31.94 by atlas213.free.mail.gq1.yahoo.com with HTTPS; Thu, 10 Mar
+ 2022 09:48:28 +0000
+Received: from 209.85.216.45 (EHLO mail-pj1-f45.google.com) by 10.253.31.94 with SMTPs
+ (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256); Thu, 10 Mar 2022 09:48:28
+ +0000
+Received: by mail-pj1-f45.google.com with SMTP id
+ mm23-20020a17090b359700b001bfceefd8c6so1499654pjb.3        for
+ <ygayathri95@yahoo.com>; Thu, 10 Mar 2022 01:48:28 -0800 (PST)
+Received: from BDC9-LX-137BR49.dir.svc.accenture.com ([223.226.206.29])        by
+ smtp.gmail.com with ESMTPSA id
+ ay5-20020a056a00300500b004f6d510af4asm5603120pfb.124.2022.03.10.01.47.55    
+    for <ygayathri95@yahoo.com>        (version=TLS1_3
+ cipher=TLS_AES_256_GCM_SHA384 bits=256/256);        Thu, 10 Mar 2022
+ 01:47:56 -0800 (PST)
+Return-Path: <laxmi.saoji@gmail.com>
+X-Originating-Ip: [209.85.216.45]
+Received-SPF: pass (domain of gmail.com designates 209.85.216.45 as permitted sender)
+Authentication-Results: atlas213.free.mail.gq1.yahoo.com; dkim=pass header.i=@gmail.com
+ header.s=20210112; spf=pass smtp.mailfrom=gmail.com;
+ dmarc=pass(p=NONE,sp=QUARANTINE) header.from=gmail.com;
+X-Apparently-To: ygayathri95@yahoo.com; Thu, 10 Mar 2022 09:48:29 +0000
+X-YMailISG: qDPSe7sWLDs0uXZNGU8x.6ePtjBc_ERm1MXVXIVAkTeN4LyL
+ WRARndsE7xlOuJtbPOaWepW3hXKsiFFL9ZPzp7LS0hRPZKfqCAy0fnIpP..7
+ 3dDlKIB.mH3sjJVb0banO3VeE_wiDT.fSr356FyKgzpH.8awH4zyatxA3Fyh
+ pZbf0iPbnJRflZ1yDri98LecKY7caL.ZdecHvtrMl6CKJCdfh3KiKJzX8QQR
+ BSHM0hX5_nV.vp_AoobdoHgd1WlARwitmnC5O8xib8RTA9yy.7yc.KxyguOT
+ CyxlmZMpYjwSOYDR17a7GAlXYpPSkQJQlbbj5sX9x73hnPyRGY4OJWSQ5EAI
+ YulqHPkaxaUgsc9CnF15zmpIZGVmpZwl1uxehOoBr.ROZrGenSIJ4cNwhPUv
+ bvSxSWystg1AfhTTZBQIlbmmFeIn9KCm4PRj2RU7BqowDwnpvR.872G_RmJn
+ 6Tyrcw5ltne73ojV9aII2HzH6Ul1LY3UuoYsVQ1fqBd1.zAoVY6jrV12ayb3
+ SYGoEs6AaAoHP2XJlRAmWRXbg9fXV2q8rr7ylW8.L38s6ymd0.qp8XTvve7N
+ 2Yyl4aX6CCP4XlaUyPiuNUiJIVndpAJjETXf0bjhI3o_2IALK3kZv_MKsAca
+ 4udhJ8dR2f7L0wfsCtv.xqZqCN.M5vZOA4mGgkRxn.oMYs1f9AOAbaK5lQ5C
+ 6k7W2piTIRWq18lyO48iBjoxWPOa.nsvRcEC_VCxDRDTkghQaD2UwHoC30GA
+ jVR.mCIowbWqlyj6Gw9UQUXNNoWWZwqLB9o6v1mgwBRIyj2Fjbhvecu2JeS6
+ TWzdKYevCNiB2X8GcZS0smXecdPMKhQ_KBh2aoPVaRMDGE2TCcmswHThTm2Y
+ bVNWTqZYw3E2nVj42gbAGRdpekVmdN420NDa1ZAhMCRnPNfKWyqeJk.XpCPH
+ 0lOOefoAc6NrDNLMInK_zvQ6NdiSPvZkcteUTExyx_h7tr6QcZk06hJGLmfl
+ kfHP6Awr55n0qkJM5RnZAHrmtO6dwUzyWKzaug.5DA0cEaNwbcnQKqsvlKr6
+ BOhU2AHt3BhDcKtU3NpL1cs0UxxjpOFJUoQxDFJ8y4ltvOJA3ihUnxT4yIr5
+ a0m.4oZFGh6szcZ.3uYwoXsnhK2sPXiRnbULc_c_7O4ia9_LnCqPe_06Znk. oRy4IUF3dLesgA--
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;        d=gmail.com; s=20210112;       
+ h=message-id:date:mime-version:from:to:subject;       
+ bh=qQWEuYbchdRMXy0Mjprn0zs5PcEETgGvmps5EnQcVuE=;       
+ b=PX/wKkmSrUP/5+JZ4F6HBYOip8chWzNVgnGc9sYzdXojkiNofjMhu+ndhnqbX6Lr+G        
+ Zne23FFMmKP1IdeGIm4Rg4Vt6V/eI5NeBT/Ipir+HTgGZJH7anjYZDXFsykNXI19RZSt        
+ L4XHbA3ljj+3aq0Y/Fm3ZL5p7JntUX0TqqiA0qauaKV8auJDeWrouoKYoNAl0zzeLQF8        
+ k1y1H8hEr480GWCYEnjDFcs3CqoW2Np57PqMdZhm24uaFNXhguGc/nFpOwnE4nc9nMt5        
+ m4z1D9hCtllonfdN80VRj4AOXCtc0ep//Zv+J2KwEBSyjkA0nLHmJ/ZPPh8ev9taCkcp        
+ 6TzA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;        d=1e100.net; s=20210112;       
+ h=x-gm-message-state:message-id:date:mime-version:from:to:subject;       
+ bh=qQWEuYbchdRMXy0Mjprn0zs5PcEETgGvmps5EnQcVuE=;       
+ b=GNE55RaLVF7cC3jZmMx6gnWR1J5k99hhbyGcDEcjKEnICqf4+TEnMs+whC4EsUUllK        
+ bFeKYlbesfF88780ZGadX5+PMBGZv/svxk14QAPzf0r7j2CuKn6bfHqpV7QwdkexLC2q        
+ uE98IT0bwUxZYSDmNDxUWwfOwZ+fubS3W0DeH/lQs4Q73a3HnB2jE++Z44Ks8Rh4o0Bt        
+ ZNhsurcm13wuIb3KOG4+rxT+jqqgzojhRZlf3xgtLxX90C8P9X4msmpLujw0fZJ2g1kK        
+ COslkyc6rUHnvmz7p3h9gjHe5b4YkO0iCEabeKPYWv4tiCl4FrGYATZ6e355urd8T8VV        
+ qAww==
+X-Gm-Message-State: AOAM530X+vQKaT98CflWQz/Kto1QFgk7OK4n2TZRT2fMUBgOezzoztUU	j4K5kRnd/EuST6sfIUJJDoXZVVZRD/8=
+X-Google-Smtp-Source: ABdhPJzPsiWtSHIpAj/1wcQUcxjNeJgFQtcqSyf5fKfleLdPYM2bM5ILMGx2KmEy7qn8/JFv0mQlLQ==
+X-Received: by 2002:a17:90b:224d:b0:1bf:73a5:ff7f with SMTP id
+ hk13-20020a17090b224d00b001bf73a5ff7fmr4096305pjb.164.1646905676409;       
+ Thu, 10 Mar 2022 01:47:56 -0800 (PST)
+Message-ID: <6229c94c.1c69fb81.b1c82.e991@mx.google.com>
+Date: Thu, 10 Mar 2022 01:47:56 -0800 (PST)
+MIME-Version: 1.0
+From: laxmi.saoji@gmail.com
+To: ygayathri95@yahoo.com
+Subject: Yoga
+Content-Length: 1374
+Content-Type: multipart/mixed; boundary="===============1199325286567310359=="
+
+--===============1199325286567310359==
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: 7bit
+MIME-Version: 1.0
+
+Sumits KILLS!!!
+
+
+...but in a good way, hot yoga can be intense but its good for you! Sumits' yoga style is very similar to that of Bikram's Yoga, but much faster and a few postures in the set are different. Otherwise, you get the same benefits and you sweat all of those gnarly toxins out! Get in shape, feel balanced, get to stare at yourself in a mirror with no shame, and sweat like a dog for 90-mins! 
+
+And if you don't come out feeling brand spanking new, then I think you slacked off in class! Make sure you go to the website or talk to someone who has already faced the experience that is Sumits Yoga before you hop right into it, there's a lot of things that you should do in preparation! 
+
+Seriously, I went in here hungover once, thinking I'd be fine...oh lordts no!
+
+Plus its really nice in here, and spacious. And please people shower before you go home (its a clean one!), I don't know how you could go home without doing so, that's a really gross drive and I'd never ride in your car. The prices can be kinda harsh, only if you plan on committing to a long class package, but there are discounts and specials ran all the time, currently I think you can sign up for 30 days for free.
+--===============1199325286567310359==--
+

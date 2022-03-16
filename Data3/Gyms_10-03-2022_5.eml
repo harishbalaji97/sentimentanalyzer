@@ -1,0 +1,85 @@
+Received: from 10.253.233.86 by atlas310.free.mail.gq1.yahoo.com with HTTPS; Thu, 10
+ Mar 2022 09:47:46 +0000
+Received: from 209.85.216.48 (EHLO mail-pj1-f48.google.com) by 10.253.233.86 with SMTPs
+ (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256); Thu, 10 Mar 2022 09:47:46
+ +0000
+Received: by mail-pj1-f48.google.com with SMTP id
+ lj8-20020a17090b344800b001bfaa46bca3so4632722pjb.2        for
+ <ygayathri95@yahoo.com>; Thu, 10 Mar 2022 01:47:46 -0800 (PST)
+Received: from BDC9-LX-137BR49.dir.svc.accenture.com ([223.226.206.29])        by
+ smtp.gmail.com with ESMTPSA id
+ b5-20020a056a000cc500b004f6ff0f51f4sm6023630pfv.5.2022.03.10.01.47.45       
+ for <ygayathri95@yahoo.com>        (version=TLS1_3
+ cipher=TLS_AES_256_GCM_SHA384 bits=256/256);        Thu, 10 Mar 2022
+ 01:47:45 -0800 (PST)
+Return-Path: <laxmi.saoji@gmail.com>
+X-Originating-Ip: [209.85.216.48]
+Received-SPF: pass (domain of gmail.com designates 209.85.216.48 as permitted sender)
+Authentication-Results: atlas310.free.mail.gq1.yahoo.com; dkim=pass header.i=@gmail.com
+ header.s=20210112; spf=pass smtp.mailfrom=gmail.com;
+ dmarc=pass(p=NONE,sp=QUARANTINE) header.from=gmail.com;
+X-Apparently-To: ygayathri95@yahoo.com; Thu, 10 Mar 2022 09:47:47 +0000
+X-YMailISG: nFaaMesWLDsg1KIDtwVq3_k_452V7M.CFhJtUL2b4c7F5fp5
+ gdAlrS6gQsJ0Nj2Raoyalrz5V41czoklwKVekGLsXKZBtXpMKBnemXud72ke
+ vsQlCsUOULQwS7o4SEM9PWKPmSpPxih5it8_hjTnb6jeP_2fDj5psi5S0DFC
+ EQUt25fnZxNwHm2DDSQCOMx0EM.BvdBxE.eHUF2rErGa2ZF1DXz.TiIWjyig
+ PTB3wRo2yL4KfU4VXw6_.x904RCe3SiCW8yLAsyRYeNhY6_iTyztDe3qj7vc
+ aKviRnAM1D2sgXyX.EZ7plG6Ijhpo.n8wPvk1Yvh5W.9yOuC0cCwq46jVByh
+ p4Xgi5.YFc9Biw0_wa_OffBQWWGg9D9H5ZpgNjCiq7aYRMW3IUEi92gOE0Cn
+ ZjABVvh9Y9lLzy0nwqEMfoTb6M8W2ct4n0VAPp6OtKKun9d0kP7wwSNy0fyg
+ HbSji7xyWqm6aSPs0k3f0BL7NEZV1rg1Ya1RuUOb_a50PyVnYxDPG2QSU6Rd
+ 9Wcm5KUr7_wKXBRDdpezvjqo5d7lxIoPjsm1icAA6WCfhh0Zhj7qa5r4vEzN
+ BBVjwLYbYZ4ZSjeEfmzNXZVfu7C73RheHs4lrh81LoR7FYfsYdUjsvsYaCvc
+ 6cs_3C3XKIPQl.3Zt6ZL2bamz34Vrxpq4lfkkzCdpGtVrXMC641unQAA6Q3H
+ Qem5q4n6LSJMxDuDcYJoRSFuEjzNBC64prxnvPwThBsICrNr5mKbV3gV9bMM
+ jvI9XDGrjpMgN4CYK8lt1Os.NihT4TTFY3b.jGq27hxjQqS1hT5X_G0iFSZ6
+ hSKcSBzlvEhw2Ecquadcp.LoLQ.o_JFTN3_Fa6vtmryYVKOfLOtMRdcWZkgq
+ eWHDNyeLlsfQnSGNh60BF9jUbfsFC3P16Toiint6dqraRfFL2K1ObxR36r9m
+ JsDaO.y6FovM2ekepBV7vVVcLZWz9bfx1Zoi6JpDZ8jx.qHJG6SaBXEGtsHX
+ X8bRVwczcQn17JtYcfG5MuDJ6JZaD7PIHW2My81R3bFdPehU0hqile7nw0wx
+ 3GVZRPBuV8fZViDABAB3rlqrW8eq7SQG3zpwuyHl4VoYroJotzKC1ICWjTQ0
+ oQEqdEsO0.lVJgjBXIqtZbOtF5i2MLQEPYLI.cKJ_kOPRmwjB27k2tAf0NBO jLiEJtTt
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;        d=gmail.com; s=20210112;       
+ h=message-id:date:mime-version:from:to:subject;       
+ bh=s/5Yi62g2N5nQH+T93lJDPinA6cQYBnOGxlu5sAItcA=;       
+ b=oXqUayafGQLstvFw2TPg4adlZPDI8yw3BiaW4IzVEZmdY4wz5h3G/WL3WcAZTqcADo        
+ 6BhnNPS0wdvC3h70saFR7C+pvzh5SExQS0McVKbVxNMf4J8Wmhs6SIiAj6qKjAhHxh32        
+ SWJjEWoHfjKq70CI22Wcj17JBwjuYGazcdglDy/RjBxH0cEb7i7rR7BiZqqK9YDmuRZ2        
+ cvn4sMW5VFANpt9zASq2h7RR8uHanghkJM7JtUdBvWaARBtWwSMgxYwUKyT3pYPZmNCU        
+ 8Y2qWwJ/2FwwiN342MuIjj7wnadJ8StccHmuEqhUeigJGmGgqfx+hlvgN1K3U81ibV7P        
+ Zv5A==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;        d=1e100.net; s=20210112;       
+ h=x-gm-message-state:message-id:date:mime-version:from:to:subject;       
+ bh=s/5Yi62g2N5nQH+T93lJDPinA6cQYBnOGxlu5sAItcA=;       
+ b=EKLb3RRKYqJKwLXEsuYCxlGfyZ+GtHCIEVhqMtGJoFTS0IEzIFWJx4tA6sCbAvypOg        
+ Y1Izy1l5XM8BrmPGxxDw62vihbDlP4oaDRXzD98QMati+lJFYntSgELR6vn1RFsbKiMP        
+ Pjaw62VAPdyaVpeiwstphsAY8Ep0G6D/e2Yw0aw+PhpTRenRVtJGmp2ZeYWtQ40h4HOL        
+ wfRWYREHekidymLBWLsJRNymUv4m2sCXqs9Xhh+7eTpTi1QeIHPF3DXv/Dc0eWx7JMPF        
+ 8wTGQsQvLEtYLITHTyUtYXTrpXcJgEAapJlaT6r4SsRS/RrqWH8YGc1x8eDixxEa3gBC        
+ 7HXQ==
+X-Gm-Message-State: AOAM532QxLqxmxWrcItgQa93WbIeq7tY+yIT+yqt1e/bwM36BdUzCFRt	wbXJYwLmvElEPMUpxHwmgUDanj5EFSk=
+X-Google-Smtp-Source: ABdhPJzQQ6SrqE75MuwsD2x+CcCX5XnfWoqFmQNVvHcnlEkyPGKVVEuEPhnkwbCXeO+gQtqYn536/Q==
+X-Received: by 2002:a17:90a:d195:b0:1bf:a0a8:6c3a with SMTP id
+ fu21-20020a17090ad19500b001bfa0a86c3amr10591652pjb.162.1646905666245;       
+ Thu, 10 Mar 2022 01:47:46 -0800 (PST)
+Message-ID: <6229c941.1c69fb81.cc34a.f292@mx.google.com>
+Date: Thu, 10 Mar 2022 01:47:45 -0800 (PST)
+MIME-Version: 1.0
+From: laxmi.saoji@gmail.com
+To: ygayathri95@yahoo.com
+Subject: Gyms
+Content-Length: 899
+Content-Type: multipart/mixed; boundary="===============7887128803962158720=="
+
+--===============7887128803962158720==
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: 7bit
+MIME-Version: 1.0
+
+I NEVER thought I'd pay this much ($90/month) but I can't quit this gym! The keys for me are their great yoga classes and instructors (just as good as any studio) and their three lap pools where I can always find a lane.
+
+Being open 24 hours a day is wonderful and even when they adjust their hours on holidays, they're workable. At peak times, the parking lot can get crazy, but you'd never know once you get inside because it's so big, you don't have to wait for a machine or a shower. 
+
+It's very family friendly, which to someone without kids means crawling with kids during summers and other school breaks, but they're not allowed upstairs in the "gym" so it's just dealing with it at the pool or in the locker rooms.
+--===============7887128803962158720==--
+

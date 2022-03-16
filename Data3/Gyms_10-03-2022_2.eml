@@ -1,0 +1,81 @@
+Received: from 10.217.150.203 by atlas105.free.mail.ne1.yahoo.com with HTTPS; Thu, 10
+ Mar 2022 09:46:50 +0000
+Received: from 209.85.216.47 (EHLO mail-pj1-f47.google.com) by 10.217.150.203 with
+ SMTPs (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256); Thu, 10 Mar 2022
+ 09:46:50 +0000
+Received: by mail-pj1-f47.google.com with SMTP id
+ mm23-20020a17090b359700b001bfceefd8c6so1496877pjb.3        for
+ <ygayathri95@yahoo.com>; Thu, 10 Mar 2022 01:46:50 -0800 (PST)
+Received: from BDC9-LX-137BR49.dir.svc.accenture.com ([223.226.206.29])        by
+ smtp.gmail.com with ESMTPSA id
+ 124-20020a621682000000b004f6a2e59a4dsm5874086pfw.121.2022.03.10.01.46.48    
+    for <ygayathri95@yahoo.com>        (version=TLS1_3
+ cipher=TLS_AES_256_GCM_SHA384 bits=256/256);        Thu, 10 Mar 2022
+ 01:46:49 -0800 (PST)
+Return-Path: <laxmi.saoji@gmail.com>
+X-Originating-Ip: [209.85.216.47]
+Received-SPF: pass (domain of gmail.com designates 209.85.216.47 as permitted sender)
+Authentication-Results: atlas105.free.mail.ne1.yahoo.com; dkim=pass header.i=@gmail.com
+ header.s=20210112; spf=pass smtp.mailfrom=gmail.com;
+ dmarc=pass(p=NONE,sp=QUARANTINE) header.from=gmail.com;
+X-Apparently-To: ygayathri95@yahoo.com; Thu, 10 Mar 2022 09:46:50 +0000
+X-YMailISG: ichzX58WLDvqB_nwSdg8Eirnc1WLNWeNR69AqvK0SFzboaf9
+ DSQTrB7XspSzcE4aep2zQPbt071fVYdJNd4WtKDqEY4vLLzUBaaYX8rfS8cE
+ xCIATdQ2.8WcLqKpNkjKZFFG7MEA.EjF3T8ZHajrlsx9WgMza1fnmVOljDKd
+ UfPG33I2e1jXQ468SIbBlogGhUmT7nYe4oVXQarHkIca4thvBMJzC4dYK98M
+ A1HlbwFCKllOGL8klx5IWaGBnq26XgmHKgvFvebiW8R6YtqJ24MzrSTztVk0
+ tycQKldEr8DL2LJS4HVn1KHbhRyQI_LTgIOY7.uhJRDiNer0vKAGVxJJyaUQ
+ GwYCtFQDXS_qh_totE6l_.eYORKgv.Cb3v5ISgAl25_QoqKqHapJk1zKbi32
+ 7WfRiUlRLMa2baUA.mhC0WVjr_NOyJ_mEBviV4TSWU8FQUFyNQbwlSjyTzxJ
+ Sdm2VmaiXtfZmZd79yy.UwhDzv.8fME1O.2CwXFby8WIzLb5gx9BVl5iX9MS
+ dxEDrvgVj9qwyM.w8jAtApaSinLTCoG9WMfZ1R9VYr4GwvFlR7xiEyIyVXvo
+ g.zZQQpgU6jmHMwV2_cgT0wVf9F.U0IpzNYt8bjCg0rzsEh.NjWn8ZutMKYN
+ l14lvIsU3pA3x.Pv5EjYuMis0YDvO6roRHJyogLRXabUIjS2ZbYmWEO1235R
+ 79WgU0XMU2jutHZPZmRFv0ImxP_CxkYoqI8i5DjVVdu1LvUeC7kCsEifSHKG
+ F82NrvwoP8QSFuqgBj9Ta6HQ8U0W.9naYeyf8w0oa2OqcYwRVG6iwGbnsLuI
+ PKv1ZCi4XxSZu7K3.OKB2LNFMP8Neth5dd7X1GJIMFEnFjHbR2mTE59XzNp2
+ VZR0A43KqYVVlk7OEhkX8mV6Xfc_m1px8a0yZ8jpTpUfK6hT60cHq6Sz4oFW
+ 5DOOYa5SQOS1fyFv3UpfYVhHwPh7qZQPe.fwMsAoGgNzKz5ZwgNUD8SIZn67
+ eio84VZsnIWBFtmZxNnuz58HvJabeMG.dmNwTuqsMwrDmO.Ho7T0QYq61meo
+ QXYEf2FXp_McgM43dON3.c9Q.PKSMWBmh4BRxywVZlKCYwqNngX6wZqkvA.P
+ Eehbx.IWKkIERjvI2BSkyE7ZzYs29fcOimtPFmM-
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;        d=gmail.com; s=20210112;       
+ h=message-id:date:mime-version:from:to:subject;       
+ bh=bgN7XiZqHIBRioSVxEeQiBiEWFUXvzqlaap4hKfLPTo=;       
+ b=HHJNr4ePXCfpGO0mZXWaUgVEWJ7dKlaS9/0bZD0dhO1fBBakkgTUieehtsdxJbMAkG        
+ ZFWiQs8NReFYGVoLSdek8d330BtAnk/1C8TfqAB2BiEJVlIloQk65GxIkypqMojgI8s6        
+ FzkUzbHx4Em7jmb2JDTIflxk5OnBdAhiD3felO8yugm49UvqiWdfwWghQcdudJSLAC89        
+ Pta6BPDiOsF8mtxbTABtkxUXI2sMAF7luhsnOM4Cfh0dPBuTvdOJAAtdmWLDaDpBjojk        
+ MK1sKkgzPNFvn/P7ZVQWA+dlVy+/yD2/EXWMKcx//KMizIBrhtNV+gBkRIjKbbWk9Cdo        
+ 1LLA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;        d=1e100.net; s=20210112;       
+ h=x-gm-message-state:message-id:date:mime-version:from:to:subject;       
+ bh=bgN7XiZqHIBRioSVxEeQiBiEWFUXvzqlaap4hKfLPTo=;       
+ b=7ZQcf4joSaO6wVN7HUxrp0bCDSEOQ3KIolnh/X9a5EIzGA0sLdi/Fs2hAakPxTDpre        
+ C0d7M3UlZAdstNXOKBDpxPPw9apQsXwlRWFf7Ce+zSeK6YifVPO/RunL0ZkXmlCcqMFs        
+ OiwQMTib1vz+klCmqorRn6rACmFbuC4x/klJ93qEDFqakqXW98yIbFlKmt16iEiosdWn        
+ ZplmANaMzr4JMmg8e7ZAkG5f4iBGiF1yb5/Y2bc8HUTXjgeACbKZ6nLR3Ek/LSxASp83        
+ Au72oB7wGj25M/UZ04hiktkl26D4KBNBB4LRQjfVKH+woOQ0htzD5ZHTKjNY99jCIaCk        
+ YP4g==
+X-Gm-Message-State: AOAM5314ZE7/rBmN0lyWJE3L11oSwBbsK17M6Lo+vsn/s6e2Fk9cNIMV	vMis9hdT8+vuD6a3iDoJ6uSPgjAxKJU=
+X-Google-Smtp-Source: ABdhPJzFxCrvOeu9J1L6X1n7cS5Fw9CEFAeq99cIzfH5w8QetG/KogcOYCQR5pJkYib6F+1m7O2eAw==
+X-Received: by 2002:a17:902:f681:b0:151:d88b:ebde with SMTP id
+ l1-20020a170902f68100b00151d88bebdemr3930889plg.159.1646905609908;       
+ Thu, 10 Mar 2022 01:46:49 -0800 (PST)
+Message-ID: <6229c909.1c69fb81.83cf9.ebc7@mx.google.com>
+Date: Thu, 10 Mar 2022 01:46:49 -0800 (PST)
+MIME-Version: 1.0
+From: laxmi.saoji@gmail.com
+To: ygayathri95@yahoo.com
+Subject: Gyms
+Content-Length: 531
+Content-Type: multipart/mixed; boundary="===============7048100789552059192=="
+
+--===============7048100789552059192==
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: 7bit
+MIME-Version: 1.0
+
+I quit la fitness to join this gym and I like it but it needs MORE AM CLASSES!! The 2 spin classes that you offer at 530am is not enough! We need some weight classes along with maybe some step classes I know plenty of people that would go to that and I know you already have an instructor that is willing to teach them that early....so whats the problem?
+--===============7048100789552059192==--
+

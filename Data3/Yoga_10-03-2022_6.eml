@@ -1,0 +1,81 @@
+Received: from 10.253.233.85 by atlas219.free.mail.gq1.yahoo.com with HTTPS; Thu, 10
+ Mar 2022 09:48:07 +0000
+Received: from 209.85.214.173 (EHLO mail-pl1-f173.google.com) by 10.253.233.85 with
+ SMTPs (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256); Thu, 10 Mar 2022
+ 09:48:07 +0000
+Received: by mail-pl1-f173.google.com with SMTP id z3so4377974plg.8        for
+ <ygayathri95@yahoo.com>; Thu, 10 Mar 2022 01:48:07 -0800 (PST)
+Received: from BDC9-LX-137BR49.dir.svc.accenture.com ([223.226.206.29])        by
+ smtp.gmail.com with ESMTPSA id
+ ob13-20020a17090b390d00b001becfd7c6f3sm5613162pjb.27.2022.03.10.01.48.06    
+    for <ygayathri95@yahoo.com>        (version=TLS1_3
+ cipher=TLS_AES_256_GCM_SHA384 bits=256/256);        Thu, 10 Mar 2022
+ 01:48:07 -0800 (PST)
+Return-Path: <laxmi.saoji@gmail.com>
+X-Originating-Ip: [209.85.214.173]
+Received-SPF: pass (domain of gmail.com designates 209.85.214.173 as permitted sender)
+Authentication-Results: atlas219.free.mail.gq1.yahoo.com; dkim=pass header.i=@gmail.com
+ header.s=20210112; spf=pass smtp.mailfrom=gmail.com;
+ dmarc=pass(p=NONE,sp=QUARANTINE) header.from=gmail.com;
+X-Apparently-To: ygayathri95@yahoo.com; Thu, 10 Mar 2022 09:48:08 +0000
+X-YMailISG: 04EViB0WLDsmUtYA8unqnT_0VO1vXNyV2Jhz6EiPLrP07OTG
+ jf4LtUbiZyyuM0MHnWok7CTQMCdk_hGgihui6umJCB5hqZVhbrXwRNUeJFkB
+ gTC9vKXp5wlW2XmMFC8XATQChAeelC4LkQbBcRowbmtSWAjolj0ieS_MUI6k
+ EDC_8SL83cPa2jWv1bXjQk.1Jp6S9fQB9Sso8IX7i89zIN6dGw3qOfEr19x4
+ DywNJidQoDk37nEc9D9vc9P5xGgq0ZcZGfSulUAJJxR8Ide7u24X3pZSDZqe
+ 1uE3OgA198WwjQX1PTP5i.7BLxJly6I2vg8NhJW8e1PjNqAh52kbm1VMke85
+ KZ4u7rLRsOq9ML9pEXiWKOnQ3zzbqS1qTEoi9bY5VSnvEh0XAlecK86HiQuV
+ YU7eiwb3aidwWHhMs5.V8a_9aknvCkkk0P6QKMUqYOolA28xvLYhStr4q2Zc
+ YBlVo_QA1l4QtduljfCxsjMCgVdEauZxKjlMCVa296N8QQM.VxAugYafTYaY
+ Xew5t8mcfuuN6VFMxwtgC24uxDyFzn9NXKr1owloPMqrQzzkw74E8_rTU1ev
+ GcpEbZv8kekeGAZqIjUeEicFRfN4UAj1dOORuyMmq.D.LX0HuqRiOfBeiwj4
+ .Nw3GW8WOIbkFDZe3N9N3HzgWUb7dyZ5xhaoNB4CkXfKPRCrzX3N_kzEgMBV
+ pTzSf.if6GEfun.TsdbI1SSzxn9DeHbi0seuE6BeIIZ0iE4f_FtXHcKIMsWw
+ BKa7M2bT33Pv8abJtww91bpThbFv0VuCrkS8sSEcW8HKdhmTnZNeunBmGHjy
+ lX4MI.De.dR.8T_s2kb1GAYXTloafPUL9ewvqzgTzxyPe2gUkP.PHDtvD0p7
+ NvThz8WNn4qXGswzYWi_NjujNYKSVFOT0dl4Gxh2wl_OiDZtGjDByt12pRLs
+ ipazLWg3.Z.4PJcy5JVM.CJv8P_R.TXuF6B1svX6IKj_Y0745o1xpezMiz1v
+ jfDIqG0js190Cp1TbttJWhvIcoEcoAlnZJ7pWIrWnPUV7tQeHM3H120Q9Ff8
+ Q8pJyaQSUzqI_keCBicBj2bC9PWhm2aWShjuo3pmO.cdTuD_2BNSx.tezIB9
+ TLImI2XhB_lqOhSQmmwdyrhSnm61IKY1.kh49gJmAyMNYyF062FlG2mIAaQF
+ BiHSZZqXaf2AbyB2ZqfLh65ERn3dTEizUTk-
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;        d=gmail.com; s=20210112;       
+ h=message-id:date:mime-version:from:to:subject;       
+ bh=iLkPub4vnkGdqJHMZtZwDStcrroWwszWeFW1www+zg0=;       
+ b=pqsKfkbRF4hwT2xdFM7Ikl8OBjR3j0JHWMpl8nWa7FBCcHBb9k0I0pFSuGpSJUtG1g        
+ ysk9eF9hHeOeHb71YUP2V3kmaH6DGwlYQZzb1BbZFF5TWhKl24kdVWs9QcyvdF54s2qg        
+ nP1/nGcsgHDBYHH2qVKxZOm+XbF6M4AQrRCBfeaSz2H++I4dwd/LL1RD6GYf48kHoXaI        
+ HadbaO2Bwqqg1eIJiqkhEzZirvqS3frvc0ioDI1BQBkiqGKg2HNY9t0VvK/vfyBeV068        
+ qrOKFyWHGUrj6I+8+/ccY/hXkCC1d28aTh/v8dVzVEsnsWuEpBMhtq0stx0W/1zoKnV8        
+ 7zOg==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;        d=1e100.net; s=20210112;       
+ h=x-gm-message-state:message-id:date:mime-version:from:to:subject;       
+ bh=iLkPub4vnkGdqJHMZtZwDStcrroWwszWeFW1www+zg0=;       
+ b=QaioHsCjGAo6xQoQLm+Z0LDqjEdLEyYelIMPRifGtxLid6mBenSVIwJRuRKkhmXJSn        
+ a/Vajb/+m7a+J0jd/1a8+cPdbwcv0V2WypoICDo6fbFqV28lW+7a76IQbsdxBF2qAiUX        
+ Gb4P3bKP8nlSHkiHXM5yHCoNxeisIVSnD16VqlXKYtbAD9DR9+Zocpr4QS2RfTFxG2vp        
+ 5ZBjT1z/gKR0MORHHnyJQL+ADdBXEdImEvuGkIxuo6ZPv36EuA4Ah62/qrgYhLfpp7vS        
+ TzZmcVbpLzc9+v+kswC5eL3saqop4Z1wSCz5mzBZPzmPb2NUQF1UiOLYpj2l/o/d6Dum        
+ bY6Q==
+X-Gm-Message-State: AOAM532uOq+Rt5RJL//rDcNiOKQTLFfSx5USUzBEeMMoLiWNEWQf54l0	AS685AFa+pcvYeBvX36Y1vTHbm++RUY=
+X-Google-Smtp-Source: ABdhPJwpgxF4QXqkHN36nARNDXkZ+XAupO2aX6nxia4K7ZubWy4x/OCoOE4Ed7U+rdRXc6LgZCQy0w==
+X-Received: by 2002:a17:902:ab8d:b0:153:2e8:d363 with SMTP id
+ f13-20020a170902ab8d00b0015302e8d363mr3972423plr.93.1646905687514;       
+ Thu, 10 Mar 2022 01:48:07 -0800 (PST)
+Message-ID: <6229c957.1c69fb81.a6717.e0c0@mx.google.com>
+Date: Thu, 10 Mar 2022 01:48:07 -0800 (PST)
+MIME-Version: 1.0
+From: laxmi.saoji@gmail.com
+To: ygayathri95@yahoo.com
+Subject: Yoga
+Content-Length: 683
+Content-Type: multipart/mixed; boundary="===============4773059473195488488=="
+
+--===============4773059473195488488==
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: 7bit
+MIME-Version: 1.0
+
+At the suggestion of some biker friends, I took the coolest spin class I've ever taken here. Whitney was a spectacular, fun and inspiring instructor, and the bikes, called Real Ryders (I think) are these incredible new machines that actually allow movement from side to side, like a real bike, but are still easy to manage and unscary for uncoordinated runners like me.  It was an awesome workout (I was sweating buckets!) and loads of fun. I will definitely be back!  I only wish the studio had showers...
+--===============4773059473195488488==--
+

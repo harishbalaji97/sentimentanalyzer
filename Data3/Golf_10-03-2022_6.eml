@@ -1,0 +1,81 @@
+Received: from 10.253.234.155 by atlas324.free.mail.gq1.yahoo.com with HTTPS; Thu, 10
+ Mar 2022 09:48:15 +0000
+Received: from 209.85.216.47 (EHLO mail-pj1-f47.google.com) by 10.253.234.155 with
+ SMTPs (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256); Thu, 10 Mar 2022
+ 09:48:15 +0000
+Received: by mail-pj1-f47.google.com with SMTP id cx5so4754554pjb.1        for
+ <ygayathri95@yahoo.com>; Thu, 10 Mar 2022 01:48:15 -0800 (PST)
+Received: from BDC9-LX-137BR49.dir.svc.accenture.com ([223.226.206.29])        by
+ smtp.gmail.com with ESMTPSA id
+ 3-20020a17090a030300b001c17851b6a1sm1478543pje.28.2022.03.10.01.48.14       
+ for <ygayathri95@yahoo.com>        (version=TLS1_3
+ cipher=TLS_AES_256_GCM_SHA384 bits=256/256);        Thu, 10 Mar 2022
+ 01:48:14 -0800 (PST)
+Return-Path: <laxmi.saoji@gmail.com>
+X-Originating-Ip: [209.85.216.47]
+Received-SPF: pass (domain of gmail.com designates 209.85.216.47 as permitted sender)
+Authentication-Results: atlas324.free.mail.gq1.yahoo.com; dkim=pass header.i=@gmail.com
+ header.s=20210112; spf=pass smtp.mailfrom=gmail.com;
+ dmarc=pass(p=NONE,sp=QUARANTINE) header.from=gmail.com;
+X-Apparently-To: ygayathri95@yahoo.com; Thu, 10 Mar 2022 09:48:16 +0000
+X-YMailISG: 1i3PxboWLDsxXyInEsuebe_.R0H0a2g6e1.fKi6eOnFBblJY
+ ppO3v.Tvt3mVlNTZ38nM1aV52J2bAUd4n93R2kw1zCUQUZgMtMSmHF4kzroX
+ YeOcr7u_CNKu4L7c7PqkSjMS86rqEpsyBAs8zgDfP_P04JVGj.P9J0mSImxI
+ 4WpNoWhYulBwdxu6Lwg6IISuS8qYVHKGR3sAr1qnlZr7OcK8WK8sUBNrm.f9
+ suAYy.k503Ut.YSL6dCyKqLGV3iHA7FmIPS4qQpXht0k8E7j0C3C2apZtwVf
+ qJDqOKqxGWtUcoBhlsCeDPmnp8RPT8H5uZZWjJlppp5yXdEnFIRmZpYzDmtV
+ o8WAG_kyUf6c5jMWpo8_xfcThgJIvjU6eLGOF6bfbnlSiuSTiILD3CbDJPGE
+ xE9wbw7L7nVL8AsBLhY_Sm6Qs.m.yYvsR0PM3mFLJ1g4frpGiRyw4Gk1kODt
+ 4sQ9LY6i2cUOG1O16E3BEURkQX.DRV_GpHaHhaO4_sPcQJOoJWD8YDXMId3Z
+ pB4ZBr9ajUV8CTub404n.IADqFpBrZKj4vSmsAkG3jhgD1a5cXXPScvbN42R
+ A5zBz3mqUd_ahG5a2ab6RsVsKaf_FDpRyy2tCtY_RS3jYd5tfuOKTUfteP4G
+ qwH2vq_3LsjL2tgpuTvQr2p4xWzSR0wN074mV7i7PpVNwMsbioxgg2DUmraX
+ 8C0G1GQ.YN2TMinEmtaDh_eAsq95kZIuGwIUPb8aAp2mrzgE4Atlbqoenli7
+ g2FZzNCcvFlWghLGweGQnXsybahyR8Jz1gKFhYLXGRWjUR8r8W4ER5GwI8Jp
+ .98j15CMa4zX5igcKf6M8fXEdWLyg.oxz_0Rid.xGk7Xo5oX4ge8TeyXofU6
+ Ec_r9Ub15Yxbgg2E6s0FcrHg2Vxers8q02FFS3zhEMwd8I8buRdWq16CHBRQ
+ amR4OB0YSouNhRJdE4nhb0kUWnXAOVAXqEtackieGmGbU8._nAiBLC8.CCxN
+ vrpfg6o1_w6tJRFcREJcBn3Pcy.pvIi2IJPli6wR14LfWo262z_TEr4Kph1d
+ ken9JqH_lKkE.vp8C8HPTdaLRlC_KrEw.QQ2FUZVMAXne_nMg_GXBXwAtX5L
+ eLqC_Bw6wcZmET6TtB6tuJYwUWO3gT4HTLeE.KFU.kcpOeBc9Qz9UGzMRk9Q
+ QJCqmaB1XKBCTCH3jhEstKURVjB8c70oKdEy5nKsBdIH5.FDFe2YPah.i8fp
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;        d=gmail.com; s=20210112;       
+ h=message-id:date:mime-version:from:to:subject;       
+ bh=v6+X8VwpxX852AbblLXPf76d8ctiNLJ8gr8vBw8cfCE=;       
+ b=mDxL1ha941Vl20jF+nWlV+C0cal4r5OSgdcVdnt0BrvTcMF4uBIrKHNyGyrwC+qpDe        
+ LOVtWaiEaJ0fPTe/LbhzzUgZr/B9mXn7xFDrJy3nm66EasMEbcZjzbkYIuIL5XJLBI1D        
+ zxTIAPT0Nglk7Q//WI739zEtM8smNM95dYwu0uVKB2yS4esbRwQB92tb1Vs5hQm1LPnw        
+ nHDM+3clvPhKzD0iLOc3c78iTe8eNljcyBHh4Z2uDRkBkp7LLH6FlRpc05PngNTW1NCR        
+ wr1OvzmA5za1FwfmpKzHkYfGVXNx9/C8Ei3Vehy8CmfPJ8uhnUYmWPkWPBbhxHKLHSBI        
+ ByfA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;        d=1e100.net; s=20210112;       
+ h=x-gm-message-state:message-id:date:mime-version:from:to:subject;       
+ bh=v6+X8VwpxX852AbblLXPf76d8ctiNLJ8gr8vBw8cfCE=;       
+ b=4djn9ke95+kvRk8GCqd4GSiH/Z6Yi/S2DmofRdw7DQ4t0AsNW62S2BmZoPPamS//1L        
+ WO+fE59ehBVdSgtq1PimqllAbjiMbevzNVFa458APq2DdafR/etA0Cb2POW4SyLbCFEQ        
+ knqiig90nNEO7/cMyS1KuYFj5uok7MIOlUo6nOWsJDwIo9yBaZPXqW+yryY+IcDZBcCH        
+ 3/gGr1RUnPcMmjU74WI5hEvigHBfsdVh0IakfCir8IOCDqUG/IRJ8Luynj6ebNzFfkHE        
+ I+TwtUpOC5lqhTQdPrdzu8RV9r1u9qnTmRvzCMhVMlqbjZKdee9faWSmYVvS14IDGJVR        
+ UHsA==
+X-Gm-Message-State: AOAM5320ABDpSORDwknDKTjjPYhMfz0c9g8U2M9pRIVX/XpkIoZxly7p	Pe+WoyG9ZEHmX6B+3ObmzdWY1ZKRXl0=
+X-Google-Smtp-Source: ABdhPJyVHB9Bjs86dW2Xk2f4HH0dr+K63DFrJFKdn7sVRNz5Md8HWetu12uIXzft/DVlYvO0Igsf0A==
+X-Received: by 2002:a17:902:d642:b0:153:9b5:c4ab with SMTP id
+ y2-20020a170902d64200b0015309b5c4abmr4115971plh.168.1646905695115;       
+ Thu, 10 Mar 2022 01:48:15 -0800 (PST)
+Message-ID: <6229c95e.1c69fb81.8679a.2cf2@mx.google.com>
+Date: Thu, 10 Mar 2022 01:48:14 -0800 (PST)
+MIME-Version: 1.0
+From: laxmi.saoji@gmail.com
+To: ygayathri95@yahoo.com
+Subject: Golf
+Content-Length: 881
+Content-Type: multipart/mixed; boundary="===============2372139284454881173=="
+
+--===============2372139284454881173==
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: 7bit
+MIME-Version: 1.0
+
+Sunridge is great to place to play if your looking for a challenging desert course. Make sure to bring an extra sleeve of balls because the desert will eat them up, as well as your game. The staff is super friendly, but beware of Jeff who works the outside services. He'll chew your ear off for an hour about Iowa and a load of shit about how he's so good at golf. The final 3 holes are the most challenging on the course and will remind you that you suck at golf. The wind is always blowing there which can only add to the challenge. The views are great because you can see an whole other set of mountain that are not seen from most of the valley. Overall its a must try course if you enjoy a challenge.
+--===============2372139284454881173==--
+

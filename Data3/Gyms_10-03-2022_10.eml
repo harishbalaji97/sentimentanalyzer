@@ -1,0 +1,83 @@
+Received: from 10.253.232.219 by atlas302.free.mail.gq1.yahoo.com with HTTPS; Thu, 10
+ Mar 2022 09:47:05 +0000
+Received: from 209.85.216.46 (EHLO mail-pj1-f46.google.com) by 10.253.232.219 with
+ SMTPs (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256); Thu, 10 Mar 2022
+ 09:47:05 +0000
+Received: by mail-pj1-f46.google.com with SMTP id
+ 15-20020a17090a098f00b001bef0376d5cso4712186pjo.5        for
+ <ygayathri95@yahoo.com>; Thu, 10 Mar 2022 01:47:05 -0800 (PST)
+Received: from BDC9-LX-137BR49.dir.svc.accenture.com ([223.226.206.29])        by
+ smtp.gmail.com with ESMTPSA id
+ kb10-20020a17090ae7ca00b001bfad03c750sm5532890pjb.26.2022.03.10.01.47.03    
+    for <ygayathri95@yahoo.com>        (version=TLS1_3
+ cipher=TLS_AES_256_GCM_SHA384 bits=256/256);        Thu, 10 Mar 2022
+ 01:47:04 -0800 (PST)
+Return-Path: <laxmi.saoji@gmail.com>
+X-Originating-Ip: [209.85.216.46]
+Received-SPF: pass (domain of gmail.com designates 209.85.216.46 as permitted sender)
+Authentication-Results: atlas302.free.mail.gq1.yahoo.com; dkim=pass header.i=@gmail.com
+ header.s=20210112; spf=pass smtp.mailfrom=gmail.com;
+ dmarc=pass(p=NONE,sp=QUARANTINE) header.from=gmail.com;
+X-Apparently-To: ygayathri95@yahoo.com; Thu, 10 Mar 2022 09:47:05 +0000
+X-YMailISG: UuwO0BoWLDukShp1PELwuNbkDfVZE0.O_TTzZRX3A6FhZvdd
+ ih7i3CIotwOKxP0ycZHHtHNRJG0SGYBNd1cfkofDafxmSUknYKOGMXzyqaAR
+ aXP32XNgPJBbPsOIMd5LDJ.pRkcgsmzgV9VdIOxzsz146DZ42h5KiCfxn6CS
+ D_o79LpM9NG7GgH53Jehnk9mlezFkrsO137p9axEWyL76sFoKqZOdrG1zrRn
+ karhfSsQl6GCQvmj.YDsJIiVXJQLg2Bgi73XPcnvNABYb7g9oesHqV_2dqLF
+ fAnlh6ieVBzvY1zlHz0mtAxJ8tXe18xMSmEIl1soQqYdK74m0WK38WktAikT
+ uBh2_3PTvJbmnQ1NmciWezLv.B6w2m_Q2TI_tBYWq1nMJoe7PI8n59KUDjcX
+ RNuqGpviOB5bRZzI1Yd768iAntNtujjvHqEt2wx5nvp0pKnQvB3WJXg5fZC6
+ 3.KajRwRzgRW_KHsww4IgtF9cMKcStxh4I2jJmNyI5uf7Lsm2TzMLzRJL0k4
+ M4Y_kK9.CTRkUs1FEJH4YmPzcbzxgvnKdcsYnIaY.QwTdlu5eBG_hvYo2357
+ GymdfK8Id8Obn.dU9m9HoTqqt6IPQPDl3v7Rv0Joi0qciF1i54OLyIfbkJ6c
+ YcTE_HY2w3Rcf7NJEq5rkI30ZYv1Ol9BNl4pMBMYBlLQ_pJp1cKTL0Hg8S1h
+ AXOxAHzFK91GMIeSY3yqgFqB.W308fIfBFyfYLvCWA_5rXeoWcI738e5aN5P
+ .S6Owa7rd2cL6sW67po5oeR_gxUDHkERm.i_63JvLP68UR.rQGxk2Ed5OH0W
+ JKTLsmHyeB9EuzajgZTTYxqO7290R0CcMEjdBTZX.zVsoqINlwJRoyBdaAxn
+ 5zRVkUJgSwURpjJcrkiza_be6HxIpF1BkrHzwDcU17spCWBobLuuGiaxsaOO
+ qiwLC7YbRMLfXT.d4a7LTtPvV4PU7BlYpmYfHSv6gTpvSOvo3A4dTCNCoRrC
+ ZGtk1LZ0bV3K03rONGh8ZvCRZX9lrhHQfeMMzObbUNtmCzC2y0arZxrYP8lJ
+ y6PdSkD8kNvvGv0QzluN7vpA79.lsX.uM8V4.6tVBq_lDm33SYo9qZ49v7Ar
+ HpfCwK7omxUbNdXq.6ipzxHucrthajf2_KT0jS.yLOG6y3HMUAa8aOYWOEjK
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;        d=gmail.com; s=20210112;       
+ h=message-id:date:mime-version:from:to:subject;       
+ bh=/ohUb7Gf8v1wFal1nYmE88D4sAiYMaYBtVB9uQRgack=;       
+ b=nXnUJmzKqDwBccF7ASJHRiQK4A2IIUcD0rm0eG+GF/7TdWECHrVGZBX48IBTLJGiv9        
+ VtohUCjvAtWpAyNKuSQ5lKu1DUCswiiq8Dp892/SXr6PuhyY8ySHjsQD6M1p+BLQUILm        
+ Myaox1rpbLz1PaF3e/4qKWSPsO6urFxrfE2Kaq3ZM9aFbMTn5/b+aPH9KChLoC/3EWn/        
+ Iv2/QLg/pKotGBof1lLuTFZ0mqtM5lJGHMjEHeXLX8MYeTu83+EF9hlEsBDf47G0v78A        
+ 5Cs7f3fjpIqc4+jij+7iYfAlveeOIwwXxJnrT/JDxAIjPQDX0eoTq61e/RtI9ipf0WLe        
+ pevw==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;        d=1e100.net; s=20210112;       
+ h=x-gm-message-state:message-id:date:mime-version:from:to:subject;       
+ bh=/ohUb7Gf8v1wFal1nYmE88D4sAiYMaYBtVB9uQRgack=;       
+ b=KqmccH7ursa4NuLJe+2ClJ+9Jp9+8Co3kagNBmf8QXGkPSUfmEIdbPzbM1pa6MZHAM        
+ A53G1ZZez3w3hyRUDsWJseyCAuQHuypD/hK6NS4aU60Mnf7kJH4v1WIlehYjRGDxBYSD        
+ x1eQ8G0mv4KdJGXPIiRYmLsRLJNN9D+GER8QeLK00+pKEvASwl0kwU4ruGucPQ9VlsBs        
+ A2dkaqagCtl4sYAolFM+RjwO0cepgONp8F+C+aUgRC9bcZBevnTLDUz8dSn8wI+Djf6K        
+ Bn6V4nOeXASqujoLM+LjIJJFXyXI8oHJwAh92rM3sbvtNF8mbxFCN91+HvAbB4IcV+wu        
+ q8OA==
+X-Gm-Message-State: AOAM530+o+t0MH1QoHjt5IkMsdwaXeE4w2imzIvtAKFs7mbnxTlqm60d	pyTIXZLPWoiz2QiFd8EoNQgPzvCJZD4=
+X-Google-Smtp-Source: ABdhPJwxd7T9ejmDIIirvYICluxntAMh+27x4YzG/QNUc1ER/P6pFUIXgvhteE4pEzS5bFvYbmFv0A==
+X-Received: by 2002:a17:902:7c94:b0:14d:77d2:a72e with SMTP id
+ y20-20020a1709027c9400b0014d77d2a72emr4074280pll.153.1646905624967;       
+ Thu, 10 Mar 2022 01:47:04 -0800 (PST)
+Message-ID: <6229c918.1c69fb81.1d163.d811@mx.google.com>
+Date: Thu, 10 Mar 2022 01:47:04 -0800 (PST)
+MIME-Version: 1.0
+From: laxmi.saoji@gmail.com
+To: ygayathri95@yahoo.com
+Subject: Gyms
+Content-Length: 977
+Content-Type: multipart/mixed; boundary="===============2969073682791195288=="
+
+--===============2969073682791195288==
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: 7bit
+MIME-Version: 1.0
+
+My biggest problem with this place is that it is NOT 24 hours on the weekends. Secondly, so many of the treadmills have issues - they either don't work at all, are stuck on "stop", the computer does not let you enter your stats, or the heart rate handles are broken (I realize these are not terribly accurate to begin with). I did recently receive an email update saying new machines are on the way so maybe things will improve. Lastly they have a crappy guest policy. Oh and I really wish the music was louder since I hate running with an ipod and headphones attached to me.
+
+I like this place mainly because I have never had to wait for a machine. Also they recently got all new flat screen TVs. And they have tons of elliptical machines. And it doesn't hurt that it is a block from my house. Yeah.
+--===============2969073682791195288==--
+

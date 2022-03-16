@@ -1,0 +1,82 @@
+Received: from 10.253.31.117 by atlas125.free.mail.gq1.yahoo.com with HTTPS; Thu, 10
+ Mar 2022 09:47:26 +0000
+Received: from 209.85.214.176 (EHLO mail-pl1-f176.google.com) by 10.253.31.117 with
+ SMTPs (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256); Thu, 10 Mar 2022
+ 09:47:26 +0000
+Received: by mail-pl1-f176.google.com with SMTP id e2so4364430pls.10        for
+ <ygayathri95@yahoo.com>; Thu, 10 Mar 2022 01:47:26 -0800 (PST)
+Received: from BDC9-LX-137BR49.dir.svc.accenture.com ([223.226.206.29])        by
+ smtp.gmail.com with ESMTPSA id
+ b5-20020a056a0002c500b004f6dbd217c9sm6063519pft.108.2022.03.10.01.47.24     
+   for <ygayathri95@yahoo.com>        (version=TLS1_3
+ cipher=TLS_AES_256_GCM_SHA384 bits=256/256);        Thu, 10 Mar 2022
+ 01:47:25 -0800 (PST)
+Return-Path: <laxmi.saoji@gmail.com>
+X-Originating-Ip: [209.85.214.176]
+Received-SPF: pass (domain of gmail.com designates 209.85.214.176 as permitted sender)
+Authentication-Results: atlas125.free.mail.gq1.yahoo.com; dkim=pass header.i=@gmail.com
+ header.s=20210112; spf=pass smtp.mailfrom=gmail.com;
+ dmarc=pass(p=NONE,sp=QUARANTINE) header.from=gmail.com;
+X-Apparently-To: ygayathri95@yahoo.com; Thu, 10 Mar 2022 09:47:26 +0000
+X-YMailISG: QAM758sWLDv.CpV.EjggXY67RAUslOveXOGxd8hh4NfuuuuG
+ hDYcqZ6vEDsaefS4ioQJrThiiBpSuDf5No4jqgfhOyK67Dx8m.DgmxaSpiqT
+ Y64MX6TT6L1QE1hkCGlf28R3mw6BorhL4Zwm2Vx.O9uHlRODC6n74ZedtPUz
+ 5im3nBQaSW8xYXZCZsjwiR97oFIs2S9Q0Jama7XZin22GrfLzSXSm_rK3wYP
+ wuZgj2jcbtdQ9Di5yHtNSBILDyJuXj02nw2m9HOcThNq0Y7sAJyCzSgp4UTE
+ 9CiU1tQqaUXOLnZ4a0H9t4mPg9DgMldSn7FJ6GlPugdcy6.sGml3yMKcV4QA
+ 7gnYkqqcmZMBdkUCCJ1m46QC5zbKN2Byruf5XOvjtV0zI9DNoe36I3_Y_ouz
+ 3Pp9YtqujScIh6mrtpSbVP4YOiQkS66V9j.XnY6k23B8bl0CKfOHBS0vqknA
+ 7EDTedO6mhRr_hX1jxiuFgOBFgADSi2TteKW43dP8oZFbdpD_FcybZY.v8l5
+ 1p.tsiicIiCAC_2qwiGBCgeiaDfMOlmG15MbEhvj8o89fiIiEVz0qCLrMxXs
+ pOo.ImshV9t7U7TSPEUh3XL3uU8YuPwW1LJ5Ab0gcMFTEiLY3AJ01gsSJEec
+ mzUuZrtpQaSCpuB8QEhLVCFF78Srf4Yzf4fnJiJbJbLjz2b1otAceqBjVdWi
+ KESiqbLCIMwWcGNCASeKuNKvDU7UtY0Z5cEyvUD7bYSQgttqlPv65NOf5mBG
+ 4y4Smk.xvw9.bSW0a7ZXYhnxwYjmc2irblSjaQ0b2aqusociQE4XjSJpdBEZ
+ UoYjR1Zzfo0hc4TjdNeaw6p4ND6_blL8NewBm3NCNoYwySa.FkBRAxU9v3gJ
+ nrv50N4C_6Q0wKqYbTCBXfRtC2ZpNlYJ2J42rSqbIpwbqx4JEbzMksYz46gt
+ jG7ODTdGENcwdX2EFhRJWQmUg4JMn08oWli1g5NIacTMV3O3jP2d4GdWSUnM
+ Sjqk4gf1uTm3yIEdTdfJpgLbtWkMxwvY1O13_B9MoThP.JtySsLmJWLVYpIm
+ Q_174Mf7NqrWK0Jg62NecFBYih89ahpIFw1j7.wZFZK.MaxjEwzD2.x3kD8V
+ auk1VJ1lrGOH8WRl7GhG3KNRWh6WuC.Z6O8DEZFBM0B9SQi_dajFGWkbeL1. Pj8feQR2SwPQ
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;        d=gmail.com; s=20210112;       
+ h=message-id:date:mime-version:from:to:subject;       
+ bh=CJvJSqaGj7i4Mohj6sFnbKRFGJY2JDUDJWwlDh8FtyU=;       
+ b=Lji+SFYuLAF86bG2sp4H1Z9dF93iC+urgZhab+U6Hp6cdUgW6Twr0/2E1iO9ydv85H        
+ WMfE/IRobS3j1guehUbi/J8ljM8aXYqpZCA7XVy37pDKYI+SfWe2RrTEwAH/8/HPftME        
+ goy/Kzvnaf2UUn6k+bZ5n6KH7XKL2qVuMxR4mFqj3dKP5Yyoz0erp/U2wPt3oEDuo019        
+ EhWEGZvt17n9BbBvZ6IB8aIyI5x4ePH19InI7IAeB2vgM9RUaINv84g4LDgi4cQZOuw+        
+ 24Kaf74nL3FoowhKewur7pdGTKpqhnkP1wXJhhTZM7kAbkC+/im8LItHDHUh8L5yImJ4        
+ kIzw==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;        d=1e100.net; s=20210112;       
+ h=x-gm-message-state:message-id:date:mime-version:from:to:subject;       
+ bh=CJvJSqaGj7i4Mohj6sFnbKRFGJY2JDUDJWwlDh8FtyU=;       
+ b=s8vvc2ToVJO0HACJjKO7ifsvQZ+h/Xaoqu/y1WJfMbBcBH7qFZtdSuKeFRMPQ20HJG        
+ 1ze4vUkKfPb/puT0mSeHWHBOpubdlxBQrmVUgdJFOvXdUMRd5xRdb3NQdU/t6svcV7zN        
+ 9XLnhJcEohw7/+gfRYkVRlPbCBhqa40IOUu7s+qUcvlEME4VkJPT9/cELbKZMFJ/gjsP        
+ wMPt6X9qEhzgEBgKD90Wg/Jw9TRH2nRrwWceoF/xZPdc6TAWgooa7AqmIE+xniEPiew+        
+ 5ViJTDTXvs/nKnU9LiWzRR3lfa/mS26fo69F6bm8RoqczDcbXlMJAL9349G3DTP49jHt        
+ fJPA==
+X-Gm-Message-State: AOAM533VkB2XSaYnjyoHy3xSz6ZjUT+y2OYhi+0JKUzX9OLnFqL5G7NC	zX3pIvWKJnqYbpg2tjU6n7IciCugK0Y=
+X-Google-Smtp-Source: ABdhPJzJ2cRgpOkXj/9HW/8efdAOy8lpUr5OdgB5KqkCFlT/tW2SmxNDYFDIP2gQWPiqeh5omrJdGA==
+X-Received: by 2002:a17:902:c14d:b0:151:dfb1:a1b4 with SMTP id
+ 13-20020a170902c14d00b00151dfb1a1b4mr4175098plj.132.1646905645780;       
+ Thu, 10 Mar 2022 01:47:25 -0800 (PST)
+Message-ID: <6229c92d.1c69fb81.bf5a8.f6b5@mx.google.com>
+Date: Thu, 10 Mar 2022 01:47:25 -0800 (PST)
+MIME-Version: 1.0
+From: laxmi.saoji@gmail.com
+To: ygayathri95@yahoo.com
+Subject: Gyms
+Content-Length: 964
+Content-Type: multipart/mixed; boundary="===============4426201440500545782=="
+
+--===============4426201440500545782==
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: 7bit
+MIME-Version: 1.0
+
+So we finally joined this local Gold's Gym. My wife was already a member so she just had to upgrade her account to be able to go to this elite location. What a dope gym!  They have all of the top-of-the-line equipment, a huge cardio cinema room where they play movies all day, nice sauna's and great city views. I was literally able to run a few miles on the running eliptical while overlooking the downtown traffic, how awesome is that???? 
+
+Everybody seemed very helpful and the clientele was your downtown workers, not the juice heads from Scottsdale Shore. They have an expanding class program with hot yoga, power yoga, pilates and spinning. Woo Hoo for the hot yoga, bikram is getting pricey for me!  What a gem, super stoked to have such a high caliber gym so close to the pad!!!!
+--===============4426201440500545782==--
+

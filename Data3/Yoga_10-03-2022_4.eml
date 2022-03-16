@@ -1,0 +1,81 @@
+Received: from 10.253.231.19 by atlas105.free.mail.gq1.yahoo.com with HTTPS; Thu, 10
+ Mar 2022 09:47:54 +0000
+Received: from 209.85.216.54 (EHLO mail-pj1-f54.google.com) by 10.253.231.19 with SMTPs
+ (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256); Thu, 10 Mar 2022 09:47:54
+ +0000
+Received: by mail-pj1-f54.google.com with SMTP id
+ mg21-20020a17090b371500b001bef9e4657cso7804300pjb.0        for
+ <ygayathri95@yahoo.com>; Thu, 10 Mar 2022 01:47:54 -0800 (PST)
+Received: from BDC9-LX-137BR49.dir.svc.accenture.com ([223.226.206.29])        by
+ smtp.gmail.com with ESMTPSA id
+ d14-20020a056a0024ce00b004f7281cda21sm6007992pfv.167.2022.03.10.01.47.52    
+    for <ygayathri95@yahoo.com>        (version=TLS1_3
+ cipher=TLS_AES_256_GCM_SHA384 bits=256/256);        Thu, 10 Mar 2022
+ 01:47:53 -0800 (PST)
+Return-Path: <laxmi.saoji@gmail.com>
+X-Originating-Ip: [209.85.216.54]
+Received-SPF: pass (domain of gmail.com designates 209.85.216.54 as permitted sender)
+Authentication-Results: atlas105.free.mail.gq1.yahoo.com; dkim=pass header.i=@gmail.com
+ header.s=20210112; spf=pass smtp.mailfrom=gmail.com;
+ dmarc=pass(p=NONE,sp=QUARANTINE) header.from=gmail.com;
+X-Apparently-To: ygayathri95@yahoo.com; Thu, 10 Mar 2022 09:47:54 +0000
+X-YMailISG: he9dRA8WLDuckNndL9pvDT2e2uKp77BTDX187HPjrO6rv_W0
+ Tz8.8pX4DPbsix9FYAeORSjNidEym4xYznhOxi5gN8Jt6yDdc6kJwaMHjz7S
+ LXkXUB0lOzqC5hZ1oj7hju8KxaIcwglan7dhqHNrNBHhMraFtM7SOxeT54dc
+ Pm0UeKQ0YFQwdW65_sHBe5qm27.Crdk3HfO2KowAfzDgfO52fV_qCcC8WBC3
+ bOefBB.fsRDbVThJG46q.cjeOVLf5LdpF5TrFBdG8hAvJO.p6kkBdbLieifY
+ .bNdQ3UP1DtHbXSPwOPBa3QcCcXcu1039OPKIjartL6RJz_XUoQebHvBl7wF
+ XlmBNUfbpBmwNiaCujrRiRCycEXK4ScJeduNDmlhIwZn4yhXH6FA89EiDvdp
+ tiH5Fc0to3YuGSevtRyNS_FGvKLp68cqZL00Jhu3s6JgQsuODErUcw7BAv2y
+ TR1tz9yftrN.TMQOCSd6W8DAUr2BnOLKUSxksz_j3ohuEstpzWLGRSAnTAzZ
+ zNN3fR60sEVNa_CYzThST73_.FgPk0bx1Pys2dQFKBJZaJ9gTxoh1EI5aEF.
+ BGMFRwaAH2qlVQhJ.C3ycPA1TOobVm3NZtQTgCB.L3vHQ6AYWCFNyD0nsXcY
+ YpanJtrK1IczbCwZokVdlgrRdjGWaz2MbqFzbqm0pZTuh6IyMLjhpf9cPCUq
+ m826ThM9qQLwXwypgUpIb7543q8_GpyuXNBFkxdlrgtOVdEsqsdsFaQvpKTH
+ G_l1JcKudWjlCYcX9XVP7mGhleohubNbwzLmhcnuLr_WxEZDgqJ1h_13IDvB
+ yTWQw7L_KmKYDCtudfjXP1Jc3fMX3AkKG7b5Aiqr38XeOrLauVioZc3hxnXy
+ _32_epLWFd_GNl.J9Qh4IxJdeYB54gcQSYMMaf7JzNHLWvP.cGNTuJi9C8se
+ cbC39Hqar4bS6DZa2KXlRowUgk_s8HAy4wh95.tuFTHOsSYFPoXD0mlndwCN
+ exN1bI1FyTOtJH9g_Brzu7YzZds1Qeh6irTbRF.fYYerZTTET63UDoh9CCFl
+ iDDB95CbT8GZh0C2e5hXWmV72GkmRu.q5OXWVca2FQ4odimpKm64EUz5qitz
+ 27sUo4oV1PHw9.XOVtJ4Mh2pT6xtNScZp0YB9tATYdL.d.9rdWIQvXWDJzr6 syxxeZNtVPw-
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;        d=gmail.com; s=20210112;       
+ h=message-id:date:mime-version:from:to:subject;       
+ bh=N+1KHGn+9wYRaUvYkrQzyXuCsufWIwrCA/UbZuhYZ90=;       
+ b=AmfBPH3Jt8pur7zU5PYlj8+JTL1ucHnixCbwlCkKloZVHBLeBJAxS8PTke6Wj50mFa        
+ 6heIlpSeZBstTB5blNCWzmMEzcWnh/DK2WqjUC1I2nssuOWLWptTgceDoqbBcnoTLraX        
+ 7Yjs71iw2qz5y4C/9/MX4p9sOdm4iefQ7Dm05ahSYlQClRo2bbONkFsB8RcIuwWWmHVZ        
+ PmzUS4p765jN5NhVVEsmXY11DQAsUdxfv16a33cNTUIKxJf+TC5DVDbNY2R+DAFoEQrA        
+ S5k4FQXLNG4g+ycYyDcmKvd1p8Gv/ZZheMKPug7mANUW6SgSs5o9CE9Z8Nilv3IqevMM        
+ gwGw==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;        d=1e100.net; s=20210112;       
+ h=x-gm-message-state:message-id:date:mime-version:from:to:subject;       
+ bh=N+1KHGn+9wYRaUvYkrQzyXuCsufWIwrCA/UbZuhYZ90=;       
+ b=SIZfJYeDN21jVJ3mEcKsUm9UyhSGGeqM7W4aR4xxb65R6dycEUrjIDCFs/9ht4k+Nj        
+ bIWw47zV4HzQAjYo8v9gRdipFMTRnkw0ipFct9tUwk/lQTfga+P3Vyi5mzS8ZtZfgXP1        
+ jB6xinnF+7N3EXcGJkVlq3Vpun/3KpHSotCrousDJXc3RxKNNqon2aKiKLuYE74WPrRB        
+ vlI7fLSoTc1/TjtTlSXu5RkjGm2IZnoctEF2JkPOLUZ6/947Xsj1tbLxkE9EpCEb0bR1        
+ mtsdRYqlJfZR0eiRxFKevLJodK7xzLphYBnO3u3b6fZcztCY4byQWe78cmdqmpe1gHw+        
+ Ey+A==
+X-Gm-Message-State: AOAM533RMN6gaRgBZ7iEuDjFSjiPYZKeHx95Ml5l4RhD9i4ggGS/5IFj	+FENgr6Kp6k85ow3tiS90cHtGT1fMeM=
+X-Google-Smtp-Source: ABdhPJz+/LrRe4Jr4Ia3HIWQHv8G6Umz+0SEWGLcRaKeFEXnNq8jK/2XUomaFqJ+Fx37m/709Btwfw==
+X-Received: by 2002:a17:902:cec6:b0:151:e4a6:6af1 with SMTP id
+ d6-20020a170902cec600b00151e4a66af1mr3972144plg.64.1646905673748;       
+ Thu, 10 Mar 2022 01:47:53 -0800 (PST)
+Message-ID: <6229c949.1c69fb81.1f50d.f119@mx.google.com>
+Date: Thu, 10 Mar 2022 01:47:53 -0800 (PST)
+MIME-Version: 1.0
+From: laxmi.saoji@gmail.com
+To: ygayathri95@yahoo.com
+Subject: Yoga
+Content-Length: 533
+Content-Type: multipart/mixed; boundary="===============7117469372282960786=="
+
+--===============7117469372282960786==
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: 7bit
+MIME-Version: 1.0
+
+I LOVE Metta yoga. I moved here about a year ago and after visiting several studios around the area, I finally found one where I feel at home. My favorite classes are Karin's, but all the classes make me feel wonderful. There are a nice variety of classes. I would highly recommend Metta Yoga, especially if you are looking for feel-good or spiritual yoga.
+--===============7117469372282960786==--
+

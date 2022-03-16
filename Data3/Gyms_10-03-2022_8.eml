@@ -1,0 +1,88 @@
+Received: from 10.217.130.18 by atlas122.free.mail.ne1.yahoo.com with HTTPS; Thu, 10
+ Mar 2022 09:48:13 +0000
+Received: from 209.85.214.170 (EHLO mail-pl1-f170.google.com) by 10.217.130.18 with
+ SMTPs (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256); Thu, 10 Mar 2022
+ 09:48:13 +0000
+Received: by mail-pl1-f170.google.com with SMTP id q13so4359768plk.12        for
+ <ygayathri95@yahoo.com>; Thu, 10 Mar 2022 01:48:13 -0800 (PST)
+Received: from BDC9-LX-137BR49.dir.svc.accenture.com ([223.226.206.29])        by
+ smtp.gmail.com with ESMTPSA id
+ t11-20020a056a00138b00b004f7664328a0sm3471087pfg.162.2022.03.10.01.48.11    
+    for <ygayathri95@yahoo.com>        (version=TLS1_3
+ cipher=TLS_AES_256_GCM_SHA384 bits=256/256);        Thu, 10 Mar 2022
+ 01:48:12 -0800 (PST)
+Return-Path: <laxmi.saoji@gmail.com>
+X-Originating-Ip: [209.85.214.170]
+Received-SPF: pass (domain of gmail.com designates 209.85.214.170 as permitted sender)
+Authentication-Results: atlas122.free.mail.ne1.yahoo.com; dkim=pass header.i=@gmail.com
+ header.s=20210112; spf=pass smtp.mailfrom=gmail.com;
+ dmarc=pass(p=NONE,sp=QUARANTINE) header.from=gmail.com;
+X-Apparently-To: ygayathri95@yahoo.com; Thu, 10 Mar 2022 09:48:13 +0000
+X-YMailISG: D2nIn6UWLDuJOXKKmQouriW7JelyUSTRRThGhZFzGbjB6Td6
+ 1MPHs8Tpy1UeZqv5JajTVbWDGRTSrAXHYv58HfEfVvrIA41OS67LCqtFoNmd
+ GzfFVB1wiG_VYmJ_A4B.bz7DAwPyD8NNwJ_PrWGXxL6icrA3iANuBt1sdMlT
+ qpNk1cK.zMnqNEehenngNrGEdtxBkiEeqe_1WCXRvW4m_y_ecolSPSdIw.iQ
+ Hj5jqNQCAg.zn6ObbClWMA.zgUfd26Kn22fS8Noyb8nZad6DjIJy1EhD3vpi
+ uTQNDz8KXAcfeGmEqdXuXBmj0jYjBswD0kP3M4.pZbDr9ENA2cU7tPeNdBr1
+ rf6I4fyhT2qxPs8R4G7Bh9vA93LwMpm1Fmds4i9qXsr68DS._.psVNKzecKf
+ WoZgyhHfFkIzYL_0JG1jaoP0CAysxhN5aA7qlkB12vlFvAOo1G79vCdJNw6P
+ ssqpakcwHp0LvcksmKLqjEEXTZ0rgBknV5.5j4SvQjF5s_QvZeDMh7KHV9nm
+ fraEPMtt1evPqFR2iif9.H6EUu44FaR6Z6KwrEOn.ij8J7VYX3t9OTVdRHe3
+ ZUmvRcP6UhCUuJYvkvBkoTZaqCob5dQuHKYhcoCedCSLz7kGfzAJtEa1gb88
+ qEPSDgxPmuix5LZ045nfsqkPzLIts0aDmBbfF_hvluIAKwtYWcB0UmP3Ih9q
+ HlS.K9Qe0ZSUAE53VWnoeT6xw2VOuxj.Tk53NAap7rDCcwYfXmEE_U9aa1lE
+ i0VkGPjnm9rOQejMEt8j9RbMaUzPpCS1e9IWLWe58npAeg234xjr0tGdH_63
+ idh64cXibQXP99xkiDYVXNV26Lv4CL1gxA4yd_XhtkN.q6Th.c_C6qRkFnMg
+ cCSwxj9rqQGhksvZpfqaoEe94q4mhHtv8kU9klsKdPH.DIonLQthXdZW4K8J
+ ogef4LU7GQQj6Mmo5Gpp.oYwRAALmCV3k2oxWN1DXfYSYdFvW6kZFEogZUR6
+ KKvczz5dKHdqLVdl5ihiJXrGO6oRgJpEPNK.zhkDuGm2lfnFwu_sgeqI.d3v
+ NJSZH9IHETjrNufOpauSoOuUasoDK0_m.iQ5sN043ufSSNzSgRKggt55roye
+ FWkq.BVSHl..qNlrwgCW1Mq7DlqwGrPVsRnvcSVA2pMgv7wSCzR8p2yTl7GN 05dHCc2cax84YQ--
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;        d=gmail.com; s=20210112;       
+ h=message-id:date:mime-version:from:to:subject;       
+ bh=PwUlroKNOLr+1PZJScyfwnz0cgz1BVxIZNzf5cJBJp8=;       
+ b=PWKUZ6bf0Qgf2hBDbPGV81Vu39+BqEx8DmjuqBkGA8GKGxisJ6zfBndQWGO7wAEfVb        
+ xYeOh1IQnWK7A5e/R6n+3vciqk62fQWXf+n71BKACr+HuVgNVSXYwNjxbFKsd4XP1lMt        
+ /ukiOPWytNiWIcCf6T1DXnkupwu4VMx1sKTOmoJpMjGuJ4ssCx4tAuRfZSkmirxRIiWe        
+ tKJjQKfn2SJ1fcK1x8XLIoh/+I/GhIW2raf+/FW1y0cvHuCil3sdLEY8DGUbA8/vnLLM        
+ dW51hEfXty600mpxa3oUTkQTkCtj5FjmgFJF2G9NcBClVrfuVc8A74uq8Cmg6ofQW8T1        
+ C9/A==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;        d=1e100.net; s=20210112;       
+ h=x-gm-message-state:message-id:date:mime-version:from:to:subject;       
+ bh=PwUlroKNOLr+1PZJScyfwnz0cgz1BVxIZNzf5cJBJp8=;       
+ b=DPx0k4rUHP92uwpgBsPNtmpniMtF571bf7SCDIKQqz1J1soTnTRSasOZ3oQlUJ8HH3        
+ ZqMUwUs0UQgTJh1LFhUvS6y6G4vmmIyKXqo3LXakx7HBtnd4xGmdBskkziQAqN8x4dGL        
+ NMZW/p9heYhIkpvo0Af3UHOwa/nrza9bY570i4io11yBAqSEtD5s8L978keAqyn0YlCU        
+ CX68vvpGygI/GrUw8ZWGa0kYG/YTK9KAEi6STar/vJPqHa+8JC3YUd4tqji8CbIyhJDx        
+ oo/qWuh3qwzHwTsgCtKcSvouBNmCj6wjUgqDjwajKF3gifjNVsChtPUp4P8Ilwa1W7cM        
+ 14Og==
+X-Gm-Message-State: AOAM530XS5rAYNd7NtxHew+Nk64At7fbQb5qk7FD07L6SbU9NDs5L4OU	Cpb77kMQ6wSk5YBbKxYBwZh3WS9PR1E=
+X-Google-Smtp-Source: ABdhPJwU4arfqzo8fFwFSfmFfrAozL15Evv26j/oRCWRF5krIc4J+WfgicnQO/i8K+gqxWZ3Zqy1sQ==
+X-Received: by 2002:a17:902:6b43:b0:150:27df:434f with SMTP id
+ g3-20020a1709026b4300b0015027df434fmr4191062plt.155.1646905692477;       
+ Thu, 10 Mar 2022 01:48:12 -0800 (PST)
+Message-ID: <6229c95c.1c69fb81.e793b.95d3@mx.google.com>
+Date: Thu, 10 Mar 2022 01:48:12 -0800 (PST)
+MIME-Version: 1.0
+From: laxmi.saoji@gmail.com
+To: ygayathri95@yahoo.com
+Subject: Gyms
+Content-Length: 895
+Content-Type: multipart/mixed; boundary="===============1127310002255332280=="
+
+--===============1127310002255332280==
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: 7bit
+MIME-Version: 1.0
+
+I really don't why so many dirty locker room comments. I've been going to gyms all over the country for about 38 years, and believe me I've seen some the vilest filthy disease infested locker rooms on the planet. This however is not one of them. People have to realize some things...
+ 
+Sales people are not sleaze or slimy.  They are just doing their jobs. Politely decline an offer if you feel you don't need the service. There.. that was easy wasn't it?
+
+Any big gym in any big city gets crowded at certain times.
+
+With maybe thirty to fifty people using a piece of equipment during a given day something is going to break. Parts aren't always in the back room.
+
+I think these places are a great value for the money.
+--===============1127310002255332280==--
+

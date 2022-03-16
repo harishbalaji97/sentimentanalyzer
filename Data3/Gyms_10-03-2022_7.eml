@@ -1,0 +1,88 @@
+Received: from 10.217.136.93 by atlas217.free.mail.ne1.yahoo.com with HTTPS; Thu, 10
+ Mar 2022 09:48:10 +0000
+Received: from 209.85.214.171 (EHLO mail-pl1-f171.google.com) by 10.217.136.93 with
+ SMTPs (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256); Thu, 10 Mar 2022
+ 09:48:10 +0000
+Received: by mail-pl1-f171.google.com with SMTP id e13so4392127plh.3        for
+ <ygayathri95@yahoo.com>; Thu, 10 Mar 2022 01:48:10 -0800 (PST)
+Received: from BDC9-LX-137BR49.dir.svc.accenture.com ([223.226.206.29])        by
+ smtp.gmail.com with ESMTPSA id
+ w21-20020a056a0014d500b004f7261ad03esm6229246pfu.35.2022.03.10.01.48.08     
+   for <ygayathri95@yahoo.com>        (version=TLS1_3
+ cipher=TLS_AES_256_GCM_SHA384 bits=256/256);        Thu, 10 Mar 2022
+ 01:48:09 -0800 (PST)
+Return-Path: <laxmi.saoji@gmail.com>
+X-Originating-Ip: [209.85.214.171]
+Received-SPF: pass (domain of gmail.com designates 209.85.214.171 as permitted sender)
+Authentication-Results: atlas217.free.mail.ne1.yahoo.com; dkim=pass header.i=@gmail.com
+ header.s=20210112; spf=pass smtp.mailfrom=gmail.com;
+ dmarc=pass(p=NONE,sp=QUARANTINE) header.from=gmail.com;
+X-Apparently-To: ygayathri95@yahoo.com; Thu, 10 Mar 2022 09:48:11 +0000
+X-YMailISG: T7irewEWLDtZ.wTx.VgAfeFdBnfwtmymRgsa4yd3FNBI6LDM
+ BDwI2t0eCsKSBd.pXLYjiJOkiEraWabz..NxLJy.I1B0BEWVM.KhBK1teQmz
+ Ev_g8F_fgjhY0lS0luZe3pSuCUGywXI2Tv8rOjaCwAW50fCR8Gbk2oKn80fS
+ 7U6KEj91DcEUU_2lxrRRVNg5Fs1zqll3qdoixaHNTpTG0k7WDuGEZJuNcf1w
+ fwM8w9Bqj4jGRGuh4uH1F01uAeWitgGMwrQmJz69vvcAcu9IekjnsKBeV3d0
+ qp7zmyfNtXrX.HUnCJf1dW2eWim25PhZjZzhJDBG9RJP2KIizop44DLiS2Nk
+ MT_R9MxT8EHZO5ZA_Lla_FLCazWQP58Ka7fMdToSdiPoXp6ILInrMAPqVqyL
+ cSSmd_B7jR4QfvvyMRx7t2pHKXeK1UXF3..hY2RyhcNrmHOq2FRiuzp4wvp8
+ VKQZ17hj7z7f4Qw.hcLjWmHCwGgUDM2Rs.pgiMPFAqXNHcimGpOtPdabb1rA
+ tvHiC5FSHxMUY_3SpUFQ97dkENzxb5MgXnQOaFFun2MyzOFr.XAGlXwVXbx0
+ auTxlCZVhceqDgMuOaYlNLw0feKb2C9v2oYGRzEeParsI.eXN2y_sXL2Ybtc
+ IxB3MkKFnU6KjP8HvZAC8DVsBI6.hZyTkd.KefVEN6YK51Bc29nwRGf5Co71
+ H3Y_1RhaBTbEZTqU.hR9Oe40FLXmAtEgcSmbX8VgBQP.GFGHQcafGYOyW1tT
+ UXyIDyaiO.QyVwcQBkDMhhkoEfT.fpU9c_LVk5vNQKF1dDoKRp1p_ZQttsob
+ sVmr9EwpT6vYJTCdZ77BOR_BE6yn4uCdb_ZnWarck8xWh79sjTzsaAQU6Jn2
+ _lpspxp6.PnAY8fn8Nj_ML1tNnsupvi1OkUmn6nSic1AW6HBpg9Gq5i_u3tZ
+ 2.objYQVnPCQ.98ffDn8TVuRK5zdUvxwrwJClkiyEGEgea7GXeibmvjVQPIs
+ sQaBfKGYzwqdRN0qaowwRww9jPZ_aSdcTIbssxXIZnn.LwA4S3NhK5sPw__Z
+ upYHoDZANiKh8rppJCCKtSLxzfMyRkQYAZDBc9jFBBfp0s3LAhxq2ugPM6EV
+ rwZZQmr4vIENd_tiBATiOVQfFe8lqeRCSjayfP3KRVYKhuhjwHB2Skb8nL_k arnCmtlglX.9fg--
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;        d=gmail.com; s=20210112;       
+ h=message-id:date:mime-version:from:to:subject;       
+ bh=DWoH5KFxVexqqIUaiRcMmqtrrHM4hz4n6nkqzkwtUfg=;       
+ b=nSjJ2ibPrsGqFP1Rn8Er9v0yYKDCbzNJL3I//Jogk0ZF4xh3+YJbPs4kVj4hFzaVWz        
+ U8kRbalvAFwc3x5j6756lpkr53YiZBS0jhhJ82dZYSbvOMBrwuqszjgUYDpAkkeS4BYR        
+ TLC5nb4IRz8aWg8J2ZiO8dSBtu4myvAcF7uST/QZkT7nS1TmdBL9YwYM+dTP0MNALymm        
+ HuT5ykff6UUkkuTL+7zyLXdEI+dv0s6VIUx/1DMUHIDfXAOP0iZIFrpBhYR4xp6fIePP        
+ zwErJ3nQyLsmxDbEE2OXV5DYdQLjpgkQWItLmEqtUc+bTg6Jyg1aMk5cTRsX3q82ZTkG        
+ 2SrA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;        d=1e100.net; s=20210112;       
+ h=x-gm-message-state:message-id:date:mime-version:from:to:subject;       
+ bh=DWoH5KFxVexqqIUaiRcMmqtrrHM4hz4n6nkqzkwtUfg=;       
+ b=6ufb/Ee4Zje+S5UL4564NIAxCWkZ8By64Byw3zm14QDy0AHgnb/Gb62brxDru3XzlU        
+ d2YRLtXlWP7jj2Pymal3cvz9VOY7cpKafWsqcBJewUpSvGJAekKNFNhRUEJJ768KKuqX        
+ hRFYedETRuSDzXBynKeJ8yvekXHtKkudtE4eeBmioOlFsKybD7UJZwbuLCSXQoOozob+        
+ v20b5E0wPtplqfmw0kHsgQhRm1sG/e1LfmxW5ysSYctRyhCjabz+bJHqstvkZAEx+EyK        
+ OretkqLVZhBCKnXgtUaj5k4fzJuvOxgUgMSpBbtE8kLXU3pOGSrY4O854pdC8FE4qqa8        
+ cvSQ==
+X-Gm-Message-State: AOAM533NVXPjVTThvldUqjNHroccnKfjpmEcd0/0y6QSyhSitTLySrjn	qZXtTJ2/S+y6vTGjiu36gZ5DOPFb8PI=
+X-Google-Smtp-Source: ABdhPJw3ML743/U3CIry3rer02fbEWvJS7uVtWaXW8JQrIgCBXmIp4AGKkpLnCsJVUVsXWQKAiPf9Q==
+X-Received: by 2002:a17:902:ce8b:b0:153:191:b263 with SMTP id
+ f11-20020a170902ce8b00b001530191b263mr4185523plg.47.1646905690006;       
+ Thu, 10 Mar 2022 01:48:10 -0800 (PST)
+Message-ID: <6229c959.1c69fb81.607f5.f47e@mx.google.com>
+Date: Thu, 10 Mar 2022 01:48:09 -0800 (PST)
+MIME-Version: 1.0
+From: laxmi.saoji@gmail.com
+To: ygayathri95@yahoo.com
+Subject: Gyms
+Content-Length: 1238
+Content-Type: multipart/mixed; boundary="===============7836562456703580594=="
+
+--===============7836562456703580594==
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: 7bit
+MIME-Version: 1.0
+
+The customer service at this gym is unbelievably positive!  I have been to many indoor rock gyms and the ones that always stand out to me are the ones with friendly and attentive staff members that care about what they are doing and their customers.
+
+We were greeted immediately as soon as we walked in.  Within 5 mins, we had signed the release forms and paid $12 each for our day pass.  
+
+They have a bouldering area on both the downstairs and upstairs.  The ratings are true to outdoor routes (V0's are at least  5.10).  Routes are nicely marked and made.  We climbed for 2 hours in the bouldering area and there was plenty of routes for us to figure out and try.  But this gym is mainly a top rope and sport climbing gym at its core.  
+
+Our friends brought their kids there after we climbed for awhile and we were able to learn how to belay them using a grigri.  I have only belayed using an ATC belay device so it was nice to learn something new.  The kids got a lot of guidance from the staff.
+
+Overall, it was a very nice and pleasant climbing afternoon.
+--===============7836562456703580594==--
+

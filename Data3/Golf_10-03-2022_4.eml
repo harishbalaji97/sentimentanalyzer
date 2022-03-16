@@ -1,0 +1,83 @@
+Received: from 10.253.230.151 by atlas102.free.mail.gq1.yahoo.com with HTTPS; Thu, 10
+ Mar 2022 09:47:51 +0000
+Received: from 209.85.216.53 (EHLO mail-pj1-f53.google.com) by 10.253.230.151 with
+ SMTPs (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256); Thu, 10 Mar 2022
+ 09:47:51 +0000
+Received: by mail-pj1-f53.google.com with SMTP id cx5so4753247pjb.1        for
+ <ygayathri95@yahoo.com>; Thu, 10 Mar 2022 01:47:51 -0800 (PST)
+Received: from BDC9-LX-137BR49.dir.svc.accenture.com ([223.226.206.29])        by
+ smtp.gmail.com with ESMTPSA id
+ j22-20020a17090a7e9600b001bc67215a52sm5203852pjl.56.2022.03.10.01.47.50     
+   for <ygayathri95@yahoo.com>        (version=TLS1_3
+ cipher=TLS_AES_256_GCM_SHA384 bits=256/256);        Thu, 10 Mar 2022
+ 01:47:51 -0800 (PST)
+Return-Path: <laxmi.saoji@gmail.com>
+X-Originating-Ip: [209.85.216.53]
+Received-SPF: pass (domain of gmail.com designates 209.85.216.53 as permitted sender)
+Authentication-Results: atlas102.free.mail.gq1.yahoo.com; dkim=pass header.i=@gmail.com
+ header.s=20210112; spf=pass smtp.mailfrom=gmail.com;
+ dmarc=pass(p=NONE,sp=QUARANTINE) header.from=gmail.com;
+X-Apparently-To: ygayathri95@yahoo.com; Thu, 10 Mar 2022 09:47:52 +0000
+X-YMailISG: pYkG0kIWLDvlRySS8P6jNBBIuDC2sd9thpOS6OZvcNJCnfFu
+ 8S0IEzOIBacg2F46Lo4msK8QLQt.dxffDFZPxVYnIQnLbi3rgaARkgDgiKba
+ RY6D3obBof3KuyeVOVcKr29XtsBjcY9y.Vdb34krDCYxxHIqRoS0vj7nWtSQ
+ J5qGJ.fzDa3tRndfufeHuwhINY7BmVlcCW4IyEvyjo4gGbNIGEFbkCBXJRGV
+ 7nQ_4EYQgfX0JnEiCtMwuE54Nt7xbgFR7a.xhpkHDOIzjAfOYTFJF30sacO.
+ ts92EpSeDt.ez.5GCF_l2s1My50yW27hQqPmH5LeLUr.lH7pP9cf8O6e_cBR
+ 6j2U8XZ9BxyHFb.cRR_bxtvigD8kTfWlRHlxoJce6WecPgEsEODznpUYKQ7h
+ 7YofvJpP8pQjasuM.hqgIlVrqTJregQUv.vcrhBaWnW05aJout73tmS6QoNe
+ TlN6VDXBQEHqBMBq.UDCyvcIMF9sedfKkiYO7DDGmBlbtePIsrWb9roDXF7.
+ IbensF_sefAv72eL5Rp0m7hvNxB8pR7xgaW2okXv1GXwjWC5.9mKovGLBw8w
+ 8A5_rRMesTjTNWHJ8xxiNolivd58OMhmiDKI1_ZDJDmdOFpaHk_zUI3XR7jk
+ 26lfJW2ENvoY0fgEzEKap05s3N_doSNroF1FXzVmFWVTnCmy1Nj4jerSJYEt
+ lBUzjfGEOSAA62anTMYhJNqM2JMe1BU1BNdxQYbiJcayi8mc1mgJ0YHufG3T
+ 8WH1e1lhvjJL2.8m6rcZtX6Qb65sDBjL1fG617kCQxTtd6gTVEBcK7jVXLJj
+ a49bzPSwXdySNhBwuDHgmwPRBTzQ_6D4WqlzZk40NOCdHweZCt5_63kv9Cjw
+ UqbbXETmLnoXrEkm8n93V7elEwnR4iFtDEnrnHD4FMMyjLyJuFR_SUZYqIFZ
+ F0F3vRcNnxTjAvdmnpbZkKcu.peAxDyl4MBWOkl1HnaOfhXbgHl2rXHhWeNH
+ g5ugsFr0E2HvTISBTDn3pl_UOydDkETDo9LpEvaPitMkSJRHvTuPqI.aWB35
+ 4RwJwNiu62RisBO6k9S8a1KE4wVP.RXml1IZgWFVS5O89GUrwJgXQrBjaLl6
+ 5RmJnc2kJrQRPs_W_vZS0EpY5g98Z0ocRj3Wc3JezJWeLP4dN_N_K5Y7l1Vw
+ _BduQjOeI39un4VydMMsJAhwEFp.VPedLb772uPJ_cWPYzVK5Mk5uzWbi0aI
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;        d=gmail.com; s=20210112;       
+ h=message-id:date:mime-version:from:to:subject;       
+ bh=p77rq83c46X9EaDZMeqR90U4In1udur10BRw68I4VLU=;       
+ b=mG2F8t8at/ghSJr/ueaL9m0qMODWVydmqIK78/JfIf0ZOnPiOnn1st+dVpqbqtco1N        
+ VhVVuF5HLW04fXmGkGQp0PglwUp3/0yUAMdCr6G2A38+BBuHBCTQd5QiVzP23DmYUEB3        
+ Zu7SDljMcRMTJebCqZLwBuHQfQl9U1B7uCJAAY641Cl/CvZD1sgE/WJowsAUiMhKPtZr        
+ f5DIUnuELq3lIACuiTZQoBsecqHoYVjz428P6yhJnRZ5qxbQthlJR1PZaFCnbVu/fWaK        
+ c9ZKOF6AAd23Zk0vRg1wZRRjrIdsHIq3kLsKi7uLfJX3KhBMe4jTcM+lIE3+5cX/Mz7k        
+ 1mxg==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;        d=1e100.net; s=20210112;       
+ h=x-gm-message-state:message-id:date:mime-version:from:to:subject;       
+ bh=p77rq83c46X9EaDZMeqR90U4In1udur10BRw68I4VLU=;       
+ b=wYo74nHOv8dMGSehOuyMhaI4URepsyNS1SlrF/3noxAb0cbTHvaUdLXCrcj7t9phvD        
+ ipdrlq9oOTT8EkioxvNsdigNSXFyTf+sMmUjjh8aJPfU5FejpRw2kZFUJm+GaGjjYS0K        
+ UhD+QbpTTHzFJ63mFyh6e21BI/ZTnsu+WXWmWgULgFxMx0vpyIUwtAdRaiiNNa9tcTe7        
+ G3rSCCzRW+Fqi9BNcYswS0SxAhVjAq1QymFHJWpNL0LmcNPqfppYr7iDj2yaYCL47k6P        
+ MROTiZwIS0Wirah9+oHr6hIntHRgEDI+nfoiPkLjccS27l6ogTurfSzndgc/jFZbxZeb        
+ Vngg==
+X-Gm-Message-State: AOAM530A+HNCfCkBeWgEk1+q5WVp323hcrHlRCUS2qchEWHDg2Hv0X09	q8/Ote1SjjChg4hZLCp1iA5MviVmkCo=
+X-Google-Smtp-Source: ABdhPJxw6KqDORhPt3m3aigHfX/fCXKZF0yefczUrjyOKzOo84zx5aCvla5tgIcR3+blfhLwJd0REg==
+X-Received: by 2002:a17:903:32d1:b0:153:64:60cc with SMTP id
+ i17-20020a17090332d100b00153006460ccmr4082405plr.3.1646905671306;       
+ Thu, 10 Mar 2022 01:47:51 -0800 (PST)
+Message-ID: <6229c947.1c69fb81.d9f4a.cd29@mx.google.com>
+Date: Thu, 10 Mar 2022 01:47:51 -0800 (PST)
+MIME-Version: 1.0
+From: laxmi.saoji@gmail.com
+To: ygayathri95@yahoo.com
+Subject: Golf
+Content-Length: 829
+Content-Type: multipart/mixed; boundary="===============1896690249345011105=="
+
+--===============1896690249345011105==
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: 7bit
+MIME-Version: 1.0
+
+The Legend is my favorite course in the west valley. Not sure how the previous critics can say it is over priced? I bought an Eagle Card and now receive great discounts every time I play. It is far better than the 500 Club or Coyote Lakes. Staff is very cool and the course is in fantastic shape. It is no where near as easy as the two other courses mentioned, which I guess is why people sometimes choose to skip it. personally I like to have fun when I golf and like to have a challenge.
+
+Wish i could retire early, I might just join. If you play, make sure to say hi to "Tony" in the pro shop, that guy is super nice and always has the latest jokes.
+--===============1896690249345011105==--
+

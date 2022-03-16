@@ -1,0 +1,82 @@
+Received: from 10.253.231.24 by atlas110.free.mail.gq1.yahoo.com with HTTPS; Thu, 10
+ Mar 2022 09:47:36 +0000
+Received: from 209.85.216.51 (EHLO mail-pj1-f51.google.com) by 10.253.231.24 with SMTPs
+ (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256); Thu, 10 Mar 2022 09:47:36
+ +0000
+Received: by mail-pj1-f51.google.com with SMTP id
+ kx6-20020a17090b228600b001bf859159bfso7752220pjb.1        for
+ <ygayathri95@yahoo.com>; Thu, 10 Mar 2022 01:47:36 -0800 (PST)
+Received: from BDC9-LX-137BR49.dir.svc.accenture.com ([223.226.206.29])        by
+ smtp.gmail.com with ESMTPSA id
+ l1-20020a17090aec0100b001bfa1bafeadsm6142653pjy.53.2022.03.10.01.47.34      
+  for <ygayathri95@yahoo.com>        (version=TLS1_3
+ cipher=TLS_AES_256_GCM_SHA384 bits=256/256);        Thu, 10 Mar 2022
+ 01:47:35 -0800 (PST)
+Return-Path: <laxmi.saoji@gmail.com>
+X-Originating-Ip: [209.85.216.51]
+Received-SPF: pass (domain of gmail.com designates 209.85.216.51 as permitted sender)
+Authentication-Results: atlas110.free.mail.gq1.yahoo.com; dkim=pass header.i=@gmail.com
+ header.s=20210112; spf=pass smtp.mailfrom=gmail.com;
+ dmarc=pass(p=NONE,sp=QUARANTINE) header.from=gmail.com;
+X-Apparently-To: ygayathri95@yahoo.com; Thu, 10 Mar 2022 09:47:36 +0000
+X-YMailISG: rNNtWK8WLDtAoz6mwkwtOCglJc0_Cki3xzw2JdCU_DVy_dcX
+ MAPGqiqKbzbqG78SQlpnV..SFgtEH.7CKqZQ6k.hVH88qSqulWTKXKPS5d9c
+ qp_UMj31hoiNn8kHlufuZeebob9chn5r6osJoU9Fn6FBJx8QVRYInCcDn4mY
+ oM8dIZ92sqHTvdeQrcDFprDzB.99tuMSNvAqukecM2rJCkoR1PJfxGMBkbGH
+ G2cV2O3Ud8IUOo9RZIr2dKZn6YmOqnhFZX5iLkBQGUzVKHJ32sxpPsw.e0b3
+ Jaxtu184hFo6oLKsOlHVctx7oRDfOjQ8FWdkBRyi0qf.h8jJIixzJcxQOO6R
+ OUlIW9_J8elJ16orGTw3kR.3D0YWHeGWPVJ9G1T8doz0dt2Wmvi8o2aY44Pm
+ M1Os9zdZ7Ef4bQve5XVupzQ49jnHXfYKCMbsNfWlL9Bmw6NMIzVRramIo7jf
+ bYQRb9AK7.am.vcQvvijdf9KShlThlXPrs4IjuucOKMq7fOY7yrFPrKhUkOf
+ w9F4gs6NN36T6V7RQ8.tP98nZNLe80QO0PlEI8plnX.kPCM7eQkeYd_oSJ1g
+ msrKu6QdBSB2C8FakFg_9O7mDv43Zhlz43DYWdgLzvfE1fW4oEJhoDZZPZwI
+ 8XfVhovdloPCmActauDvU0DlLUX8TfNJQhkB2_cngI7rfBVlTMBSiQr3PgoL
+ qeYPAON6WhQ1zXEA8TbsPSyZ6L.hxSqCRc.9HqDVYLSJuIWUixLil6OHCtbh
+ 2OudUE2ARLfjvwMV70FHPq7mdmi2cD1KPwPGGXuKsY2ZJ8jyHNRIrmLhubNW
+ YaMYvarR5ffn6HmKIXHq5jOamf9wXmYKHJQBOe4mvinKNyAHQrw.3ru91FNs
+ XDtKIV4IqsMwyjmmtnQBcGPBQ_didEorRmD84d2FWmMzf7ScgLOz8iTpFXls
+ dWvaiAE076ofpFeeOpWtNIPadg681ekH_EUI_yyex4RzPs2hDYgHwkybqqJG
+ rIlFsXT468o1rJTKZDzH9PL8geNl5IRLpfZ5huMOSbgYB13W54UQx7LCv2FH
+ zDS52ras3Gj_AXzR3SQcQRLTq6alsMWBmK26yDieezlTfLmfWhPcXm.Ni6Dp
+ MgZAha_Uz5A9O6H9UbRKLptH7J3ctg_ympooY2Bav_7LoxXxLc6bDYfVWqsM
+ RXmar76597pCwkyRiZ4S0djFALWlSqlGngCqyG5_wU40IRfWDi0-
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;        d=gmail.com; s=20210112;       
+ h=message-id:date:mime-version:from:to:subject;       
+ bh=jfo1imociNZ8FDNV12BrfOKjCsW/DfI7ydqnQTAEU8o=;       
+ b=hl/xQNRiiuqjKsdnEkXhctHFuISbhnjTc8oAWUIWYzUaRFm9A5EpYh77S+TxYe48vi        
+ 0BNQ4qgMLVXRzg2seXOHlwkNbaf3ymjPElhjlnG81AcIXdR62gqgD2/ZLFwfEtGkaX/j        
+ /AKHAunZmayk9vUiKzNBrNrDYmaLBQIciLC4fM7jMu2XkZ7ag7d2mvV8rXKBwXn1dusw        
+ S4JyYPH11fT/FXVWBl36aYy6n7K4AIKsZKh6FG8HOWviXY1u+MrGlnewMbjh9pyDhTal        
+ euEifyPq4xFGpY7M+YxPRJ5W0HlhkZ3l4lhT0BWYjt6Jkjbqwp1XFhjf7GL0Jrcgvznx        
+ xCgw==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;        d=1e100.net; s=20210112;       
+ h=x-gm-message-state:message-id:date:mime-version:from:to:subject;       
+ bh=jfo1imociNZ8FDNV12BrfOKjCsW/DfI7ydqnQTAEU8o=;       
+ b=bui2ceOMujpGc2JR3trjaMciXmDOBC16lx9WTFX8shjwRuBUQAIp1Y7Iz2tHqV6C78        
+ 1747OPu1fsJLYfb1LlmnNxV/0hJYdtLoIIefteNawi6iMzmJ1yXncLfAXnE6fWQJZPPz        
+ zwq6bhAktpWeFBdDI0//XAllcv9sGrLBsQC5PrwfeA4KReDKwqCEc9rUumlyifZfT69Q        
+ wI4nDjslSEcJpywDF6GR7IMDrtOLV9gAqt+zYgk59n70iQ1Fr841y8gdUurmPyy1xbg0        
+ vo3y6ANLMzsp2udYIPvgme9UUllIDlK5lwOn42I10UpMBXHgKTj84vvXWGl9zhnP8oqG        
+ HkYA==
+X-Gm-Message-State: AOAM532YHKefWruEd0Wv2GHOG/0EDvSz8niXeR/1ZHhzwS0OPXioJhpK	gWEX4chuh7tAUYvXAW9BDaLcV14qfIk=
+X-Google-Smtp-Source: ABdhPJz+Iej14pIc356vLgSL+gsmfgjh2b9M/nSOPf3VLv1XbyjL4jQwvx/597RBCqZrm9HXShpYxA==
+X-Received: by 2002:a17:90b:4c44:b0:1bf:f00:3735 with SMTP id
+ np4-20020a17090b4c4400b001bf0f003735mr15181376pjb.168.1646905655859;       
+ Thu, 10 Mar 2022 01:47:35 -0800 (PST)
+Message-ID: <6229c937.1c69fb81.43758.05b4@mx.google.com>
+Date: Thu, 10 Mar 2022 01:47:35 -0800 (PST)
+MIME-Version: 1.0
+From: laxmi.saoji@gmail.com
+To: ygayathri95@yahoo.com
+Subject: Golf
+Content-Length: 901
+Content-Type: multipart/mixed; boundary="===============4105231693609500872=="
+
+--===============4105231693609500872==
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: 7bit
+MIME-Version: 1.0
+
+Played here with my dad who's a local. He's played pretty much everywhere and he says that this is one of the best that he's played. I agree. We usually play Raven at Verrado and I love that course... but I think it's only better because it's in the middle of nowhere. No houses, no cars, no highways... nothing. With that said... it's in the opposite side of where my parents live so it's a pain in the arse to make my way out there. I feel like all dessert courses are similar so I probably won't make my way out there again especially since I have Raven. But regardless, all the accolades and attention this course is getting is legit. I'd give it 5 stars but I'm not a huge fan of dessert golf... I love trees and rough.
+--===============4105231693609500872==--
+

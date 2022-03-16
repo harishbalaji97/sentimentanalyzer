@@ -1,0 +1,80 @@
+Received: from 10.217.137.18 by atlas219.free.mail.ne1.yahoo.com with HTTPS; Thu, 10
+ Mar 2022 09:47:28 +0000
+Received: from 209.85.214.175 (EHLO mail-pl1-f175.google.com) by 10.217.137.18 with
+ SMTPs (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256); Thu, 10 Mar 2022
+ 09:47:28 +0000
+Received: by mail-pl1-f175.google.com with SMTP id e13so4389659plh.3        for
+ <ygayathri95@yahoo.com>; Thu, 10 Mar 2022 01:47:28 -0800 (PST)
+Received: from BDC9-LX-137BR49.dir.svc.accenture.com ([223.226.206.29])        by
+ smtp.gmail.com with ESMTPSA id
+ cv15-20020a17090afd0f00b001bedcbca1a9sm9407489pjb.57.2022.03.10.01.47.27    
+    for <ygayathri95@yahoo.com>        (version=TLS1_3
+ cipher=TLS_AES_256_GCM_SHA384 bits=256/256);        Thu, 10 Mar 2022
+ 01:47:28 -0800 (PST)
+Return-Path: <laxmi.saoji@gmail.com>
+X-Originating-Ip: [209.85.214.175]
+Received-SPF: pass (domain of gmail.com designates 209.85.214.175 as permitted sender)
+Authentication-Results: atlas219.free.mail.ne1.yahoo.com; dkim=pass header.i=@gmail.com
+ header.s=20210112; spf=pass smtp.mailfrom=gmail.com;
+ dmarc=pass(p=NONE,sp=QUARANTINE) header.from=gmail.com;
+X-Apparently-To: ygayathri95@yahoo.com; Thu, 10 Mar 2022 09:47:29 +0000
+X-YMailISG: apHMVIkWLDsLZjb1dsmPLke39JWerAsCCfRX5JF5UCujSyE.
+ R3GowFmTcoDqG6hlq35mCnqdS05yxfaQnNFKq10RiwY0eMHnPjW7ebSnXM2S
+ siIzpxPqlI0ebv6cfn56cXxf8gRDYJ22_hX4cT9BaI1ykLzKi_vimkRAtBSV
+ ssSqblGfDRngDaQHmvlWxtk__SLden91BbPf6Nw_tbh5JC_ajbdJfgIBfkkM
+ Wb8o_j7cPBkUyLO8S0zpDbTwdBxYjsPNNBqdMLY4hljNYoIO0kYy.rIEnyMG
+ g7WDWTXCI1fXhXv9Jhqei.ibXRWnVCvIwIpV2RwL0S5mfJyCHQELvrADFP2q
+ 0s8qzRYBJqkj6A2H28emJDOr9oZP8IzKSu4X.rpMvqmnjRBJibO_Uq7RSG83
+ 5vU9_oISUmtvHAYAZ0Gdw.o0.61ERgqeaqnOljFUqywwMVll.FYPyUyJs4c_
+ dZNB7FDP2jZ2UbiHJW4Ii_cPjh1FZX3CfEucl9qWramv5jiICtNF1bG6zztB
+ A1zv3QTMZ_y7JCEKbVZnzEKyXBfn7R7yVlWTaFPU0Kbki9V8wQPwTAyuD3s2
+ p_XnqSkyFYiY7k5B_dgx1u3yTiwBPuYc1lMQnUUvwBZ2u2fOvLUf8m7Mz2nD
+ d64Gm.ackV0DffCCgWxFTeVnqZiYfz5F19OAw..wygJlug8wr9Q8n1UW0YTd
+ KopNEBTOfFgdcGoh51nBnMdiYjP3SDuIfN0Byjplr0.hNi5PnbxVwG5hwBRK
+ z.XyYalkUKt2VQT3LiMEi2_aU2Idov9WtH35T.qCstC.bWAmoVleGpCNMAWk
+ zZzbLoe8spS0ZafPrUmB3ffO18YfrfhIbnVy_P91nX85Ii80C9usUzDvy8fK
+ ldf7cYbRg3H2Qweg2swntH3KyTlKJj88.V1VevreRDeiCZwb6YUJCCj.gQdH
+ eJQDJoAa0QNj7npqjxKCVK_aMXGV73n4LqjKghSWg3PDgIU8qle0NsyCwWWh
+ wgDfPMQYtxio9ObOVkbvADj.F7nXzT1YqJ4mZIOCWDmn030t3ZkAd0MgtDru
+ SUsewM8wjDFJ4QWJTkGK.z5WsZTNLA2uMnkVI8FNxX7g920kBPrkaPVuw2z8
+ LdIhVRNnv1SRWscCr7mb.r5xQ07tq_Y9hVdvVSyaWPNDTcfjOZw9l8Xu9cJB O80-
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;        d=gmail.com; s=20210112;       
+ h=message-id:date:mime-version:from:to:subject;       
+ bh=w4NO3AZQ6MxVNWZ8f/KBLaXSgL0vJUx2Qc5/+bQ6BTw=;       
+ b=CkdeJ0/Q1Drvx11e2aXNUnB1OXkUpNTjWOpbhSx/a7y9SGHzvjkZhxTVIdwPDco8ZN        
+ /J8RxvwBoVHIJl9Bt57yEbUDiY0BXjzkK58Fj+4JSdFXtTgzAQOnHkCc+ufAZQ67iRkm        
+ EFwgqaUHwc4nZjluUeVkVc/QW+/hQ8S01A7064VZZfBeqcjYRnH3heawPVAm7P2arBbb        
+ Qea8pcA5yENjUSyyw36uc17DC/zm3n8hVL9kDbeWqI8gYWYvk1B2KgERAig9GyW8Ps3L        
+ aF1vGfJYcpTbSxZIzFb/kY8H04gtwdrIYTxrlDaiYExfofoS8Knx1T9YCFYg3ixThZkV        
+ SyTA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;        d=1e100.net; s=20210112;       
+ h=x-gm-message-state:message-id:date:mime-version:from:to:subject;       
+ bh=w4NO3AZQ6MxVNWZ8f/KBLaXSgL0vJUx2Qc5/+bQ6BTw=;       
+ b=7VGIz1JBfOsy7yM7uus3bWVQlerBGH80wrZfo+qyMnPYOiSIwdOpiuJB3kBeLLHNF0        
+ p5kSeNjwNG4kcPAf5U/bYKBS5PSwKfmMoCMD3tj3VDrJi135nejbVC+a0S+Ar/fbdn7Z        
+ ZDAz5inMsS/JJSAJg7wCAmI1VxO3LZwuHSEuVS0rp/WfOb8XtKUixRJV6o3Cmzt2JYi1        
+ rUjeLI//YWEefqg4flIFsr7QqtKxTrhHGsesZDXJp9ySfZB2v2kzyqiA0vlNdZYYVOOw        
+ WLwydLazCGYkTpTOQN2SsgHjHSiJr42fKwZkYkAykT1AmFHM80rvWIaBbCl8q10/XZrF        
+ VWGQ==
+X-Gm-Message-State: AOAM533QtvC80vI0k1MhRWZ6Q0fiaSMdAV6DYjRmjS9X8ClSCnskFDrv	gfY9EDf7E38quZ3DRI3ffoypQxZLaXM=
+X-Google-Smtp-Source: ABdhPJzUCfqvGPWc3xWWMYnKq5xajpaH6eaosQKGOFVSbQv/+qlsdekSW1luG4UZAXU+l1755NgjCw==
+X-Received: by 2002:a17:902:bc89:b0:151:accf:afad with SMTP id
+ bb9-20020a170902bc8900b00151accfafadmr4256221plb.169.1646905648337;       
+ Thu, 10 Mar 2022 01:47:28 -0800 (PST)
+Message-ID: <6229c930.1c69fb81.a261.7e39@mx.google.com>
+Date: Thu, 10 Mar 2022 01:47:28 -0800 (PST)
+MIME-Version: 1.0
+From: laxmi.saoji@gmail.com
+To: ygayathri95@yahoo.com
+Subject: Gyms
+Content-Length: 615
+Content-Type: multipart/mixed; boundary="===============4406534520587260081=="
+
+--===============4406534520587260081==
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: 7bit
+MIME-Version: 1.0
+
+I absolutely love the freedom that Anytime Fitness gives you to go whenever you want. I go anytime I feel like it, even if that happens to be at 1:00am! I don't feel pressured to sign up for more or to get personal training sessions and I can workout the way I want to. The bathrooms are very nice and have personal showers and scales! Plus when I'm on vacation, I can go to the gyms there too so there really is NO EXCUSE not to workout.
+--===============4406534520587260081==--
+

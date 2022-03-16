@@ -1,0 +1,82 @@
+Received: from 10.223.248.105 by atlas321.free.mail.ne1.yahoo.com with HTTPS; Thu, 10
+ Mar 2022 09:47:00 +0000
+Received: from 209.85.216.49 (EHLO mail-pj1-f49.google.com) by 10.223.248.105 with
+ SMTPs (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256); Thu, 10 Mar 2022
+ 09:47:00 +0000
+Received: by mail-pj1-f49.google.com with SMTP id
+ mm23-20020a17090b359700b001bfceefd8c6so1497442pjb.3        for
+ <ygayathri95@yahoo.com>; Thu, 10 Mar 2022 01:47:00 -0800 (PST)
+Received: from BDC9-LX-137BR49.dir.svc.accenture.com ([223.226.206.29])        by
+ smtp.gmail.com with ESMTPSA id
+ j7-20020a056a00130700b004b9f7cd94a4sm6103433pfu.56.2022.03.10.01.46.58      
+  for <ygayathri95@yahoo.com>        (version=TLS1_3
+ cipher=TLS_AES_256_GCM_SHA384 bits=256/256);        Thu, 10 Mar 2022
+ 01:46:59 -0800 (PST)
+Return-Path: <laxmi.saoji@gmail.com>
+X-Originating-Ip: [209.85.216.49]
+Received-SPF: pass (domain of gmail.com designates 209.85.216.49 as permitted sender)
+Authentication-Results: atlas321.free.mail.ne1.yahoo.com; dkim=pass header.i=@gmail.com
+ header.s=20210112; spf=pass smtp.mailfrom=gmail.com;
+ dmarc=pass(p=NONE,sp=QUARANTINE) header.from=gmail.com;
+X-Apparently-To: ygayathri95@yahoo.com; Thu, 10 Mar 2022 09:47:01 +0000
+X-YMailISG: Qbli6bUWLDssnOJb2RmNCTQkwL7dqJ1r6IYgeCTmdJDmCjDu
+ Ps0hHM4yKxmmY.SFj.JAqw4Xjy1BGk4eDZId3B.gyHcvdFH4Abw6l.tpTKCw
+ jMu6iOfxUwFfuEE5LL6wYoniNONXXtLhGZ3Lp8Bo8Mzr6PjBDzBmaR_BIKqL
+ FCuOOC4gorIdcuNGIdZ3iILekBu7eD3GvQd6lkcD4TZsEKNCqKAdk8t6gubf
+ BRV7jW.eAgPkPzbPL6vMcw0qWWcBgzBDIvXglHqXvxV2NjV0R_SYAxva.13E
+ D3a7HKvv597bLEZFjvNH6FNELqDOcOf7gjr55t7dm8SGFUjXby1EvPmxGbcj
+ OndQxqhlBH49kTcDyHdZMBapGQ.KwpOEovStPIo7MBJFmuSkLXxZeMLjCOJp
+ 9Xw9LMwNIyrlrce0afU_AND3IHOCF2pA4Eh88LFytPAuBzo0tZ_4qHEHk7Ys
+ MzrKeO5mXRL2OaXuj1eS_KuNIQ0DbTkf9acfvdxOFcEYnYRWtZTZe9n8owfA
+ WeVtYlKTETsUCxpGGA1M8Gbpdy8qzFs2rPfe_LG68WcfQ3pGSXdCUfP5_OV6
+ Cj0fOm32pDFyzF11cGAQaLY6rUJsKZxAncA_ugOBduuBIUiZtGYut.cUtdOW
+ AV99Y2zprtwuPphTKC.yAwVMDiLq7XLAKXKGQFhoWbAqIgsq86zCv8tPYjo5
+ AjFgH97xfgvMx7ZipeEBGpVUsZMYf_.M_34y_tz_i_h4lIGbf.mOTt5D6vOM
+ oml7ZJRUMZuYO4dK9vRSh8b7fib9Exssp3P76IzcObCQoXNUZkj.bvsrdOaB
+ HuCJcY5btUY57iL3buoJZWwNmfruvHboJJfahJ4j2MHZxtDtyHPCN85GlJ57
+ MhPOExT.gQW7alXvNHHy2tBuuW7_2csDmDNw.SkDj0UUAHeHRoeUpcC_xO7a
+ n4Ak3eQs6YCtbUV5DFiKP.QQSIFppp1rAm.sKGvT1vQpWKSuMIlawF7DaQYK
+ 4FI86N9fmHdVGxwFKUIfdrbRpJqeq6uiTgvs9KTrSUUkrG6hUkXwYBjqSNeH
+ 9.5Fnj8vl_IYTYaj9DjurJuxsvneMGnJjiuKRfYQHYwWeKmxfjWgRU94JI2j
+ nUxo59dclUic6WCzABCAnTg_kM8-
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;        d=gmail.com; s=20210112;       
+ h=message-id:date:mime-version:from:to:subject;       
+ bh=sSspFY5ZSN+vF1/UsP9Zz4v1nUKTWJV3aGq0ppi11C4=;       
+ b=IUJJ2oJKR6zdvPPy4mDEahHMFgu7EzMbra631aXI9wyaroJg/iiyjGd7F/GxS9QC7j        
+ EWr0J05ypndg4WBXhk2DnhLBRwYn8Bw0nqZc/dnEn6YZbFuGHe1yYCu5XrLMzQNAgqQE        
+ P2hN90j9bovWDklk/vgngFqzc4R4GRuHDLMNqM2iSiQy4B9i/4y+CvI/3BOzAAo7b4qw        
+ QvEo2xeBL5N2A4tOe6HpRyoUTyU12JuZmAmTpGKHHXFUlDDIwA4GNj/4h7aFjUwn7rnz        
+ m3N7xuqH/0Ej6AndGV0/HlM4HO8b6P6wyhpQEQmEfuYy1LEDRXkWA13CXYEASfn0pOeY        
+ vvDQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;        d=1e100.net; s=20210112;       
+ h=x-gm-message-state:message-id:date:mime-version:from:to:subject;       
+ bh=sSspFY5ZSN+vF1/UsP9Zz4v1nUKTWJV3aGq0ppi11C4=;       
+ b=5jYjyLoRyHizJjmAbSrM0/yvxVYWLNBG5fhOZKAhIzHM2KFSjWwYNiHrNS20k7uXvV        
+ mtQXqmmlqyvOXtb5O+yqktUKj8tvSr/w3Twzx5C8PJ8+eoZW0xhkbEYOpgiROpkMshZL        
+ ZZ2OBvBAcV2WfjOYdsKpLK3zQxd2pf1ArahT4didKY+WDxQRvSh/tO6dyV8N7gv5tacc        
+ TUeDN7DdmUCBmyYYLqfvGiIkVIT4qpOZ7MwYDYyxxBY5b643wlfDrkm2Ez2nWwV0BOMf        
+ yT6woZbqa4jlkOEJ/gwW1yy0LjSbSFgYz3nE7tawfz8bhTM4PvDPox2+4s+KrDV+CHhu        
+ 3hng==
+X-Gm-Message-State: AOAM531UJXSsTaFv3tawm1kK6E9IHdnGcZwcIp5NHBGswlzh5th8PfqV	XJ/6aBQ8lEv4WAaqp5vWYZ5IbzxWZBI=
+X-Google-Smtp-Source: ABdhPJwCGgwMEiMT4sJolwZ0Xett3FyeGkn5Do0YF/Fh+0VqXGraUGE/PaZ1O6aeNX76Laa5jRJr8A==
+X-Received: by 2002:a17:902:bd95:b0:14f:40ab:270e with SMTP id
+ q21-20020a170902bd9500b0014f40ab270emr4127684pls.101.1646905620011;       
+ Thu, 10 Mar 2022 01:47:00 -0800 (PST)
+Message-ID: <6229c913.1c69fb81.d2d2f.f716@mx.google.com>
+Date: Thu, 10 Mar 2022 01:46:59 -0800 (PST)
+MIME-Version: 1.0
+From: laxmi.saoji@gmail.com
+To: ygayathri95@yahoo.com
+Subject: Sporting Goods
+Content-Length: 615
+Content-Type: multipart/mixed; boundary="===============7215903392187241978=="
+
+--===============7215903392187241978==
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: 7bit
+MIME-Version: 1.0
+
+I got great service and they totally set me up with the right bike after receiving wrong sizing from another Landis store. They definitely spent some time with me on my shoe choice. My sizing appointment went well and they answered a lot of my new road bike questions though I thought some of their techniques a bit questionable. 
+Haven't used for repairs yet but have a mountain bike in rough shape to bring in so will review after that.
+--===============7215903392187241978==--
+

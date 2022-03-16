@@ -1,0 +1,81 @@
+Received: from 10.197.32.75 by atlas125.free.mail.bf1.yahoo.com with HTTPS; Thu, 10 Mar
+ 2022 09:46:48 +0000
+Received: from 209.85.210.177 (EHLO mail-pf1-f177.google.com) by 10.197.32.75 with
+ SMTPs (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256); Thu, 10 Mar 2022
+ 09:46:48 +0000
+Received: by mail-pf1-f177.google.com with SMTP id g19so4637237pfc.9        for
+ <ygayathri95@yahoo.com>; Thu, 10 Mar 2022 01:46:47 -0800 (PST)
+Received: from BDC9-LX-137BR49.dir.svc.accenture.com ([223.226.206.29])        by
+ smtp.gmail.com with ESMTPSA id
+ k1-20020a056a00168100b004e0e45a39c6sm6806574pfc.181.2022.03.10.01.46.46     
+   for <ygayathri95@yahoo.com>        (version=TLS1_3
+ cipher=TLS_AES_256_GCM_SHA384 bits=256/256);        Thu, 10 Mar 2022
+ 01:46:47 -0800 (PST)
+Return-Path: <laxmi.saoji@gmail.com>
+X-Originating-Ip: [209.85.210.177]
+Received-SPF: pass (domain of gmail.com designates 209.85.210.177 as permitted sender)
+Authentication-Results: atlas125.free.mail.bf1.yahoo.com; dkim=pass header.i=@gmail.com
+ header.s=20210112; spf=pass smtp.mailfrom=gmail.com;
+ dmarc=pass(p=NONE,sp=QUARANTINE) header.from=gmail.com;
+X-Apparently-To: ygayathri95@yahoo.com; Thu, 10 Mar 2022 09:46:48 +0000
+X-YMailISG: 8FjR7XcWLDsibP6_ow0wDNHh3NpRysrGtuIMuybbJQyBAT1C
+ xGsDCGyzYrxi9BDCavBpinlu.o5kdTREcSWs2Wd38FBTgZ_VACBrCNxIBp6B
+ Sma8fHPezr20LX.MN.htNnrn0PTe6gH7xA5d5Z43YPRzroHRofI0g4gWUVtz
+ a3U0iSX3mB1ShTNQYnowlxbwjOnUK7cT7E3IIcFN4W5XU3PDgcsymQRfSVwk
+ ZWBhmU9__57k1b1ZdLSdpZmnUcPMlOdlzfa.iVkkvJHb2_Rvfqu.hT87_S2I
+ TJ6RrdND5vlxNKLFbI3Lx0FDFdlx0_Bvn8yXSOcgV4WsjuK4KdsRjqK72JLL
+ l3IaZN0vzQqJMsXzZTHAUNOw5HzXPeT.qUymilBwlvBIcxl8F8CNL7bcLKzJ
+ NUIlnZincF4zUEDm9aq.6u5NN0tyK16luy9OdwjIjNO3Y0XPcU2yFouMWmDS
+ ia9H5omb5dBJsV9Gj.MvTiLQvrf4KOu2O7TlvBV_NsGgLmqxUKOTzsHlfcWg
+ RBEkM8jKxQ1JFW5z2HYK6q8I201TpbJ3Wco0EuWzdX9zYpjd9CJOyfcYUtRd
+ H0hXDFIkyQwuKjsPgUnoeNHtD9xhFKbYDxbXOO1.DIjaoKCAPuAALnSNpzFo
+ mmRg70YzjDo7kTosdv6hUXRMbUo3NQ34kOYriPqTNKpVXVYPMm9TrJT0qR1.
+ qznVHl9yhDmdHbKwCq3mlPNjtRKZ5NTnb2uimICSmdf7KFnVTvubXftQ03Lj
+ rZmwrDcfyfoHrO7ntsijLFB4q3KaxzCbdqXWGB2ggQerrQyK2t6nQfSGuk21
+ sPpHVaNy6UAhcQ5C7l_dYsl4Fs24SGxdlDcxngovmaV7vXuzZq0z_BFz3iBG
+ 3dun2WceHgyYWc6QpoQCXVYQmqpIM0j0V0cAe1vrsdoi0hnv9l8I5YDrVI31
+ ZjWJQ22GyluzR2rSShURPxaX9xYLa1hZC_RP6hsT8QPX0AxKzMLgsjVuNZZt
+ 1ib3ehuyvlIaTFhbq3337khzYfs36bS_XaG8dSinuBzsQEaUBvqqLdqBCPqU
+ vZKDd65.sfH2mNOULyZgcB385LqGi3gD5x9HfhS7ZoTWj.VtXJac7pj36xHA
+ YaNmx95W636CYCWz938IP8hREa3PHMU8OnCCBkCErlG3hxK501akS43.uLje
+ pPtrINoqGwpFDmFy7kOc4SDbzhHRRZwJuGw-
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;        d=gmail.com; s=20210112;       
+ h=message-id:date:mime-version:from:to:subject;       
+ bh=pIZj8L6FaFE5OwBme+VIQKvHC8k/1n6Xq1ExH/KFdaU=;       
+ b=PESKLY6WywalYzQsncncrCQ4jsk5Y5K14RPPpb2c4OSTVH1lnb9GDFYTcST/JN1g4L        
+ PUSDxICsz1fKVe3U8bc4Hji3kNPh8xoCPXJVf7B29Ck+agdLFWS7B9AygnR1hScn17fj        
+ H1/5ChPMtz1S4TBL0yK6dRIP4p+McTNq6GKvhrSj9oBoPpgKRBD5Cbo/PcaywgApiFqa        
+ fPZyd8K1ZjVpzE+iOpSje+fp9X3RZGN7ZHakbQCEhyEDMMJvvvRg7qZ2KpQKHvxVTZWs        
+ 6DO0nz6cAuUdCeqI/LNkf6pe0rehiW1JN5fgJ6/M5cwTC1qpNqgxbuboioGLSgOT9Dm7        
+ 4U5Q==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;        d=1e100.net; s=20210112;       
+ h=x-gm-message-state:message-id:date:mime-version:from:to:subject;       
+ bh=pIZj8L6FaFE5OwBme+VIQKvHC8k/1n6Xq1ExH/KFdaU=;       
+ b=ehYmsZWTjXC3kQtFvmQLzmBuvfWNCIqb02sUYTgOL9i4ZI4t4pnwwUNWSRYIL27uJF        
+ PIuiu1YGMtMHmnkfl6XrU0vf24LWqJiz/vorTE0IUhsJfb0MX1wSdVo7nbV/Jg2O1HJC        
+ S+o8vW+kQ+g5NirN13RIIKhIWc5UmM1ZsDBw0Qq1JzQHdRtbZJVwUhamh3PJMt4i8N3g        
+ n8xnoI9/vRoGFu3cAK7SSq4+V/o+IZ1Tv2Nj9Nq2QcRdZSVjGDy0RonJNb3heBvgJhzf        
+ dmuXxo5RtOXc+28KCqlpEkSg6j0fA5u08WlDOJHI+SGz7W0dwUsIIje8ao3Cnlsmf3WU        
+ 3dZg==
+X-Gm-Message-State: AOAM532eBMGFO6F/FWi0APTagpOjHBjA2xCbvZjPuglFzI5lAgV3e+ku	rk37Wr5wyuc/46Q48HdWDhP5qlfSQuE=
+X-Google-Smtp-Source: ABdhPJxGdZtWAy6NEQ2f3OQ8ZKHyFFii3/kL+X7pe1Rd+g4SnGKeQkXmBRmQiJ4sPAyJ+BhKlsmwDA==
+X-Received: by 2002:a63:da06:0:b0:372:f5c5:8f92 with SMTP id
+ c6-20020a63da06000000b00372f5c58f92mr3264309pgh.311.1646905607462;       
+ Thu, 10 Mar 2022 01:46:47 -0800 (PST)
+Message-ID: <6229c907.1c69fb81.83742.03af@mx.google.com>
+Date: Thu, 10 Mar 2022 01:46:47 -0800 (PST)
+MIME-Version: 1.0
+From: laxmi.saoji@gmail.com
+To: ygayathri95@yahoo.com
+Subject: Golf
+Content-Length: 506
+Content-Type: multipart/mixed; boundary="===============5142910750069333992=="
+
+--===============5142910750069333992==
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: 7bit
+MIME-Version: 1.0
+
+Played there today. The views and conditions were very nice but be prepared. There is no clubhouse. I mean none. No Pro shop. No food or drink. They did provide free bottle water on the first hole. We did see a cart girl but she doesn't accept credit cards. The course is really long so it makes a long day with no food or drink.
+--===============5142910750069333992==--
+

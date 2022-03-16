@@ -1,0 +1,88 @@
+Received: from 10.253.62.153 by atlas319.free.mail.gq1.yahoo.com with HTTPS; Thu, 10
+ Mar 2022 09:48:02 +0000
+Received: from 209.85.216.46 (EHLO mail-pj1-f46.google.com) by 10.253.62.153 with SMTPs
+ (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256); Thu, 10 Mar 2022 09:48:02
+ +0000
+Received: by mail-pj1-f46.google.com with SMTP id
+ kx6-20020a17090b228600b001bf859159bfso7755184pjb.1        for
+ <ygayathri95@yahoo.com>; Thu, 10 Mar 2022 01:48:02 -0800 (PST)
+Received: from BDC9-LX-137BR49.dir.svc.accenture.com ([223.226.206.29])        by
+ smtp.gmail.com with ESMTPSA id
+ mu1-20020a17090b388100b001bf861ef154sm9659369pjb.55.2022.03.10.01.48.00     
+   for <ygayathri95@yahoo.com>        (version=TLS1_3
+ cipher=TLS_AES_256_GCM_SHA384 bits=256/256);        Thu, 10 Mar 2022
+ 01:48:01 -0800 (PST)
+Return-Path: <laxmi.saoji@gmail.com>
+X-Originating-Ip: [209.85.216.46]
+Received-SPF: pass (domain of gmail.com designates 209.85.216.46 as permitted sender)
+Authentication-Results: atlas319.free.mail.gq1.yahoo.com; dkim=pass header.i=@gmail.com
+ header.s=20210112; spf=pass smtp.mailfrom=gmail.com;
+ dmarc=pass(p=NONE,sp=QUARANTINE) header.from=gmail.com;
+X-Apparently-To: ygayathri95@yahoo.com; Thu, 10 Mar 2022 09:48:02 +0000
+X-YMailISG: zdUBjRgWLDv1r_VJmGXYc_AWK9mXhz7Xs.yAf_mgKfsqvLOh
+ MqmbaUe931ttrM72TnHjEDD6fhiMFiIAXQA6Iej7zq_0oGQ0RQt87RloTt6P
+ cdxGYqDRzOwgMVKPe.vFgWLqf1qn2dxswngvQHTAPi1wNLw6tFk.Y0f2qIq7
+ alClOQ14OQwQLV2UvDXgfNHCycvGxrRKLta3G3ss5xcLwmGk9fjoLwBpE8T1
+ wrC9vgFaSyiWFiVCEyDsWEx7wvBsUG77yp5W1wC_1v.7agggWu6Dd40Wit5P
+ t0FHTdyB_ldZaq22ukEKqZmFatlIa.tWsIl_z5SC.dxCIdkwV9fiDyIomhgg
+ ixzZ0jdvdidSzkruGBwYAI1x.5Jg51GDzzGhwFW_q1wjOINdIObgrdq.Z4qN
+ TzfPG0Gx2a8OFnL2i6T4iMQb7jsclXrWRAx3H.vMglkHM9zLY86xe64Ku0hp
+ y2_lgxQfqJuxRKEYxfn05SMq42_W3LMG0qWwe6RfJDoez0zD0IWHQNxXD7NG
+ tnq2949jUKrKJ2SBHuA36PMddTqHPEskciLFxJ11iXaKXuOHvwoN_G.cSNjI
+ V9.8nAi9gqug3YkX7qvEJNGGqPI9h2sJcqZMgZDy36Clvv9.6iPDZE63bzh6
+ cnYJBuK6MDnOJHmqBcxujL76S7X7c7yLeiBBwiwXBbxKPFxH_vTj.7EYdDGH
+ XZBbrDlGPYKUYA8oCxcdY2IsGM6azZJxLuIiXNoq8ztkHZINqBMGxgj2Se3d
+ AehAI6oD3ZVSuL5a4ajRPILAnIcnO1iRg2Eb9LoqFjYJ30kvflNMpI0nefXr
+ W9mEcr0inCjItu6vuCILMUdEWNYoDL9PPq5rClJZAlcDmYKVybQaP3h.538z
+ lkBMiCymgbOalWPlO0TES5r3kP7g4PtJwUK.X.LFVEzbpfG_yaOQP7nQki3R
+ k6tYhoEB_bZs78t5WqJ3kAgH2P4kjcJQvVZIC.xayjQG4XNmt70RnNQcOPv4
+ oc7dpwVxgVUNJ1Tkw76YQFOAxs1T23G11WS0qo1aXUwCMQmWU2XupoeiB3Ta
+ tAqVQnXKPNOZotPnNvQThoSJL4yyH91cJcEbjJ67INuq6psgQXr_2.r8hgU4
+ aYzRwPCuGntZpeCCOCQshVyJHLzaQCvawhDlrSHC9SS16nb0ngGmG5ycknZu
+ _3efu0nZ73UgHyXo3Mnpyy3s.nScU8U11mTWPeCqG3284Dcab2hOsw--
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;        d=gmail.com; s=20210112;       
+ h=message-id:date:mime-version:from:to:subject;       
+ bh=rvmTBGFedq+w4zgF+wWgaA6bsAS+ucKn6tUMlFYiRPY=;       
+ b=TraNgRE31I2meDUgTcJQCOAO+y4i5um5tqEv+YTKl/t/LhAq97b4t+IBuFKWA+9AgM        
+ ZmPEXHQv44ZcuDMOiUCD4DdVidbHg/PtZMnKF63K3MU2ruAmsOvjE508hehsEHNRaKKE        
+ 4KbhEsmPQjT+uwywtA8mPAYnDo+iH09WENygU1ApTZezhVxK3RnJ4sM7G5lSWcHfVFbF        
+ en02QfacGet2LOIbemEc+ce61ov61zCf24meRg+GiTof3Oj0msVR1B5aCr+tI9bsz7KF        
+ oIHO/2FCqMHXhORBrJUoV5pjhHDMzQO19Za4lA0uhrIVwNXjqGZsF6cnwX8w5oo7Y8Ve        
+ C8LQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;        d=1e100.net; s=20210112;       
+ h=x-gm-message-state:message-id:date:mime-version:from:to:subject;       
+ bh=rvmTBGFedq+w4zgF+wWgaA6bsAS+ucKn6tUMlFYiRPY=;       
+ b=Qj2Gu9P0Jz/T6FA8J91fR9DfSYoTHcxUfhrUpe//kuLiIoO632B103KkeQv6Ecl7iX        
+ iRtAZx1XvXlfZBmxL3mnfyWR1CSKeUOHv0x13B5nMdiNl3gE0A9w0MBx/dZh3MUAkoid        
+ 9N9DaALkxJZ+KnSDdVqfRTQG3PHvHCSQiVCUQQQae+rAlhjFNCjPSixGyx5H1GMUnSui        
+ 3OvBg02WYI3eCS8BycxNGZVFifqWsbbz5XAYCRthWMM6l7zqEWWt0ky89hqiuXDwGyPh        
+ nZ8PMG0yUUZst26bNTaaTtm+IFT2sfI1epkjguc1zoZtqBxfPAN4+lpWvMiIV39JhDCz        
+ zXBg==
+X-Gm-Message-State: AOAM532CLYcuUdjMmc8xvPYmMKRvY1nc8+TL3Yrdo892Ur4IhY4R3UWB	jQr5EepHAVmoxKjYavL1HpS2GUFMghA=
+X-Google-Smtp-Source: ABdhPJxSnKmmoTyh1eHBGsy2zSxA6OzY8ybMgp4RPhZTw7QAo7nNrZN8P8sRbsErWQ4wc5OQ7jmpaw==
+X-Received: by 2002:a17:90a:fec:b0:1bf:3c6a:c8a3 with SMTP id
+ 99-20020a17090a0fec00b001bf3c6ac8a3mr4065701pjz.191.1646905681885;       
+ Thu, 10 Mar 2022 01:48:01 -0800 (PST)
+Message-ID: <6229c951.1c69fb81.64c5a.81ca@mx.google.com>
+Date: Thu, 10 Mar 2022 01:48:01 -0800 (PST)
+MIME-Version: 1.0
+From: laxmi.saoji@gmail.com
+To: ygayathri95@yahoo.com
+Subject: Golf
+Content-Length: 1244
+Content-Type: multipart/mixed; boundary="===============8384220128951923810=="
+
+--===============8384220128951923810==
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: 7bit
+MIME-Version: 1.0
+
+The Biltmore has two courses: the Adobe and the Links. I get out there as often as I can, and these are my favorite courses in town to play. Apparently it isn't often enough because I can't seem to shimmy my score much under 90 with any frequency. 
+
+Anyhow, of the two, I prefer the Links. It is much more picturesque and manages to frame more of the southwestern desert landscape. The 16th hole on the backside of the Links is one of the best views of the city . . .
+
+The Adobe is more old-school, and easier (not that I have the right to call any golf course "easy"). It is rolling and green with less water than the Links and much more room for error as many of the fairways bleed together. There are more trees on Adobe and it almost feels like you're no longer in Arizona . . . until you realize that the sun is about to set and it's still well over a hundred degrees. 
+
+The restaurant/bar offers good fare at reasonable prices and the air conditioning is always blasting in the summer months. There is GPS on all the carts and the staff is friendly and helpful.
+--===============8384220128951923810==--
+

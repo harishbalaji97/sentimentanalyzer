@@ -1,0 +1,86 @@
+Received: from 10.253.233.85 by atlas122.free.mail.gq1.yahoo.com with HTTPS; Thu, 10
+ Mar 2022 09:47:23 +0000
+Received: from 209.85.215.180 (EHLO mail-pg1-f180.google.com) by 10.253.233.85 with
+ SMTPs (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256); Thu, 10 Mar 2022
+ 09:47:23 +0000
+Received: by mail-pg1-f180.google.com with SMTP id 27so4256966pgk.10        for
+ <ygayathri95@yahoo.com>; Thu, 10 Mar 2022 01:47:23 -0800 (PST)
+Received: from BDC9-LX-137BR49.dir.svc.accenture.com ([223.226.206.29])        by
+ smtp.gmail.com with ESMTPSA id
+ g5-20020a655805000000b003643e405b56sm5029437pgr.24.2022.03.10.01.47.22      
+  for <ygayathri95@yahoo.com>        (version=TLS1_3
+ cipher=TLS_AES_256_GCM_SHA384 bits=256/256);        Thu, 10 Mar 2022
+ 01:47:22 -0800 (PST)
+Return-Path: <laxmi.saoji@gmail.com>
+X-Originating-Ip: [209.85.215.180]
+Received-SPF: pass (domain of gmail.com designates 209.85.215.180 as permitted sender)
+Authentication-Results: atlas122.free.mail.gq1.yahoo.com; dkim=pass header.i=@gmail.com
+ header.s=20210112; spf=pass smtp.mailfrom=gmail.com;
+ dmarc=pass(p=NONE,sp=QUARANTINE) header.from=gmail.com;
+X-Apparently-To: ygayathri95@yahoo.com; Thu, 10 Mar 2022 09:47:24 +0000
+X-YMailISG: hR4dFbMWLDu4s2nrjQSPnlpduLXzR60lI_Y6H6PQBr1TfpB0
+ sazc1UsSGPr02ey.vaZyDvmYLLD.JvZIAy2VbkEVTQPL5PSOyKiEpapBPsH_
+ qgBpCk8CGlu0zJNHYp6Wd4UdwDz21GfKe85ylsO8aEoBuf30V9TmNB3Gz852
+ eW.G5uQBaq6KKxQU8GtkwAMcnbNa8rAiExaBixooxduzgF.VHPo0AX4vj2jF
+ QkQqwxhjS7_ANRmsX7MuVV.0ZrkoBy9.EVQOl_D6VUwW5bQzcIchULfUYrhW
+ Xfb0udOn4RRvy70Qu4tV4A8PzlKFZxxD5aQ.bnVd7O7wqSXjqvAdDs8jSdHm
+ JwqhcBUO_lUvLlUlC1lSBHTAMLOUTxWUfthPStKSPNGuPe4JFAGoSvSjU7E_
+ AHx4AJKD6BUlLJNaIvuDJQZ0rj9c6vn3flBRy7nDZKuz2z0t7ZHQF..myzDc
+ C9t78o2vc9jSE_Js63ImJ7pSAJybsUg_rWzDyeHj6O_nBBkHLZXVo6TK5YlC
+ 5i3a.9rAe1rXr1fg1N8Ze5XIzUGbVuv6iiMeJWe4oMRc5Tiaa0FPGKZX.JTW
+ 4JmAEgiTdkx5IAqaLZA8l0jGMN63a0dbp6SnsWthBwQqb0Ynn5jxLRTyUDcA
+ c0y8lpk8RzNdIBZhwK_6K2jsejOFdgRe_xWG3WnVTgWC6kPlBsvlmMQSKPLF
+ zwaPD07X3yt8_X4xmPZhqceeBK5ztLYnF921jLMBPuzonme7Y.qBE6D9a9hI
+ fFF6A31g2GfFlBh07Br_VN56Uv5gDpVmPNh8DocOpBpezUMeMNOaKhfrLz7j
+ GIHi7w2J9wRfGFjADIZr9HGQo2R9VBdIJbRJb4MM5PcGkeVvJG8Oi1qddCa_
+ eBTypA4W9eu1fbOQfE2M_x9T9wUfK6R_9h0lDCB9dRbVspxg7ZeVEX6rJJsT
+ FYPlXnswjIo.l4INARGrz4ZztzoaOQy5iqQUKihl8PjJ8YyOB_qkLLHWprwl
+ 8soz1G48O3nBOghT52UlkFbzjokl4YKHAoRHMH.jZG1xf_WwlaTsprAc036v
+ MTTym1sjuC0GXLWGMGcx4dmwI6lgViuHYF4TfW0NMJeqOsnn1SI2xeKXRxus
+ lsmEHW7os9peG50DEmhGr.QegaOeqkIMIknslcgf4pLKNI9ZO71.a1vovUGr
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;        d=gmail.com; s=20210112;       
+ h=message-id:date:mime-version:from:to:subject;       
+ bh=bNO6aUXsN9O/oV0VVAc41/bA8XPg398MMtsWv4tYwTM=;       
+ b=qqJZyv/otb99qF5+Banl8azBYOZUh9AvsPdBiBZahrZ8Rwg7W3Bk6yxgZOj9b/iT0k        
+ 3g+YG1zQC5bJFU1B+TdkcJfKmBK0KyB9Lc5emQAt64hhuC5aPekl++l+pmJhBKsKt5rp        
+ +CnqTPAvmMlnnbWcL4srYte0BRzuuWxquXPMrUzITnQSb8C72z/1nC+9FIKe07gjrks8        
+ 4++v9FAd7sScDQH47uAS7U/wI31A1nCMq22lOqgW5tEiCVQExY2IhGpfo9UgElIj6I1/        
+ NXcuTyPJn7EVJqgDiDarw9FfcXWz+MyzupYJGdFmxdvSLRUO5OCjEGBD9x+kH7Lgt1MN        
+ FJnw==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;        d=1e100.net; s=20210112;       
+ h=x-gm-message-state:message-id:date:mime-version:from:to:subject;       
+ bh=bNO6aUXsN9O/oV0VVAc41/bA8XPg398MMtsWv4tYwTM=;       
+ b=o1JV+N1+fWQDbkf1EnBm+gu4yR3a+A3FoMx1PcLyNjaNXf2Y82GEPEWFzETYyWO/uJ        
+ hXsxFEm0bAkhoLhCk/9RGGoX8LpFPx8nnSW0wOZqUB2NkhKyQN9wWDu2DaQGFHc/jJK3        
+ rDtRw5FqyE0u8Zor5klG3C7GFfnZTxkTFo1TmfJKj2FL83hy0UOygOLc8rKqWuZgVJZX        
+ HlikYEU091ulEdB86SDy8f7RT68r9y0UjVZoo5XX2Gn30BtLeoIGuHAlwEbHXSnWNVHD        
+ Q2ekRZSNseC5XneUA3oTtXsLivYnDnJIguXC6gv59Cgz8Zt57Ipv1ePF1dvVPEDHkS84        
+ e3ew==
+X-Gm-Message-State: AOAM5319WVcb0rTMQ3iK6FQhbAaUdedp5ylDXQiwznypX8p/BOUJTgFK	QjCICV8kQOhYk9HeNhAj8xVrWQAdODs=
+X-Google-Smtp-Source: ABdhPJybIxILJmqqAki4HSOA9YEBWgyKkgH2+2Bzxz/n3QgLgBdEbjIN1Gys9tonJ4CR4ZX0Q4SnUw==
+X-Received: by 2002:a63:8843:0:b0:37c:94d1:4ceb with SMTP id
+ l64-20020a638843000000b0037c94d14cebmr3416012pgd.408.1646905643317;       
+ Thu, 10 Mar 2022 01:47:23 -0800 (PST)
+Message-ID: <6229c92a.1c69fb81.d9da0.c469@mx.google.com>
+Date: Thu, 10 Mar 2022 01:47:22 -0800 (PST)
+MIME-Version: 1.0
+From: laxmi.saoji@gmail.com
+To: ygayathri95@yahoo.com
+Subject: Gyms
+Content-Length: 1295
+Content-Type: multipart/mixed; boundary="===============0239517519193060556=="
+
+--===============0239517519193060556==
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: 7bit
+MIME-Version: 1.0
+
+I have lived in Phoenix long enough to see more than a few gyms come and go.  I am inclined to thins LA fitness is going to last.  I don't see them overselling memberships like some places I've belonged to.
+
+I find it to be clean and spacious. There have been times when it has been ready to be cleaned but I expect that considering the time of day and how many people through there. The machines aren't right on top of each other and neither are the people working out.  If you don't go during the busiest times of the day, there isn't much of a wait.
+
+They have the advantage of having plenty of covered parking which during the summer is really nice.  Of course any place that you can walk around the corner and find stores like Trader Joe's when you are done working out is fine with me.
+
+A gay meat market? I personally am of the opinion that you find what you are looking for.  Yes there are people who are openly gay and openly straight as well.  Live with it and focus on your workout is my attitude.  If I ask someone to spot me, I am far more concerned about whether they can do the job than their sexuality.
+--===============0239517519193060556==--
+

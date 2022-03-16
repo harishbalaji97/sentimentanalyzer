@@ -1,0 +1,85 @@
+Received: from 10.197.37.232 by atlas201.free.mail.bf1.yahoo.com with HTTPS; Thu, 10
+ Mar 2022 09:48:05 +0000
+Received: from 209.85.210.178 (EHLO mail-pf1-f178.google.com) by 10.197.37.232 with
+ SMTPs (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256); Thu, 10 Mar 2022
+ 09:48:05 +0000
+Received: by mail-pf1-f178.google.com with SMTP id s42so4692657pfg.0        for
+ <ygayathri95@yahoo.com>; Thu, 10 Mar 2022 01:48:05 -0800 (PST)
+Received: from BDC9-LX-137BR49.dir.svc.accenture.com ([223.226.206.29])        by
+ smtp.gmail.com with ESMTPSA id
+ r15-20020a63ce4f000000b00341c40f913esm4843127pgi.87.2022.03.10.01.48.03     
+   for <ygayathri95@yahoo.com>        (version=TLS1_3
+ cipher=TLS_AES_256_GCM_SHA384 bits=256/256);        Thu, 10 Mar 2022
+ 01:48:04 -0800 (PST)
+Return-Path: <laxmi.saoji@gmail.com>
+X-Originating-Ip: [209.85.210.178]
+Received-SPF: pass (domain of gmail.com designates 209.85.210.178 as permitted sender)
+Authentication-Results: atlas201.free.mail.bf1.yahoo.com; dkim=pass header.i=@gmail.com
+ header.s=20210112; spf=pass smtp.mailfrom=gmail.com;
+ dmarc=pass(p=NONE,sp=QUARANTINE) header.from=gmail.com;
+X-Apparently-To: ygayathri95@yahoo.com; Thu, 10 Mar 2022 09:48:06 +0000
+X-YMailISG: Mj.HJucWLDstHpk3QTxoLS2MLB7E37s9dru1iPD56EiM1q38
+ iax2vjVy1pYfH6IsOGZBmjI4z4E7zl.hdyUfBxh__gsoVweJUbkwpdvl96a0
+ CHh4Cx.NqexJlIQz6XOuY5g3Mz1tHClFEwIBM5RsK51keeSdvBdqnlXXhyBM
+ 5xv.25HhbVyGjO842nTcGgGZr4.8w9Gn1.2QOmKy7YyBwvJLfbON.B1MSFRW
+ CVrgztBI0InE91iXkq_LSSX2WUSIywnDE.5vna9xNRzAyKCVkqwq3.41EC2q
+ gKvOguE_LQ7BaxgN8NX7z9xkd_9WAR9wZdJFoLr4zw8B5THBSuL2Dnfp7jAg
+ fM6X0FP.rW24TN0jXZENmPCa.b4qQVvM.L0kqRaCaJR23bRcPG7eWtRaWHbm
+ eeHnwhYt8iyAGaL3Qe3AbJ2ogzIqsLeRfHkRB2krwlS.qXVwFW9YCNY1QZRy
+ plDu59nmRegCp_HXabqTIW9E8SADbOWCnwFxSuiAYNHMOcl1yYxNwUingusU
+ mv8mxSfV5NuUqMWi8ohJtqD4gakZl_QdmFe.YEhkkWtNw1yDRZZJuhtrE1VB
+ IFg7ZnkQkGmkZM7XeAmllLZ_x6Vq6JNUjk6JbA49BmwxtamAfo0RZLf4v6Ri
+ ip4h7whK9r3vw8_3L9JHXbGa0wtW5sAiW0GlctHfHWT5XKPawxmZCjS5Fd.r
+ PIF9SOV1cU809tx17i6xPzCbRr_PL51OqlTWz4T997XuHpLYrcS21T0DIgar
+ jy3OiZcudjHu0n6veey2YoS.w3_HSADjdMAYvOTiLuy0jeibeKAKCA6fcCr_
+ cgWeWfcvoOE1LlMBWwA35Uqwij.npDaDhfYH.eKlirnOdx8Eu881iAFuhlrg
+ EA_kJpuxVStFC1oT7KnJKEkKlpThCf0SOeNxFPaL_rJ8O67H235sInKP7NKj
+ Bm2Dnqb9XO0voMJ1pSfhKp.VikLBZaovpmRBc0j_7gLC4UrJvd8iTqncxxMg
+ kZPSJmIxOssZUlZ3yIwOc1AfyKxY_NG_FdRzfTrFOQxoLCKbjHoEpGSh14nU
+ 7R65QttEu6zlkDExaUeQhOfPTbPFbocgyF8Xn4pgCfxfA6o6noqeUTsT.mMq
+ 4ugzWBqowIAvOqwc_M4nlkcScjz7Ne7oIQvcgFtg5ZGSlHVemHkiGkTBEZUW
+ MlfcbdbvzOK_4dOLnJvu2CEqHWKlWdikH13d26c-
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;        d=gmail.com; s=20210112;       
+ h=message-id:date:mime-version:from:to:subject;       
+ bh=xrOPGGkRRFWhq/w+5yIgFC+cVymjHHj2FVbkO6AAdFo=;       
+ b=aafIqrPq8ofALUINiVe3U4OAsqXq0QODhsE0qOet+ZG1NrQlGvioeHcBBQmL3HJDAU        
+ GI5UI42+sZbF5pxZfzPJydUnqOLlptGodOGk2YASgFJQhVhXMBh6AqG+1Z0wEiEBI6z8        
+ PFrjDgOZuCGxsPZi0Zi3D6dS4YvwCK35t4mztr/Zav3YIjL7r6epzIuWfK3DrRTQA0gs        
+ XWqzE12xE+YSZ7oytg5AkxonA0FzTjrks9F+Tu92zhZebzSYS+Hn1BXbhV/KnzBin8HM        
+ xoJOOERURDDxOl8G1l586QuxP7j83ZPFaj9GVMzjVHfsmDLwsm1NlOgxHr6Urtmym7hB        
+ Nd/A==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;        d=1e100.net; s=20210112;       
+ h=x-gm-message-state:message-id:date:mime-version:from:to:subject;       
+ bh=xrOPGGkRRFWhq/w+5yIgFC+cVymjHHj2FVbkO6AAdFo=;       
+ b=zg2xwYcR++NBgyCi2MrmnOQPsz7pwl1nhRm/5cL1TwLZDl1iVZRVT/v2+mT+WhGxjX        
+ MAwmN4QRNzUIN3ptvLuVCA11ivfXpblvYHaFlSsHZHoq11cvUuy9pYuG89R2iDec3jli        
+ kao27Qlm6pKd6iQyK+ReeSEtsSAEp+Plk+m6TJ00W4BiNrTHafK+wpNqxebrG8SR0tzB        
+ huG3/qLBLX4LWC1YzxCr6qQwG7fiurNVJv3eQk9YTMNm7T20CqBRYm0aOhpjjxdDI5wZ        
+ UuYqzI6IWeeXJSixZsDcx9nS1esHdqpaRDl1nWkYJUANfSC2IuTThczPfrKkYa0b9hG2        
+ K+Ww==
+X-Gm-Message-State: AOAM531QZ0flIdJQ0dbmHoZxDVmreLJwNJitu12MDyhQ7n/Xcber9j3h	9sy1ITXM8v/UYipKg72jK+cg7jHS1w8=
+X-Google-Smtp-Source: ABdhPJzGyrrH4EAvVzehkME7a5Izh+hU0kWQ6Er8marNlTnnDYrPyzfZChvurNgKSaOp8kOrPRtzAA==
+X-Received: by 2002:a05:6a00:1f0c:b0:4f6:fee8:7c8c with SMTP id
+ be12-20020a056a001f0c00b004f6fee87c8cmr4152718pfb.60.1646905685013;       
+ Thu, 10 Mar 2022 01:48:05 -0800 (PST)
+Message-ID: <6229c954.1c69fb81.df87.c117@mx.google.com>
+Date: Thu, 10 Mar 2022 01:48:04 -0800 (PST)
+MIME-Version: 1.0
+From: laxmi.saoji@gmail.com
+To: ygayathri95@yahoo.com
+Subject: Yoga
+Content-Length: 1458
+Content-Type: multipart/mixed; boundary="===============8870509379494741007=="
+
+--===============8870509379494741007==
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: 7bit
+MIME-Version: 1.0
+
+Huge fan of Bikram yoga! It's a 90 minute, torturous-at-times, sweat-filled  workout but when you are done, you feel insanely amazing. The feeling continues throughout the day leaving you in complete zen....Road rage? Gone. Annoying food cravings? Zero. Jeans? Fitting awesome. You really must try it, it can completely change your body.
+
+There are a few places in the valley that offer Bikram, most of them exclusively rather than in combo with other methods of yoga. The Bikram Institute on Miller and Indian School is where I first tried it, and I like it the best so far. They offer classes throughout the day and later in the evening as well. Like other studios, this place offers first timers a week-long pass for around $20. What I really like about this studio is their instructors and the fact that they keep their room darkened throughout the entire practice. I've have been going to another studio lately (for their first-time student deals) and their instructors bark out instructions non-stop plus they keep the lights on the whole time. So when you're staring up lying in your relaxed state, your eyes meet the glare of the fluorescent. 
+
+I'll very likely return here after I've exhausted the new student deals at the studios around the valley. Yoga can be expensive!
+--===============8870509379494741007==--
+

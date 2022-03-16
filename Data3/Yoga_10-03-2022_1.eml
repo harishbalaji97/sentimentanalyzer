@@ -1,0 +1,82 @@
+Received: from 10.217.151.200 by atlas223.free.mail.ne1.yahoo.com with HTTPS; Thu, 10
+ Mar 2022 09:47:39 +0000
+Received: from 209.85.216.47 (EHLO mail-pj1-f47.google.com) by 10.217.151.200 with
+ SMTPs (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256); Thu, 10 Mar 2022
+ 09:47:39 +0000
+Received: by mail-pj1-f47.google.com with SMTP id
+ mr24-20020a17090b239800b001bf0a375440so7724255pjb.4        for
+ <ygayathri95@yahoo.com>; Thu, 10 Mar 2022 01:47:39 -0800 (PST)
+Received: from BDC9-LX-137BR49.dir.svc.accenture.com ([223.226.206.29])        by
+ smtp.gmail.com with ESMTPSA id
+ j14-20020a056a00174e00b004f66ce6367bsm7136555pfc.147.2022.03.10.01.47.37    
+    for <ygayathri95@yahoo.com>        (version=TLS1_3
+ cipher=TLS_AES_256_GCM_SHA384 bits=256/256);        Thu, 10 Mar 2022
+ 01:47:38 -0800 (PST)
+Return-Path: <laxmi.saoji@gmail.com>
+X-Originating-Ip: [209.85.216.47]
+Received-SPF: pass (domain of gmail.com designates 209.85.216.47 as permitted sender)
+Authentication-Results: atlas223.free.mail.ne1.yahoo.com; dkim=pass header.i=@gmail.com
+ header.s=20210112; spf=pass smtp.mailfrom=gmail.com;
+ dmarc=pass(p=NONE,sp=QUARANTINE) header.from=gmail.com;
+X-Apparently-To: ygayathri95@yahoo.com; Thu, 10 Mar 2022 09:47:40 +0000
+X-YMailISG: DHPKNisWLDt8uwc11UgE2Lid7o7xX9lEgDrQEdwezs5pD8dD
+ ZPUCxs5vfKqragiz13Rm3XMJmxKIrsQDGxgGqdbj7MF5hAMTAG6F2sIMBhka
+ 5lvrBr.FdA1..k4kyOcBM8LG189Uu7Zj1uSbr0mqSlqOxTOv4EqptIcsbdH0
+ CJ5kplHfeMuPac1BinJ25eijr8AuKHR5YervVYgJFKEZHH6ynLGKdHFOhYWg
+ 7xz_yRdiBa1lBx2rTEzd_hOCvBSfZlpxzynts6r2wc0CaqY8xFyxdDUIeRd4
+ IRTwtNPyiqSOV8cJN7jNTUQJIZePI7UjiWELLhgbbYoT_YwVlqgLRjrixKDT
+ .KQZ4czP_dP2KF6vN25VnILTa1qoFXKbEK8EZ_3diRYKCWrKk5L9bzd78gD3
+ 1M0S5COyo6HX1CmWtwzI.5Uwxgf4OZZN5eL0coVbyA1C.55pMOoO9.L0o8x4
+ uzTYbSaAOImw5texCPLGqclwRj81zrTp26f4u9hKENkb07gKLDii.4ht9HnE
+ hdCOO0xzPHua5P.dffZUwQ_Wde5XG_HzWIA1AlANQ3kX5sZauueXGoeyqpJT
+ YEFMOYVVem56fCdiJ62dIO_uMZEuv6bR1Y8Z5O6JYnCv_ybveygUXRcE88NE
+ 9eSq4Qiq6XAjAanKibypmenSEwVVcdoGEZp29lwpCT1tntVepPdwL6_3Z7n8
+ RLml31SB0sUI6oUU5QFH0i_ckBX37O202sGxMbswDMIr6jvhS5YnjwVzqmkE
+ zo5D9WrIrgJ5fEJoTfVlL61nZl4fPWj6fZkebdi3Ev4Ie_noteK5ZA_Vzi8o
+ Gr85kLklHPDKrUTotGfotW9unXz_UOyhFHKHj49S1e6RmRA7x0dDHr_vho00
+ R7xF1EexPh8X3K9bxtTo9siXEIxXmPoY9Q3SfkY1Z9a.uVAPo5HUcZWDgYPp
+ 54axkBnIZRbRDb8Xu8fvX.c5Z0jE4vGfsVhdWZ.d1ihAESB5jpHBfkcJoa0P
+ NOJ0flR2CZlCCILYmjT0VWnfHsCo4gaZIVV6ye0hfvRdNdJJsVpx81JJbSEG
+ wMEriIytYmKDbNX__0H6SQe51irp7vcj.sHW.WGunAe7kw2TOrRljpB9WTRl
+ wbkUXDGEn3nJWisXPg5sZOzUupKDeevnYw6G8m86TzcFBTQVYtcoHmsNUxoF
+ 53zY.u5073v6HOyUtuf2vNjLAJkcxRYjQqUNf0k-
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;        d=gmail.com; s=20210112;       
+ h=message-id:date:mime-version:from:to:subject;       
+ bh=AwA8At1q+Y4mTA7pyTANkEIE5FuyQnZaIw+1AnNTpmg=;       
+ b=P//yCNq3srbxvDQt3kRGn5g0iOzbOCpb9UGEFohLDZpbB/u3NmClnMBLJqmDacmNlt        
+ 9rvL2pOgF9T3Co0hYfWdxhlL81pS0NbYaoRTPq+dp/+TZlc2ycazEvVZEfiVP1PIsf4B        
+ bp2mhWzEL+EAkbLXrod1unHaSrjKT+HaLd2aw4piFiVcL3VZqDFUeMFoRUSZrUg+2goo        
+ JhNlFzbhydl6XmqRAT8/E8nOJXF0R3sRWgaHfGKDGjnE2/I3SEMKUJk0A1xysjeV+sT/        
+ 8rlS1G7b9yxnjTacgAAUBYrrBxhxS6Mh9NLv+JHZyiuPenmldX1rKc+NxsLLpQ812Zs/        
+ 0UGA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;        d=1e100.net; s=20210112;       
+ h=x-gm-message-state:message-id:date:mime-version:from:to:subject;       
+ bh=AwA8At1q+Y4mTA7pyTANkEIE5FuyQnZaIw+1AnNTpmg=;       
+ b=5vaCgkgGRc5mIOtwXtRMZv3aL4Hbp04sRgsaAhyiNta42SxkRpCnU9CsVbJtdBguKg        
+ +guY8FFl0pxjR6DTcQ1SGsxp63B6r9flbQarMJ1oh+f3mqL0zgu5EowrIr2u2IcwUPR0        
+ xWtkUsbLOu2xIY8HylKt3GwooY+9mnE2xU8QmQj7DhsuLMLBoVp6V9pTkCDOQf8Z3xJn        
+ 3rkbBM+4Ylb8JG+YRFMYBLCeRJdbnAiy5xa2dwGHX0o5Kq893SKv8kmzWPuf086eUb5P        
+ 0Ke20egaLY+F8H1DmLChs87SXDuGPrYldDkNwEV7vlKTel/xtjRm9D53Fr7iuCA2ZtSz        
+ j3VA==
+X-Gm-Message-State: AOAM530Q8M1KBQHRJZNtOvRfpocMF7EADAy9CO7U9opKkUPiYfvDIVk2	ZWrWD8OCR7q8lbOiu02N7B28EWyHMaY=
+X-Google-Smtp-Source: ABdhPJycneGp3DKoDs3SUUJrWgkjFWr0XzfqfBWKNk40CT/mK1hvDlueBYjeCReSYnr7B/6V/MHCQg==
+X-Received: by 2002:a17:90b:1a89:b0:1bf:7508:9f6a with SMTP id
+ ng9-20020a17090b1a8900b001bf75089f6amr4103908pjb.201.1646905658511;       
+ Thu, 10 Mar 2022 01:47:38 -0800 (PST)
+Message-ID: <6229c93a.1c69fb81.bf8a6.179c@mx.google.com>
+Date: Thu, 10 Mar 2022 01:47:38 -0800 (PST)
+MIME-Version: 1.0
+From: laxmi.saoji@gmail.com
+To: ygayathri95@yahoo.com
+Subject: Yoga
+Content-Length: 1033
+Content-Type: multipart/mixed; boundary="===============1647543146907915664=="
+
+--===============1647543146907915664==
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: 7bit
+MIME-Version: 1.0
+
+I just started here recently because I bought a Groupon for $15 for an unlimited month. It is usually $160 for an unlimited month. I have been addicted and have attended class 4 our of the last 6 days. Remember to pace yourself and drink a lot of water, and be prepared to sweat! I was told that you usually sweat out a liter of water in each class. By day 2, I had it down and didn't have to stop to rest or for extra water. The instructors are fantastic and the owner is a sweetheart. Due to the large number of Groupon buyers, classes are huge, yet they conveniently added an additional noon class each day to accommodate. The experience is amazing and relieving. I would definitely recommend this to anyone wanting an invigorating experience. However, it is pricey. Normally, it is $17/class, $160/unlimited month, and have other package deals as well.
+--===============1647543146907915664==--
+

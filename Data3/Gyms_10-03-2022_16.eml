@@ -1,0 +1,80 @@
+Received: from 10.217.150.203 by atlas301.free.mail.ne1.yahoo.com with HTTPS; Thu, 10
+ Mar 2022 09:46:45 +0000
+Received: from 209.85.215.171 (EHLO mail-pg1-f171.google.com) by 10.217.150.203 with
+ SMTPs (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256); Thu, 10 Mar 2022
+ 09:46:45 +0000
+Received: by mail-pg1-f171.google.com with SMTP id t14so4279470pgr.3        for
+ <ygayathri95@yahoo.com>; Thu, 10 Mar 2022 01:46:45 -0800 (PST)
+Received: from BDC9-LX-137BR49.dir.svc.accenture.com ([223.226.206.29])        by
+ smtp.gmail.com with ESMTPSA id
+ x135-20020a62868d000000b004f7550f7f60sm6008244pfd.110.2022.03.10.01.46.43   
+     for <ygayathri95@yahoo.com>        (version=TLS1_3
+ cipher=TLS_AES_256_GCM_SHA384 bits=256/256);        Thu, 10 Mar 2022
+ 01:46:44 -0800 (PST)
+Return-Path: <laxmi.saoji@gmail.com>
+X-Originating-Ip: [209.85.215.171]
+Received-SPF: pass (domain of gmail.com designates 209.85.215.171 as permitted sender)
+Authentication-Results: atlas301.free.mail.ne1.yahoo.com; dkim=pass header.i=@gmail.com
+ header.s=20210112; spf=pass smtp.mailfrom=gmail.com;
+ dmarc=pass(p=NONE,sp=QUARANTINE) header.from=gmail.com;
+X-Apparently-To: ygayathri95@yahoo.com; Thu, 10 Mar 2022 09:46:46 +0000
+X-YMailISG: A010M9EWLDt42RCcKM56woqCTFhm1.cnTUHDZGiKfXZr76FA
+ md9x7RVtOpuwmTJjCez.apbOWmN3Idu20X3W4Y29u5nybzjLW2HIT1Dmgo7G
+ 2gCMaWM.fuXuxzoKkTTVqB5plevgzd5zxLJsahwjobOFC9QJRBbe32ZkI6V1
+ CDgvsR59v4.94V.lveA_UWnhiIYfD0RhrFLYgC_LrG3BxR7P8VIo6CgS8rTM
+ VthtWPL_u5EiPKr9vmMuEsv3pt8KsHc0pG98uQoJG34ixVVQG.RVdXNrjJ1.
+ OE5Om4_GMNU8tQjGGdHgDfiVt_v7nhNSKfXNHMk_RPmAp7.4QboqL99A3P7R
+ tgPL7jskHEvl0NYFxPwEhGe3m7WEgqL96MMnSplTmGNnMpD5LxIvPtNZf_93
+ sJrChKLESqP4P9qaf_XCF0EUidOnEVt0je0RJcyXcKyZUmU.ueOI5Lhdr8lf
+ 8YrxkNzE5pVNcx4CqjtTrXP2BvCJNsls7OLYNOuOwL8xFMiiml7vk7jexHFV
+ s6IhTNViBPpOIiacBp2zkSpgPZEb20e7y3A6lsnnpKDL3AIAu5vhX0w.d4Qh
+ pliLKmWGd989wk19Xe2_Q2m1LVWfel5BeeTAKmb2wunOIUZNNSozsPmEz4zO
+ rOy0laM9nhhwdpSCYsfaGkbJ2iDSjvF8wZuMYUBhZRCuxp_eVMYJW.GyGK3V
+ z9lr8UbJfww188sfClLkDR8RZ7QxN_t97Uj0wliXwxB4NirJHK7CEsz4CHLI
+ aSV2L2Ym1LofX7E7PHL9vi6LhpPWKZ1P0_.KasKLyh4U9Z0wxAfh36Q_SaGt
+ 5OuHFd197ioBa_yWogibEY2E5Pn4zgrmBMlLkwkrTlTaA.BNThHC1Yz1p5mZ
+ yPZUL2CY4XkHi77CX4J3jJyU_SQZXrCztTRhngertOlnSon1wnecF25IMfxd
+ edEgMpkny_KQZ7HZmzCtGNbAzMQwMllvtJL4RH.t6_zzICh.yLXz1acgbv4g
+ LL2mxceMyxX0AxCSv2OGryhUMHB7cYdmoSdELxkzt.NEBZ5Zcc5HtgeyVE09
+ mhofEoEbhcCdUEwfWUGUwVwdoCErepFFvivnAvZFa0abBfi_PwqQnMrMNboh
+ vzLkv390c7AedTcFi.DA.YYpI6BIRsUXB.D9_2YN.CwOZlMplkw4XqYgUola yg--
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;        d=gmail.com; s=20210112;       
+ h=message-id:date:mime-version:from:to:subject;       
+ bh=oeHsON/szrQxTAf3RVZ4MvDvy04eqnhfNfDwJoq4LpQ=;       
+ b=ZtQCeRPwjY04SodWZrt6CKSIjJ66D9LFUy3i1y3KADANz46PqbDnEbfRiXc7cTx57d        
+ 7D6CHExSLCeFKFVBOnAyo2IWXK2BnRxaaCmcPtR1oibpjBRP74nkeBatOQh9DUP/rtNU        
+ cc+v/lKrnkAK+zF+YwGHZIG5K9pEYIdgBnsJnAAz42kfhcWZwPh+hai+l7xM/kvXc4Ft        
+ 6Ax8oX3NGNVG3kX030Tn+2HZch4l4BOgLx5wMiB5+gmsw1bDKzu3ovBSMOSHvlgqQi0R        
+ ei0MsI2CFxDR3BkVYjCcrczO+Pf5jEjwT9q79RgW25v0rmaGTbVU2ASOwipzQXrVh8Ow        
+ PjYw==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;        d=1e100.net; s=20210112;       
+ h=x-gm-message-state:message-id:date:mime-version:from:to:subject;       
+ bh=oeHsON/szrQxTAf3RVZ4MvDvy04eqnhfNfDwJoq4LpQ=;       
+ b=OQoQwwjgfGhFtNCdQYqevgNKT2ensTTylL8rvZiz3Sf/ocwqdmUBsW/CFZxMojxpPn        
+ RTHqPY88EuPipF+v/ad5RLrD0hu3oAXlq+NE959pMpSQTwLo99M1W+Jvzd6ud3QMk8Kn        
+ MT6DKhBnr7fZCTo4V3TBd3mRd/gBi9RgcJ4GAmpgYNMXdlLlm+YiQwNRccETDw3hkkMb        
+ UAB1G12smNh93QFC0//lWYvS9HccxqORbINZVL8dd5z3+FMFHF9/wNNbupqEU8Ge/OYW        
+ LcbQbpWydC03Fw8llplLYfN2YZdsSINGv0zyG8TtcvV9ACf12oxzXIFZJQuhV1INxDRt        
+ HNFA==
+X-Gm-Message-State: AOAM531SUQu9EDn+ZoBKTt2TepwBWk6Ilc7QfxlLTKHM9+nztT1aS8bK	CU1rD2arh5q1QgGKFwNe8OMl1JKN9sg=
+X-Google-Smtp-Source: ABdhPJxx3EOfdyMNvdCzD401Hv0YiWK3u/K4XTeKr/ujgJOGsaC0IO9zMNkaThuGtdh8lqot0xi1dw==
+X-Received: by 2002:a65:5307:0:b0:374:315a:bc32 with SMTP id
+ m7-20020a655307000000b00374315abc32mr3393145pgq.342.1646905604911;       
+ Thu, 10 Mar 2022 01:46:44 -0800 (PST)
+Message-ID: <6229c904.1c69fb81.41d56.f384@mx.google.com>
+Date: Thu, 10 Mar 2022 01:46:44 -0800 (PST)
+MIME-Version: 1.0
+From: laxmi.saoji@gmail.com
+To: ygayathri95@yahoo.com
+Subject: Gyms
+Content-Length: 392
+Content-Type: multipart/mixed; boundary="===============6252570417146627801=="
+
+--===============6252570417146627801==
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: 7bit
+MIME-Version: 1.0
+
+I can't figure out if this one or the one on Camelback is more ghetto. I will say though that between the two, this one seems to have better equipment so I try to hit this one, even if it's 37 blocks out of the way.
+--===============6252570417146627801==--
+

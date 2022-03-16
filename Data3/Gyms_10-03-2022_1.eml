@@ -1,0 +1,80 @@
+Received: from 10.197.36.75 by atlas321.free.mail.bf1.yahoo.com with HTTPS; Thu, 10 Mar
+ 2022 09:46:52 +0000
+Received: from 209.85.214.172 (EHLO mail-pl1-f172.google.com) by 10.197.36.75 with
+ SMTPs (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256); Thu, 10 Mar 2022
+ 09:46:52 +0000
+Received: by mail-pl1-f172.google.com with SMTP id m2so4426686pll.0        for
+ <ygayathri95@yahoo.com>; Thu, 10 Mar 2022 01:46:52 -0800 (PST)
+Received: from BDC9-LX-137BR49.dir.svc.accenture.com ([223.226.206.29])        by
+ smtp.gmail.com with ESMTPSA id
+ z18-20020aa78892000000b004e19bd62d8bsm6427563pfe.23.2022.03.10.01.46.51     
+   for <ygayathri95@yahoo.com>        (version=TLS1_3
+ cipher=TLS_AES_256_GCM_SHA384 bits=256/256);        Thu, 10 Mar 2022
+ 01:46:52 -0800 (PST)
+Return-Path: <laxmi.saoji@gmail.com>
+X-Originating-Ip: [209.85.214.172]
+Received-SPF: pass (domain of gmail.com designates 209.85.214.172 as permitted sender)
+Authentication-Results: atlas321.free.mail.bf1.yahoo.com; dkim=pass header.i=@gmail.com
+ header.s=20210112; spf=pass smtp.mailfrom=gmail.com;
+ dmarc=pass(p=NONE,sp=QUARANTINE) header.from=gmail.com;
+X-Apparently-To: ygayathri95@yahoo.com; Thu, 10 Mar 2022 09:46:53 +0000
+X-YMailISG: JWZ9yGcWLDtyfEVtHlu9BHn6CIC9mg9_fnrq.RJFxKgdLkNh
+ oZLc3h5ziWNDWIeeihUkvLFAby8XOFwehhHww6qx3oILkgdSjkf01G_CtfM9
+ OYgyLyWmThpy6VGOwRManTjn6rUrneNQvePb5O1o2e5He5hrZU5YiV.QOPOb
+ j6IAaQHql7MjtE5fUCVwV41FmhZxuQ9HOJmKo2dI8z1j8KURyD_AKswUU1Y.
+ NutC17zsZPa9527MTbnarB89Y.pC91KrEN3NlW3Sn2IntdM.DicPf1JrkGoT
+ bLLMjJC_ky.WRBqYkP5euDV42617R7ginYxk_zvgBJ.RefJ0qjD8JMoiwAJP
+ CTwIImf.IsBdv3az5b2_XLWqlSv6K.G7VC5kMY1uKD3R6yvvBufq0cFH7l36
+ EV0qeUjIzvWocZeagVPsqcs4rn_AH4ngCVlTADHs3haHkoZ_ekFkb9QIgRgJ
+ 9LXKq7jqVmdkB75.cSVy4TQ3OheZm6fco0wtgUepCs3DbK_AMircyQvAHLgk
+ Jfw64Yi7vT.YcS4rbWFVHuLyKkEJT6.bF4xPZo7i2qxyOdQKrWcnAgzjJqyj
+ 8lMWCvtfn0IiRrcDHa2e78ojdecCvi0Q_z5XGsSwtmwpN7.GO2U3yoN_TwTC
+ cn3GqtWlAttD46HjYKDm3Z9iI6TFX7l1woOWsHbRlVy2hLfDucR5Zk08lCwK
+ Ze2.MYIW.N9xnoVE4gU_5HUrdg1cfVyhNOCbcqeyhANJnfYkrOR4lIXVzgl_
+ Cl_nGSveb6MrcOx5HKpDtkpidGdyhVtHGTAKmvFc65TcSNK3c.srFeCN5qXp
+ BR9hujVjiS3cD4.t4iPJdVa7Sklb0deNzdNc7x9gloQF5SxyM6B71GzUv5W0
+ nf2T96W9aCKUnU0cxUQutA3Pink0F8.FfuI2J_JraWRil1ENvnbhORfbfYa9
+ Cwcs1qxzENHkPKdbm99GapSjnngOg7.nuMajqtlZZW2STuBHUXuccOpWpq2b
+ Pj07SDxr.FU26g6CyQmHgO75KruN2RJjtsSdqpvXXeWy8Zz6F0_op3OCaNth
+ B.ch5WN22iLUDyeegiZOnbP8H6IQoM8oiQQyJLxeN_xTnF9SqU_s_AnMbYu4
+ MFqbHplGTOeSJn9guYcB9UV1y.YEfDAC12hVOw--
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;        d=gmail.com; s=20210112;       
+ h=message-id:date:mime-version:from:to:subject;       
+ bh=D/DTpiCTV9luvZPoJSzGzybRZKwk8qDlWd+HEBlsQfM=;       
+ b=WMBQQDThFLyd2TzxD7ZqGrTOEtSSzKXmTPisgRdkxsQXE5gWFxifAO0PA60Rr7IGnb        
+ z1JPgy4BIiQy+S77X/scx1x8FBcUncc8+lEHr/AdX6m3la1ZZt7hWhotRIWYOKmAsiZg        
+ cgVJBoc0DH/FsHbghSiQgccBRgCvMj1xt3nRq89lMhAqSKeuIPRk4A+i99s4GeK6MPf8        
+ SjsbBtiSfpbfDkWXUtrO+MsOVcoZzVLlr6xGHsFVZSjrA55ObvWvQhnNVhlRkXs/XL3S        
+ NJibIK3hmcf2xbuAcMMG+hcDpE4Dohor8dN5Ny6L6yUm/WU9T7jAVvnRx2sEtLQQQae9        
+ IWQw==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;        d=1e100.net; s=20210112;       
+ h=x-gm-message-state:message-id:date:mime-version:from:to:subject;       
+ bh=D/DTpiCTV9luvZPoJSzGzybRZKwk8qDlWd+HEBlsQfM=;       
+ b=6/ssTa7hA94Em9SSONYrbwtsHwwhTuXanXHIeIWgvz2S11/uV8RXMz/w0rK/m1Tmbo        
+ 3EMfQa89Ufg93k1R+qz1sKMZv4ikWovFefn+d7X49XYxGP7HgW6p44p7kf2A/dnhUnen        
+ 7YfQ1ThgtZzpl3WJTQJdqm82mXdoDZrc2J5Bp744e4CpKMIXjA5f1kTaPvkREt94rYKd        
+ xsfjrNlbonuFFExbUHNZ0dIpM8aC1WU5W56JcnfuALXCWRs02Jx/eItI1cYmX59hjNQd        
+ gL+bDrcWPYmbWwNzKWS9M5Fv0EBgactW7GhVWVoizOb8Qiv/wDoeVpBq5PzcX96AAB3H        
+ MzEQ==
+X-Gm-Message-State: AOAM533jdMVXnbhoJQT3M9RgpAPSY28M8vHrRiAG3QzXKkWT6d7oJybs	pDyjUB+Fw5/fJYkxgMLSoy25t8N8sck=
+X-Google-Smtp-Source: ABdhPJzYtrNctrP5WX0AvdKIZ/NwfuUPfV3BJMcZqdxTkRZ48QyVJbDeu63Ck2GExiezp7JTnHuCvA==
+X-Received: by 2002:a17:90a:8c14:b0:1be:e874:1cbb with SMTP id
+ a20-20020a17090a8c1400b001bee8741cbbmr4083570pjo.210.1646905612418;       
+ Thu, 10 Mar 2022 01:46:52 -0800 (PST)
+Message-ID: <6229c90c.1c69fb81.bf2c6.ffdd@mx.google.com>
+Date: Thu, 10 Mar 2022 01:46:52 -0800 (PST)
+MIME-Version: 1.0
+From: laxmi.saoji@gmail.com
+To: ygayathri95@yahoo.com
+Subject: Gyms
+Content-Length: 343
+Content-Type: multipart/mixed; boundary="===============4349844616282833897=="
+
+--===============4349844616282833897==
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: 7bit
+MIME-Version: 1.0
+
+Good for a cheap gym 10 a month hard to beat. can't do alot of heavy lifting, but can get most things done. Biggest downfall, zero eyecandy. Median must be around 60.
+--===============4349844616282833897==--
+
