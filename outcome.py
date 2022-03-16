@@ -220,10 +220,10 @@ def app():
         fig2,ax=plt.subplots()
             #explode = (0, 0.1)
         temp1=output_df.groupby(['emotions1'])['From'].count().reset_index()
-        temp1=temp1.sort_values('emotions1')
+        temp1=temp1.sort_values('from')
         t=temp1['From']
         classes=temp1['emotions1']
-        t=sorted(t)
+        #t=sorted(t)
             #plt.pie(result['spam_probability'],labels=classes)
         ax.pie(t, labels=classes,wedgeprops={'linewidth':1.0 ,'edgecolor':'white'},autopct='%1.1f%%',colors=['brown','lime','purple','r','grey','yellowgreen','y','orange','r','cornflowerblue','thistle'],textprops={'fontsize': 25})
         ax.axis('equal')

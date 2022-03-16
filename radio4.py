@@ -652,6 +652,7 @@ if st.session_state['but']=='User Input':
                        # output_df['emotions1'][i]=max_value
                     #st.write("File saved")
                     output_df['Departments']=output_df['Department_1']
+                    output_df['emotions1']=output_df['emotions1'].str.strip()
                     output_df.to_csv('fgk.csv')
                 st.info(" Prediction - Done")
                 with st.spinner(" Rendering Visualization...."):
