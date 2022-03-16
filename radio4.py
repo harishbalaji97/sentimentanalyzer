@@ -522,6 +522,15 @@ div['data-testid']{
     flex: 1 1 calc(60.241% - 1rem);
     border: none;
 }  
+
+.st-e9 {
+    border: none;
+}
+
+.st-e8 {
+    min-width: 0px;
+    border: ridge;
+}
             </style>
 """,unsafe_allow_html=True)
 hide_table_row_index = """
