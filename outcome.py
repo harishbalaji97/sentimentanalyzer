@@ -220,7 +220,7 @@ def app():
         fig2,ax=plt.subplots()
             #explode = (0, 0.1)
         temp1=output_df.groupby(['emotions1'])['From'].count().reset_index()
-        temp1=temp1.sort_values('from')
+        temp1=temp1.sort_values('From')
         t=temp1['From']
         classes=temp1['emotions1']
         #t=sorted(t)
