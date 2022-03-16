@@ -43,7 +43,7 @@ def app():
     
     
     
-    col1,col2,col3,col4,col5,col6=st.columns([1,0.2,1,1,1,1])
+    col1,col3,col4,col5,col6=st.columns([1,1,1,1,1])
     for j in output_df['Receiver_Email_Type'].unique():
         st.session_state.email.append(j)
     

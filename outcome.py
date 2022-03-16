@@ -225,7 +225,7 @@ def app():
         classes=temp1['emotions1']
         t=sorted(t)
             #plt.pie(result['spam_probability'],labels=classes)
-        ax.pie(t, labels=classes,wedgeprops={'linewidth':1.0 ,'edgecolor':'white'},autopct='%1.1f%%',colors=['lightgreen','lime','purple','r','grey','g','y','orange','r','g'],textprops={'fontsize': 25})
+        ax.pie(t, labels=classes,wedgeprops={'linewidth':1.0 ,'edgecolor':'white'},autopct='%1.1f%%',colors=['brown','lime','purple','r','grey','yellowgreen','y','orange','r','cornflowerblue','thistle'],textprops={'fontsize': 25})
         ax.axis('equal')
         #fig2.patch.set_linewidth(5)
         #fig2.patch.set_edgecolor("black")

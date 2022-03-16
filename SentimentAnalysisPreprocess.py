@@ -18,8 +18,8 @@ def textpreprocess_pipeline(input_df, lemmatizationFlag, ngramsFlag):
     input_df['whitespace_removed'] = input_df['remove_number'].apply(lambda x: preprocesstext.remove_whitespace(x))
     input_df['tokenized_text'] = input_df['whitespace_removed'].apply(lambda x: preprocesstext.tokenization(x))
     input_df['Location']='United States'
-    department = ['HR', 'Finance', 'Procurement', 'Operations']
-    #input_df["Department"] = np.random.choice(department, size=len(input_df))
+    department = ['Sales', 'Finance', 'Customer Support', 'Operations']
+    input_df["Department_1"] = np.random.choice(department, size=len(input_df))
     if lemmatizationFlag:
         input_df['lemmatized_text'] = input_df['whitespace_removed'].apply(lambda x: preprocesstext.lemmatize_sentence(x))
         input_df['smallwords_removed'] = input_df['lemmatized_text'].apply(lambda x: preprocesstext.remove_smallwords(str(x)))

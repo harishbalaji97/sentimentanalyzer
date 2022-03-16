@@ -97,4 +97,6 @@ def emotion(df):
     
     df['emotions1']=df1['Final']
     df['emotions1']=df.emotions1.str.capitalize()
+    emotion_replace ={'Negative' : 'Unpleasant','Positive' : 'Pleasant'}
+    df.emotions1 = df.emotions1.replace(emotion_replace)
     return df
