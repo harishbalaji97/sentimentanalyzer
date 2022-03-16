@@ -12,3 +12,4 @@ openpyxl
 lightgbm
 NRCLex
 nrclex
+seaborn
