@@ -432,7 +432,7 @@ def app():
         ax.spines['bottom'].set_visible(False)
         ax.get_xaxis().set_ticks([])
         #ax.set_ylabel("No. of mails")
-        ax.legend(['Trust', 'Negative', 'Anger', 'Anticipation', 'Joy', 'Sadness','Fear', 'Disgust', 'Positive', 'Surprise'],fontsize=8)
+        ax.legend(['Trust', 'Unpleasant', 'Anger', 'Anticipation', 'Joy', 'Sadness','Fear', 'Disgust', 'Pleasant', 'Surprise'],fontsize=8)
         #plt.legend(['Legend'], )
         plt.yticks(fontsize=12)
         st.pyplot(fig)
